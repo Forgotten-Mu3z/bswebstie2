@@ -1,0 +1,26 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "bsgaming",
+  "compatibility_date": "2026-05-22",
+  // A plain deploy is always the public store. scripts/deploy.mjs deploys the
+  // admin panel as a second Worker with APP_ROLE=admin.
+  "vars": { "APP_ROLE": "store" },
+  // database_id comes from `npx wrangler d1 create bsgaming`.
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "bsgaming",
+      "database_id": "00000000-0000-4000-8000-000000000000",
+      "migrations_dir": "drizzle"
+    }
+  ],
+  "r2_buckets": [{ "binding": "FILES", "bucket_name": "bsgaming-media" }],
+  // Requests allowed per visitor IP per 60 seconds (server/security/request-limits.ts).
+  "ratelimits": [
+    { "name": "AUTH_LIMITER", "namespace_id": "2001", "simple": { "limit": 10, "period": 60 } },
+    { "name": "UPLOAD_LIMITER", "namespace_id": "2002", "simple": { "limit": 20, "period": 60 } },
+    { "name": "ADMIN_LIMITER", "namespace_id": "2003", "simple": { "limit": 120, "period": 60 } },
+    { "name": "SEARCH_LIMITER", "namespace_id": "2004", "simple": { "limit": 120, "period": 60 } },
+    { "name": "GENERAL_LIMITER", "namespace_id": "2005", "simple": { "limit": 600, "period": 60 } }
+  ]
+}

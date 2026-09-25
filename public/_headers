@@ -1,0 +1,7 @@
+# Headers for static files (images, scripts, fonts) served directly by
+# Cloudflare. Pages and API routes get theirs from next.config.ts.
+/*
+  X-Content-Type-Options: nosniff
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: DENY

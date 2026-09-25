@@ -1,0 +1,97 @@
+@import 'tailwindcss';
+
+/* Design tokens: graphite surfaces, one electric-cyan accent, data in mono. */
+@theme {
+  --color-ink-950: #07080b;
+  --color-ink-900: #0b0d11;
+  --color-ink-850: #0f1217;
+  --color-ink-800: #141820;
+  --color-ink-700: #1b2029;
+  --color-line: #1e232c;
+  --color-line-strong: #2c333f;
+  --color-fg: #e9edf2;
+  --color-fg-muted: #9aa4b2;
+  --color-fg-subtle: #626c7a;
+  --color-accent: #3de0ff;
+  --color-accent-strong: #19c7ea;
+  --color-accent-ink: #03141b;
+  --color-ok: #5fe3a1;
+  --color-warn: #f3bd55;
+  --color-danger: #ff7a7a;
+
+  --font-sans: var(--font-geist), ui-sans-serif, system-ui, sans-serif;
+  --font-mono:
+    var(--font-geist-mono), ui-monospace, 'SFMono-Regular', monospace;
+
+  --radius-sm: 3px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    min-width: 320px;
+    background: var(--color-ink-950);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+    font-feature-settings: 'ss01', 'cv11';
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection {
+    background: color-mix(in srgb, var(--color-accent) 30%, transparent);
+    color: #fff;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+  a,
+  button {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+  input,
+  select,
+  textarea {
+    font: inherit;
+  }
+  /* Numbers line up in price and spec columns. */
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Faint engineering grid used behind hero areas. */
+.blueprint {
+  background-image:
+    linear-gradient(var(--color-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-line) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(ellipse at 70% 40%, black 30%, transparent 75%);
+}
+
+/* Ruled product grid: cells share 1px dividers instead of floating cards. */
+.ruled {
+  display: grid;
+  gap: 1px;
+  background: var(--color-line);
+  border: 1px solid var(--color-line);
+}
+.ruled > * {
+  background: var(--color-ink-900);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
