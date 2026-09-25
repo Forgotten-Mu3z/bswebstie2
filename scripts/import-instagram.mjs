@@ -160,8 +160,14 @@ async function importRecord(record) {
   }
 
   const thumb = cover ?? source(parts.find((p) => p.image)?.image);
-  if (thumb)
+  if (thumb) {
+    // Two sizes: phones show tiles about 180px wide, desktops up to 240px.
     await image(thumb, join(dir, 'thumb.webp'), { square: 480, quality: 70 });
+    await image(thumb, join(dir, 'thumb-240.webp'), {
+      square: 240,
+      quality: 70,
+    });
+  }
 
   return {
     code,

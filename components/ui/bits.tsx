@@ -1,5 +1,4 @@
 import clsx from 'clsx';
-import Image from 'next/image';
 import {
   currentPrice,
   discountPercent,
@@ -93,30 +92,48 @@ export function Stock({
   );
 }
 
-/** Product photo, or the honest "photo coming soon" placeholder. */
+const BUNDLED = /^\/products\/([a-z0-9-]+\.webp)$/;
+
+/**
+ * Product photo, or the honest "photo coming soon" placeholder. Bundled
+ * photos come in 400, 800 and 1200px (scripts/make-brand-assets.mjs) and the
+ * browser picks the smallest that is sharp enough; `sizes` says how wide the
+ * image is shown (defaults to `size` pixels).
+ */
 export function ProductImage({
   product,
   size,
+  sizes,
   priority = false,
   className,
   decorative = false,
 }: {
   product: { name: string; image: string | null };
   size: number;
+  sizes?: string;
   priority?: boolean;
   className?: string;
   /** When the product name is already next to it. */
   decorative?: boolean;
 }) {
   const src = product.image ?? PHOTO_NEEDED;
+  const file = src.match(BUNDLED)?.[1];
   return (
-    <Image
-      src={src}
+    // oxlint-disable-next-line nextjs/no-img-element -- pre-sized files; the Workers image endpoint does not resize
+    <img
+      src={file ? `/products/800/${file}` : src}
+      srcSet={
+        file
+          ? `/products/400/${file} 400w, /products/800/${file} 800w, /products/${file} 1200w`
+          : undefined
+      }
+      sizes={file ? (sizes ?? `${size}px`) : undefined}
       alt={decorative ? '' : imageAlt(product)}
       width={size}
       height={size}
-      priority={priority}
-      unoptimized={src.startsWith('/api/') || src.endsWith('.svg')}
+      loading={priority ? 'eager' : 'lazy'}
+      fetchPriority={priority ? 'high' : undefined}
+      decoding="async"
       className={clsx('h-full w-full object-contain', className)}
     />
   );

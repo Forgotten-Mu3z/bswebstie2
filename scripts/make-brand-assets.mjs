@@ -21,6 +21,26 @@ const icon = (size) =>
     .flatten({ background: BG })
     .png();
 
+// Small logo for the site header (the file shown at 36-40px).
+writeFileSync('public/logo-96.png', await icon(96).toBuffer());
+
+// --- Product photo sizes ---------------------------------------------------
+// Cloudflare Workers has no on-the-fly image resizing, so smaller copies are
+// made here and picked by the browser with srcset (components/ui/bits.tsx).
+for (const width of [400, 800]) {
+  mkdirSync(join('public/products', String(width)), { recursive: true });
+  for (const file of readdirSync('public/products').filter((name) =>
+    name.endsWith('.webp'),
+  ))
+    writeFileSync(
+      join('public/products', String(width), file),
+      await sharp(readFileSync(join('public/products', file)))
+        .resize(width, width, { fit: 'inside', withoutEnlargement: true })
+        .webp({ quality: 78 })
+        .toBuffer(),
+    );
+}
+
 // --- Favicons ---------------------------------------------------------------
 const sizes = {
   'icon-16.png': 16,

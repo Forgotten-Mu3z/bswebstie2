@@ -38,6 +38,7 @@ export function ProductCell({
           <ProductImage
             product={product}
             size={320}
+            sizes="(min-width: 1024px) 240px, (min-width: 640px) 30vw, 45vw"
             priority={priority}
             decorative
             className="transition-transform duration-300 group-hover:scale-[1.03]"

@@ -26,7 +26,8 @@ export function AdminShell({
         <div className="mx-auto flex max-w-[1400px] items-center gap-3 px-4 pt-3 sm:px-6">
           <a href="/admin" className="flex items-center gap-2.5">
             <Image
-              src="/blackshark-logo.png"
+              src="/logo-96.png"
+              unoptimized
               alt=""
               width={28}
               height={28}

@@ -1,7 +1,6 @@
 import { ArrowRight, Clapperboard, Cpu } from 'lucide-react';
-import Image from 'next/image';
 import { attributeRows, partTypeLabel } from '@/lib/catalog';
-import { postAlt, postDate } from '@/lib/instagram';
+import { postAlt, postDate, thumbSrcSet } from '@/lib/instagram';
 import { SLOTS } from '@/lib/pc-builder';
 import {
   fitDescription,
@@ -76,9 +75,9 @@ export default async function HomePage() {
           </div>
 
           {hero ? (
+            // oxlint-disable-next-line jsx-a11y/control-has-associated-label -- named by the product text inside
             <a
               href={`/products/${hero.slug}`}
-              aria-labelledby="hero-product"
               className="group block overflow-hidden rounded-lg border border-line-strong bg-ink-900/90 shadow-2xl shadow-black/50 transition-colors hover:border-accent/50"
             >
               <div className="flex items-center justify-between border-b border-line px-4 py-2.5">
@@ -104,10 +103,7 @@ export default async function HomePage() {
                       .filter(Boolean)
                       .join(' · ')}
                   </p>
-                  <p
-                    id="hero-product"
-                    className="mt-1 text-lg font-semibold leading-snug group-hover:text-accent"
-                  >
+                  <p className="mt-1 text-lg font-semibold leading-snug group-hover:text-accent">
                     {hero.name}
                   </p>
                   <dl className="mt-3 divide-y divide-line border-y border-line font-mono text-xs">
@@ -289,13 +285,16 @@ export default async function HomePage() {
                   href="/instagram"
                   className="group relative block aspect-square overflow-hidden rounded-md bg-ink-850"
                 >
-                  <Image
+                  {/* oxlint-disable-next-line nextjs/no-img-element -- pre-sized thumbnails picked with srcset */}
+                  <img
                     src={post.thumb!}
+                    srcSet={thumbSrcSet(post.thumb!)}
+                    sizes="(min-width: 1400px) 220px, (min-width: 640px) 16vw, 32vw"
                     alt={postAlt(post)}
                     width={480}
                     height={480}
-                    unoptimized
                     loading="lazy"
+                    decoding="async"
                     className="size-full object-cover transition-transform duration-300 group-hover:scale-[1.04]"
                   />
                   <span className="pointer-events-none absolute inset-x-0 bottom-0 flex items-center justify-between bg-gradient-to-t from-black/75 to-transparent px-2 pb-1.5 pt-6 font-mono text-[11px] text-white/90">

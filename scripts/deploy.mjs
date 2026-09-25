@@ -47,6 +47,7 @@ if (built.d1_databases?.some((db) => /^0{8}-/.test(db.database_id))) {
 const instagram = JSON.parse(readFileSync('data/instagram.json', 'utf8'));
 const media = instagram.posts.flatMap((post) => [
   post.thumb,
+  post.thumb?.replace(/thumb\.webp$/, 'thumb-240.webp'),
   ...post.slides.flatMap((slide) => [slide.src, slide.poster]),
 ]);
 const absent = media.filter(

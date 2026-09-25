@@ -14,6 +14,8 @@ import {
   postAlt,
   postDate,
   postKind,
+  THUMB_SIZES,
+  thumbSrcSet,
   type InstagramPost,
 } from '@/lib/instagram';
 import { buttonClass } from '@/components/ui/button';
@@ -253,14 +255,17 @@ export function InstagramGallery({
               className="group relative block aspect-square overflow-hidden rounded-md bg-ink-850"
             >
               {post.thumb ? (
-                <Image
+                // oxlint-disable-next-line nextjs/no-img-element -- pre-sized thumbnails picked with srcset
+                <img
                   src={post.thumb}
+                  srcSet={thumbSrcSet(post.thumb)}
+                  sizes={THUMB_SIZES}
                   alt={postAlt(post)}
                   width={480}
                   height={480}
-                  unoptimized
                   loading={index < eager ? 'eager' : 'lazy'}
                   fetchPriority={index < 2 ? 'high' : undefined}
+                  decoding="async"
                   className="size-full object-cover transition-transform duration-300 group-hover:scale-[1.04]"
                 />
               ) : (

@@ -163,7 +163,12 @@ export default async function ProductPage({ params }: Props) {
                 className="blueprint absolute inset-0 opacity-60"
               />
               <div className="relative h-full p-8 sm:p-14">
-                <ProductImage product={product} size={720} priority />
+                <ProductImage
+                  product={product}
+                  size={720}
+                  sizes="(min-width: 1024px) 560px, 90vw"
+                  priority
+                />
               </div>
             </div>
           </div>

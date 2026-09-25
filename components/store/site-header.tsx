@@ -15,19 +15,17 @@ export type NavCategory = { slug: string; name: string };
 
 function Wordmark() {
   return (
-    <a
-      href="/"
-      className="flex shrink-0 items-center gap-2.5 rounded-md"
-      aria-label="BLACKSHARK home"
-    >
+    <a href="/" className="flex shrink-0 items-center gap-2.5 rounded-md">
       <Image
-        src="/blackshark-logo.png"
+        src="/logo-96.png"
         alt=""
         width={40}
         height={40}
+        unoptimized
         priority
         className="size-9 rounded-md sm:size-10"
       />
+      <span className="sr-only sm:hidden">BLACKSHARK home</span>
       <span className="hidden leading-none sm:block">
         <span className="block text-[15px] font-bold tracking-[0.2em]">
           BLACKSHARK

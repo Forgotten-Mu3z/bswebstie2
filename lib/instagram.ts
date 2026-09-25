@@ -49,6 +49,13 @@ export const postKind = (post: Pick<InstagramPost, 'type'>) =>
       ? 'Carousel'
       : 'Photo';
 
+/** srcset for a grid tile: 240px and 480px squares from the importer. */
+export const thumbSrcSet = (thumb: string) =>
+  `${thumb.replace(/thumb\.webp$/, 'thumb-240.webp')} 240w, ${thumb} 480w`;
+
+export const THUMB_SIZES =
+  '(min-width: 1280px) 200px, (min-width: 1024px) 24vw, (min-width: 640px) 32vw, 48vw';
+
 /** First line of a caption without emoji or hashtags, for alt text and titles. */
 export function captionHeadline(caption: string | undefined, max = 110) {
   const line =

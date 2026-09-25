@@ -41,7 +41,8 @@ export function AuthCard({
       >
         <div className="flex items-center gap-3 border-b border-line px-6 py-4">
           <Image
-            src="/blackshark-logo.png"
+            src="/logo-96.png"
+            unoptimized
             alt=""
             width={32}
             height={32}
