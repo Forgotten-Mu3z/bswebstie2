@@ -21,6 +21,8 @@ TypeScript, Tailwind CSS 4 and Drizzle ORM. Runs on Cloudflare Workers with **D1
 - **Admin site** (a separate address): overview with counts, low stock and activity, and product
   management with photo upload.
 
+Live store: https://bsgaming.kbdh1243-2.workers.dev (the admin address is kept out of this repository).
+
 Prices are stored as whole **baisa** (1 OMR = 1000 baisa) and shown as `OMR 1,234.500`.
 
 ## Project layout

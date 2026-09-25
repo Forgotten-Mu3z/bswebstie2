@@ -57,7 +57,10 @@ function deploy(name, vars) {
   for (let attempt = 1; attempt <= 3; attempt++) {
     const result = wrangler(['deploy', '--config', file]);
     if (result.ok) {
-      const url = result.output.match(/https:\/\/[^\s]+\.workers\.dev/)?.[0];
+      // Match this Worker's own address, not a URL printed among its variables.
+      const url = result.output.match(
+        new RegExp(`https://${name}\\.[a-z0-9-]+\\.workers\\.dev`),
+      )?.[0];
       console.log(`Deployed ${vars.APP_ROLE}: ${url ?? name}`);
       return url;
     }
@@ -74,7 +77,14 @@ deploy(adminName, { APP_ROLE: 'admin', STORE_URL: storeUrl ?? '' });
 // Retried, so a timed-out request is not reported as "missing secrets".
 let secrets = { ok: false, output: '' };
 for (let attempt = 1; attempt <= 3 && !secrets.ok; attempt++)
-  secrets = wrangler(['secret', 'list', '--name', adminName, '--format', 'json']);
+  secrets = wrangler([
+    'secret',
+    'list',
+    '--name',
+    adminName,
+    '--format',
+    'json',
+  ]);
 const missing = ['ADMIN_EMAILS', 'TOTP_ENCRYPTION_KEY'].filter(
   (name) => !secrets.output.includes(`"${name}"`),
 );
