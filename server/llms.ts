@@ -19,7 +19,7 @@ async function header() {
   const lines = [
     '# BLACKSHARK',
     '',
-    '> Gaming PC and computer parts store in Oman, also known as Black Shark Gaming or BS Gaming. Prices are in Omani rial (OMR) with live stock. There is no online checkout: customers add items to a cart or build a PC on the site, then order on WhatsApp.',
+    '> Gaming PC and computer parts store in Oman, also known as Black Shark Gaming or BS Gaming. Prices are in Omani rial (OMR) with live stock. There is no online checkout: customers order on WhatsApp from any product page or from the PC builder.',
     '',
     '## Key pages',
     '',
@@ -90,7 +90,7 @@ export async function llmsFull() {
           product.brand,
           partTypeLabel(product.partType),
           product.stockOnRequest
-            ? 'ask for stock'
+            ? ''
             : product.stock > 0
               ? 'in stock'
               : 'out of stock',

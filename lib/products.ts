@@ -18,7 +18,7 @@ export type PublicProduct = {
   priceBaisa: number;
   salePriceBaisa: number | null;
   stock: number;
-  /** No stock count: "ask us" instead of a number, still orderable. */
+  /** No stock count is shown; availability is confirmed on WhatsApp. */
   stockOnRequest: boolean;
   image: string | null;
   featured: boolean;
@@ -39,18 +39,11 @@ export type Suggestion = {
 
 export const PHOTO_NEEDED = '/product-photo-needed.svg';
 
-/** Most a cart can hold of a stock-on-request product; more by WhatsApp. */
-export const ON_REQUEST_LIMIT = 10;
-
 type Availability = { stock: number; stockOnRequest?: boolean };
 
-/** Can be added to the cart: in stock, or listed as "ask for stock". */
+/** Has stock, or its stock is only confirmed on WhatsApp. */
 export const canOrder = (product: Availability) =>
   Boolean(product.stockOnRequest) || product.stock > 0;
-
-/** Most of this product one cart can hold. */
-export const orderLimit = (product: Availability) =>
-  product.stockOnRequest ? ON_REQUEST_LIMIT : product.stock;
 
 /** Price customers pay: the sale price only when it is actually lower. */
 export function currentPrice(product: {

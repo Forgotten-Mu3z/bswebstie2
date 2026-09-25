@@ -11,17 +11,22 @@ import { Modal } from '@/components/ui/overlay';
 export function WhatsAppChooser({
   message,
   label,
+  ariaLabel,
   title = 'Message us on WhatsApp',
   description = 'Choose who to message. WhatsApp opens with the details already written.',
   variant = 'whatsapp',
+  size = 'lg',
   disabled = false,
   className,
 }: {
   message: () => string;
   label: string;
+  /** Full name for screen readers when the visible label is short. */
+  ariaLabel?: string;
   title?: string;
   description?: string;
   variant?: 'whatsapp' | 'secondary';
+  size?: 'md' | 'lg';
   disabled?: boolean;
   className?: string;
 }) {
@@ -32,6 +37,7 @@ export function WhatsAppChooser({
       <button
         type="button"
         aria-haspopup="dialog"
+        aria-label={ariaLabel}
         disabled={disabled}
         onClick={() => {
           setText(message());
@@ -40,13 +46,17 @@ export function WhatsAppChooser({
         className={
           variant === 'whatsapp'
             ? clsx(
-                'inline-flex h-12 items-center justify-center gap-2 rounded-md bg-[#25d366] px-5 font-semibold text-[#04150b] hover:bg-[#1fbe5b] disabled:cursor-not-allowed disabled:bg-ink-700 disabled:text-fg-subtle',
+                'inline-flex items-center justify-center gap-2 rounded-md bg-[#25d366] font-semibold text-[#04150b] hover:bg-[#1fbe5b] disabled:cursor-not-allowed disabled:bg-ink-700 disabled:text-fg-subtle',
+                size === 'lg' ? 'h-12 px-5' : 'h-11 px-3 text-sm',
                 className,
               )
-            : buttonClass('secondary', 'lg', clsx('justify-center', className))
+            : buttonClass('secondary', size, clsx('justify-center', className))
         }
       >
-        <MessageCircle aria-hidden="true" className="size-5" />
+        <MessageCircle
+          aria-hidden="true"
+          className={size === 'lg' ? 'size-5' : 'size-4'}
+        />
         {label}
       </button>
       <Modal

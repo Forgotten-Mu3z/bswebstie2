@@ -103,7 +103,8 @@ export function totpUri(secret: string, email: string) {
 // --- Encryption at rest -----------------------------------------------------
 
 async function encryptionKey() {
-  const raw = env.TOTP_ENCRYPTION_KEY;
+  // Trimmed: a secret pasted or piped in often ends with a line break.
+  const raw = env.TOTP_ENCRYPTION_KEY?.trim();
   if (!raw) throw new Error('TOTP_ENCRYPTION_KEY is not configured');
   const bytes = Uint8Array.from(atob(raw), (char) => char.charCodeAt(0));
   if (bytes.length !== 32)

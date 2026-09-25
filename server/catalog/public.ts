@@ -101,7 +101,8 @@ function searchCondition(raw: string): SQL | undefined {
     .replace(/[%_\\]/g, ' ')
     .trim()
     .slice(0, 100);
-  if (!term) return undefined;
+  // Only wildcard characters were typed: match nothing, not everything.
+  if (!term) return sql`0 = 1`;
   const pattern = `%${term}%`;
   const lower = term.toLowerCase();
   const types = PART_TYPES.filter(
@@ -274,9 +275,15 @@ export async function getBuilderParts() {
     .where(
       and(
         visible,
-        inArray(
-          products.partType,
-          SLOTS.map((slot) => slot.partType),
+        or(
+          inArray(
+            products.partType,
+            SLOTS.flatMap((slot) => (slot.partType ? [slot.partType] : [])),
+          ),
+          inArray(
+            categories.slug,
+            SLOTS.flatMap((slot) => (slot.category ? [slot.category] : [])),
+          ),
         ),
       ),
     )

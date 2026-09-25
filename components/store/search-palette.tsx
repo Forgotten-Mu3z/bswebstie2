@@ -113,7 +113,7 @@ export function SearchPalette({
               enterKeyHint="search"
               className="h-14 min-w-0 flex-1 bg-transparent text-base text-fg outline-none placeholder:text-fg-subtle"
             />
-            <kbd className="hidden rounded-sm border border-line-strong px-1.5 py-0.5 font-mono text-[11px] text-fg-subtle sm:block">
+            <kbd className="pointer-coarse:hidden hidden rounded-sm border border-line-strong px-1.5 py-0.5 font-mono text-[11px] text-fg-subtle sm:block">
               Esc
             </kbd>
           </div>
@@ -155,7 +155,7 @@ export function SearchPalette({
                     <span className="block truncate font-mono text-xs text-fg-subtle">
                       {item.brand ?? 'BLACKSHARK'} ·{' '}
                       {item.onRequest
-                        ? 'Ask for stock'
+                        ? 'Order on WhatsApp'
                         : item.inStock
                           ? 'In stock'
                           : 'Out of stock'}

@@ -14,8 +14,10 @@ import {
   organizationId,
   pageMetadata,
 } from '@/lib/seo';
+import { estimateFps } from '@/lib/fps';
 import { instagramPostDate } from '@/lib/source';
 import { Eyebrow, Price, ProductImage, Stock } from '@/components/ui/bits';
+import { FpsTable } from '@/components/ui/fps-table';
 import { JsonLd } from '@/components/ui/json-ld';
 import { ProductActions } from '@/components/store/product-actions';
 import { ProductGrid } from '@/components/store/product-cell';
@@ -68,7 +70,7 @@ export async function generateMetadata({ params }: Props) {
       product.summary,
       `${product.brand ? `${product.brand} ` : ''}${kind} for ${formatOMR(currentPrice(product))} in Oman.`,
       product.stockOnRequest
-        ? 'Ask us on WhatsApp for stock.'
+        ? 'Order on WhatsApp.'
         : product.stock > 0
           ? 'In stock now.'
           : 'Out of stock right now.',
@@ -88,6 +90,16 @@ export default async function ProductPage({ params }: Props) {
   const pageUrl = `${siteUrl}/products/${product.slug}`;
   const typeLabel = partTypeLabel(product.partType);
   const postedOn = instagramPostDate(product.sourceUrl);
+  // Gaming PCs and graphics cards get estimated FPS (from the specs in the name).
+  const specText = `${product.name} ${product.summary}`;
+  const fps =
+    product.categorySlug === 'gaming-pcs' ||
+    product.partType === 'graphics-card'
+      ? estimateFps(
+          specText,
+          product.categorySlug === 'gaming-pcs' ? specText : '',
+        )
+      : null;
 
   const specs = [
     { label: 'Brand', value: product.brand ?? '—' },
@@ -209,8 +221,8 @@ export default async function ProductPage({ params }: Props) {
                 className="mt-2"
               />
               <p className="mt-3 text-sm text-fg-muted">
-                No online checkout yet. Add to your cart to plan, then ask us on
-                WhatsApp to order.
+                Order on WhatsApp: pick who to message and your order is written
+                for you.
               </p>
               {postedOn ? (
                 <p className="mt-2 text-sm text-fg-muted">
@@ -230,10 +242,16 @@ export default async function ProductPage({ params }: Props) {
             </div>
 
             <div className="mt-6">
-              <ProductActions product={product} pageUrl={pageUrl} />
+              <ProductActions product={product} />
             </div>
 
             <p className="mt-8 leading-7 text-fg-muted">{product.summary}</p>
+
+            {fps ? (
+              <div className="mt-8 rounded-lg border border-line bg-ink-900 p-4">
+                <FpsTable estimate={fps} heading="h2" />
+              </div>
+            ) : null}
 
             <section aria-labelledby="spec-title" className="mt-8">
               <h2

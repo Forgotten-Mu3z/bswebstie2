@@ -13,11 +13,21 @@ TypeScript, Tailwind CSS 4 and Drizzle ORM. Runs on Cloudflare Workers with **D1
 - **Store:** home page, 6 categories with part-type chips, filters (brand, price, stock, sale),
   sorting, a search palette with live suggestions (`Ctrl K` or `/`), product spec sheets and a
   deals page that only lists real sale prices.
-- **Cart and saved items** kept on the shopper's device. Prices and stock refresh on every visit,
-  and any change is explained. There is **no online checkout**: the cart is sent on WhatsApp.
-- **PC builder:** 8 steps. Each step only lists parts that fit what is already chosen (socket,
-  memory type, board size, power supply). The build lives in the link, so it can be shared or
-  sent on WhatsApp and reopened later.
+- **Ordering on WhatsApp:** there is no cart or online checkout. Every product has an
+  "Order on WhatsApp" button that lets the shopper pick Munir or Bassam and opens WhatsApp with
+  the order already written (product, quantity, SKU, website price and link).
+- **Saved items** kept on the shopper's device. Prices and stock refresh on every visit.
+- **PC builder:** 8 core steps plus 7 optional extras (second drive, case fans, Wi-Fi, capture
+  card, build extras, monitor, gaming gear). Each step only lists parts that fit what is already
+  chosen (socket, memory type, board size, power supply). The build lives in the link, so it can
+  be shared or sent on WhatsApp and reopened later; parts in a link that do not fit their step
+  are ignored.
+- **Estimated FPS** for Fortnite, Call of Duty: Warzone and Call of Duty: Black Ops 7 at 1080p and
+  1440p, shown on gaming PCs, graphics cards and in the builder once a graphics card is chosen
+  (`lib/fps.ts`). The numbers are rough ranges from a relative score per graphics card and a
+  processor tier, and the page always says they are estimates.
+- **Products imported from Instagram posts** (`npm run instagram:products`) can hide their stock
+  count ("Hide the stock count" in the editor); the product page links back to the source post.
 - **Admin site** (a separate address): overview with counts, low stock and activity, and product
   management with photo upload.
 
@@ -30,7 +40,7 @@ Prices are stored as whole **baisa** (1 OMR = 1000 baisa) and shown as `OMR 1,23
 ```
 app/                 routes (store pages in app/(store), admin in app/admin, sign-in, security)
 app/api/             JSON and form endpoints (public: search, products, photos; admin; auth)
-components/store     storefront UI (header, search, cart, filters, product cells)
+components/store     storefront UI (header, search, WhatsApp ordering, saved items, filters)
 components/builder   the PC builder
 components/admin     admin UI (shell, product manager and editor, sign-in card)
 components/ui        shared pieces (buttons, dialogs, price, stock, notices)
@@ -94,6 +104,8 @@ node -e "console.log(require('crypto').randomBytes(32).toString('base64'))" | np
 npm run admin:create -- --email owner@example.com --name "Store owner" --remote
 ```
 
+The key is trimmed before use, so a line break added by the shell is harmless.
+
 `admin:create` prints a one-time password. At first sign-in the person scans a QR code with an
 authenticator app, then must choose their own password.
 
@@ -141,6 +153,6 @@ npm run build
 
 ## Not included yet
 
-Checkout and payments, orders, customer accounts, Arabic interface, email confirmation for
+Online checkout and payments (orders are taken on WhatsApp), customer accounts, Arabic interface, email confirmation for
 password changes (needs a domain for sending email), and legal pages (terms, privacy,
 refunds). Legal text must come from, or be approved by, the business owner.

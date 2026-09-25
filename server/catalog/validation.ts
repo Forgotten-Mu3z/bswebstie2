@@ -107,6 +107,8 @@ export function validateProduct(body: unknown): ProductInput {
   const status = input.status;
   if (status !== 'DRAFT' && status !== 'PUBLISHED' && status !== 'HIDDEN')
     fail('status', 'Choose draft, published or hidden.');
+  if (status === 'PUBLISHED' && priceBaisa <= 0)
+    fail('price', 'Set a price above 0 before publishing.');
   if (typeof input.featured !== 'boolean')
     fail('featured', 'Choose yes or no.');
   // Optional so older clients still work; anything but true means "no".

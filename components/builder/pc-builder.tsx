@@ -8,7 +8,6 @@ import {
   Plus,
   RotateCcw,
   Search,
-  ShoppingBag,
   TriangleAlert,
   X,
 } from 'lucide-react';
@@ -23,7 +22,10 @@ import {
   normalize,
   prerequisite,
   requirement,
+  matchesSlot,
   SLOTS,
+  slotInfo,
+  type SlotInfo,
   type Build,
   type Slot,
 } from '@/lib/pc-builder';
@@ -37,8 +39,12 @@ import { Button } from '@/components/ui/button';
 import { Price, ProductImage, Stock } from '@/components/ui/bits';
 import { Modal } from '@/components/ui/overlay';
 import { Notice } from '@/components/ui/notice';
-import { useCart } from '@/components/store/cart-store';
 import { WhatsAppChooser } from '@/components/store/whatsapp-chooser';
+import { FpsTable } from '@/components/ui/fps-table';
+import { estimateFps } from '@/lib/fps';
+
+const CORE_SLOTS = SLOTS.filter((slot) => !slot.optional);
+const EXTRA_SLOTS = SLOTS.filter((slot) => slot.optional);
 
 const STORAGE_KEY = 'bsg-build-v1';
 const slotLabel = (slot: Slot) =>
@@ -131,7 +137,7 @@ function PartPicker({
   );
   const info = slot ? SLOTS.find((entry) => entry.key === slot)! : null;
   const ofType = info
-    ? parts.filter((part) => part.partType === info.partType)
+    ? parts.filter((part) => matchesSlot(info.key, part))
     : [];
   const compatible = slot
     ? ofType.filter((part) => fits(slot, part, build, byId))
@@ -255,7 +261,6 @@ export function PcBuilder({
   parts: PublicProduct[];
   siteUrl: string;
 }) {
-  const cart = useCart();
   const byId = useMemo(
     () => new Map(parts.map((part) => [part.id, part])),
     [parts],
@@ -312,6 +317,12 @@ export function PcBuilder({
   });
   const total = chosen.reduce((sum, { part }) => sum + currentPrice(part), 0);
   const checks = compatibility(build, byId);
+  const coreChosen = chosen.filter(({ key }) => !slotInfo(key).optional).length;
+  const gpuPart = build.gpu ? byId.get(build.gpu) : undefined;
+  const cpuPart = build.cpu ? byId.get(build.cpu) : undefined;
+  const fps = gpuPart
+    ? estimateFps(`${gpuPart.name} ${gpuPart.summary}`, cpuPart?.name ?? '')
+    : null;
   const shareUrl = `${siteUrl}/build${chosen.length ? `?${buildQuery(build)}` : ''}`;
 
   function update(next: Build, reason: string) {
@@ -347,16 +358,6 @@ export function PcBuilder({
     }
   }
 
-  function addAll() {
-    const available = chosen.filter(({ part }) => canOrder(part));
-    for (const { part } of available) cart.add(part, 1);
-    const skipped = chosen.length - available.length;
-    if (skipped)
-      setNotice(
-        `${skipped} out-of-stock ${skipped === 1 ? 'part was' : 'parts were'} not added to the cart.`,
-      );
-  }
-
   const message = () =>
     [
       "Hi, I'd like a quote for this PC build:",
@@ -370,116 +371,116 @@ export function PcBuilder({
       `Build link: ${shareUrl}`,
     ].join('\n');
 
+  const renderSlot = (slot: SlotInfo, index: number) => {
+    const part = build[slot.key] ? byId.get(build[slot.key]!) : undefined;
+    const unlocked = isUnlocked(slot.key, build);
+    const needed = prerequisite(slot.key);
+    const rule = requirement(slot.key, build, byId);
+    return (
+      <li key={slot.key} className="border-b border-line last:border-b-0">
+        <div className="grid grid-cols-[2.5rem_1fr] gap-x-3 gap-y-3 p-4 sm:grid-cols-[3rem_1fr_auto] sm:items-center sm:p-5">
+          <span
+            aria-hidden="true"
+            className={clsx(
+              'grid size-10 place-items-center rounded-md border font-mono text-sm',
+              part
+                ? 'border-accent/50 bg-accent/10 text-accent'
+                : 'border-line-strong text-fg-subtle',
+            )}
+          >
+            {part ? (
+              <Check className="size-4" />
+            ) : (
+              String(index + 1).padStart(2, '0')
+            )}
+          </span>
+          <div className="min-w-0">
+            <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+              <h3 className="font-semibold">{slot.label}</h3>
+              {rule && !part ? (
+                <span className="font-mono text-xs text-accent">{rule}</span>
+              ) : null}
+            </div>
+            {part ? (
+              <div className="mt-2 flex items-center gap-3">
+                <span className="size-12 shrink-0 rounded bg-ink-850 p-1">
+                  <ProductImage product={part} size={48} decorative />
+                </span>
+                <span className="min-w-0">
+                  <a
+                    href={`/products/${part.slug}`}
+                    className="line-clamp-2 text-sm hover:text-accent"
+                  >
+                    {part.name}
+                  </a>
+                  <span className="mt-0.5 flex flex-wrap items-center gap-x-3">
+                    <span className="font-mono text-sm tabular">
+                      {formatOMR(currentPrice(part))}
+                    </span>
+                    {canOrder(part) ? null : <Stock stock={0} />}
+                  </span>
+                </span>
+              </div>
+            ) : (
+              <p className="mt-1 text-sm text-fg-muted">
+                {unlocked
+                  ? slot.hint
+                  : `Choose a ${slotLabel(needed!).toLowerCase()} first.`}
+              </p>
+            )}
+          </div>
+          <div className="col-start-2 flex gap-2 sm:col-start-3">
+            {unlocked ? (
+              <Button
+                variant={part ? 'secondary' : 'primary'}
+                onClick={() => setPicking(slot.key)}
+              >
+                {part ? (
+                  'Change'
+                ) : (
+                  <>
+                    <Plus aria-hidden="true" className="size-4" /> Choose
+                  </>
+                )}
+                <span className="sr-only"> {slot.label.toLowerCase()}</span>
+              </Button>
+            ) : (
+              <span className="inline-flex h-11 items-center gap-2 rounded-md border border-dashed border-line-strong px-4 text-sm text-fg-subtle">
+                <Lock aria-hidden="true" className="size-4" /> Locked
+              </span>
+            )}
+            {part ? (
+              <Button
+                variant="ghost"
+                size="icon"
+                aria-label={`Remove ${slot.label.toLowerCase()}`}
+                onClick={() => clear(slot.key)}
+              >
+                <X aria-hidden="true" className="size-4" />
+              </Button>
+            ) : null}
+          </div>
+        </div>
+      </li>
+    );
+  };
+
   return (
     <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_380px] lg:items-start">
       <div>
         <Notice message={notice} className="mb-4" />
-        <h2 className="sr-only">Parts</h2>
+        <h2 className="mb-3 text-lg font-semibold">Core parts</h2>
         <ol className="overflow-hidden rounded-lg border border-line bg-ink-900">
-          {SLOTS.map((slot, index) => {
-            const part = build[slot.key]
-              ? byId.get(build[slot.key]!)
-              : undefined;
-            const unlocked = isUnlocked(slot.key, build);
-            const needed = prerequisite(slot.key);
-            const rule = requirement(slot.key, build, byId);
-            return (
-              <li
-                key={slot.key}
-                className="border-b border-line last:border-b-0"
-              >
-                <div className="grid grid-cols-[2.5rem_1fr] gap-x-3 gap-y-3 p-4 sm:grid-cols-[3rem_1fr_auto] sm:items-center sm:p-5">
-                  <span
-                    aria-hidden="true"
-                    className={clsx(
-                      'grid size-10 place-items-center rounded-md border font-mono text-sm',
-                      part
-                        ? 'border-accent/50 bg-accent/10 text-accent'
-                        : 'border-line-strong text-fg-subtle',
-                    )}
-                  >
-                    {part ? (
-                      <Check className="size-4" />
-                    ) : (
-                      String(index + 1).padStart(2, '0')
-                    )}
-                  </span>
-                  <div className="min-w-0">
-                    <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-                      <h3 className="font-semibold">{slot.label}</h3>
-                      {rule && !part ? (
-                        <span className="font-mono text-xs text-accent">
-                          {rule}
-                        </span>
-                      ) : null}
-                    </div>
-                    {part ? (
-                      <div className="mt-2 flex items-center gap-3">
-                        <span className="size-12 shrink-0 rounded bg-ink-850 p-1">
-                          <ProductImage product={part} size={48} decorative />
-                        </span>
-                        <span className="min-w-0">
-                          <a
-                            href={`/products/${part.slug}`}
-                            className="line-clamp-2 text-sm hover:text-accent"
-                          >
-                            {part.name}
-                          </a>
-                          <span className="mt-0.5 flex flex-wrap items-center gap-x-3">
-                            <span className="font-mono text-sm tabular">
-                              {formatOMR(currentPrice(part))}
-                            </span>
-                            {canOrder(part) ? null : <Stock stock={0} />}
-                          </span>
-                        </span>
-                      </div>
-                    ) : (
-                      <p className="mt-1 text-sm text-fg-muted">
-                        {unlocked
-                          ? slot.hint
-                          : `Choose a ${slotLabel(needed!).toLowerCase()} first.`}
-                      </p>
-                    )}
-                  </div>
-                  <div className="col-start-2 flex gap-2 sm:col-start-3">
-                    {unlocked ? (
-                      <Button
-                        variant={part ? 'secondary' : 'primary'}
-                        onClick={() => setPicking(slot.key)}
-                      >
-                        {part ? (
-                          'Change'
-                        ) : (
-                          <>
-                            <Plus aria-hidden="true" className="size-4" />{' '}
-                            Choose
-                          </>
-                        )}
-                        <span className="sr-only">
-                          {' '}
-                          {slot.label.toLowerCase()}
-                        </span>
-                      </Button>
-                    ) : (
-                      <span className="inline-flex h-11 items-center gap-2 rounded-md border border-dashed border-line-strong px-4 text-sm text-fg-subtle">
-                        <Lock aria-hidden="true" className="size-4" /> Locked
-                      </span>
-                    )}
-                    {part ? (
-                      <Button
-                        variant="ghost"
-                        size="icon"
-                        aria-label={`Remove ${slot.label.toLowerCase()}`}
-                        onClick={() => clear(slot.key)}
-                      >
-                        <X aria-hidden="true" className="size-4" />
-                      </Button>
-                    ) : null}
-                  </div>
-                </div>
-              </li>
-            );
-          })}
+          {CORE_SLOTS.map((slot, index) => renderSlot(slot, index))}
+        </ol>
+        <h2 className="mb-3 mt-8 flex items-baseline gap-2 text-lg font-semibold">
+          Extras
+          <span className="text-sm font-normal text-fg-muted">optional</span>
+        </h2>
+        <ol className="overflow-hidden rounded-lg border border-line bg-ink-900">
+          {EXTRA_SLOTS.map((slot, index) =>
+            renderSlot(slot, CORE_SLOTS.length + index),
+          )}
         </ol>
       </div>
 
@@ -492,7 +493,10 @@ export function PcBuilder({
             Build sheet
           </p>
           <h2 id="summary-title" className="mt-1 text-lg font-semibold">
-            {chosen.length} of {SLOTS.length} parts chosen
+            {coreChosen} of {CORE_SLOTS.length} core parts chosen
+            {chosen.length > coreChosen
+              ? ` + ${chosen.length - coreChosen} ${chosen.length - coreChosen === 1 ? 'extra' : 'extras'}`
+              : ''}
           </h2>
         </div>
         <div className="px-5 py-4">
@@ -500,6 +504,16 @@ export function PcBuilder({
           <p className="font-mono text-3xl font-semibold tabular">
             {formatOMR(total)}
           </p>
+        </div>
+        <div className="border-t border-line px-5 py-4">
+          {fps ? (
+            <FpsTable estimate={fps} />
+          ) : (
+            <p className="text-sm text-fg-muted">
+              Choose a graphics card to see estimated FPS in Fortnite, Warzone
+              and Black Ops 7.
+            </p>
+          )}
         </div>
         <div className="border-t border-line px-5 py-4">
           <h3 className="text-sm font-semibold">Compatibility</h3>
@@ -552,29 +566,19 @@ export function PcBuilder({
             message={message}
             disabled={!chosen.length}
           />
-          <div className="grid grid-cols-2 gap-2">
-            <Button
-              variant="secondary"
-              className="justify-center"
-              disabled={!chosen.length}
-              onClick={copyLink}
-            >
-              {copied ? (
-                <Check aria-hidden="true" className="size-4" />
-              ) : (
-                <Copy aria-hidden="true" className="size-4" />
-              )}
-              {copied ? 'Copied' : 'Copy link'}
-            </Button>
-            <Button
-              variant="secondary"
-              className="justify-center"
-              disabled={!chosen.length}
-              onClick={addAll}
-            >
-              <ShoppingBag aria-hidden="true" className="size-4" /> Add to cart
-            </Button>
-          </div>
+          <Button
+            variant="secondary"
+            className="justify-center"
+            disabled={!chosen.length}
+            onClick={copyLink}
+          >
+            {copied ? (
+              <Check aria-hidden="true" className="size-4" />
+            ) : (
+              <Copy aria-hidden="true" className="size-4" />
+            )}
+            {copied ? 'Copied' : 'Copy build link'}
+          </Button>
           {chosen.length ? (
             <Button
               variant="ghost"

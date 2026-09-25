@@ -651,10 +651,10 @@ export function ProductEditor({
               className="mt-1 size-4 accent-[var(--color-accent)]"
             />
             <span>
-              Ask for stock
+              Hide the stock count
               <span className="block text-xs text-fg-subtle">
-                Show “Ask for stock” instead of a number. Customers can still
-                order, and you confirm availability on WhatsApp.
+                Show no stock number for this product. Customers still order on
+                WhatsApp and you confirm availability there.
               </span>
             </span>
           </label>

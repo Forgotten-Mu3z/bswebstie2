@@ -48,7 +48,7 @@ const isLow = (product: AdminProduct) =>
 
 function StockCell({ product }: { product: AdminProduct }) {
   if (product.stockOnRequest)
-    return <span className="font-mono text-warn">Ask</span>;
+    return <span className="font-mono text-fg-subtle">Hidden</span>;
   const low = isLow(product);
   return (
     <span
@@ -245,8 +245,8 @@ export function ProductManager({
 
       {shown.length ? (
         <>
-          {/* Wide screens: table */}
-          <div className="mt-3 hidden overflow-hidden rounded-lg border border-line md:block">
+          {/* Laptops and wider: table. Phones and tablets: cards */}
+          <div className="mt-3 hidden overflow-hidden rounded-lg border border-line lg:block">
             <table className="w-full text-left text-sm">
               <thead className="bg-ink-900 font-mono text-[11px] uppercase tracking-[0.14em] text-fg-subtle">
                 <tr>
@@ -352,8 +352,8 @@ export function ProductManager({
             </table>
           </div>
 
-          {/* Phones: cards */}
-          <ul className="mt-3 grid gap-2 md:hidden">
+          {/* Phones and tablets: cards */}
+          <ul className="mt-3 grid gap-2 md:grid-cols-2 lg:hidden">
             {shown.map((product) => (
               <li
                 key={product.id}

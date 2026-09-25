@@ -1,14 +1,14 @@
 'use client';
 
 import clsx from 'clsx';
-import { Cpu, Heart, Menu, Search, ShoppingBag } from 'lucide-react';
+import { Cpu, Heart, Menu, Search } from 'lucide-react';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { PART_TYPES } from '@/lib/catalog';
 import { itemCount } from '@/lib/products';
 import { Drawer } from '@/components/ui/overlay';
-import { useCart } from './cart-store';
+import { useShop } from './shop-state';
 import { SearchPalette } from './search-palette';
 
 export type NavCategory = { slug: string; name: string };
@@ -47,7 +47,7 @@ function Count({ value }: { value: number }) {
 }
 
 export function SiteHeader({ categories }: { categories: NavCategory[] }) {
-  const cart = useCart();
+  const shop = useShop();
   const pathname = usePathname();
   const [searchOpen, setSearchOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -95,7 +95,7 @@ export function SiteHeader({ categories }: { categories: NavCategory[] }) {
         >
           <Search aria-hidden="true" className="size-4" />
           <span className="flex-1">Search products, brands or SKU</span>
-          <kbd className="rounded-sm border border-line-strong px-1.5 font-mono text-[11px]">
+          <kbd className="pointer-coarse:hidden rounded-sm border border-line-strong px-1.5 font-mono text-[11px]">
             Ctrl K
           </kbd>
         </button>
@@ -115,20 +115,11 @@ export function SiteHeader({ categories }: { categories: NavCategory[] }) {
           <button
             type="button"
             className={iconButton}
-            aria-label={`Saved items, ${itemCount(cart.wishlist.length)}`}
-            onClick={() => cart.openPanel('wishlist')}
+            aria-label={`Saved items, ${itemCount(shop.saved.length)}`}
+            onClick={() => shop.openPanel('saved')}
           >
             <Heart aria-hidden="true" className="size-5" />
-            <Count value={cart.wishlist.length} />
-          </button>
-          <button
-            type="button"
-            className={iconButton}
-            aria-label={`Cart, ${itemCount(cart.itemCount)}`}
-            onClick={() => cart.openPanel('cart')}
-          >
-            <ShoppingBag aria-hidden="true" className="size-5" />
-            <Count value={cart.itemCount} />
+            <Count value={shop.saved.length} />
           </button>
         </nav>
       </div>

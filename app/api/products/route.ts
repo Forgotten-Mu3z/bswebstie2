@@ -5,8 +5,8 @@ export const dynamic = 'force-dynamic';
 
 const ID = /^[A-Za-z0-9_-]{1,80}$/;
 
-// Current public details for products saved in a shopper's cart or wishlist,
-// so saved copies pick up new prices, stock and availability.
+// Current public details for a shopper's saved items, so saved copies pick
+// up new prices and stock, and drop products that are no longer sold.
 export async function GET(request: Request) {
   const ids = [
     ...new Set(

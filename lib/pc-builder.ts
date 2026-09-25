@@ -12,16 +12,31 @@ export type Slot =
   | 'storage'
   | 'cooler'
   | 'psu'
-  | 'case';
+  | 'case'
+  // Optional extras
+  | 'storage2'
+  | 'fans'
+  | 'network'
+  | 'capture'
+  | 'extras'
+  | 'monitor'
+  | 'gear';
 
 export type Build = Partial<Record<Slot, string>>;
 
-export const SLOTS: {
+export type SlotInfo = {
   key: Slot;
   label: string;
-  partType: PartType;
   hint: string;
-}[] = [
+  /** Filled from this PC part type… */
+  partType?: PartType;
+  /** …or from this store category (monitors, gaming gear). */
+  category?: string;
+  /** Extras are not needed for a working PC. */
+  optional?: boolean;
+};
+
+export const SLOTS: SlotInfo[] = [
   {
     key: 'cpu',
     label: 'Processor',
@@ -44,7 +59,7 @@ export const SLOTS: {
     key: 'gpu',
     label: 'Graphics card',
     partType: 'graphics-card',
-    hint: 'Sets the power supply you need.',
+    hint: 'Sets the power supply you need, and your FPS.',
   },
   {
     key: 'storage',
@@ -70,7 +85,67 @@ export const SLOTS: {
     partType: 'case',
     hint: 'Must fit the motherboard size.',
   },
+  {
+    key: 'storage2',
+    label: 'Extra storage',
+    partType: 'storage',
+    optional: true,
+    hint: 'A second drive for more games.',
+  },
+  {
+    key: 'fans',
+    label: 'Case fans',
+    partType: 'case-fan',
+    optional: true,
+    hint: 'More airflow and lighting.',
+  },
+  {
+    key: 'network',
+    label: 'Wi-Fi & network',
+    partType: 'network-card',
+    optional: true,
+    hint: 'Wireless internet if the board has none.',
+  },
+  {
+    key: 'capture',
+    label: 'Capture card',
+    partType: 'capture-card',
+    optional: true,
+    hint: 'For recording or streaming consoles.',
+  },
+  {
+    key: 'extras',
+    label: 'Build extras',
+    partType: 'accessory',
+    optional: true,
+    hint: 'Thermal paste, cables and other small parts.',
+  },
+  {
+    key: 'monitor',
+    label: 'Monitor',
+    category: 'monitors',
+    optional: true,
+    hint: 'Match the refresh rate to your FPS.',
+  },
+  {
+    key: 'gear',
+    label: 'Gaming gear',
+    category: 'gaming-gear',
+    optional: true,
+    hint: 'Keyboard, mouse, headset or chair.',
+  },
 ];
+
+export const slotInfo = (slot: Slot) =>
+  SLOTS.find((entry) => entry.key === slot)!;
+
+/** Whether a product is the right kind of item for a slot. */
+export function matchesSlot(slot: Slot, part: PublicProduct) {
+  const info = slotInfo(slot);
+  return info.partType
+    ? part.partType === info.partType
+    : part.categorySlug === info.category;
+}
 
 /** Used when a graphics card does not list a recommended PSU. */
 export const DEFAULT_PSU_WATTS = 650;
@@ -151,7 +226,12 @@ export function normalize(build: Build, parts: Parts) {
   for (const { key } of SLOTS) {
     const id = build[key];
     const part = id ? parts.get(id) : undefined;
-    if (part && isUnlocked(key, next) && fits(key, part, next, parts))
+    if (
+      part &&
+      matchesSlot(key, part) &&
+      isUnlocked(key, next) &&
+      fits(key, part, next, parts)
+    )
       next[key] = id;
   }
   const removed = SLOTS.filter(({ key }) => build[key] && !next[key]).map(
@@ -170,7 +250,9 @@ export function buildFromQuery(query: URLSearchParams, parts: Parts): Build {
   const build: Build = {};
   for (const { key } of SLOTS) {
     const id = query.get(key);
-    if (id && parts.has(id)) build[key] = id;
+    const part = id ? parts.get(id) : undefined;
+    // A shared link can say anything; keep only the right kind of part.
+    if (id && part && matchesSlot(key, part)) build[key] = id;
   }
   return build;
 }

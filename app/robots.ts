@@ -25,8 +25,8 @@ const CRAWLERS = [
   'meta-externalagent',
 ];
 
-// Nothing to index behind these: JSON endpoints and the device-local cart.
-const PRIVATE = ['/api/', '/cart'];
+// Nothing to index behind these: JSON endpoints.
+const PRIVATE = ['/api/'];
 
 export default async function robots(): Promise<MetadataRoute.Robots> {
   // The admin site is never indexed. The store does not name admin paths,

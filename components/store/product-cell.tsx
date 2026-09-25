@@ -3,10 +3,11 @@
 import clsx from 'clsx';
 import { Eye, Heart } from 'lucide-react';
 import { attributeRows, partTypeLabel } from '@/lib/catalog';
-import { canOrder, discountPercent, type PublicProduct } from '@/lib/products';
+import { discountPercent, type PublicProduct } from '@/lib/products';
 import { Button } from '@/components/ui/button';
 import { Price, ProductImage, Stock } from '@/components/ui/bits';
-import { useCart } from './cart-store';
+import { OrderOnWhatsApp } from './order-button';
+import { useShop } from './shop-state';
 
 export function ProductCell({
   product,
@@ -15,8 +16,8 @@ export function ProductCell({
   product: PublicProduct;
   priority?: boolean;
 }) {
-  const cart = useCart();
-  const saved = cart.isWishlisted(product.id);
+  const shop = useShop();
+  const saved = shop.isSaved(product.id);
   const discount = discountPercent(product);
   const keySpec = attributeRows(product.attributes)[0];
   const kind = [
@@ -51,7 +52,7 @@ export function ProductCell({
         ) : null}
         <button
           type="button"
-          onClick={() => cart.toggleWishlist(product)}
+          onClick={() => shop.toggleSaved(product)}
           aria-pressed={saved}
           aria-label={
             saved
@@ -96,18 +97,16 @@ export function ProductCell({
           className="mt-1"
         />
         <div className="mt-3 flex gap-2">
-          <Button
-            className="flex-1 justify-center"
-            disabled={!canOrder(product)}
-            onClick={() => cart.add(product)}
-          >
-            {canOrder(product) ? 'Add to cart' : 'Out of stock'}
-          </Button>
+          <OrderOnWhatsApp
+            product={product}
+            size="md"
+            className="min-w-0 flex-1"
+          />
           <Button
             variant="secondary"
             size="icon"
             aria-label={`Quick view: ${product.name}`}
-            onClick={() => cart.showQuickView(product)}
+            onClick={() => shop.showQuickView(product)}
           >
             <Eye aria-hidden="true" className="size-4" />
           </Button>

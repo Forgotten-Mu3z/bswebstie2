@@ -71,16 +71,18 @@ export function Stock({
   className,
 }: {
   stock: number;
-  /** Listed without a count: we confirm stock on WhatsApp. */
+  /** No stock count for this product (confirmed on WhatsApp): show nothing. */
   onRequest?: boolean;
   className?: string;
 }) {
-  const tone = onRequest ? 'warn' : stock > 0 ? 'ok' : 'danger';
+  // No stock count for this product: show nothing rather than guess.
+  if (onRequest) return null;
+  const tone = stock > 0 ? 'ok' : 'danger';
   return (
     <span
       className={clsx(
         'inline-flex items-center gap-1.5 font-mono text-xs',
-        { ok: 'text-ok', warn: 'text-warn', danger: 'text-danger' }[tone],
+        tone === 'ok' ? 'text-ok' : 'text-danger',
         className,
       )}
     >
@@ -88,14 +90,10 @@ export function Stock({
         aria-hidden="true"
         className={clsx(
           'size-1.5 rounded-full',
-          { ok: 'bg-ok', warn: 'bg-warn', danger: 'bg-danger' }[tone],
+          tone === 'ok' ? 'bg-ok' : 'bg-danger',
         )}
       />
-      {onRequest
-        ? 'Ask for stock'
-        : stock > 0
-          ? `${stock} in stock`
-          : 'Out of stock'}
+      {stock > 0 ? `${stock} in stock` : 'Out of stock'}
     </span>
   );
 }

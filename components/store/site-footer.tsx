@@ -57,11 +57,6 @@ export function SiteFooter({ categories }: { categories: NavCategory[] }) {
                 All products
               </a>
             </li>
-            <li>
-              <a href="/cart" className={link}>
-                Cart
-              </a>
-            </li>
           </ul>
         </nav>
         <div>
