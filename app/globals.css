@@ -11,7 +11,7 @@
   --color-line-strong: #2c333f;
   --color-fg: #e9edf2;
   --color-fg-muted: #9aa4b2;
-  --color-fg-subtle: #626c7a;
+  --color-fg-subtle: #808a98; /* 4.6:1 or better on every ink background */
   --color-accent: #3de0ff;
   --color-accent-strong: #19c7ea;
   --color-accent-ink: #03141b;

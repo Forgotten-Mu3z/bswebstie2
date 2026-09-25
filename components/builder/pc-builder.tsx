@@ -366,6 +366,7 @@ export function PcBuilder({
     <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_380px] lg:items-start">
       <div>
         <Notice message={notice} className="mb-4" />
+        <h2 className="sr-only">Parts</h2>
         <ol className="overflow-hidden rounded-lg border border-line bg-ink-900">
           {SLOTS.map((slot, index) => {
             const part = build[slot.key]

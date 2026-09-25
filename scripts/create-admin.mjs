@@ -1,4 +1,4 @@
-﻿// Creates an admin account, or resets one, with a one-time temporary password.
+// Creates an admin account, or resets one, with a one-time temporary password.
 //
 //   npm run admin:create -- --email owner@example.com --name "Store owner" --remote
 //   npm run admin:create -- --email owner@example.com --remote --reset-2fa

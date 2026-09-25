@@ -1,3 +1,4 @@
+import { env } from 'cloudflare:workers';
 import { NextResponse, type NextRequest } from 'next/server';
 import { drainSmallBody } from '@/server/security/http';
 import { checkRequestLimit } from '@/server/security/request-limits';
@@ -9,10 +10,18 @@ import {
 } from '@/server/security/site';
 
 // Runs before every page and API route:
-//   1. per-visitor rate limits
-//   2. keeps each site to its own paths (pages and routes check again).
+//   1. one address for the store: once SITE_URL is set (a custom domain),
+//      any other host, such as *.workers.dev, gets a permanent redirect
+//   2. per-visitor rate limits
+//   3. keeps each site to its own paths (pages and routes check again).
 export async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
+
+  const canonical = storeRedirect(request);
+  if (canonical) {
+    await drainSmallBody(request);
+    return canonical;
+  }
 
   const limited = await checkRequestLimit(request, pathname);
   if (limited) {
@@ -39,6 +48,17 @@ export async function proxy(request: NextRequest) {
   const response = allowed ? NextResponse.next() : notFound(request);
   response.headers.set('X-Robots-Tag', 'noindex, nofollow');
   return response;
+}
+
+function storeRedirect(request: NextRequest) {
+  if (isAdminSite() || !env.SITE_URL) return null;
+  const target = new URL(env.SITE_URL);
+  if (request.nextUrl.host === target.host) return null;
+  const url = new URL(
+    `${request.nextUrl.pathname}${request.nextUrl.search}`,
+    target,
+  );
+  return NextResponse.redirect(url, 301);
 }
 
 function notFound(request: NextRequest) {

@@ -1,5 +1,6 @@
-import { MessageCircle } from 'lucide-react';
+import { Camera, MessageCircle } from 'lucide-react';
 import { WHATSAPP_CONTACTS, whatsappLabel, whatsappLink } from '@/lib/contacts';
+import { INSTAGRAM_URL } from '@/lib/seo';
 import type { NavCategory } from './site-header';
 
 const ROLE: Record<string, string> = { '96879970799': 'PC builds' };
@@ -16,6 +17,15 @@ export function SiteFooter({ categories }: { categories: NavCategory[] }) {
           <p className="mt-3 max-w-xs text-sm leading-6 text-fg-muted">
             Gaming PCs, parts and gear in Oman. Prices in OMR, stock shown live.
           </p>
+          <a
+            href={INSTAGRAM_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 inline-flex min-h-11 items-center gap-2 text-sm text-fg-muted hover:text-fg"
+          >
+            <Camera aria-hidden="true" className="size-4" /> @blackshark__gaming
+            <span className="sr-only">on Instagram (opens a new tab)</span>
+          </a>
         </div>
         <nav aria-label="Shop">
           <p className={heading}>Shop</p>
@@ -50,6 +60,11 @@ export function SiteFooter({ categories }: { categories: NavCategory[] }) {
             <li>
               <a href="/cart" className={link}>
                 Cart
+              </a>
+            </li>
+            <li>
+              <a href="/instagram" className={link}>
+                Instagram posts &amp; reels
               </a>
             </li>
           </ul>

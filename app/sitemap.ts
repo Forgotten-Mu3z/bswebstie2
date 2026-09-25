@@ -1,29 +1,51 @@
 import type { MetadataRoute } from 'next';
 import { getSitemapEntries } from '@/server/catalog/public';
+import { newestInstagramDate } from '@/server/instagram';
 import { getSiteUrl } from '@/server/site-url';
 
+// Built from the live catalog on each request (and cached by crawlers), so a
+// product added in the admin appears at once. Every entry has a lastmod.
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const [entries, siteUrl] = await Promise.all([
     getSitemapEntries(),
     getSiteUrl(),
   ]);
-  const page = (path: string, priority: number) => ({
-    url: `${siteUrl}${path}`,
-    changeFrequency: 'daily' as const,
-    priority,
-  });
+  const latest = (dates: Date[]) =>
+    dates.length
+      ? new Date(Math.max(...dates.map((date) => date.getTime())))
+      : undefined;
+  const catalogUpdated = latest(
+    entries.products.map((product) => product.updatedAt),
+  );
+  const instagramUpdated = newestInstagramDate();
+
+  const page = (
+    path: string,
+    lastModified: Date | undefined,
+    priority: number,
+    changeFrequency: 'daily' | 'weekly' = 'daily',
+  ) => ({ url: `${siteUrl}${path}`, lastModified, changeFrequency, priority });
+
   return [
-    page('', 1),
-    page('/deals', 0.8),
-    page('/build', 0.8),
+    page('', catalogUpdated, 1),
+    page('/deals', catalogUpdated, 0.8),
+    page('/build', catalogUpdated, 0.8, 'weekly'),
+    ...(instagramUpdated
+      ? [page('/instagram', new Date(instagramUpdated), 0.6, 'weekly')]
+      : []),
     ...entries.categories.map((category) =>
-      page(`/categories/${category.slug}`, 0.8),
+      page(
+        `/categories/${category.slug}`,
+        latest(
+          entries.products
+            .filter((product) => product.categorySlug === category.slug)
+            .map((product) => product.updatedAt),
+        ) ?? catalogUpdated,
+        0.8,
+      ),
     ),
-    ...entries.products.map((product) => ({
-      url: `${siteUrl}/products/${product.slug}`,
-      lastModified: product.updatedAt,
-      changeFrequency: 'weekly' as const,
-      priority: 0.7,
-    })),
+    ...entries.products.map((product) =>
+      page(`/products/${product.slug}`, product.updatedAt, 0.7, 'weekly'),
+    ),
   ];
 }

@@ -92,7 +92,10 @@ export function CatalogView({
         <CatalogFilters {...filters} />
         <div className="min-w-0">
           {products.length ? (
-            <ProductGrid products={products} priorityCount={4} />
+            <>
+              <h2 className="sr-only">Products</h2>
+              <ProductGrid products={products} priorityCount={4} />
+            </>
           ) : (
             <div className="grid place-items-center rounded-lg border border-dashed border-line-strong px-6 py-16 text-center">
               <SearchX aria-hidden="true" className="size-8 text-fg-subtle" />

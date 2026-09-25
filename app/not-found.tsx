@@ -4,7 +4,9 @@ import { getCategories } from '@/server/catalog/public';
 import { isAdminSite } from '@/server/security/site';
 
 export const metadata = {
-  title: 'Page not found',
+  title: { absolute: 'Page Not Found (404) | BLACKSHARK Gaming Store in Oman' },
+  description:
+    'This page does not exist or was moved. Search BLACKSHARK for gaming PCs, PC parts and gaming gear in Oman, or open a category or the PC builder.',
   robots: { index: false, follow: true },
 };
 

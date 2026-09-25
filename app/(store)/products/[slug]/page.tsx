@@ -1,7 +1,21 @@
 import { notFound } from 'next/navigation';
 import { attributeRows, partTypeLabel } from '@/lib/catalog';
-import { currentPrice, PHOTO_NEEDED } from '@/lib/products';
+import {
+  currentPrice,
+  formatOMR,
+  PHOTO_NEEDED,
+  type PublicProduct,
+} from '@/lib/products';
+import {
+  breadcrumbLd,
+  DEFAULT_OG_IMAGE,
+  fitDescription,
+  fitTitle,
+  organizationId,
+  pageMetadata,
+} from '@/lib/seo';
 import { Eyebrow, Price, ProductImage, Stock } from '@/components/ui/bits';
+import { JsonLd } from '@/components/ui/json-ld';
 import { ProductActions } from '@/components/store/product-actions';
 import { ProductGrid } from '@/components/store/product-cell';
 import { Section } from '@/components/store/section';
@@ -10,22 +24,53 @@ import { getSiteUrl } from '@/server/site-url';
 
 type Props = { params: Promise<{ slug: string }> };
 
+/** 1200x630 share image made by scripts/make-brand-assets.mjs from the bundled photo. */
+function shareImage(product: PublicProduct) {
+  const slug = product.image?.match(/^\/products\/([a-z0-9-]+)\.webp$/)?.[1];
+  return slug
+    ? {
+        url: `/og/products/${slug}.jpg`,
+        width: 1200,
+        height: 630,
+        alt: product.name,
+      }
+    : DEFAULT_OG_IMAGE;
+}
+
+function crumbs(product: PublicProduct) {
+  const items = [
+    { name: product.category, path: `/categories/${product.categorySlug}` },
+  ];
+  if (product.partType && product.categorySlug === 'pc-components')
+    items.push({
+      name: partTypeLabel(product.partType, false) ?? '',
+      path: `/categories/pc-components?type=${product.partType}`,
+    });
+  return [...items, { name: product.name, path: `/products/${product.slug}` }];
+}
+
 export async function generateMetadata({ params }: Props) {
   const product = await getProduct((await params).slug);
-  if (!product) return { title: 'Product not found' };
-  return {
-    title: product.name,
-    description: product.summary,
-    alternates: { canonical: `/products/${product.slug}` },
-    openGraph: {
-      title: product.name,
-      description: product.summary,
-      url: `/products/${product.slug}`,
-      images: product.image
-        ? [{ url: product.image, alt: product.name }]
-        : undefined,
-    },
-  };
+  if (!product) return { title: 'Product not found', robots: { index: false } };
+  const kind =
+    partTypeLabel(product.partType)?.toLowerCase() ??
+    product.category.toLowerCase();
+  return pageMetadata({
+    title: fitTitle(product.name, [
+      (c) => `${c}: Price, Specs & Stock in Oman | BLACKSHARK`,
+      (c) => `${c}: Price & Specs in Oman | BLACKSHARK`,
+      (c) => `${c} Price in Oman | BLACKSHARK`,
+      (c) => `${c} | BLACKSHARK Oman`,
+      (c) => `${c} | BLACKSHARK`,
+    ]),
+    description: fitDescription([
+      product.summary,
+      `${product.brand ? `${product.brand} ` : ''}${kind} for ${formatOMR(currentPrice(product))} in Oman.`,
+      product.stock > 0 ? 'In stock now.' : 'Out of stock right now.',
+    ]),
+    path: `/products/${product.slug}`,
+    image: shareImage(product),
+  });
 }
 
 export default async function ProductPage({ params }: Props) {
@@ -49,9 +94,11 @@ export default async function ProductPage({ params }: Props) {
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'Product',
+    '@id': `${pageUrl}#product`,
     name: product.name,
     sku: product.sku,
     description: product.summary,
+    category: typeLabel ?? product.category,
     image: `${siteUrl}${product.image ?? PHOTO_NEEDED}`,
     ...(product.brand
       ? { brand: { '@type': 'Brand', name: product.brand } }
@@ -65,18 +112,13 @@ export default async function ProductPage({ params }: Props) {
         product.stock > 0
           ? 'https://schema.org/InStock'
           : 'https://schema.org/OutOfStock',
+      seller: { '@id': organizationId(siteUrl) },
     },
   };
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        // Escaped so product text can never close the script tag.
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(structuredData).replace(/</g, '\\u003c'),
-        }}
-      />
+      <JsonLd data={[structuredData, breadcrumbLd(siteUrl, crumbs(product))]} />
       <div className="mx-auto max-w-[1400px] px-4 py-8 sm:px-6 sm:py-12">
         <nav
           aria-label="Breadcrumb"

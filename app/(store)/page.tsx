@@ -1,16 +1,36 @@
-import { ArrowRight, Cpu } from 'lucide-react';
+import { ArrowRight, Clapperboard, Cpu } from 'lucide-react';
+import Image from 'next/image';
 import { attributeRows, partTypeLabel } from '@/lib/catalog';
+import { postAlt, postDate } from '@/lib/instagram';
 import { SLOTS } from '@/lib/pc-builder';
+import {
+  fitDescription,
+  organizationLd,
+  pageMetadata,
+  websiteLd,
+} from '@/lib/seo';
 import { Eyebrow, Price, ProductImage, Stock } from '@/components/ui/bits';
 import { buttonClass } from '@/components/ui/button';
+import { JsonLd } from '@/components/ui/json-ld';
 import { ProductGrid } from '@/components/store/product-cell';
 import { Section } from '@/components/store/section';
 import { getHomeData } from '@/server/catalog/public';
+import { latestInstagramPosts } from '@/server/instagram';
+import { getSiteUrl } from '@/server/site-url';
 
-export const metadata = { alternates: { canonical: '/' } };
+export const metadata = pageMetadata({
+  title: 'BLACKSHARK: Gaming PCs, PC Parts & Gaming Gear in Oman',
+  description: fitDescription([
+    'Shop gaming PCs, graphics cards, processors, monitors and gaming gear in Oman with clear OMR prices and live stock.',
+    'Build a PC that fits, then order on WhatsApp.',
+  ]),
+  path: '/',
+});
 
 export default async function HomePage() {
-  const { featured, newest, deals, categories, brands } = await getHomeData();
+  const [{ featured, newest, deals, categories, brands }, siteUrl] =
+    await Promise.all([getHomeData(), getSiteUrl()]);
+  const instagram = latestInstagramPosts(6);
   const productCount = categories.reduce(
     (sum, category) => sum + category.productCount,
     0,
@@ -21,6 +41,7 @@ export default async function HomePage() {
 
   return (
     <>
+      <JsonLd data={[organizationLd(siteUrl), websiteLd(siteUrl)]} />
       <section
         aria-labelledby="hero-title"
         className="relative overflow-hidden border-b border-line"
@@ -252,6 +273,43 @@ export default async function HomePage() {
           ))}
         </ul>
       </Section>
+
+      {instagram.length ? (
+        <Section
+          index="07"
+          eyebrow="Instagram"
+          title="Latest from @blackshark__gaming"
+          href="/instagram"
+          linkLabel="All posts & reels"
+        >
+          <ul className="grid grid-cols-3 gap-1.5 sm:grid-cols-6 sm:gap-2">
+            {instagram.map((post) => (
+              <li key={post.code}>
+                <a
+                  href="/instagram"
+                  className="group relative block aspect-square overflow-hidden rounded-md bg-ink-850"
+                >
+                  <Image
+                    src={post.thumb!}
+                    alt={postAlt(post)}
+                    width={480}
+                    height={480}
+                    unoptimized
+                    loading="lazy"
+                    className="size-full object-cover transition-transform duration-300 group-hover:scale-[1.04]"
+                  />
+                  <span className="pointer-events-none absolute inset-x-0 bottom-0 flex items-center justify-between bg-gradient-to-t from-black/75 to-transparent px-2 pb-1.5 pt-6 font-mono text-[11px] text-white/90">
+                    {postDate(post)}
+                    {post.type === 'reel' ? (
+                      <Clapperboard aria-hidden="true" className="size-4" />
+                    ) : null}
+                  </span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </Section>
+      ) : null}
     </>
   );
 }

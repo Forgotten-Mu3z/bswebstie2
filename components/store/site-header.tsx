@@ -167,6 +167,16 @@ export function SiteHeader({ categories }: { categories: NavCategory[] }) {
             Deals
           </a>
           <a
+            href="/instagram"
+            aria-current={isActive('/instagram') ? 'page' : undefined}
+            className={clsx(
+              'rounded-md px-3 py-1.5 hover:bg-ink-800 hover:text-fg',
+              isActive('/instagram') ? 'text-fg' : 'text-fg-muted',
+            )}
+          >
+            Instagram
+          </a>
+          <a
             href="/build"
             className="ml-auto inline-flex items-center gap-2 rounded-md border border-accent/40 px-3 py-1.5 font-medium text-accent hover:bg-accent/10"
           >
@@ -212,6 +222,12 @@ export function SiteHeader({ categories }: { categories: NavCategory[] }) {
             className="flex h-12 items-center rounded-md px-3 hover:bg-ink-800"
           >
             All products
+          </a>
+          <a
+            href="/instagram"
+            className="flex h-12 items-center rounded-md px-3 hover:bg-ink-800"
+          >
+            Instagram posts &amp; reels
           </a>
           <p className="mt-4 px-3 font-mono text-[11px] uppercase tracking-[0.18em] text-fg-subtle">
             PC parts

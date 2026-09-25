@@ -22,6 +22,10 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
+  // Always put <title>, description, canonical and social tags in <head>.
+  // By default they are streamed into <body> for everyone except a short list
+  // of bots, which leaves out most AI crawlers and anything reading raw HTML.
+  htmlLimitedBots: /./,
   async headers() {
     return [
       // "/:path*" does not match the bare home page in vinext, so list it too.

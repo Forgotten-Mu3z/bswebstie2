@@ -13,6 +13,8 @@ export default defineConfig(async () => {
 
   return {
     css: { postcss: { plugins: [tailwindcss()] } },
+    // No public source maps in production builds.
+    build: { sourcemap: false },
     plugins: [
       vinext(),
       cloudflare({

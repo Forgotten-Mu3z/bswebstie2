@@ -281,7 +281,11 @@ export async function getHomeData() {
 export async function getSitemapEntries() {
   const [productRows, categoryRows] = await Promise.all([
     getDb()
-      .select({ slug: products.slug, updatedAt: products.updatedAt })
+      .select({
+        slug: products.slug,
+        categorySlug: categories.slug,
+        updatedAt: products.updatedAt,
+      })
       .from(products)
       .innerJoin(categories, eq(products.categoryId, categories.id))
       .where(visible),

@@ -20,7 +20,9 @@
     "deploy": "vinext build && node scripts/deploy.mjs",
     "deploy:no-r2": "vinext build && node scripts/deploy.mjs --no-r2",
     "photos:clean": "node scripts/remove-photo-backgrounds.mjs",
-    "media:record": "node scripts/media-record.mjs"
+    "media:record": "node scripts/media-record.mjs",
+    "instagram:import": "node scripts/import-instagram.mjs",
+    "brand:assets": "node scripts/make-brand-assets.mjs"
   },
   "dependencies": {
     "@base-ui/react": "1.7.0",

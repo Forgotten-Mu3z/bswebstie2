@@ -49,6 +49,19 @@ a manufacturer media-kit image used under its terms, or an image with written pe
 | \`public/icon-32.png\`, \`public/icon-192.png\`, \`public/apple-touch-icon.png\` | Resized copies of the BS Gaming logo (browser-tab and home-screen icons) | Owner's brand asset |
 | \`public/product-photo-needed.svg\` | Created for this project | Project asset |
 
+## Social share images
+
+\`public/og/default.png\` is made from the logo; \`public/og/products/*.jpg\` are made from
+the product photos below (\`npm run brand:assets\`), so each has the same rights status as its photo.
+
+## Instagram posts and reels
+
+\`public/ig/\` (not in git) holds the media of the store's own Instagram account,
+[@blackshark__gaming](https://www.instagram.com/blackshark__gaming/), imported with
+\`npm run instagram:import\` from the archive collected on 25 September 2026. Each post links
+back to its Instagram original. The posts are the store's own; some designs include product,
+game or brand artwork from manufacturers and publishers.
+
 ## Product photos (${manifest.length})
 
 Listings without a verified photo (the four generic BLACKSHARK products) use

@@ -46,7 +46,9 @@ export function Modal({
         <Dialog.Backdrop className={backdrop} />
         <Dialog.Popup
           className={clsx(
-            'fixed left-1/2 top-1/2 z-50 flex max-h-[min(90dvh,860px)] w-[calc(100%-2rem)] max-w-lg -translate-x-1/2 -translate-y-1/2 flex-col rounded-lg border border-line-strong bg-ink-900 shadow-2xl shadow-black/60 outline-none transition duration-200 data-[ending-style]:scale-[0.98] data-[ending-style]:opacity-0 data-[starting-style]:scale-[0.98] data-[starting-style]:opacity-0',
+            'fixed left-1/2 top-1/2 z-50 flex max-h-[min(90dvh,860px)] w-[calc(100%-2rem)] -translate-x-1/2 -translate-y-1/2 flex-col rounded-lg border border-line-strong bg-ink-900 shadow-2xl shadow-black/60 outline-none transition duration-200 data-[ending-style]:scale-[0.98] data-[ending-style]:opacity-0 data-[starting-style]:scale-[0.98] data-[starting-style]:opacity-0',
+            // A width passed in replaces the default instead of fighting it.
+            className?.includes('max-w-') ? null : 'max-w-lg',
             className,
           )}
         >

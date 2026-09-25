@@ -12,22 +12,25 @@ const geistMono = Geist_Mono({
 });
 
 export async function generateMetadata(): Promise<Metadata> {
+  // Pages set their own title, description, canonical and social tags
+  // (lib/seo.ts); these are the site-wide defaults and icons.
   return {
     metadataBase: new URL(await getSiteUrl()),
     title: {
-      default: 'BLACKSHARK — Gaming PCs & parts in Oman',
-      template: '%s · BLACKSHARK',
+      default: 'BLACKSHARK: Gaming PCs, PC Parts & Gaming Gear in Oman',
+      template: '%s | BLACKSHARK',
     },
-    description:
-      'Gaming PCs, components, monitors and gear in Oman, with clear OMR prices, live stock and a PC builder that checks compatibility.',
+    applicationName: 'BLACKSHARK',
     icons: {
       icon: [
+        { url: '/favicon.ico', sizes: '16x16 32x32 48x48' },
+        { url: '/icon-16.png', sizes: '16x16', type: 'image/png' },
         { url: '/icon-32.png', sizes: '32x32', type: 'image/png' },
         { url: '/icon-192.png', sizes: '192x192', type: 'image/png' },
       ],
       apple: [{ url: '/apple-touch-icon.png', sizes: '180x180' }],
     },
-    openGraph: { type: 'website', siteName: 'BLACKSHARK' },
+    manifest: '/site.webmanifest',
   };
 }
 

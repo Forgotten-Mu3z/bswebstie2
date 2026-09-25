@@ -18,6 +18,9 @@ TypeScript, Tailwind CSS 4 and Drizzle ORM. Runs on Cloudflare Workers with **D1
 - **PC builder:** 8 steps. Each step only lists parts that fit what is already chosen (socket,
   memory type, board size, power supply). The build lives in the link, so it can be shared or
   sent on WhatsApp and reopened later.
+- **Instagram gallery** at `/instagram`: all 1,345 posts and reels from
+  [@blackshark__gaming](https://www.instagram.com/blackshark__gaming/), newest first, with photo
+  carousels and playable reels in a lightbox. Each links back to the original post.
 - **Admin site** (a separate address): overview with counts, low stock and activity, and product
   management with photo upload.
 
@@ -40,6 +43,35 @@ server/security      everything about access: sessions, 2FA, lockouts, limits, a
 db/, drizzle/        schema and migrations (0001 loads the 50-product catalog)
 proxy.ts             runs first on every request: rate limits and store/admin separation
 ```
+
+## Instagram posts and reels
+
+The gallery comes from an archive of the store's Instagram account (collected 25 September 2026):
+
+```bash
+npm run instagram:import -- "C:\path\to\blackshark-instagram"
+```
+
+This writes `data/instagram.json` (committed) and the optimised media to `public/ig/`
+(about 2 GB with the reels, so **not** in git). Deploying refuses to run if media referenced by
+`data/instagram.json` is missing, so the site never ships broken links. Post dates come from the
+Instagram shortcodes. Captions are shown as saved in the archive and were not re-checked word for
+word on Instagram; one caption that belonged to another post is hidden (see the script). Two reels
+are larger than Cloudflare's 25 MB file limit and link to Instagram instead of playing here.
+
+## SEO
+
+- Every public page has its own 50-60 character title, a 140-160 character description, a
+  self-referencing canonical, Open Graph and Twitter tags (`lib/seo.ts`), all in `<head>`.
+- Share images are 1200x630: `public/og/default.png` and one per product photo in
+  `public/og/products/`. Regenerate them and the favicon set with `npm run brand:assets`.
+- JSON-LD: Organization and WebSite (home), Product and BreadcrumbList (products),
+  BreadcrumbList and ItemList (categories, deals), CollectionPage (Instagram).
+- `robots.txt` allows search engines and AI crawlers, `sitemap.xml` lists every public page with
+  `lastmod`, and `/llms.txt` and `/llms-full.txt` summarise the store for language models.
+- Once a domain is connected, set `SITE_URL` in `wrangler.jsonc` `vars`: canonicals, the sitemap
+  and share links use it, and the store permanently redirects any other address (such as
+  `*.workers.dev`) to it.
 
 ## Local development
 
@@ -87,8 +119,8 @@ authenticator app, then must choose their own password.
 a payment method), then `npx wrangler r2 bucket create bsgaming-media`. Until then use
 `npm run deploy:no-r2`; everything works except photo uploads, which explain that storage is off.
 
-Links, the sitemap and builder links follow the address the visitor used. To force one address
-after adding a domain, set `SITE_URL` in `wrangler.jsonc` `vars`.
+Links, the sitemap and builder links follow the address the visitor used until `SITE_URL` is set
+(see SEO above).
 
 ## Security
 
