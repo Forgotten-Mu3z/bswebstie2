@@ -1,20 +1,34 @@
 {
-    "version":  "7",
-    "dialect":  "sqlite",
-    "entries":  [
-                    {
-                        "idx":  0,
-                        "version":  "6",
-                        "when":  1790331717322,
-                        "tag":  "0000_schema",
-                        "breakpoints":  true
-                    },
-                    {
-                        "idx":  1,
-                        "version":  "6",
-                        "when":  1790331717409,
-                        "tag":  "0001_catalog",
-                        "breakpoints":  true
-                    }
-                ]
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1790331717322,
+      "tag": "0000_schema",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1790331717409,
+      "tag": "0001_catalog",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1790366668237,
+      "tag": "0002_stock_on_request",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1790372112816,
+      "tag": "0003_instagram_products",
+      "breakpoints": true
+    }
+  ]
 }

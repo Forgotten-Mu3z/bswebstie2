@@ -1,6 +1,5 @@
-import { ArrowRight, Clapperboard, Cpu } from 'lucide-react';
+import { ArrowRight, Cpu } from 'lucide-react';
 import { attributeRows, partTypeLabel } from '@/lib/catalog';
-import { postAlt, postDate, thumbSrcSet } from '@/lib/instagram';
 import { SLOTS } from '@/lib/pc-builder';
 import {
   fitDescription,
@@ -14,7 +13,6 @@ import { JsonLd } from '@/components/ui/json-ld';
 import { ProductGrid } from '@/components/store/product-cell';
 import { Section } from '@/components/store/section';
 import { getHomeData } from '@/server/catalog/public';
-import { latestInstagramPosts } from '@/server/instagram';
 import { getSiteUrl } from '@/server/site-url';
 
 export const metadata = pageMetadata({
@@ -29,7 +27,6 @@ export const metadata = pageMetadata({
 export default async function HomePage() {
   const [{ featured, newest, deals, categories, brands }, siteUrl] =
     await Promise.all([getHomeData(), getSiteUrl()]);
-  const instagram = latestInstagramPosts(6);
   const productCount = categories.reduce(
     (sum, category) => sum + category.productCount,
     0,
@@ -121,7 +118,10 @@ export default async function HomePage() {
                     <div className="flex justify-between gap-3 py-1.5">
                       <dt className="text-fg-subtle">Availability</dt>
                       <dd>
-                        <Stock stock={hero.stock} />
+                        <Stock
+                          stock={hero.stock}
+                          onRequest={hero.stockOnRequest}
+                        />
                       </dd>
                     </div>
                   </dl>
@@ -269,46 +269,6 @@ export default async function HomePage() {
           ))}
         </ul>
       </Section>
-
-      {instagram.length ? (
-        <Section
-          index="07"
-          eyebrow="Instagram"
-          title="Latest from @blackshark__gaming"
-          href="/instagram"
-          linkLabel="All posts & reels"
-        >
-          <ul className="grid grid-cols-3 gap-1.5 sm:grid-cols-6 sm:gap-2">
-            {instagram.map((post) => (
-              <li key={post.code}>
-                <a
-                  href="/instagram"
-                  className="group relative block aspect-square overflow-hidden rounded-md bg-ink-850"
-                >
-                  {/* oxlint-disable-next-line nextjs/no-img-element -- pre-sized thumbnails picked with srcset */}
-                  <img
-                    src={post.thumb!}
-                    srcSet={thumbSrcSet(post.thumb!)}
-                    sizes="(min-width: 1400px) 220px, (min-width: 640px) 16vw, 32vw"
-                    alt={postAlt(post)}
-                    width={480}
-                    height={480}
-                    loading="lazy"
-                    decoding="async"
-                    className="size-full object-cover transition-transform duration-300 group-hover:scale-[1.04]"
-                  />
-                  <span className="pointer-events-none absolute inset-x-0 bottom-0 flex items-center justify-between bg-gradient-to-t from-black/75 to-transparent px-2 pb-1.5 pt-6 font-mono text-[11px] text-white/90">
-                    {postDate(post)}
-                    {post.type === 'reel' ? (
-                      <Clapperboard aria-hidden="true" className="size-4" />
-                    ) : null}
-                  </span>
-                </a>
-              </li>
-            ))}
-          </ul>
-        </Section>
-      ) : null}
     </>
   );
 }

@@ -62,11 +62,6 @@ export function SiteFooter({ categories }: { categories: NavCategory[] }) {
                 Cart
               </a>
             </li>
-            <li>
-              <a href="/instagram" className={link}>
-                Instagram posts &amp; reels
-              </a>
-            </li>
           </ul>
         </nav>
         <div>

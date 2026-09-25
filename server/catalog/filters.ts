@@ -3,6 +3,9 @@ import type { ProductQuery } from './public';
 
 // Turns URL search params into a safe product query (and back).
 
+/** Products per catalog page; keeps each page quick to render. */
+export const CATALOG_PAGE_SIZE = 36;
+
 export type SearchParams = Record<string, string | string[] | undefined>;
 
 const first = (value: string | string[] | undefined) =>
@@ -22,6 +25,7 @@ export type FilterValues = {
   sale: boolean;
   min: string;
   max: string;
+  page: number;
 };
 
 export function readFilters(
@@ -40,6 +44,9 @@ export function readFilters(
     sale: first(params.sale) === '1',
     min: omrToBaisa(first(params.min)) !== undefined ? first(params.min) : '',
     max: omrToBaisa(first(params.max)) !== undefined ? first(params.max) : '',
+    page: /^[1-9]\d{0,3}$/.test(first(params.page))
+      ? Number(first(params.page))
+      : 1,
   };
   const query: ProductQuery = {
     q: values.q || undefined,
@@ -50,6 +57,8 @@ export function readFilters(
     onSale: values.sale,
     minBaisa: omrToBaisa(values.min),
     maxBaisa: omrToBaisa(values.max),
+    limit: CATALOG_PAGE_SIZE,
+    offset: (values.page - 1) * CATALOG_PAGE_SIZE,
   };
   const active = [
     values.type,
@@ -60,4 +69,25 @@ export function readFilters(
     values.max,
   ].filter(Boolean).length;
   return { values, query, active };
+}
+
+/** The URL for another page of the same listing and filters. */
+export function listingHref(
+  action: string,
+  values: FilterValues,
+  page: number,
+  defaultSort: Sort = 'featured',
+) {
+  const query = new URLSearchParams();
+  if (values.q) query.set('q', values.q);
+  if (values.type) query.set('type', values.type);
+  if (values.brand) query.set('brand', values.brand);
+  if (values.sort !== defaultSort) query.set('sort', values.sort);
+  if (values.stock) query.set('stock', '1');
+  if (values.sale) query.set('sale', '1');
+  if (values.min) query.set('min', values.min);
+  if (values.max) query.set('max', values.max);
+  if (page > 1) query.set('page', String(page));
+  const text = query.toString();
+  return text ? `${action}?${text}` : action;
 }

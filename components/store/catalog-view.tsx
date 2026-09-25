@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import { SearchX } from 'lucide-react';
+import { ChevronLeft, ChevronRight, SearchX } from 'lucide-react';
 import type { PublicProduct } from '@/lib/products';
 import type { FilterValues } from '@/server/catalog/filters';
 import { Eyebrow } from '@/components/ui/bits';
@@ -21,6 +21,8 @@ export function CatalogView({
   description,
   chips,
   products,
+  total,
+  pagination,
   filters,
   empty,
 }: {
@@ -29,6 +31,9 @@ export function CatalogView({
   description?: string;
   chips?: Chip[];
   products: PublicProduct[];
+  /** All matches, across pages. */
+  total: number;
+  pagination?: { page: number; pages: number; href: (page: number) => string };
   filters: {
     values: FilterValues;
     brands: { slug: string; name: string }[];
@@ -49,7 +54,10 @@ export function CatalogView({
             className="font-mono text-sm text-fg-subtle tabular"
             aria-live="polite"
           >
-            {products.length} {products.length === 1 ? 'product' : 'products'}
+            {total} {total === 1 ? 'product' : 'products'}
+            {pagination && pagination.pages > 1
+              ? ` · page ${pagination.page} of ${pagination.pages}`
+              : ''}
           </p>
         </div>
         {description ? (
@@ -95,6 +103,40 @@ export function CatalogView({
             <>
               <h2 className="sr-only">Products</h2>
               <ProductGrid products={products} priorityCount={4} />
+              {pagination && pagination.pages > 1 ? (
+                <nav
+                  aria-label="Pages"
+                  className="mt-8 flex items-center justify-between gap-3 border-t border-line pt-6"
+                >
+                  {pagination.page > 1 ? (
+                    <a
+                      href={pagination.href(pagination.page - 1)}
+                      rel="prev"
+                      className={buttonClass('secondary')}
+                    >
+                      <ChevronLeft aria-hidden="true" className="size-4" />
+                      Previous
+                    </a>
+                  ) : (
+                    <span />
+                  )}
+                  <p className="font-mono text-sm text-fg-subtle tabular">
+                    Page {pagination.page} of {pagination.pages}
+                  </p>
+                  {pagination.page < pagination.pages ? (
+                    <a
+                      href={pagination.href(pagination.page + 1)}
+                      rel="next"
+                      className={buttonClass('secondary')}
+                    >
+                      Next
+                      <ChevronRight aria-hidden="true" className="size-4" />
+                    </a>
+                  ) : (
+                    <span />
+                  )}
+                </nav>
+              ) : null}
             </>
           ) : (
             <div className="grid place-items-center rounded-lg border border-dashed border-line-strong px-6 py-16 text-center">

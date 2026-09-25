@@ -27,7 +27,12 @@ import {
   type Build,
   type Slot,
 } from '@/lib/pc-builder';
-import { currentPrice, formatOMR, type PublicProduct } from '@/lib/products';
+import {
+  canOrder,
+  currentPrice,
+  formatOMR,
+  type PublicProduct,
+} from '@/lib/products';
 import { Button } from '@/components/ui/button';
 import { Price, ProductImage, Stock } from '@/components/ui/bits';
 import { Modal } from '@/components/ui/overlay';
@@ -207,7 +212,10 @@ function PartPicker({
                           {spec.label}: {spec.value}
                         </span>
                       ) : null}
-                      <Stock stock={part.stock} />
+                      <Stock
+                        stock={part.stock}
+                        onRequest={part.stockOnRequest}
+                      />
                     </span>
                   </span>
                   <span className="flex shrink-0 flex-col items-end gap-1">
@@ -340,7 +348,7 @@ export function PcBuilder({
   }
 
   function addAll() {
-    const available = chosen.filter(({ part }) => part.stock > 0);
+    const available = chosen.filter(({ part }) => canOrder(part));
     for (const { part } of available) cart.add(part, 1);
     const skipped = chosen.length - available.length;
     if (skipped)
@@ -421,7 +429,7 @@ export function PcBuilder({
                             <span className="font-mono text-sm tabular">
                               {formatOMR(currentPrice(part))}
                             </span>
-                            {part.stock < 1 ? <Stock stock={0} /> : null}
+                            {canOrder(part) ? null : <Stock stock={0} />}
                           </span>
                         </span>
                       </div>

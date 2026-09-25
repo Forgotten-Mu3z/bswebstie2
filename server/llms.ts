@@ -3,7 +3,6 @@ import { partTypeLabel } from '@/lib/catalog';
 import { currentPrice, formatOMR } from '@/lib/products';
 import { INSTAGRAM_URL } from '@/lib/seo';
 import { findProducts, getCategories } from '@/server/catalog/public';
-import { instagramCounts } from '@/server/instagram';
 import { notFound } from '@/server/security/http';
 import { isAdminSite } from '@/server/security/site';
 import { getSiteUrl } from '@/server/site-url';
@@ -17,7 +16,6 @@ const phone = (digits: string) =>
 async function header() {
   const siteUrl = await getSiteUrl();
   const categories = await getCategories();
-  const instagram = instagramCounts();
   const lines = [
     '# BLACKSHARK',
     '',
@@ -29,7 +27,6 @@ async function header() {
     `- [PC builder](${siteUrl}/build): choose 8 parts step by step; only compatible parts are offered (socket, memory type, board size, power supply)`,
     `- [Deals](${siteUrl}/deals): products whose sale price is below the regular price`,
     `- [All products](${siteUrl}/search): the full catalog with filters`,
-    `- [Instagram posts and reels](${siteUrl}/instagram): ${instagram.all} posts and reels from ${INSTAGRAM_URL} (prices in posts are from the day they were posted)`,
     '',
     '## Categories',
     '',
@@ -92,7 +89,11 @@ export async function llmsFull() {
             : formatOMR(price),
           product.brand,
           partTypeLabel(product.partType),
-          product.stock > 0 ? 'in stock' : 'out of stock',
+          product.stockOnRequest
+            ? 'ask for stock'
+            : product.stock > 0
+              ? 'in stock'
+              : 'out of stock',
           `SKU ${product.sku}`,
         ].filter(Boolean);
         return `- [${product.name}](${siteUrl}/products/${product.slug}): ${facts.join(' · ')}. ${product.summary}`;

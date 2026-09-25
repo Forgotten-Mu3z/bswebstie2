@@ -1,6 +1,5 @@
 import type { MetadataRoute } from 'next';
 import { getSitemapEntries } from '@/server/catalog/public';
-import { newestInstagramDate } from '@/server/instagram';
 import { getSiteUrl } from '@/server/site-url';
 
 // Built from the live catalog on each request (and cached by crawlers), so a
@@ -17,7 +16,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const catalogUpdated = latest(
     entries.products.map((product) => product.updatedAt),
   );
-  const instagramUpdated = newestInstagramDate();
 
   const page = (
     path: string,
@@ -30,9 +28,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     page('', catalogUpdated, 1),
     page('/deals', catalogUpdated, 0.8),
     page('/build', catalogUpdated, 0.8, 'weekly'),
-    ...(instagramUpdated
-      ? [page('/instagram', new Date(instagramUpdated), 0.6, 'weekly')]
-      : []),
     ...entries.categories.map((category) =>
       page(
         `/categories/${category.slug}`,

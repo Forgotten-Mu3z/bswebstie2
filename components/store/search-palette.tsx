@@ -154,7 +154,11 @@ export function SearchPalette({
                     </span>
                     <span className="block truncate font-mono text-xs text-fg-subtle">
                       {item.brand ?? 'BLACKSHARK'} ·{' '}
-                      {item.inStock ? 'In stock' : 'Out of stock'}
+                      {item.onRequest
+                        ? 'Ask for stock'
+                        : item.inStock
+                          ? 'In stock'
+                          : 'Out of stock'}
                     </span>
                   </span>
                   <span className="shrink-0 font-mono text-sm tabular">

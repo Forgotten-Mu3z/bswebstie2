@@ -38,6 +38,7 @@ type Draft = {
   price: string;
   salePrice: string;
   stock: string;
+  stockOnRequest: boolean;
   lowStockThreshold: string;
   status: AdminProduct['status'];
   featured: boolean;
@@ -61,6 +62,7 @@ function toDraft(product: AdminProduct | null, lookups: Lookups): Draft {
     price: product ? omr(product.priceBaisa) : '',
     salePrice: product ? omr(product.salePriceBaisa) : '',
     stock: String(product?.stock ?? 0),
+    stockOnRequest: product?.stockOnRequest ?? false,
     lowStockThreshold: String(product?.lowStockThreshold ?? 3),
     status: product?.status ?? 'DRAFT',
     featured: product?.featured ?? false,
@@ -640,6 +642,22 @@ export function ProductEditor({
               />
             </Field>
           </div>
+          <label className="flex min-h-11 items-start gap-3 text-sm">
+            <input
+              type="checkbox"
+              checked={draft.stockOnRequest}
+              disabled={stockLocked}
+              onChange={(event) => set('stockOnRequest', event.target.checked)}
+              className="mt-1 size-4 accent-[var(--color-accent)]"
+            />
+            <span>
+              Ask for stock
+              <span className="block text-xs text-fg-subtle">
+                Show “Ask for stock” instead of a number. Customers can still
+                order, and you confirm availability on WhatsApp.
+              </span>
+            </span>
+          </label>
         </fieldset>
 
         <fieldset className="grid gap-4">

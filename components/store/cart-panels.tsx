@@ -2,7 +2,12 @@
 
 import { Heart, Minus, Plus, ShoppingBag, Trash2 } from 'lucide-react';
 import { partTypeLabel } from '@/lib/catalog';
-import { formatOMR, type PublicProduct } from '@/lib/products';
+import {
+  canOrder,
+  formatOMR,
+  orderLimit,
+  type PublicProduct,
+} from '@/lib/products';
 import { Button, buttonClass } from '@/components/ui/button';
 import { Price, ProductImage, Stock } from '@/components/ui/bits';
 import { Drawer, Modal } from '@/components/ui/overlay';
@@ -38,7 +43,7 @@ export function QuantityStepper({
       <button
         type="button"
         aria-label={`One more ${product.name}`}
-        disabled={quantity >= product.stock}
+        disabled={quantity >= orderLimit(product)}
         onClick={() => cart.setQuantity(product.id, quantity + 1)}
         className="grid size-11 place-items-center text-fg-muted hover:text-fg disabled:text-fg-subtle"
       >
@@ -172,10 +177,10 @@ function WishlistDrawer() {
                 <div className="mt-2 flex items-center gap-2">
                   <Button
                     size="sm"
-                    disabled={product.stock < 1}
+                    disabled={!canOrder(product)}
                     onClick={() => cart.add(product)}
                   >
-                    {product.stock < 1 ? 'Out of stock' : 'Add to cart'}
+                    {canOrder(product) ? 'Add to cart' : 'Out of stock'}
                   </Button>
                   <button
                     type="button"
@@ -230,15 +235,19 @@ function QuickView({ product }: { product: PublicProduct | null }) {
               size="lg"
               className="mt-5"
             />
-            <Stock stock={product.stock} className="mt-2" />
+            <Stock
+              stock={product.stock}
+              onRequest={product.stockOnRequest}
+              className="mt-2"
+            />
             <div className="mt-auto grid gap-2 pt-6">
               <Button
                 size="lg"
                 className="justify-center"
-                disabled={product.stock < 1}
+                disabled={!canOrder(product)}
                 onClick={() => cart.add(product)}
               >
-                {product.stock < 1 ? 'Out of stock' : 'Add to cart'}
+                {canOrder(product) ? 'Add to cart' : 'Out of stock'}
               </Button>
               <a
                 href={`/products/${product.slug}`}

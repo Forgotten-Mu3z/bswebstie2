@@ -18,8 +18,12 @@ export type PublicProduct = {
   priceBaisa: number;
   salePriceBaisa: number | null;
   stock: number;
+  /** No stock count: "ask us" instead of a number, still orderable. */
+  stockOnRequest: boolean;
   image: string | null;
   featured: boolean;
+  /** The store's own post the listing came from (Instagram), if any. */
+  sourceUrl: string | null;
 };
 
 /** One live search suggestion: only what the dropdown shows. */
@@ -30,9 +34,23 @@ export type Suggestion = {
   image: string | null;
   priceBaisa: number;
   inStock: boolean;
+  onRequest: boolean;
 };
 
 export const PHOTO_NEEDED = '/product-photo-needed.svg';
+
+/** Most a cart can hold of a stock-on-request product; more by WhatsApp. */
+export const ON_REQUEST_LIMIT = 10;
+
+type Availability = { stock: number; stockOnRequest?: boolean };
+
+/** Can be added to the cart: in stock, or listed as "ask for stock". */
+export const canOrder = (product: Availability) =>
+  Boolean(product.stockOnRequest) || product.stock > 0;
+
+/** Most of this product one cart can hold. */
+export const orderLimit = (product: Availability) =>
+  product.stockOnRequest ? ON_REQUEST_LIMIT : product.stock;
 
 /** Price customers pay: the sale price only when it is actually lower. */
 export function currentPrice(product: {

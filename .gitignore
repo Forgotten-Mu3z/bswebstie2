@@ -17,6 +17,3 @@ next-env.d.ts
 # logs and OS files
 *.log
 .DS_Store
-
-# Instagram media from scripts/import-instagram.mjs (about 2 GB; deployed, not committed)
-/public/ig/

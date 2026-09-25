@@ -23,6 +23,7 @@ export type ProductInput = {
   priceBaisa: number;
   salePriceBaisa: number | null;
   stock: number;
+  stockOnRequest: boolean;
   lowStockThreshold: number;
   status: 'DRAFT' | 'PUBLISHED' | 'HIDDEN';
   featured: boolean;
@@ -108,6 +109,8 @@ export function validateProduct(body: unknown): ProductInput {
     fail('status', 'Choose draft, published or hidden.');
   if (typeof input.featured !== 'boolean')
     fail('featured', 'Choose yes or no.');
+  // Optional so older clients still work; anything but true means "no".
+  const stockOnRequest = input.stockOnRequest === true;
 
   const imageKey = raw(input.imageKey) || null;
   if (imageKey && !IMAGE_KEY.test(imageKey))
@@ -128,6 +131,7 @@ export function validateProduct(body: unknown): ProductInput {
     priceBaisa,
     salePriceBaisa,
     stock: wholeNumber(input, 'stock'),
+    stockOnRequest,
     lowStockThreshold: wholeNumber(input, 'lowStockThreshold'),
     status: status as ProductInput['status'],
     featured: input.featured as boolean,

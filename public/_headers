@@ -6,9 +6,6 @@
   Referrer-Policy: strict-origin-when-cross-origin
   X-Frame-Options: DENY
 
-# Instagram media and share images rarely change: let browsers and Cloudflare
-# keep them for a week.
-/ig/*
-  Cache-Control: public, max-age=604800
+# Share images rarely change: let browsers and Cloudflare keep them a week.
 /og/*
   Cache-Control: public, max-age=604800

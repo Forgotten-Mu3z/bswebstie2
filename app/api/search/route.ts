@@ -1,4 +1,4 @@
-import { currentPrice, type Suggestion } from '@/lib/products';
+import { canOrder, currentPrice, type Suggestion } from '@/lib/products';
 import { getSuggestions } from '@/server/catalog/public';
 import { json } from '@/server/security/http';
 
@@ -14,7 +14,8 @@ export async function GET(request: Request) {
     brand: product.brand,
     image: product.image,
     priceBaisa: currentPrice(product),
-    inStock: product.stock > 0,
+    inStock: canOrder(product),
+    onRequest: product.stockOnRequest,
   }));
   return json({ suggestions });
 }

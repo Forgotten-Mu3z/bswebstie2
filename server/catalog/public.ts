@@ -46,8 +46,10 @@ const publicFields = {
   priceBaisa: products.priceBaisa,
   salePriceBaisa: products.salePriceBaisa,
   stock: products.stock,
+  stockOnRequest: products.stockOnRequest,
   image: products.imageKey,
   featured: products.featured,
+  sourceUrl: products.sourceUrl,
 };
 
 type Row = Omit<PublicProduct, 'partType' | 'attributes'> & {
@@ -90,6 +92,7 @@ export type ProductQuery = {
   maxBaisa?: number;
   featured?: boolean;
   limit?: number;
+  offset?: number;
 };
 
 /** Search text: matches name, SKU, summary, brand, category and part type. */
@@ -137,34 +140,48 @@ function orderFor(sort: Sort | undefined) {
   }
 }
 
+function productWhere(query: ProductQuery) {
+  return and(
+    visible,
+    query.category ? eq(categories.slug, query.category) : undefined,
+    query.type ? eq(products.partType, query.type) : undefined,
+    query.brand ? eq(brands.slug, query.brand) : undefined,
+    query.q ? searchCondition(query.q) : undefined,
+    query.inStock ? gt(products.stock, 0) : undefined,
+    query.onSale
+      ? and(
+          isNotNull(products.salePriceBaisa),
+          lt(products.salePriceBaisa, products.priceBaisa),
+        )
+      : undefined,
+    query.minBaisa !== undefined
+      ? gte(effectivePrice, query.minBaisa)
+      : undefined,
+    query.maxBaisa !== undefined
+      ? lte(effectivePrice, query.maxBaisa)
+      : undefined,
+    query.featured ? eq(products.featured, true) : undefined,
+  );
+}
+
 export async function findProducts(query: ProductQuery = {}) {
   const rows = await select()
-    .where(
-      and(
-        visible,
-        query.category ? eq(categories.slug, query.category) : undefined,
-        query.type ? eq(products.partType, query.type) : undefined,
-        query.brand ? eq(brands.slug, query.brand) : undefined,
-        query.q ? searchCondition(query.q) : undefined,
-        query.inStock ? gt(products.stock, 0) : undefined,
-        query.onSale
-          ? and(
-              isNotNull(products.salePriceBaisa),
-              lt(products.salePriceBaisa, products.priceBaisa),
-            )
-          : undefined,
-        query.minBaisa !== undefined
-          ? gte(effectivePrice, query.minBaisa)
-          : undefined,
-        query.maxBaisa !== undefined
-          ? lte(effectivePrice, query.maxBaisa)
-          : undefined,
-        query.featured ? eq(products.featured, true) : undefined,
-      ),
-    )
+    .where(productWhere(query))
     .orderBy(...orderFor(query.sort))
-    .limit(Math.min(query.limit ?? 120, 200));
+    .limit(Math.min(query.limit ?? 120, 200))
+    .offset(query.offset ?? 0);
   return rows.map(toPublic);
+}
+
+/** How many products match (ignores limit and offset), for page counts. */
+export async function countProducts(query: ProductQuery = {}) {
+  const [row] = await getDb()
+    .select({ total: count(products.id) })
+    .from(products)
+    .innerJoin(categories, eq(products.categoryId, categories.id))
+    .leftJoin(brands, eq(products.brandId, brands.id))
+    .where(productWhere(query));
+  return row?.total ?? 0;
 }
 
 export async function getProduct(slug: string) {

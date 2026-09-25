@@ -43,8 +43,13 @@ function StatusBadge({ status }: { status: AdminProduct['status'] }) {
   );
 }
 
+const isLow = (product: AdminProduct) =>
+  !product.stockOnRequest && product.stock <= product.lowStockThreshold;
+
 function StockCell({ product }: { product: AdminProduct }) {
-  const low = product.stock <= product.lowStockThreshold;
+  if (product.stockOnRequest)
+    return <span className="font-mono text-warn">Ask</span>;
+  const low = isLow(product);
   return (
     <span
       className={clsx(
@@ -113,7 +118,7 @@ export function ProductManager({
             .includes(needle)) &&
         (!filters.status || product.status === filters.status) &&
         (!filters.category || product.categoryId === filters.category) &&
-        (!filters.lowStock || product.stock <= product.lowStockThreshold),
+        (!filters.lowStock || isLow(product)),
     );
   }, [products, filters]);
 

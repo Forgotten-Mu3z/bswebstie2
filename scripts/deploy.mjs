@@ -42,24 +42,6 @@ if (built.d1_databases?.some((db) => /^0{8}-/.test(db.database_id))) {
   process.exit(1);
 }
 
-// The Instagram gallery's media is not in git (about 2 GB). Refuse to deploy
-// a build whose gallery would point at files that are not there.
-const instagram = JSON.parse(readFileSync('data/instagram.json', 'utf8'));
-const media = instagram.posts.flatMap((post) => [
-  post.thumb,
-  post.thumb?.replace(/thumb\.webp$/, 'thumb-240.webp'),
-  ...post.slides.flatMap((slide) => [slide.src, slide.poster]),
-]);
-const absent = media.filter(
-  (url) => url && !existsSync(join('dist', 'client', url)),
-);
-if (absent.length) {
-  console.error(
-    `${absent.length} Instagram media files are missing (first: ${absent[0]}). Import them first:\n  npm run instagram:import -- "<path to the blackshark-instagram archive>"`,
-  );
-  process.exit(1);
-}
-
 function wrangler(args) {
   const result = spawnSync(
     process.execPath,
@@ -72,14 +54,14 @@ function wrangler(args) {
   };
 }
 
-// The admin site never shows the Instagram gallery, so its static files leave
-// out the ~2 GB of media instead of uploading it twice.
+// The admin site never shows social share images, so its static files leave
+// them out instead of uploading them twice.
 function adminAssets() {
   const dir = join('dist', 'admin-client');
   rmSync(dir, { recursive: true, force: true });
   cpSync(join('dist', 'client'), dir, {
     recursive: true,
-    filter: (source) => !/[\\/]client[\\/](ig|og)([\\/]|$)/.test(source),
+    filter: (source) => !/[\\/]client[\\/]og([\\/]|$)/.test(source),
   });
   return '../admin-client';
 }

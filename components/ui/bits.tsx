@@ -67,16 +67,20 @@ export function Price({
 /** Stock indicator: a dot plus words, never colour alone. */
 export function Stock({
   stock,
+  onRequest = false,
   className,
 }: {
   stock: number;
+  /** Listed without a count: we confirm stock on WhatsApp. */
+  onRequest?: boolean;
   className?: string;
 }) {
+  const tone = onRequest ? 'warn' : stock > 0 ? 'ok' : 'danger';
   return (
     <span
       className={clsx(
         'inline-flex items-center gap-1.5 font-mono text-xs',
-        stock > 0 ? 'text-ok' : 'text-danger',
+        { ok: 'text-ok', warn: 'text-warn', danger: 'text-danger' }[tone],
         className,
       )}
     >
@@ -84,10 +88,14 @@ export function Stock({
         aria-hidden="true"
         className={clsx(
           'size-1.5 rounded-full',
-          stock > 0 ? 'bg-ok' : 'bg-danger',
+          { ok: 'bg-ok', warn: 'bg-warn', danger: 'bg-danger' }[tone],
         )}
       />
-      {stock > 0 ? `${stock} in stock` : 'Out of stock'}
+      {onRequest
+        ? 'Ask for stock'
+        : stock > 0
+          ? `${stock} in stock`
+          : 'Out of stock'}
     </span>
   );
 }

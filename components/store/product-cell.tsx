@@ -3,7 +3,7 @@
 import clsx from 'clsx';
 import { Eye, Heart } from 'lucide-react';
 import { attributeRows, partTypeLabel } from '@/lib/catalog';
-import { discountPercent, type PublicProduct } from '@/lib/products';
+import { canOrder, discountPercent, type PublicProduct } from '@/lib/products';
 import { Button } from '@/components/ui/button';
 import { Price, ProductImage, Stock } from '@/components/ui/bits';
 import { useCart } from './cart-store';
@@ -90,14 +90,18 @@ export function ProductCell({
           salePriceBaisa={product.salePriceBaisa}
           size="md"
         />
-        <Stock stock={product.stock} className="mt-1" />
+        <Stock
+          stock={product.stock}
+          onRequest={product.stockOnRequest}
+          className="mt-1"
+        />
         <div className="mt-3 flex gap-2">
           <Button
             className="flex-1 justify-center"
-            disabled={product.stock < 1}
+            disabled={!canOrder(product)}
             onClick={() => cart.add(product)}
           >
-            {product.stock < 1 ? 'Out of stock' : 'Add to cart'}
+            {canOrder(product) ? 'Add to cart' : 'Out of stock'}
           </Button>
           <Button
             variant="secondary"

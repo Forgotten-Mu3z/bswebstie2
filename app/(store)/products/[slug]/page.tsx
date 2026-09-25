@@ -14,6 +14,7 @@ import {
   organizationId,
   pageMetadata,
 } from '@/lib/seo';
+import { instagramPostDate } from '@/lib/source';
 import { Eyebrow, Price, ProductImage, Stock } from '@/components/ui/bits';
 import { JsonLd } from '@/components/ui/json-ld';
 import { ProductActions } from '@/components/store/product-actions';
@@ -66,7 +67,11 @@ export async function generateMetadata({ params }: Props) {
     description: fitDescription([
       product.summary,
       `${product.brand ? `${product.brand} ` : ''}${kind} for ${formatOMR(currentPrice(product))} in Oman.`,
-      product.stock > 0 ? 'In stock now.' : 'Out of stock right now.',
+      product.stockOnRequest
+        ? 'Ask us on WhatsApp for stock.'
+        : product.stock > 0
+          ? 'In stock now.'
+          : 'Out of stock right now.',
     ]),
     path: `/products/${product.slug}`,
     image: shareImage(product),
@@ -82,6 +87,7 @@ export default async function ProductPage({ params }: Props) {
   ]);
   const pageUrl = `${siteUrl}/products/${product.slug}`;
   const typeLabel = partTypeLabel(product.partType);
+  const postedOn = instagramPostDate(product.sourceUrl);
 
   const specs = [
     { label: 'Brand', value: product.brand ?? '—' },
@@ -108,10 +114,15 @@ export default async function ProductPage({ params }: Props) {
       url: pageUrl,
       priceCurrency: 'OMR',
       price: (currentPrice(product) / 1000).toFixed(3),
-      availability:
-        product.stock > 0
-          ? 'https://schema.org/InStock'
-          : 'https://schema.org/OutOfStock',
+      // Left out when stock is only confirmed on request.
+      ...(product.stockOnRequest
+        ? {}
+        : {
+            availability:
+              product.stock > 0
+                ? 'https://schema.org/InStock'
+                : 'https://schema.org/OutOfStock',
+          }),
       seller: { '@id': organizationId(siteUrl) },
     },
   };
@@ -192,11 +203,30 @@ export default async function ProductPage({ params }: Props) {
                 salePriceBaisa={product.salePriceBaisa}
                 size="lg"
               />
-              <Stock stock={product.stock} className="mt-2" />
+              <Stock
+                stock={product.stock}
+                onRequest={product.stockOnRequest}
+                className="mt-2"
+              />
               <p className="mt-3 text-sm text-fg-muted">
                 No online checkout yet. Add to your cart to plan, then ask us on
                 WhatsApp to order.
               </p>
+              {postedOn ? (
+                <p className="mt-2 text-sm text-fg-muted">
+                  Price from{' '}
+                  <a
+                    href={product.sourceUrl!}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-accent underline-offset-4 hover:underline"
+                  >
+                    our Instagram post
+                  </a>{' '}
+                  of {postedOn}. We confirm the current price and stock on
+                  WhatsApp.
+                </p>
+              ) : null}
             </div>
 
             <div className="mt-6">

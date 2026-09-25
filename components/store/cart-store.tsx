@@ -1,7 +1,13 @@
 'use client';
 
 import { createContext, useContext, useEffect, useMemo, useState } from 'react';
-import { currentPrice, formatOMR, type PublicProduct } from '@/lib/products';
+import {
+  canOrder,
+  currentPrice,
+  formatOMR,
+  orderLimit,
+  type PublicProduct,
+} from '@/lib/products';
 import { CartPanels } from './cart-panels';
 
 // Cart and wishlist live on the shopper's device (localStorage). Saved copies
@@ -76,11 +82,13 @@ function describeChanges(saved: CartLine[], fresh: Map<string, PublicProduct>) {
   return saved.flatMap(({ product: old, quantity }) => {
     const now = fresh.get(old.id);
     if (!now) return [`${old.name} is no longer sold and was removed.`];
-    if (now.stock < 1) return [`${now.name} is out of stock and was removed.`];
+    if (!canOrder(now)) return [`${now.name} is out of stock and was removed.`];
     const notes: string[] = [];
-    if (quantity > now.stock)
+    if (quantity > orderLimit(now))
       notes.push(
-        `${now.name}: only ${now.stock} left, so your quantity was lowered.`,
+        now.stockOnRequest
+          ? `${now.name}: your quantity was lowered to ${orderLimit(now)}. Ask us on WhatsApp for more.`
+          : `${now.name}: only ${now.stock} left, so your quantity was lowered.`,
       );
     if (currentPrice(now) !== currentPrice(old))
       notes.push(
@@ -127,8 +135,13 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
         setLines((current) =>
           current.flatMap((line) => {
             const product = fresh.get(line.product.id);
-            return product && product.stock > 0
-              ? [{ product, quantity: Math.min(line.quantity, product.stock) }]
+            return product && canOrder(product)
+              ? [
+                  {
+                    product,
+                    quantity: Math.min(line.quantity, orderLimit(product)),
+                  },
+                ]
               : [];
           }),
         );
@@ -168,16 +181,19 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
         0,
       ),
       add(product, quantity = 1) {
-        if (product.stock < 1) return;
+        if (!canOrder(product)) return;
+        const limit = orderLimit(product);
         const already = inCart(product.id);
         const wanted = already + Math.max(1, quantity);
-        const next = Math.min(product.stock, wanted);
+        const next = Math.min(limit, wanted);
         setNotice(
-          already >= product.stock
-            ? `Your cart already has all ${product.stock} in stock of ${product.name}.`
-            : wanted > product.stock
-              ? `Only ${product.stock} of ${product.name} are in stock. Your cart now has all of them.`
-              : `${product.name} added to your cart.`,
+          wanted <= limit
+            ? `${product.name} added to your cart.`
+            : product.stockOnRequest
+              ? `Your cart can hold up to ${limit} of ${product.name}. Ask us on WhatsApp for more.`
+              : already >= limit
+                ? `Your cart already has all ${limit} in stock of ${product.name}.`
+                : `Only ${limit} of ${product.name} are in stock. Your cart now has all of them.`,
         );
         setLines((current) =>
           current.some((line) => line.product.id === product.id)
@@ -197,7 +213,10 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
             line.product.id === productId
               ? {
                   ...line,
-                  quantity: Math.max(1, Math.min(line.product.stock, quantity)),
+                  quantity: Math.max(
+                    1,
+                    Math.min(orderLimit(line.product), quantity),
+                  ),
                 }
               : line,
           ),

@@ -27,6 +27,7 @@ export type AdminProduct = {
   priceBaisa: number;
   salePriceBaisa: number | null;
   stock: number;
+  stockOnRequest: boolean;
   lowStockThreshold: number;
   status: 'DRAFT' | 'PUBLISHED' | 'HIDDEN';
   featured: boolean;
@@ -54,6 +55,7 @@ function toAdmin(row: Row): AdminProduct {
     salePriceBaisa:
       row.sale_price_baisa === null ? null : Number(row.sale_price_baisa),
     stock: Number(row.stock),
+    stockOnRequest: Boolean(row.stock_on_request),
     lowStockThreshold: Number(row.low_stock_threshold),
     status: row.status as AdminProduct['status'],
     featured: Boolean(row.featured),
@@ -73,6 +75,7 @@ function snapshot(product: AdminProduct | ProductInput) {
     priceBaisa,
     salePriceBaisa,
     stock,
+    stockOnRequest,
     featured,
     imageKey,
   } = product;
@@ -84,6 +87,7 @@ function snapshot(product: AdminProduct | ProductInput) {
     priceBaisa,
     salePriceBaisa,
     stock,
+    stockOnRequest,
     featured,
     imageKey,
   };
@@ -152,6 +156,7 @@ const COLUMNS = [
   'price_baisa',
   'sale_price_baisa',
   'stock',
+  'stock_on_request',
   'low_stock_threshold',
   'status',
   'featured',
@@ -172,6 +177,7 @@ function columnValues(input: ProductInput) {
     input.priceBaisa,
     input.salePriceBaisa,
     input.stock,
+    input.stockOnRequest ? 1 : 0,
     input.lowStockThreshold,
     input.status,
     input.featured ? 1 : 0,
@@ -203,8 +209,10 @@ export async function saveProduct(options: {
     (input.status === 'PUBLISHED' || old?.status === 'PUBLISHED')
   )
     need(access, 'products.publish');
-  if (old ? old.stock !== input.stock : input.stock > 0)
-    need(access, 'inventory.edit');
+  const stockChanged = old
+    ? old.stock !== input.stock || old.stockOnRequest !== input.stockOnRequest
+    : input.stock > 0 || input.stockOnRequest;
+  if (stockChanged) need(access, 'inventory.edit');
 
   const [category, brand, duplicate] = await Promise.all([
     d1
@@ -329,7 +337,7 @@ export async function getOverview() {
           coalesce(sum(status = 'PUBLISHED'), 0) AS published,
           coalesce(sum(status = 'DRAFT'), 0) AS drafts,
           coalesce(sum(status = 'HIDDEN'), 0) AS hidden,
-          coalesce(sum(stock <= low_stock_threshold), 0) AS low_stock
+          coalesce(sum(stock <= low_stock_threshold AND stock_on_request = 0), 0) AS low_stock
         FROM products`,
       )
       .first<{
@@ -342,7 +350,8 @@ export async function getOverview() {
     d1
       .prepare(
         `SELECT id, name, sku, stock, low_stock_threshold FROM products
-        WHERE stock <= low_stock_threshold ORDER BY stock, name LIMIT 8`,
+        WHERE stock <= low_stock_threshold AND stock_on_request = 0
+        ORDER BY stock, name LIMIT 8`,
       )
       .all<{
         id: string;

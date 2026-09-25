@@ -3,7 +3,13 @@
 import clsx from 'clsx';
 import { Heart, Minus, Plus } from 'lucide-react';
 import { useState } from 'react';
-import { formatOMR, currentPrice, type PublicProduct } from '@/lib/products';
+import {
+  canOrder,
+  currentPrice,
+  formatOMR,
+  orderLimit,
+  type PublicProduct,
+} from '@/lib/products';
 import { Button } from '@/components/ui/button';
 import { useCart } from './cart-store';
 import { WhatsAppChooser } from './whatsapp-chooser';
@@ -19,9 +25,9 @@ export function ProductActions({
   const cart = useCart();
   const [quantity, setQuantity] = useState(1);
   const saved = cart.isWishlisted(product.id);
-  const soldOut = product.stock < 1;
-  const clamp = (value: number) =>
-    Math.max(1, Math.min(product.stock || 1, value));
+  const soldOut = !canOrder(product);
+  const limit = Math.max(1, orderLimit(product));
+  const clamp = (value: number) => Math.max(1, Math.min(limit, value));
 
   return (
     <div className="grid gap-3">
@@ -45,7 +51,7 @@ export function ProductActions({
             type="number"
             inputMode="numeric"
             min={1}
-            max={Math.max(1, product.stock)}
+            max={limit}
             value={quantity}
             disabled={soldOut}
             onChange={(event) =>
@@ -56,7 +62,7 @@ export function ProductActions({
           <button
             type="button"
             aria-label="One more"
-            disabled={soldOut || quantity >= product.stock}
+            disabled={soldOut || quantity >= limit}
             onClick={() => setQuantity((q) => clamp(q + 1))}
             className="grid size-12 place-items-center text-fg-muted hover:text-fg disabled:text-fg-subtle"
           >

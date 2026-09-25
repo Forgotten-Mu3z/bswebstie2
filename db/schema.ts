@@ -45,6 +45,10 @@ export const products = sqliteTable(
     priceBaisa: integer('price_baisa').notNull(),
     salePriceBaisa: integer('sale_price_baisa'),
     stock: integer('stock').notNull().default(0),
+    /** Listed without a stock count: customers order and we confirm on WhatsApp. */
+    stockOnRequest: integer('stock_on_request', { mode: 'boolean' })
+      .notNull()
+      .default(false),
     lowStockThreshold: integer('low_stock_threshold').notNull().default(3),
     status: text('status', { enum: ['DRAFT', 'PUBLISHED', 'HIDDEN'] })
       .notNull()
@@ -52,6 +56,8 @@ export const products = sqliteTable(
     featured: integer('featured', { mode: 'boolean' }).notNull().default(false),
     /** "/products/<slug>.webp" (bundled) or "/api/product-images/<uuid>" (R2). */
     imageKey: text('image_key'),
+    /** Where the listing came from, e.g. the store's Instagram post. */
+    sourceUrl: text('source_url'),
     createdAt: timestamp('created_at').notNull(),
     updatedAt: timestamp('updated_at').notNull(),
   },

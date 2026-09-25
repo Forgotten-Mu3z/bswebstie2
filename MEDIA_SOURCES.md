@@ -20,15 +20,7 @@ a manufacturer media-kit image used under its terms, or an image with written pe
 `public/og/default.png` is made from the logo; `public/og/products/*.jpg` are made from
 the product photos below (`npm run brand:assets`), so each has the same rights status as its photo.
 
-## Instagram posts and reels
-
-`public/ig/` (not in git) holds the media of the store's own Instagram account,
-[@blackshark__gaming](https://www.instagram.com/blackshark__gaming/), imported with
-`npm run instagram:import` from the archive collected on 25 September 2026. Each post links
-back to its Instagram original. The posts are the store's own; some designs include product,
-game or brand artwork from manufacturers and publishers.
-
-## Product photos (46)
+## Product photos (133)
 
 Listings without a verified photo (the four generic BLACKSHARK products) use
 `product-photo-needed.svg` until the owner uploads photos of the real items.
@@ -81,3 +73,90 @@ Listings without a verified photo (the four generic BLACKSHARK products) use
 | `western-digital-red-plus-8tb-nas-hdd` | gccgamers.com ([page](https://gccgamers.com/om/product/western-digital-wd80efzx)) | NOT CONFIRMED. Copied from another retailer. Replace with a manufacturer or own photo, or get written permission. |
 | `xpg-lancer-blade-rgb-16gb-ddr5-6000-white` | store.alnabaa.com ([page](https://store.alnabaa.com/ar/products/xpg-lancer-blade-rgb-ddr5-32gb-16gb-x-2-u-dimm-6000mhz-copy)) | NOT CONFIRMED. Copied from another retailer. Replace with a manufacturer or own photo, or get written permission. |
 | `zotac-rtx-5080-solid-core-16gb` | gccgamers.com ([page](https://gccgamers.com/om/product/zotac-gaming-geforce-rtx-5080-solid-core-zt-b50800d2-10p)) | NOT CONFIRMED. Copied from another retailer. Replace with a manufacturer or own photo, or get written permission. |
+| `ea-sports-fc-27` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DdfX2ayIgP3/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `silent-hill-townfall-day-one-edition-ps5` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DdhDwbUolnF/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `hot-wheels-infinite-rush` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DdOF8VuowWe/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `trails-from-zero-trails-to-azure-deluxe-switch-2` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DdOFAhqqzZ4/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `marsupilami-2-salsa-palombia-switch` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DdOEk-GoZye/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `resonance-a-plague-tale-legacy-ps5` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DdN7EVBIUff/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `mortal-shell-2-ps5` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DcROYL5oXKi/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `metal-gear-solid-master-collection-vol-2-day-one` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DcOgGk1IPY_/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `jdm-japanese-drift-master-ps5` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DcLupUsIUUU/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `marvel-tokon-fighting-souls-ps5` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DcLqCa3oqDI/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `beast-of-reincarnation-ps5` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DcLpZeiI7up/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `assassins-creed-black-flag-resynced-launch-edition-ps5` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/Daf4w_riKv6/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `007-first-light-ps5` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DYzsQmNoAAZ/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `directive-8020-deluxe-edition-ps5` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DYk5ww0oDYy/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `forza-horizon-6-xbox-series-x` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DYk3zYnIZQ9/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `saros-ps5` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DYE88CtCKw0/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `invincible-vs-standard-edition-ps5` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DX2NCKNiEvy/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `invincible-vs-argos-exclusive-box-ps5` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DX2NCKNiEvy/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `invincible-vs-collectors-edition-ps5` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DX2NCKNiEvy/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `crimson-desert-day-one-edition-ps5` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DXRpqH4iKfY/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `pragmata-ps5` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DXRo5CDiBMN/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `nioh-3-ps5` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DUYJnsuiLcb/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `nioh-3-steelbook-launch-edition-ps5` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DUYJ0AxiEWj/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `code-vein-2-ps5` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DURZp_JiBFa/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `resident-evil-requiem-deluxe-edition-ps5` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DURZes-iJt0/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `ninja-gaiden-4-ps5` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DQOxuwQCI_S/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `playstation-5-slim-disc-edition` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DYpCbjAoLFJ/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `playstation-5-slim-digital-edition` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DYpCbjAoLFJ/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `dualsense-007-first-light-limited-edition` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DXysNecCKTN/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `gameon-goes22fhd120ips` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DdODk_LoOc_/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `gameon-gomm24fhd200ips` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DdODk_LoOc_/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `gameon-goam24fhd200ips` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DaIJ7S_COrP/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `gameon-goes24fhd144ips` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/Dar8VkDoOqn/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `gameon-goes27fhd120ips` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/Dar8VkDoOqn/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `gameon-goae24qhd180ips` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/Dar8VkDoOqn/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `gameon-gops27qhd180ips` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/Dar8VkDoOqn/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `gameon-goes27qhd120ips` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DaIEHlUCK65/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `gameon-goc49dqhd120-black` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DYzr7Lyo8Iy/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `gameon-goac49dqhd120-white` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DYzr7Lyo8Iy/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `gameon-27-fhd-144hz-gaming-monitor` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DYE_u3vCPXT/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `gameon-gomd27qhd240ips-black` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DXjjZHRCPbZ/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `gameon-goad27qhd240ips-white` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DXjjZHRCPbZ/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `gameon-gops27-180ips` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DXjgXz4iJZl/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `gameon-goc27f180va` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DXUNyPyCNBP/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `gameon-goc24f180va` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DXUNyPyCNBP/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `gameon-goc34wqhd180va` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DVjO6r7CJvJ/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `gameon-goc34wqhd120va` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DP91T-5CC2n/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `gameon-goes24fhd120ips` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DQNE8utiLHC/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `kgaming-vision-forge-v1-27` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DdOALI7I4SB/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `kgaming-orbit-27` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DdOALI7I4SB/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `kgaming-lumin-25` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DdOALI7I4SB/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `kgaming-neo-22` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DdOALI7I4SB/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `twisted-minds-tm24fhd280ips` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DXjkIlGCPjD/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `twisted-minds-tm24fhd180ips` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DXjkIlGCPjD/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `twisted-minds-tm34cwqhdva` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DXZUYK9iFKt/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `twisted-minds-tm22fhd120ips` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DVjQk0xiKTU/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `twisted-minds-tm24fhd144ips` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DSOJb5UCGEY/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `twisted-minds-tm27fhd144ips` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DQNKMSkiLln/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `koorui-g2511p` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DYXQ6v1IHdW/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `koorui-24-fhd-165hz` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DXO9LU0CIIF/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `koorui-27-fhd-165hz` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DXO9LU0CIIF/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `sansui-es-22x3` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DVTzKFKCLBQ/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `xstrike-me-gc-905-gaming-chair` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DaIMgzxCETI/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `divoom-times-gate-digital-clock` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DYzr04_ojV-/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `porodo-gaming-4-in-1-combo` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DYXSGAnoUZV/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `kgaming-racing-foldable-chair` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DXjaCIGCGul/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `kgaming-kgs-001a-nomad-red-black` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DXhDMTmCI19/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `kgaming-kgs-001a-nomad-black` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DXhCrY4CDrD/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `kgaming-kgs-001a-nomad-blue-black` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DXhClYRiFLX/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `kgaming-kgs-001rb-swift-red-black` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DXhC-ykCLZs/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `kgaming-kgs-001gb-swift-green-black` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DXhCzlYiE99/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `kgaming-kgs-002-oasis-green-white` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DXhC56zCE36/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `kgaming-kgs-002-oasis-blue-white` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DXhCgBZiKAP/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `porodo-xcommand-gaming-desk` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DXRq3n1iOw6/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `maono-dm30-rgb-usb-microphone` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DXOyBcSCPRD/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `twisted-minds-tm-mk75-w-keyboard` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DSOL-zoiOjF/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `twisted-minds-tm-mk75-wlpro-keyboard` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DSOLWqqCAmn/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `gameon-go21km-b-keyboard-mouse-combo` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DSOIWs9iIj3/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `gameon-go-5501-monitor-arm` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DSOBPMDiPsv/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `gameon-gok905-infernus-headset` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DSOAnlViDo9/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `fnatic-focus-3-mouse-pad-medium` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DQAY29WiB9m/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `gameon-spy2-850w-bronze-psu` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DSOG7VZiDV-/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `bs-gaming-pc-i5-12400-rtx-3060-ti` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DdiV6AZocJj/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `bs-gaming-pc-i5-14400f-rtx-5070` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DaIKxABiK5B/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `bs-gaming-pc-i5-12400f-rtx-5060` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DYXSJd0I2id/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `bs-gaming-pc-setup-i5-12400f-rtx-5060-monitor` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DVMJfziCPs8/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |
+| `bs-gaming-pc-ryzen-5-7500f-rtx-5060-ti` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DSmUAcRiLiy/)) | The store's own Instagram post (@blackshark__gaming). (no product uses this photo) |

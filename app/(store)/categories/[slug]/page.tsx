@@ -9,8 +9,14 @@ import {
 } from '@/lib/seo';
 import { JsonLd } from '@/components/ui/json-ld';
 import { CatalogView, type Chip } from '@/components/store/catalog-view';
-import { readFilters, type SearchParams } from '@/server/catalog/filters';
 import {
+  CATALOG_PAGE_SIZE,
+  listingHref,
+  readFilters,
+  type SearchParams,
+} from '@/server/catalog/filters';
+import {
+  countProducts,
   findProducts,
   getBrands,
   getCategories,
@@ -37,23 +43,29 @@ const TITLES = [
   (c: string) => `${c} | BLACKSHARK`,
 ];
 
-/** The part-type filter is its own listing (and canonical); other filters are not. */
-function listingPath(slug: string, type: string | undefined) {
-  return type ? `/categories/${slug}?type=${type}` : `/categories/${slug}`;
+/** The part-type filter and page number make their own listing (and canonical); other filters do not. */
+function listingPath(slug: string, type: string | undefined, page = 1) {
+  const query = new URLSearchParams();
+  if (type) query.set('type', type);
+  if (page > 1) query.set('page', String(page));
+  const text = query.toString();
+  return text ? `/categories/${slug}?${text}` : `/categories/${slug}`;
 }
 
 export async function generateMetadata({ params, searchParams }: Props) {
   const category = await findCategory((await params).slug);
   if (!category)
     return { title: 'Category not found', robots: { index: false } };
-  const rawType = (await searchParams).type;
+  const search = await searchParams;
+  const rawType = search.type;
+  const { page } = readFilters(search).values;
   const type =
     typeof rawType === 'string' ? partTypeLabel(rawType, false) : null;
   const name = type ?? category.name;
   return pageMetadata({
-    title: fitTitle(name, TITLES),
+    title: fitTitle(page > 1 ? `${name}, Page ${page}` : name, TITLES),
     description: fitDescription([
-      `Shop ${name.toLowerCase()} at BLACKSHARK in Oman.`,
+      `${page > 1 ? `Page ${page}: ` : ''}Shop ${name.toLowerCase()} at BLACKSHARK in Oman.`,
       type
         ? `Compare ${name.toLowerCase()} by brand, specs and stock.`
         : category.description,
@@ -61,6 +73,7 @@ export async function generateMetadata({ params, searchParams }: Props) {
     path: listingPath(
       category.slug,
       type && typeof rawType === 'string' ? rawType : undefined,
+      page,
     ),
   });
 }
@@ -71,11 +84,14 @@ export default async function CategoryPage({ params, searchParams }: Props) {
   if (!category) notFound();
 
   const { values, query, active } = readFilters(await searchParams);
-  const [products, types, brands] = await Promise.all([
+  const [products, total, types, brands] = await Promise.all([
     findProducts({ ...query, category: slug }),
+    countProducts({ ...query, category: slug }),
     getPartTypeCounts(slug),
     getBrands(),
   ]);
+  const pages = Math.max(1, Math.ceil(total / CATALOG_PAGE_SIZE));
+  if (values.page > pages) notFound();
   const action = `/categories/${slug}`;
   const typeLabel = types.find((type) => type.value === values.type)?.label;
   const chips: Chip[] = types.length
@@ -96,7 +112,11 @@ export default async function CategoryPage({ params, searchParams }: Props) {
     : [];
 
   const siteUrl = await getSiteUrl();
-  const path = listingPath(slug, typeLabel ? values.type : undefined);
+  const path = listingPath(
+    slug,
+    typeLabel ? values.type : undefined,
+    values.page,
+  );
   const listName = typeLabel ?? category.name;
   return (
     <>
@@ -122,6 +142,12 @@ export default async function CategoryPage({ params, searchParams }: Props) {
         description={typeLabel ? undefined : category.description}
         chips={chips}
         products={products}
+        total={total}
+        pagination={{
+          page: values.page,
+          pages,
+          href: (page) => listingHref(action, values, page),
+        }}
         filters={{ values, brands, action, active }}
         empty={
           category.productCount

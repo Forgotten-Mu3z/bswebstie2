@@ -92,7 +92,11 @@ export function CartPage({ siteUrl }: { siteUrl: string }) {
                   size="sm"
                   className="mt-2"
                 />
-                <Stock stock={line.product.stock} className="mt-1" />
+                <Stock
+                  stock={line.product.stock}
+                  onRequest={line.product.stockOnRequest}
+                  className="mt-1"
+                />
               </div>
               <div className="col-span-2 flex items-center justify-between gap-3 sm:col-span-1 sm:flex-col sm:items-end">
                 <p className="font-mono font-semibold tabular">
