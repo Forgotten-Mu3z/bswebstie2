@@ -99,9 +99,9 @@ const supabase = {
 };
 if (!supabase.SUPABASE_URL || !supabase.SUPABASE_PUBLISHABLE_KEY) {
   console.error(
-    'Admin sign-in needs Supabase. Add to .env.deploy:
-  SUPABASE_URL=https://<project>.supabase.co
-  SUPABASE_PUBLISHABLE_KEY=<publishable key>',
+    'Admin sign-in needs Supabase. Add to .env.deploy:\n' +
+      '  SUPABASE_URL=https://<project>.supabase.co\n' +
+      '  SUPABASE_PUBLISHABLE_KEY=<publishable key>',
   );
   process.exit(1);
 }
