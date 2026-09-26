@@ -120,11 +120,36 @@ export function ProductGrid({
   products,
   columns = 'default',
   priorityCount = 0,
+  rail = false,
 }: {
   products: PublicProduct[];
   columns?: 'default' | 'wide';
   priorityCount?: number;
+  /** Phones: one swipeable row instead of a long grid. */
+  rail?: boolean;
 }) {
+  const cells = products.map((product, index) => (
+    <ProductCell
+      key={product.id}
+      product={product}
+      priority={index < priorityCount}
+    />
+  ));
+  if (rail)
+    return (
+      // Same ruled grid from tablets up (utilities, not .ruled, so the phone
+      // layout can be a flex row).
+      <div className="-mx-4 flex snap-x snap-mandatory scroll-px-4 gap-3 overflow-x-auto px-4 pb-2 [scrollbar-width:none] sm:-mx-6 sm:scroll-px-6 sm:px-6 md:mx-0 md:grid md:snap-none md:grid-cols-3 md:gap-px md:overflow-hidden md:rounded-lg md:border md:border-line md:bg-line md:p-0 lg:grid-cols-4 [&::-webkit-scrollbar]:hidden">
+        {cells.map((cell) => (
+          <div
+            key={cell.key}
+            className="flex w-[46%] min-w-40 max-w-60 shrink-0 snap-start overflow-hidden rounded-lg border border-line bg-ink-900 *:flex-1 md:w-auto md:min-w-0 md:max-w-none md:rounded-none md:border-0"
+          >
+            {cell}
+          </div>
+        ))}
+      </div>
+    );
   return (
     <div
       className={clsx(
@@ -134,13 +159,7 @@ export function ProductGrid({
           : 'md:grid-cols-3 lg:grid-cols-4',
       )}
     >
-      {products.map((product, index) => (
-        <ProductCell
-          key={product.id}
-          product={product}
-          priority={index < priorityCount}
-        />
-      ))}
+      {cells}
     </div>
   );
 }

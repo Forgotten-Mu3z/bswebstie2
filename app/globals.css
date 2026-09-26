@@ -35,6 +35,8 @@
   }
   body {
     min-width: 320px;
+    /* viewport-fit=cover: keep content out of a landscape iPhone's notch. */
+    padding-inline: env(safe-area-inset-left) env(safe-area-inset-right);
     background: var(--color-ink-950);
     color: var(--color-fg);
     font-family: var(--font-sans);
