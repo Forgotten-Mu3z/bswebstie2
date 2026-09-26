@@ -8,6 +8,8 @@ import { useEffect, useState } from 'react';
 import { PART_TYPES } from '@/lib/catalog';
 import { itemCount } from '@/lib/products';
 import { Drawer } from '@/components/ui/overlay';
+import { categoryLook, hueStyle } from './category-look';
+import { MobileTabBar } from './mobile-tab-bar';
 import { useShop } from './shop-state';
 import { SearchPalette } from './search-palette';
 
@@ -25,8 +27,7 @@ function Wordmark() {
         priority
         className="size-9 rounded-md sm:size-10"
       />
-      <span className="sr-only sm:hidden">BLACKSHARK home</span>
-      <span className="hidden leading-none sm:block">
+      <span className="leading-none">
         <span className="block text-[15px] font-bold tracking-[0.2em]">
           BLACKSHARK
         </span>
@@ -76,11 +77,12 @@ export function SiteHeader({ categories }: { categories: NavCategory[] }) {
     pathname === href || pathname.startsWith(`${href}/`);
 
   return (
+    <>
     <header className="sticky top-0 z-40 border-b border-line bg-ink-950/90 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-[1400px] items-center gap-2 px-4 sm:gap-4 sm:px-6">
         <button
           type="button"
-          className={clsx(iconButton, 'lg:hidden')}
+          className={clsx(iconButton, 'max-md:hidden lg:hidden')}
           aria-label="Open menu"
           onClick={() => setMenuOpen(true)}
         >
@@ -106,15 +108,7 @@ export function SiteHeader({ categories }: { categories: NavCategory[] }) {
         >
           <button
             type="button"
-            className={clsx(iconButton, 'md:hidden')}
-            aria-label="Search"
-            onClick={() => setSearchOpen(true)}
-          >
-            <Search aria-hidden="true" className="size-5" />
-          </button>
-          <button
-            type="button"
-            className={iconButton}
+            className={clsx(iconButton, 'max-md:hidden')}
             aria-label={`Saved items, ${itemCount(shop.saved.length)}`}
             onClick={() => shop.openPanel('saved')}
           >
@@ -181,15 +175,22 @@ export function SiteHeader({ categories }: { categories: NavCategory[] }) {
           <p className="mt-4 px-3 font-mono text-[11px] uppercase tracking-[0.18em] text-fg-subtle">
             Shop
           </p>
-          {categories.map((category) => (
-            <a
-              key={category.slug}
-              href={`/categories/${category.slug}`}
-              className="flex h-12 items-center rounded-md px-3 hover:bg-ink-800"
-            >
-              {category.name}
-            </a>
-          ))}
+          {categories.map((category) => {
+            const Icon = categoryLook(category.slug).icon;
+            return (
+              <a
+                key={category.slug}
+                href={`/categories/${category.slug}`}
+                style={hueStyle(category.slug)}
+                className="flex h-12 items-center gap-3 rounded-md px-3 hover:bg-ink-800"
+              >
+                <span className="grid size-8 place-items-center rounded-md bg-[color-mix(in_srgb,var(--hue)_16%,transparent)] text-[var(--hue)]">
+                  <Icon aria-hidden="true" className="size-4" />
+                </span>
+                {category.name}
+              </a>
+            );
+          })}
           <a
             href="/deals"
             className="flex h-12 items-center rounded-md px-3 hover:bg-ink-800"
@@ -219,5 +220,10 @@ export function SiteHeader({ categories }: { categories: NavCategory[] }) {
         </nav>
       </Drawer>
     </header>
+    <MobileTabBar
+      onSearch={() => setSearchOpen(true)}
+      onMenu={() => setMenuOpen(true)}
+    />
+    </>
   );
 }

@@ -37,6 +37,8 @@ export async function generateMetadata(): Promise<Metadata> {
 export const viewport: Viewport = {
   themeColor: '#07080b',
   colorScheme: 'dark',
+  // Lets the phone's bottom bar sit clear of the iPhone home indicator.
+  viewportFit: 'cover',
 };
 
 export default function RootLayout({

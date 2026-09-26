@@ -22,6 +22,11 @@ export async function StoreShell({ children }: { children: React.ReactNode }) {
         {children}
       </main>
       <SiteFooter categories={categories} />
+      {/* Room for the phone's bottom bar, so it never covers the footer. */}
+      <div
+        aria-hidden="true"
+        className="h-[calc(4.5rem+env(safe-area-inset-bottom))] md:hidden"
+      />
     </ShopProvider>
   );
 }
