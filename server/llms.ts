@@ -1,5 +1,6 @@
 import { WHATSAPP_CONTACTS } from '@/lib/contacts';
 import { partTypeLabel } from '@/lib/catalog';
+import { BUSINESS } from '@/lib/business';
 import { LEGAL_DOCS } from '@/lib/legal';
 import { currentPrice, formatOMR } from '@/lib/products';
 import { INSTAGRAM_URL } from '@/lib/seo';
@@ -41,6 +42,7 @@ async function header() {
     ...WHATSAPP_CONTACTS.map(
       (contact) => `- WhatsApp: ${contact.name}, ${phone(contact.phone)}`,
     ),
+    ...(BUSINESS.supportEmail ? [`- Email: ${BUSINESS.supportEmail}`] : []),
     `- Instagram: ${INSTAGRAM_URL}`,
     `- [Contact page](${siteUrl}/contact)`,
     '',

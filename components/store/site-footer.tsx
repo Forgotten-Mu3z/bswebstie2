@@ -1,6 +1,6 @@
 import { Camera, MessageCircle } from 'lucide-react';
 import { WHATSAPP_CONTACTS, whatsappLabel, whatsappLink } from '@/lib/contacts';
-import { BUSINESS } from '@/lib/business';
+import { BUSINESS, businessName } from '@/lib/business';
 import { LEGAL_DOCS } from '@/lib/legal';
 import { INSTAGRAM_URL } from '@/lib/seo';
 import type { NavCategory } from './site-header';
@@ -116,8 +116,7 @@ export function SiteFooter({ categories }: { categories: NavCategory[] }) {
             </ul>
           </nav>
           <p className="font-mono text-xs text-fg-subtle">
-            © {new Date().getFullYear()}{' '}
-            {BUSINESS.legalName ?? BUSINESS.tradingName} · {BUSINESS.country}
+            © {new Date().getFullYear()} {businessName()} · {BUSINESS.country}
           </p>
         </div>
       </div>

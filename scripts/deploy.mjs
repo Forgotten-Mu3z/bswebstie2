@@ -139,10 +139,11 @@ else if (missing.length)
         .join('\n'),
   );
 
-// Business details the policy pages leave out until the owner fills them in.
+// Business details the policy pages leave out until the owner fills them in
+// (a null followed by a comment was left out on purpose).
 const unsetDetails = [
   ...readFileSync(join('lib', 'business.ts'), 'utf8').matchAll(
-    /^ {2}(\w+): null,/gm,
+    /^ {2}(\w+): null,$/gm,
   ),
 ].map((match) => match[1]);
 if (unsetDetails.length)

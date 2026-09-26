@@ -199,8 +199,9 @@ maintenance risk.
 
 ## M. Production checklist
 
-- [ ] Fill in `lib/business.ts` (legal name, CR number, address, email,
-      payment methods, delivery, return period if any)
+- [x] Fill in `lib/business.ts` (2026-09-26: name, address, email and refund
+      time supplied; CR number not published by choice; payment and delivery
+      agreed on WhatsApp; no fixed change-of-mind period)
 - [ ] Legal review of `/terms`, `/privacy`, `/refunds`, `/cookies` for Oman;
       then set `governingLaw` and update the dates in `lib/legal.ts`
 - [ ] Confirm product photo rights or replace the photos
@@ -209,6 +210,6 @@ maintenance risk.
 - [ ] Decide retention for the staff audit log and for WhatsApp order records
 - [ ] Confirm Cloudflare log settings
 - [ ] Upgrade vinext and vite in a separate, fully tested change
-- [ ] Add a security email and publish `/.well-known/security.txt`
+- [ ] Publish `/.well-known/security.txt` (a support email now exists)
 - [ ] Staff: phone screen lock and WhatsApp two-step verification
 - [ ] Custom domain; then set `SITE_URL`

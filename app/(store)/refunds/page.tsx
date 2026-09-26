@@ -203,9 +203,12 @@ export default function RefundsPage() {
           body: (
             <p>
               Refunds go back the way you paid where possible, or another way we
-              agree with you. We tell you in the chat when to expect it. If you
-              paid by card or bank transfer, your bank&apos;s own processing
-              time also applies.
+              agree with you.{' '}
+              {BUSINESS.refundTime
+                ? `Once we accept a return, we pay the refund within ${BUSINESS.refundTime}.`
+                : 'We tell you in the chat when to expect it.'}{' '}
+              If you paid by card or bank transfer, your bank may take longer to
+              show it.
             </p>
           ),
         },

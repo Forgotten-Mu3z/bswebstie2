@@ -1,5 +1,4 @@
 import { BUSINESS, businessName } from '@/lib/business';
-import { WHATSAPP_CONTACTS } from '@/lib/contacts';
 import { legalDoc } from '@/lib/legal';
 import { pageMetadata } from '@/lib/seo';
 import {
@@ -21,10 +20,6 @@ export const metadata = pageMetadata({
     'How BLACKSHARK handles information on its website and in WhatsApp orders: no shopper accounts or trackers, and what Cloudflare, WhatsApp and Supabase receive.',
   path: doc.path,
 });
-
-const staffNames = WHATSAPP_CONTACTS.map((contact) => contact.name).join(
-  ' and ',
-);
 
 export default function PrivacyPage() {
   return (
@@ -152,7 +147,8 @@ export default function PrivacyPage() {
               <p>
                 We use this to answer you, confirm prices and stock, arrange
                 payment and delivery or collection, and help with returns and
-                warranty. The chats are handled by {staffNames}.
+                warranty. The chats are handled by our team on the WhatsApp
+                numbers listed on the <a href="/contact">Contact</a> page.
               </p>
               <p>
                 WhatsApp is a service of Meta. How WhatsApp itself handles your

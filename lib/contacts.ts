@@ -3,6 +3,8 @@
 export const WHATSAPP_CONTACTS = [
   { name: 'Munir Al Balushi', phone: '96879970799' },
   { name: 'Bassam Al Balushi', phone: '96871146552' },
+  // Added 2026-09-26 without a person's name: shown as the store's line.
+  { name: 'BLACKSHARK', phone: '96894909974' },
 ] as const;
 
 // api.whatsapp.com instead of the wa.me short link: some DNS services and
