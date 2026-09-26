@@ -93,6 +93,22 @@ export function WhatsAppChooser({
             </li>
           ))}
         </ul>
+        {/* What the shopper should know before sending an order. */}
+        <p className="mt-4 text-xs leading-5 text-fg-subtle">
+          Prices and stock are confirmed in the chat before you pay. WhatsApp
+          (Meta) shares your name and number with us.{' '}
+          <a href="/terms" className="underline hover:text-fg">
+            Terms
+          </a>
+          {' · '}
+          <a href="/refunds" className="underline hover:text-fg">
+            Returns
+          </a>
+          {' · '}
+          <a href="/privacy" className="underline hover:text-fg">
+            Privacy
+          </a>
+        </p>
       </Modal>
     </>
   );

@@ -42,11 +42,12 @@ import { Notice } from '@/components/ui/notice';
 import { WhatsAppChooser } from '@/components/store/whatsapp-chooser';
 import { FpsTable } from '@/components/ui/fps-table';
 import { estimateFps } from '@/lib/fps';
+import { STORAGE_KEYS } from '@/lib/storage-keys';
 
 const CORE_SLOTS = SLOTS.filter((slot) => !slot.optional);
 const EXTRA_SLOTS = SLOTS.filter((slot) => slot.optional);
 
-const STORAGE_KEY = 'bsg-build-v1';
+const STORAGE_KEY = STORAGE_KEYS.build;
 const slotLabel = (slot: Slot) =>
   SLOTS.find((entry) => entry.key === slot)!.label;
 
@@ -305,7 +306,9 @@ export function PcBuilder({
     const query = buildQuery(build);
     window.history.replaceState(null, '', query ? `/build?${query}` : '/build');
     try {
-      localStorage.setItem(STORAGE_KEY, query);
+      // An empty build leaves nothing behind in the browser.
+      if (query) localStorage.setItem(STORAGE_KEY, query);
+      else localStorage.removeItem(STORAGE_KEY);
     } catch {
       // Storage can be blocked; the link still holds the build.
     }

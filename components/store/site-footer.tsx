@@ -1,5 +1,7 @@
 import { Camera, MessageCircle } from 'lucide-react';
 import { WHATSAPP_CONTACTS, whatsappLabel, whatsappLink } from '@/lib/contacts';
+import { BUSINESS } from '@/lib/business';
+import { LEGAL_DOCS } from '@/lib/legal';
 import { INSTAGRAM_URL } from '@/lib/seo';
 import type { NavCategory } from './site-header';
 
@@ -96,9 +98,28 @@ export function SiteFooter({ categories }: { categories: NavCategory[] }) {
         </div>
       </div>
       <div className="border-t border-line">
-        <p className="mx-auto max-w-[1400px] px-4 py-5 font-mono text-xs text-fg-subtle sm:px-6">
-          © {new Date().getFullYear()} BLACKSHARK · Oman
-        </p>
+        <div className="mx-auto flex max-w-[1400px] flex-col gap-3 px-4 py-5 sm:flex-row sm:items-center sm:justify-between sm:px-6">
+          <nav aria-label="Legal">
+            <ul className="flex flex-wrap gap-x-5 gap-y-1">
+              {[...LEGAL_DOCS, { path: '/contact', label: 'Contact' }].map(
+                (doc) => (
+                  <li key={doc.path}>
+                    <a
+                      href={doc.path}
+                      className="inline-flex min-h-9 items-center text-xs text-fg-muted hover:text-fg"
+                    >
+                      {doc.label}
+                    </a>
+                  </li>
+                ),
+              )}
+            </ul>
+          </nav>
+          <p className="font-mono text-xs text-fg-subtle">
+            © {new Date().getFullYear()}{' '}
+            {BUSINESS.legalName ?? BUSINESS.tradingName} · {BUSINESS.country}
+          </p>
+        </div>
       </div>
     </footer>
   );

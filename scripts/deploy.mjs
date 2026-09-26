@@ -138,3 +138,14 @@ else if (missing.length)
         .map((name) => `  npx wrangler secret put ${name} --name ${adminName}`)
         .join('\n'),
   );
+
+// Business details the policy pages leave out until the owner fills them in.
+const unsetDetails = [
+  ...readFileSync(join('lib', 'business.ts'), 'utf8').matchAll(
+    /^ {2}(\w+): null,/gm,
+  ),
+].map((match) => match[1]);
+if (unsetDetails.length)
+  console.warn(
+    `\nNot yet filled in lib/business.ts (the policy pages leave these out): ${unsetDetails.join(', ')}`,
+  );

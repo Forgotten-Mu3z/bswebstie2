@@ -25,28 +25,37 @@ export const ipKey = (ip: string): LockKey => ({
   limit: LIMITS.ip,
 });
 
+// Retention: these rows hold IP addresses, so rows older than a day are
+// removed on every check and every new failure (see the Privacy policy).
+function purgeOld(time: number) {
+  return getD1()
+    .prepare(
+      'DELETE FROM login_failures WHERE window_start < ? AND (locked_until IS NULL OR locked_until < ?)',
+    )
+    .bind(time - 24 * 60 * 60, time);
+}
+
 export async function isLocked(keys: LockKey[]) {
   const names = keys.map(({ key }) => key);
-  const { results } = await getD1()
-    .prepare(
-      `SELECT locked_until FROM login_failures WHERE key IN (${names.map(() => '?').join(', ')})`,
-    )
-    .bind(...names)
-    .all<{ locked_until: number | null }>();
   const time = Math.floor(Date.now() / 1000);
-  return results.some((row) => row.locked_until && row.locked_until > time);
+  const [, lookup] = await getD1().batch<{ locked_until: number | null }>([
+    purgeOld(time),
+    getD1()
+      .prepare(
+        `SELECT locked_until FROM login_failures WHERE key IN (${names.map(() => '?').join(', ')})`,
+      )
+      .bind(...names),
+  ]);
+  return lookup.results.some(
+    (row) => row.locked_until && row.locked_until > time,
+  );
 }
 
 export async function recordFailure(keys: LockKey[]) {
   const d1 = getD1();
   const time = Math.floor(Date.now() / 1000);
   await d1.batch([
-    // Retention: these rows hold IP addresses; keep them one day at most.
-    d1
-      .prepare(
-        'DELETE FROM login_failures WHERE window_start < ? AND (locked_until IS NULL OR locked_until < ?)',
-      )
-      .bind(time - 24 * 60 * 60, time),
+    purgeOld(time),
     ...keys.map(({ key, limit }) =>
       d1
         .prepare(

@@ -14,7 +14,9 @@ Tell the store owner privately. Do not open a public GitHub issue for a security
 | Admin access checks (pages and API) | `server/security/admin.ts` (`requireAdminPage`, `adminRoute`) |
 | Input validation | `server/catalog/validation.ts`, `server/security/http.ts` |
 | Audit trail | `server/security/audit.ts` |
-| Security headers | `next.config.ts`, `public/_headers` |
+| Security headers, Content-Security-Policy | `next.config.ts`, `public/_headers` |
+| Personal data held, and for how long | `docs/privacy-data-inventory.md` |
+| Open audit items | `docs/legal-security-audit.md` |
 
 ## Where secrets live
 

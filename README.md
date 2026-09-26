@@ -157,7 +157,9 @@ Summary (details and incident steps in [SECURITY.md](SECURITY.md)):
   from the same origin. Edits use versions so two people cannot overwrite each other.
 - Every product and photo change is written to an audit log in the same transaction.
 - Uploads: JPG, PNG, WebP or AVIF, max 5 MB, checked by file signature, random names.
-- Security headers on every response; error pages never show details.
+- Security headers on every response, including a Content-Security-Policy that only
+  allows the site's own origin (see `next.config.ts`); error pages never show details.
+- Failed sign-in records (with IP addresses) are deleted after about a day.
 
 ## Product photos
 
@@ -174,8 +176,25 @@ npm run lint
 npm run build
 ```
 
+## Legal pages
+
+`/terms`, `/privacy`, `/refunds`, `/cookies`, `/contact` and `/legal` (store only),
+drafted from what the code actually does and linked from the footer and the order dialog.
+They are **drafts pending legal review for Oman** (see `TODO_LEGAL_REVIEW` comments).
+
+- Business details (legal name, CR number, address, email, return period, payment,
+  delivery, governing law) live in `lib/business.ts`. Unknown values stay `null` and are
+  left out of the pages; `npm run deploy` lists what is still missing. Never fill them with
+  made-up details.
+- Each document's date (= version) is in `lib/legal.ts`; change it when the meaning changes.
+- What data the site handles: [docs/privacy-data-inventory.md](docs/privacy-data-inventory.md).
+  Audit and open items: [docs/legal-security-audit.md](docs/legal-security-audit.md).
+  Licences: [THIRD_PARTY_LICENSES.md](THIRD_PARTY_LICENSES.md).
+- There are no optional cookies or trackers, so there is no consent banner. Anything
+  optional added later must wait for consent and have its origin added to the CSP in
+  `next.config.ts`.
+
 ## Not included yet
 
-Online checkout and payments (orders are taken on WhatsApp), customer accounts, Arabic interface, email confirmation for
-password changes (needs a domain for sending email), and legal pages (terms, privacy,
-refunds). Legal text must come from, or be approved by, the business owner.
+Online checkout and payments (orders are taken on WhatsApp), customer accounts, Arabic
+interface, and email confirmation for password changes (needs a domain for sending email).

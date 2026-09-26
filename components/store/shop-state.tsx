@@ -2,6 +2,7 @@
 
 import { createContext, useContext, useEffect, useMemo, useState } from 'react';
 import type { PublicProduct } from '@/lib/products';
+import { STORAGE_KEYS } from '@/lib/storage-keys';
 import { ShopPanels } from './shop-panels';
 
 // Saved items (kept on the shopper's device) and the quick-view dialog.
@@ -22,9 +23,9 @@ type ShopApi = {
 };
 
 const ShopContext = createContext<ShopApi | null>(null);
-const SAVED_KEY = 'bsg-wishlist-v1';
+const SAVED_KEY = STORAGE_KEYS.saved;
 // The cart was removed; clear what older visits left behind.
-const OLD_CART_KEY = 'bsg-cart-v1';
+const OLD_CART_KEY = STORAGE_KEYS.oldCart;
 
 function isProduct(value: unknown): value is PublicProduct {
   const p = value as Partial<PublicProduct> | null;
@@ -49,7 +50,9 @@ function loadSaved() {
 
 function store(value: PublicProduct[]) {
   try {
-    localStorage.setItem(SAVED_KEY, JSON.stringify(value));
+    // Nothing is kept in the browser until the shopper saves something.
+    if (value.length) localStorage.setItem(SAVED_KEY, JSON.stringify(value));
+    else localStorage.removeItem(SAVED_KEY);
     localStorage.removeItem(OLD_CART_KEY);
   } catch {
     // Private mode or full storage: saved items still work for this visit.

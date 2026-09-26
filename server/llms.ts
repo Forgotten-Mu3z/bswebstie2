@@ -1,5 +1,6 @@
 import { WHATSAPP_CONTACTS } from '@/lib/contacts';
 import { partTypeLabel } from '@/lib/catalog';
+import { LEGAL_DOCS } from '@/lib/legal';
 import { currentPrice, formatOMR } from '@/lib/products';
 import { INSTAGRAM_URL } from '@/lib/seo';
 import { findProducts, getCategories } from '@/server/catalog/public';
@@ -24,7 +25,7 @@ async function header() {
     '## Key pages',
     '',
     `- [Home](${siteUrl}/): featured products, deals and new arrivals`,
-    `- [PC builder](${siteUrl}/build): choose 8 parts step by step; only compatible parts are offered (socket, memory type, board size, power supply)`,
+    `- [PC builder](${siteUrl}/build): choose 8 core parts step by step, plus optional extras; only compatible parts are offered (socket, memory type, board size, power supply)`,
     `- [Deals](${siteUrl}/deals): products whose sale price is below the regular price`,
     `- [All products](${siteUrl}/search): the full catalog with filters`,
     '',
@@ -41,6 +42,13 @@ async function header() {
       (contact) => `- WhatsApp: ${contact.name}, ${phone(contact.phone)}`,
     ),
     `- Instagram: ${INSTAGRAM_URL}`,
+    `- [Contact page](${siteUrl}/contact)`,
+    '',
+    '## Policies',
+    '',
+    ...LEGAL_DOCS.map(
+      (doc) => `- [${doc.title}](${siteUrl}${doc.path}): ${doc.summary}`,
+    ),
     '',
   ];
   return { siteUrl, categories, lines };

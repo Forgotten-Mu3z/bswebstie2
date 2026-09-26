@@ -1,4 +1,5 @@
 import type { MetadataRoute } from 'next';
+import { LEGAL_DOCS } from '@/lib/legal';
 import { getSitemapEntries } from '@/server/catalog/public';
 import { getSiteUrl } from '@/server/site-url';
 
@@ -13,6 +14,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     dates.length
       ? new Date(Math.max(...dates.map((date) => date.getTime())))
       : undefined;
+  const legalUpdated = latest(
+    LEGAL_DOCS.map((doc) => new Date(`${doc.updated}T00:00:00Z`)),
+  );
   const catalogUpdated = latest(
     entries.products.map((product) => product.updatedAt),
   );
@@ -21,7 +25,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     path: string,
     lastModified: Date | undefined,
     priority: number,
-    changeFrequency: 'daily' | 'weekly' = 'daily',
+    changeFrequency: 'daily' | 'weekly' | 'monthly' = 'daily',
   ) => ({ url: `${siteUrl}${path}`, lastModified, changeFrequency, priority });
 
   return [
@@ -42,5 +46,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...entries.products.map((product) =>
       page(`/products/${product.slug}`, product.updatedAt, 0.7, 'weekly'),
     ),
+    // Policies: dated by their own version.
+    ...LEGAL_DOCS.map((doc) =>
+      page(doc.path, new Date(`${doc.updated}T00:00:00Z`), 0.3, 'monthly'),
+    ),
+    page('/legal', legalUpdated, 0.3, 'monthly'),
+    page('/contact', legalUpdated, 0.4, 'monthly'),
   ];
 }
