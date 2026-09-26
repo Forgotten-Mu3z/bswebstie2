@@ -45,18 +45,17 @@ async function loadAccess(user: AdminUser): Promise<AdminAccess> {
   return { user, can: (permission) => granted.has(permission) };
 }
 
-/** For admin pages. Redirects to sign-in or the password page when needed. */
+/** For admin pages. Redirects to sign-in when needed. */
 export async function requireAdminPage(returnTo = '/admin') {
   if (!isAdminSite()) pageNotFound();
   const user = await getAdminUser();
   if (!user) pageRedirect(signInPath(returnTo));
-  if (user.mustChangePassword) pageRedirect('/security?required=1');
   return loadAccess(user);
 }
 
 /**
- * Wraps an admin API handler: admin site only, full 2FA session, no pending
- * temporary password, the given permission, and same-origin for writes.
+ * Wraps an admin API handler: admin site only, full 2FA session, the given
+ * permission, and same-origin for writes.
  */
 export function adminRoute<Context>(
   permission: Permission,
@@ -76,8 +75,6 @@ export function adminRoute<Context>(
         assertSameOrigin(request);
       const user = await getAdminUser();
       if (!user) throw new HttpError(401, 'Sign in again to continue.');
-      if (user.mustChangePassword)
-        throw new HttpError(403, 'Change your temporary password first.');
       const access = await loadAccess(user);
       if (!access.can(permission))
         throw new HttpError(403, 'Your account is not allowed to do this.');

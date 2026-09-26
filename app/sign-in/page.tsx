@@ -24,6 +24,7 @@ const errors: Record<string, string> = {
   locked: 'Too many failed attempts. Wait 15 minutes, then try again.',
   blocked: 'Request blocked. Reload this page and try again.',
   expired: 'Your sign-in expired. Enter your password again.',
+  busy: 'Too many sign-in attempts right now. Wait a minute, then try again.',
   unavailable: 'Sign-in is not available right now. Please try again.',
 };
 
@@ -37,7 +38,7 @@ export default async function SignInPage({ searchParams }: Props) {
   const pending = await getPendingSignIn().catch(() => null);
   if (pending)
     redirect(
-      pageUrl(pending.totpSecret ? '/sign-in/verify' : '/sign-in/setup', {
+      pageUrl(pending.state.factorId ? '/sign-in/verify' : '/sign-in/setup', {
         return_to: returnTo,
       }),
     );
@@ -48,7 +49,13 @@ export default async function SignInPage({ searchParams }: Props) {
       title="Sign in"
       intro="Enter your password. Next you will need a code from your authenticator app."
       error={params.error ? (errors[params.error] ?? errors.invalid) : null}
-      notice={params.signed_out ? 'You are signed out.' : null}
+      notice={
+        params.reset
+          ? 'Password changed. Sign in with your new password.'
+          : params.signed_out
+            ? 'You are signed out.'
+            : null
+      }
     >
       <form
         method="post"
@@ -71,9 +78,17 @@ export default async function SignInPage({ searchParams }: Props) {
           />
         </div>
         <div className="grid gap-2">
-          <label htmlFor="password" className="text-sm font-medium">
-            Password
-          </label>
+          <div className="flex items-baseline justify-between gap-3">
+            <label htmlFor="password" className="text-sm font-medium">
+              Password
+            </label>
+            <a
+              href="/forgot-password"
+              className="-my-2 py-2 text-sm text-accent hover:underline"
+            >
+              Forgot password?
+            </a>
+          </div>
           <input
             id="password"
             name="password"

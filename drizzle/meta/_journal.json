@@ -29,6 +29,20 @@
       "when": 1790372112816,
       "tag": "0003_instagram_products",
       "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1790410649559,
+      "tag": "0004_drop_local_passwords",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "6",
+      "when": 1790410662593,
+      "tag": "0005_supabase_sign_in",
+      "breakpoints": true
     }
   ]
 }

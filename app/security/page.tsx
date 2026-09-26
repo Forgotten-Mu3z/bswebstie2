@@ -17,7 +17,9 @@ const errors: Record<string, string> = {
   match: 'The two new passwords do not match.',
   weak: 'The new password does not meet every rule below.',
   same: 'Choose a password you have not just used.',
-  locked: 'Too many wrong passwords. Wait 15 minutes, then try again.',
+  code: 'That code did not work. Wait for a new code and try again.',
+  locked: 'Too many wrong attempts. Wait 15 minutes, then try again.',
+  busy: 'Too many attempts right now. Wait a minute, then try again.',
   blocked: 'Request blocked. Reload this page and try again.',
   invalid: 'That did not work. Reload this page and try again.',
   unavailable:
@@ -34,16 +36,10 @@ export default async function SecurityPage({ searchParams }: Props) {
   const error = params.error ? (errors[params.error] ?? errors.invalid) : null;
 
   return (
-    <AdminShell email={user.email} nav={!user.mustChangePassword}>
+    <AdminShell email={user.email}>
       <div className="mx-auto max-w-xl">
         <Eyebrow>Account</Eyebrow>
         <h1 className="mt-2 text-3xl font-semibold tracking-tight">Security</h1>
-        {user.mustChangePassword ? (
-          <output className="mt-5 block rounded-md border border-warn/40 bg-warn/10 px-3 py-2 text-sm">
-            You signed in with a temporary password. Choose your own password to
-            open the admin panel.
-          </output>
-        ) : null}
         {params.saved ? (
           <output className="mt-5 block rounded-md border border-ok/30 bg-ok/10 px-3 py-2 text-sm text-ok">
             Password changed. Every other device was signed out.
@@ -66,7 +62,8 @@ export default async function SecurityPage({ searchParams }: Props) {
             Change password
           </h2>
           <p className="mt-1 mb-6 text-sm text-fg-muted">
-            Changing it signs out every other device.
+            Changing it signs out every other device. Forgot it? Sign out and
+            use “Forgot password?” to get an email link.
           </p>
           <PasswordForm email={user.email} />
         </section>
@@ -81,8 +78,8 @@ export default async function SecurityPage({ searchParams }: Props) {
           <p className="mt-1 text-sm leading-6 text-fg-muted">
             <span className="font-medium text-ok">On.</span> Every sign-in asks
             for a code from your authenticator app. If you lose your phone, the
-            store owner can reset it with the{' '}
-            <code className="font-mono">admin:create</code> command.
+            store owner can remove the old app in Supabase; you then add a new
+            one at your next sign-in.
           </p>
         </section>
       </div>

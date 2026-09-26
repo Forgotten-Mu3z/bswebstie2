@@ -11,6 +11,8 @@ export function isAdminSite() {
 export const ADMIN_PATHS = [
   '/admin',
   '/sign-in',
+  '/forgot-password',
+  '/reset-password',
   '/security',
   '/api/admin',
   '/api/auth',

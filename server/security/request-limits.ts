@@ -35,6 +35,8 @@ const RULES: {
       p === '/admin' ||
       p.startsWith('/admin/') ||
       p.startsWith('/sign-in') ||
+      p === '/forgot-password' ||
+      p === '/reset-password' ||
       p === '/security',
   },
   {

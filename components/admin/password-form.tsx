@@ -4,40 +4,25 @@ import clsx from 'clsx';
 import { Check, X } from 'lucide-react';
 import { useState } from 'react';
 import { checkPassword, PASSWORD_MAX } from '@/lib/password-policy';
-import { inputClass, submitClass } from './auth-card';
+import { CodeField, inputClass, submitClass } from './auth-card';
 
-/** Plain form post, with the password rules checked live as you type. */
-export function PasswordForm({ email }: { email: string }) {
-  const [password, setPassword] = useState('');
-  const [confirm, setConfirm] = useState('');
+/** New password + confirmation, with the password rules checked live. */
+export function NewPasswordFields({
+  email,
+  password,
+  confirm,
+  onPassword,
+  onConfirm,
+}: {
+  email: string;
+  password: string;
+  confirm: string;
+  onPassword: (value: string) => void;
+  onConfirm: (value: string) => void;
+}) {
   const checks = checkPassword(password, email);
-  const ready = checks.every((check) => check.ok) && password === confirm;
-
   return (
-    <form method="post" action="/api/auth/password" className="grid gap-5">
-      {/* Lets password managers link the new password to this account. */}
-      <input
-        type="email"
-        name="username"
-        value={email}
-        autoComplete="username"
-        readOnly
-        hidden
-      />
-      <div className="grid gap-2">
-        <label htmlFor="current_password" className="text-sm font-medium">
-          Current password
-        </label>
-        <input
-          id="current_password"
-          name="current_password"
-          type="password"
-          autoComplete="current-password"
-          required
-          maxLength={200}
-          className={inputClass}
-        />
-      </div>
+    <>
       <div className="grid gap-2">
         <label htmlFor="new_password" className="text-sm font-medium">
           New password
@@ -50,7 +35,7 @@ export function PasswordForm({ email }: { email: string }) {
           required
           maxLength={PASSWORD_MAX}
           value={password}
-          onChange={(event) => setPassword(event.target.value)}
+          onChange={(event) => onPassword(event.target.value)}
           aria-describedby="password-rules"
           className={inputClass}
         />
@@ -90,14 +75,67 @@ export function PasswordForm({ email }: { email: string }) {
           required
           maxLength={PASSWORD_MAX}
           value={confirm}
-          onChange={(event) => setConfirm(event.target.value)}
+          onChange={(event) => onConfirm(event.target.value)}
           className={inputClass}
         />
         {confirm && confirm !== password ? (
           <p className="text-sm text-danger">The passwords do not match.</p>
         ) : null}
       </div>
-      <button type="submit" disabled={!ready} className={submitClass}>
+    </>
+  );
+}
+
+export function passwordReady(password: string, confirm: string, email: string) {
+  return (
+    checkPassword(password, email).every((check) => check.ok) &&
+    password === confirm
+  );
+}
+
+/** Change password while signed in: a plain form post. */
+export function PasswordForm({ email }: { email: string }) {
+  const [password, setPassword] = useState('');
+  const [confirm, setConfirm] = useState('');
+
+  return (
+    <form method="post" action="/api/auth/password" className="grid gap-5">
+      {/* Lets password managers link the new password to this account. */}
+      <input
+        type="email"
+        name="username"
+        value={email}
+        autoComplete="username"
+        readOnly
+        hidden
+      />
+      <div className="grid gap-2">
+        <label htmlFor="current_password" className="text-sm font-medium">
+          Current password
+        </label>
+        <input
+          id="current_password"
+          name="current_password"
+          type="password"
+          autoComplete="current-password"
+          required
+          maxLength={200}
+          className={inputClass}
+        />
+      </div>
+      <NewPasswordFields
+        email={email}
+        password={password}
+        confirm={confirm}
+        onPassword={setPassword}
+        onConfirm={setConfirm}
+      />
+      <CodeField label="6-digit code from your authenticator app" />
+      <button
+        type="submit"
+        disabled={!passwordReady(password, confirm, email)}
+        className={submitClass}
+      >
         Change password
       </button>
     </form>

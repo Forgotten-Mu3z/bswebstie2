@@ -3,14 +3,12 @@ import { ExternalLink, LogOut } from 'lucide-react';
 import Image from 'next/image';
 import { AdminNav } from './admin-nav';
 
-/** Frame for signed-in admin pages. `nav` is off while a temporary password must be changed. */
+/** Frame for signed-in admin pages. */
 export function AdminShell({
   email,
-  nav = true,
   children,
 }: {
   email: string;
-  nav?: boolean;
   children: React.ReactNode;
 }) {
   const storeUrl = env.STORE_URL?.replace(/\/+$/, '');
@@ -70,7 +68,7 @@ export function AdminShell({
           </div>
         </div>
         <div className="mx-auto max-w-[1400px] px-4 sm:px-6">
-          {nav ? <AdminNav /> : <div className="h-3" />}
+          <AdminNav />
         </div>
       </header>
       <main

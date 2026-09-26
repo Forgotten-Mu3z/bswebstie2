@@ -3,7 +3,8 @@
 //   admin  the admin panel only (APP_ROLE=admin), on its own address
 //
 // Run after `vinext build` (`npm run deploy` does both).
-// The admin Worker's name comes from ADMIN_WORKER_NAME or the git-ignored
+// The admin Worker's name and its Supabase project (SUPABASE_URL,
+// SUPABASE_PUBLISHABLE_KEY) come from the environment or the git-ignored
 // .env.deploy file, so the admin address is never in the repository.
 // Pass --no-r2 while R2 is not enabled on the Cloudflare account.
 import { spawnSync } from 'node:child_process';
@@ -91,8 +92,26 @@ function deploy(name, vars) {
   process.exit(1);
 }
 
+const setting = (name) => process.env[name] ?? localEnv[name] ?? '';
+const supabase = {
+  SUPABASE_URL: setting('SUPABASE_URL'),
+  SUPABASE_PUBLISHABLE_KEY: setting('SUPABASE_PUBLISHABLE_KEY'),
+};
+if (!supabase.SUPABASE_URL || !supabase.SUPABASE_PUBLISHABLE_KEY) {
+  console.error(
+    'Admin sign-in needs Supabase. Add to .env.deploy:
+  SUPABASE_URL=https://<project>.supabase.co
+  SUPABASE_PUBLISHABLE_KEY=<publishable key>',
+  );
+  process.exit(1);
+}
+
 const storeUrl = deploy(built.name, { APP_ROLE: 'store' });
-deploy(adminName, { APP_ROLE: 'admin', STORE_URL: storeUrl ?? '' });
+deploy(adminName, {
+  APP_ROLE: 'admin',
+  STORE_URL: storeUrl ?? '',
+  ...supabase,
+});
 
 // Retried, so a timed-out request is not reported as "missing secrets".
 let secrets = { ok: false, output: '' };

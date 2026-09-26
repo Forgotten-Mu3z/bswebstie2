@@ -19,7 +19,7 @@ export default async function VerifyPage({ searchParams }: Props) {
   const pending = await getPendingSignIn();
   if (!pending)
     redirect(pageUrl('/sign-in', { error: 'expired', return_to: returnTo }));
-  if (!pending.totpSecret)
+  if (!pending.state.factorId)
     redirect(pageUrl('/sign-in/setup', { return_to: returnTo }));
 
   return (

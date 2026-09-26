@@ -2,10 +2,14 @@ import { notFound, redirect } from 'next/navigation';
 import { renderSVG } from 'uqr';
 import { AuthCard, CodeField, submitClass } from '@/components/admin/auth-card';
 import { pageUrl } from '@/server/security/form-flow';
-import { getPendingSignIn, safeReturnPath } from '@/server/security/sessions';
+import {
+  endSessionById,
+  getPendingSignIn,
+  safeReturnPath,
+} from '@/server/security/sessions';
 import { isAdminSite } from '@/server/security/site';
-import { totpUri } from '@/server/security/totp';
-import { getSetupSecret } from '@/server/security/two-factor';
+import { isRejection } from '@/server/security/supabase';
+import { getSetupFactor } from '@/server/security/two-factor';
 
 export const dynamic = 'force-dynamic';
 export const metadata = {
@@ -22,11 +26,20 @@ export default async function SetupPage({ searchParams }: Props) {
   const pending = await getPendingSignIn();
   if (!pending)
     redirect(pageUrl('/sign-in', { error: 'expired', return_to: returnTo }));
-  if (pending.totpSecret)
+  if (pending.state.factorId)
     redirect(pageUrl('/sign-in/verify', { return_to: returnTo }));
 
-  const secret = await getSetupSecret(pending);
-  const qr = renderSVG(totpUri(secret, pending.email), {
+  const setup = await getSetupFactor(pending).catch((error: unknown) => {
+    if (isRejection(error, 401, 403)) return null;
+    throw error;
+  });
+  if (!setup) {
+    // The Supabase side of this sign-in has ended: start again.
+    await endSessionById(pending.sessionId);
+    redirect(pageUrl('/sign-in', { error: 'expired', return_to: returnTo }));
+  }
+  const { secret, uri } = setup;
+  const qr = renderSVG(uri, {
     pixelSize: 6,
     whiteColor: '#ffffff',
     blackColor: '#07080b',
@@ -105,9 +118,9 @@ export default async function SetupPage({ searchParams }: Props) {
         </li>
       </ol>
       <p className="mt-6 border-t border-line pt-4 text-sm leading-6 text-fg-subtle">
-        Keep this key private. If you lose your phone, the store owner can reset
-        two-factor sign-in with the{' '}
-        <code className="font-mono">admin:create</code> command.
+        Keep this key private. If you lose your phone, the store owner can
+        remove the old app in Supabase, then you add a new one here at your
+        next sign-in.
       </p>
     </AuthCard>
   );

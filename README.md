@@ -6,7 +6,8 @@ security model as version 1, with the code reorganised to be smaller and easier 
 
 Built with React 19, [Vinext](https://github.com/cloudflare/vinext) (Next.js-style routing on Vite),
 TypeScript, Tailwind CSS 4 and Drizzle ORM. Runs on Cloudflare Workers with **D1** (database) and
-**R2** (uploaded photos).
+**R2** (uploaded photos). Admin sign-in uses **Supabase Auth** (passwords, two-factor codes and
+"forgot password" emails).
 
 ## What it does
 
@@ -77,7 +78,8 @@ npm run dev
 ```
 
 `npm run dev` serves the store. The admin only exists when the Worker runs with `APP_ROLE=admin`,
-`ADMIN_EMAILS` and `TOTP_ENCRYPTION_KEY` set (see `.env.example`).
+`ADMIN_EMAILS`, `TOTP_ENCRYPTION_KEY`, `SUPABASE_URL` and `SUPABASE_PUBLISHABLE_KEY` set (see
+`.env.example`).
 
 **Windows:** paths are limited to 260 characters. If the project folder is deep, point local data
 at a short folder: `$env:LOCAL_STATE_DIR = "C:\bsdata"` and pass `--persist-to C:\bsdata` to
@@ -97,7 +99,6 @@ First time:
 npx wrangler login
 npx wrangler d1 create bsgaming            # put the printed database_id in wrangler.jsonc
 npm run db:migrate:remote
-echo ADMIN_WORKER_NAME=<hard-to-guess-name> > .env.deploy
 npm run deploy                             # or deploy:no-r2 until R2 is enabled
 npx wrangler secret put ADMIN_EMAILS --name <admin-worker-name>
 node -e "console.log(require('crypto').randomBytes(32).toString('base64'))" | npx wrangler secret put TOTP_ENCRYPTION_KEY --name <admin-worker-name>
@@ -106,8 +107,27 @@ npm run admin:create -- --email owner@example.com --name "Store owner" --remote
 
 The key is trimmed before use, so a line break added by the shell is harmless.
 
-`admin:create` prints a one-time password. At first sign-in the person scans a QR code with an
-authenticator app, then must choose their own password.
+`.env.deploy` (git-ignored) must hold:
+
+```
+ADMIN_WORKER_NAME=<hard-to-guess-name>
+SUPABASE_URL=https://<project>.supabase.co
+SUPABASE_PUBLISHABLE_KEY=<publishable key>
+```
+
+**Supabase** (admin sign-in), once, in the project's dashboard:
+
+1. Sign up to Supabase with the owner's email: its built-in email service only sends to members
+   of the project's team (at most 2 emails an hour; add your own SMTP later for more).
+2. Authentication → Sign In / Providers → Email: turn **off** "Allow new users to sign up".
+3. Authentication → URL Configuration: set **Site URL** to `https://<admin-address>/reset-password`
+   and add the same address under Redirect URLs.
+4. Authentication → Users → **Invite user** with the owner's email. The invitation link opens the
+   admin site to choose a password; the first sign-in sets up an authenticator app.
+5. Project Settings → API Keys: copy the project URL and the **publishable** key into
+   `.env.deploy`. Never use the secret (service role) key here.
+
+`admin:create` gives an email its role in the admin panel; Supabase holds the password.
 
 **R2** must be enabled once in the Cloudflare dashboard (free up to 10 GB, but Cloudflare asks for
 a payment method), then `npx wrangler r2 bucket create bsgaming-media`. Until then use
@@ -122,12 +142,15 @@ Summary (details and incident steps in [SECURITY.md](SECURITY.md)):
 
 - Separate admin Worker and address; the store has no admin routes at all.
 - At most **two** admin emails (`ADMIN_EMAILS` secret). Removing one ends its sessions at once.
-- Password **and** authenticator code at every sign-in. Codes cannot be reused; secrets are
-  encrypted at rest.
+- Password **and** authenticator code at every sign-in, both checked by Supabase Auth. A code
+  cannot be used twice. The Supabase token between the two steps is encrypted in D1 and signed
+  out as soon as the code is accepted; the browser never sees it.
+- "Forgot password?" emails a reset link (Supabase); the answer is the same for every address,
+  and resetting still needs the authenticator code.
 - `__Host-` session cookie: `HttpOnly`, `Secure`, `SameSite=Strict`; only a hash is stored.
   Password-only sessions last 10 minutes and can only finish 2FA; full sessions 12 hours.
-- Password rules checked on the server; temporary passwords must be changed; changing a
-  password signs out every other device.
+- Password rules checked on the server; changing or resetting a password needs the current
+  password or the emailed link plus a code, and signs out every other device.
 - Lockouts (5 wrong passwords, 5 wrong codes, 20 failures per IP in 15 minutes) and per-IP
   request limits on every endpoint.
 - Every admin request checks the session and role permissions on the server; writes must come

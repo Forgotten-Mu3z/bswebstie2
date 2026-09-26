@@ -78,11 +78,19 @@ export function AuthCard({
   );
 }
 
-export function CodeField() {
+export function CodeField({
+  label = '6-digit code',
+  hint,
+  required = true,
+}: {
+  label?: string;
+  hint?: string;
+  required?: boolean;
+}) {
   return (
     <div className="grid gap-2">
       <label htmlFor="code" className="text-sm font-medium">
-        6-digit code
+        {label}
       </label>
       <input
         id="code"
@@ -91,9 +99,15 @@ export function CodeField() {
         autoComplete="one-time-code"
         pattern="\d{6}"
         maxLength={6}
-        required
+        required={required}
+        aria-describedby={hint ? 'code-hint' : undefined}
         className={`${inputClass} text-center font-mono text-2xl tracking-[0.4em]`}
       />
+      {hint ? (
+        <p id="code-hint" className="text-sm text-fg-subtle">
+          {hint}
+        </p>
+      ) : null}
     </div>
   );
 }

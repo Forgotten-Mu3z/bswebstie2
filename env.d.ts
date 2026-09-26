@@ -12,8 +12,12 @@ declare namespace Cloudflare {
     STORE_URL?: string;
     /** Secret. Comma-separated, at most 2 addresses. */
     ADMIN_EMAILS?: string;
-    /** Secret. Base64 of 32 random bytes; encrypts TOTP secrets. */
+    /** Secret. Base64 of 32 random bytes; encrypts sign-in steps in D1. */
     TOTP_ENCRYPTION_KEY?: string;
+    /** Admin Worker only: Supabase project address (admin sign-in). */
+    SUPABASE_URL?: string;
+    /** Admin Worker only: the project's publishable (anon) key. */
+    SUPABASE_PUBLISHABLE_KEY?: string;
     AUTH_LIMITER?: RateLimit;
     UPLOAD_LIMITER?: RateLimit;
     ADMIN_LIMITER?: RateLimit;

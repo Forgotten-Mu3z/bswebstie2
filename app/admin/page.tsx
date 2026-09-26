@@ -16,6 +16,7 @@ const ACTIONS: Record<string, string> = {
   'account.sign_in': 'signed in',
   'account.two_factor_enabled': 'turned on two-factor sign-in',
   'account.password_changed': 'changed their password',
+  'account.password_reset': 'reset their password by email',
 };
 
 const when = new Intl.DateTimeFormat('en-GB', {

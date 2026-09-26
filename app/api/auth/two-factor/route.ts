@@ -16,12 +16,13 @@ import {
   safeReturnPath,
   startSession,
 } from '@/server/security/sessions';
-import { openSecret, verifyTotp } from '@/server/security/totp';
+import { isRejection, signOut } from '@/server/security/supabase';
+import { checkCode } from '@/server/security/two-factor';
 
 export const dynamic = 'force-dynamic';
 
-// Step 2 of 2: a code from the authenticator app. Confirms a new secret during
-// setup, and is required at every later sign-in.
+// Step 2 of 2: a code from the authenticator app, checked by Supabase.
+// Confirms a new app during setup, and is required at every later sign-in.
 export const POST = formRoute('/sign-in', async (request) => {
   const form = await readForm(request);
   const returnTo = safeReturnPath(form.get('return_to'));
@@ -31,12 +32,18 @@ export const POST = formRoute('/sign-in', async (request) => {
       pageUrl('/sign-in', { error: 'expired', return_to: returnTo }),
     );
 
-  const setup = !pending.totpSecret;
+  const { state } = pending;
+  const setup = !state.factorId;
   const page = setup ? '/sign-in/setup' : '/sign-in/verify';
+  const factorId = state.factorId ?? state.setup?.factorId;
+  if (!factorId)
+    return redirect(pageUrl('/sign-in/setup', { return_to: returnTo }));
+
   const keys = [totpKey(pending.userId), ipKey(clientIp(request))];
   const lockOut = async () => {
     // Too many wrong codes: the pending sign-in is thrown away.
     await endSessionById(pending.sessionId);
+    await signOut(state.token);
     return redirect(
       pageUrl('/sign-in', { error: 'locked', return_to: returnTo }),
       clearedSessionCookie(),
@@ -44,35 +51,32 @@ export const POST = formRoute('/sign-in', async (request) => {
   };
   if (await isLocked(keys)) return lockOut();
 
-  const sealed = setup ? pending.totpPendingSecret : pending.totpSecret;
-  if (!sealed)
-    return redirect(pageUrl('/sign-in/setup', { return_to: returnTo }));
-  const step = await verifyTotp(
-    await openSecret(sealed, pending.userId),
-    form.get('code') ?? '',
-    pending.totpLastStep,
-  );
-  if (step === null) {
+  let verified;
+  try {
+    verified = await checkCode(
+      pending.userId,
+      state.token,
+      factorId,
+      form.get('code') ?? '',
+    );
+  } catch (error) {
+    // The Supabase side of this sign-in has ended: start again.
+    if (!isRejection(error, 401, 403)) throw error;
+    await endSessionById(pending.sessionId);
+    return redirect(
+      pageUrl('/sign-in', { error: 'expired', return_to: returnTo }),
+      clearedSessionCookie(),
+    );
+  }
+  if (!verified) {
     await recordFailure(keys);
     if (await isLocked(keys)) return lockOut();
     return redirect(pageUrl(page, { error: 'code', return_to: returnTo }));
   }
 
+  // This site's own session takes over; the Supabase one is not kept.
+  await signOut(verified.access_token);
   const d1 = getD1();
-  const time = Math.floor(Date.now() / 1000);
-  // The step guard rejects a replayed code even if two requests race.
-  const accepted = await d1
-    .prepare(
-      `UPDATE users SET totp_last_step = ?1,
-        totp_secret = CASE WHEN ?2 = 1 THEN totp_pending_secret ELSE totp_secret END,
-        totp_pending_secret = NULL, updated_at = ?3
-      WHERE id = ?4 AND (totp_last_step IS NULL OR totp_last_step < ?1)`,
-    )
-    .bind(step, setup ? 1 : 0, time, pending.userId)
-    .run();
-  if (accepted.meta.changes !== 1)
-    return redirect(pageUrl(page, { error: 'code', return_to: returnTo }));
-
   await d1.batch([
     d1.prepare('DELETE FROM sessions WHERE id = ?').bind(pending.sessionId),
     auditStatement({
@@ -85,9 +89,5 @@ export const POST = formRoute('/sign-in', async (request) => {
   ]);
   await clearFailures([totpKey(pending.userId)]);
   // A brand-new token for the full session.
-  const cookie = await startSession(pending.userId, true);
-  return redirect(
-    pending.mustChangePassword ? '/security?required=1' : returnTo,
-    cookie,
-  );
+  return redirect(returnTo, await startSession(pending.userId));
 });

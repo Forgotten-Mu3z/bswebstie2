@@ -69,20 +69,17 @@ export const products = sqliteTable(
 
 // ------------------------------------------------------------------ staff --
 
+/**
+ * Admin accounts. Passwords and two-factor apps live in Supabase Auth
+ * (matched by email); roles and permissions live here.
+ */
 export const users = sqliteTable('users', {
   id: text('id').primaryKey(),
   email: text('email').notNull().unique(),
   displayName: text('display_name').notNull().default(''),
-  passwordHash: text('password_hash'),
-  mustChangePassword: integer('must_change_password', { mode: 'boolean' })
-    .notNull()
-    .default(true),
-  passwordChangedAt: timestamp('password_changed_at'),
-  /** AES-GCM sealed with TOTP_ENCRYPTION_KEY, bound to the user id. */
-  totpSecret: text('totp_secret'),
-  totpPendingSecret: text('totp_pending_secret'),
-  /** Last accepted 30-second step, so a code cannot be used twice. */
-  totpLastStep: integer('totp_last_step'),
+  /** Hash of the last two-factor code tried, so it cannot be replayed. */
+  lastCode: text('last_code'),
+  lastCodeAt: timestamp('last_code_at'),
   suspendedAt: timestamp('suspended_at'),
   createdAt: timestamp('created_at').notNull(),
   updatedAt: timestamp('updated_at').notNull(),
@@ -137,6 +134,8 @@ export const sessions = sqliteTable(
     expiresAt: timestamp('expires_at').notNull(),
     /** Null until the 2FA code is accepted; only then is it a full session. */
     mfaVerifiedAt: timestamp('mfa_verified_at'),
+    /** Pending sessions only: the sealed Supabase sign-in step. */
+    signInState: text('sign_in_state'),
   },
   (table) => [index('sessions_user_idx').on(table.userId)],
 );
