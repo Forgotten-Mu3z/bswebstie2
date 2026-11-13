@@ -31,13 +31,35 @@ export type Suggestion = {
   slug: string;
   name: string;
   brand: string | null;
+  categorySlug: string;
   image: string | null;
   priceBaisa: number;
   inStock: boolean;
   onRequest: boolean;
 };
 
-export const PHOTO_NEEDED = '/product-photo-needed.svg';
+// Categories with their own picture in public/placeholders/
+// (scripts/make-placeholders.mjs); anything else gets the plain one.
+const PLACEHOLDER_CATEGORIES = new Set([
+  'pc-components',
+  'gaming-pcs',
+  'gaming-gear',
+  'monitors',
+  'consoles',
+  'games',
+  'collectibles',
+  'repairs-services',
+  'digital-cards',
+]);
+
+/** Shown for a product with no photo yet: its category's icon. */
+export function placeholderImage(categorySlug?: string | null) {
+  return `/placeholders/${
+    categorySlug && PLACEHOLDER_CATEGORIES.has(categorySlug)
+      ? categorySlug
+      : 'product'
+  }.svg`;
+}
 
 type Availability = { stock: number; stockOnRequest?: boolean };
 

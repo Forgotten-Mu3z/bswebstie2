@@ -439,7 +439,9 @@ const brandOf = (item) => {
   if (NO_BRAND.has(item.mapping[0]) || NO_BRAND_SOURCE.has(item.sourceCategory))
     return null;
   if (item.sourceCategory === 'PLAYSTATIONS') return 'Sony';
-  if (item.sourceCategory === 'FUNKO POP') return 'Funko';
+  // The Funko Pop! export also lists Nintendo amiibo figures.
+  if (item.sourceCategory === 'FUNKO POP')
+    return /\bAMIIBO\b/i.test(item.title) ? 'Nintendo' : 'Funko';
   const title = item.title.toUpperCase();
   const chip =
     item.mapping[1] === 'processor' || item.mapping[1] === 'graphics-card';

@@ -4,7 +4,7 @@ import {
   discountPercent,
   formatAmount,
   imageAlt,
-  PHOTO_NEEDED,
+  placeholderImage,
 } from '@/lib/products';
 
 /** "OMR 148.668" with the regular price struck through when on sale. */
@@ -114,7 +114,7 @@ export function ProductImage({
   className,
   decorative = false,
 }: {
-  product: { name: string; image: string | null };
+  product: { name: string; image: string | null; categorySlug?: string };
   size: number;
   sizes?: string;
   priority?: boolean;
@@ -122,7 +122,7 @@ export function ProductImage({
   /** When the product name is already next to it. */
   decorative?: boolean;
 }) {
-  const src = product.image ?? PHOTO_NEEDED;
+  const src = product.image ?? placeholderImage(product.categorySlug);
   const file = src.match(BUNDLED)?.[1];
   return (
     // oxlint-disable-next-line nextjs/no-img-element -- pre-sized files; the Workers image endpoint does not resize

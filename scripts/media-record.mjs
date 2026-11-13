@@ -48,7 +48,7 @@ a manufacturer media-kit image used under its terms, or an image with written pe
 | --- | --- | --- |
 | \`public/blackshark-logo.png\` | Supplied by the store owner (BS Gaming logo) | Owner's brand asset |
 | \`public/icon-32.png\`, \`public/icon-192.png\`, \`public/apple-touch-icon.png\` | Resized copies of the BS Gaming logo (browser-tab and home-screen icons) | Owner's brand asset |
-| \`public/product-photo-needed.svg\` | Created for this project | Project asset |
+| \`public/placeholders/*.svg\` | Created for this project (\`npm run placeholders\`, icons from Lucide, ISC licence) | Project asset |
 
 ## Social share images
 
@@ -57,7 +57,7 @@ the product photos below (\`npm run brand:assets\`), so each has the same rights
 
 ## Product photos (${manifest.length})
 
-Products without a photo use \`product-photo-needed.svg\` until one is added.
+Products without a photo show their category's picture from \`public/placeholders/\` until one is added.
 
 | Product slug | Source | Rights status |
 | --- | --- | --- |

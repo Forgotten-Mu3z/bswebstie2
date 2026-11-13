@@ -9,3 +9,7 @@
 # Share images rarely change: let browsers and Cloudflare keep them a week.
 /og/*
   Cache-Control: public, max-age=604800
+
+# Category pictures for products without a photo (npm run placeholders).
+/placeholders/*
+  Cache-Control: public, max-age=86400

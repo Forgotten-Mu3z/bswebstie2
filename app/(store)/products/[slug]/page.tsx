@@ -1,11 +1,6 @@
 import { notFound } from 'next/navigation';
 import { attributeRows, partTypeLabel } from '@/lib/catalog';
-import {
-  currentPrice,
-  formatOMR,
-  PHOTO_NEEDED,
-  type PublicProduct,
-} from '@/lib/products';
+import { currentPrice, formatOMR, type PublicProduct } from '@/lib/products';
 import {
   breadcrumbLd,
   DEFAULT_OG_IMAGE,
@@ -117,7 +112,8 @@ export default async function ProductPage({ params }: Props) {
     sku: product.sku,
     description: product.summary,
     category: typeLabel ?? product.category,
-    image: `${siteUrl}${product.image ?? PHOTO_NEEDED}`,
+    // Only a real photo: search engines treat a placeholder as a bad image.
+    ...(product.image ? { image: `${siteUrl}${product.image}` } : {}),
     ...(product.brand
       ? { brand: { '@type': 'Brand', name: product.brand } }
       : {}),

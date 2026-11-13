@@ -5,7 +5,7 @@ import { Dialog } from '@base-ui/react/dialog';
 import clsx from 'clsx';
 import { ArrowRight, Search } from 'lucide-react';
 import { useEffect, useId, useRef, useState } from 'react';
-import { formatOMR, PHOTO_NEEDED, type Suggestion } from '@/lib/products';
+import { formatOMR, placeholderImage, type Suggestion } from '@/lib/products';
 
 // Command-palette search: live suggestions, full keyboard support.
 export function SearchPalette({
@@ -142,7 +142,7 @@ export function SearchPalette({
                 >
                   {/* oxlint-disable-next-line nextjs/no-img-element -- tiny thumbnail in a live list */}
                   <img
-                    src={item.image ?? PHOTO_NEEDED}
+                    src={item.image ?? placeholderImage(item.categorySlug)}
                     alt=""
                     width={44}
                     height={44}

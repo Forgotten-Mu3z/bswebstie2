@@ -22,6 +22,7 @@
     "photos:clean": "node scripts/remove-photo-backgrounds.mjs",
     "media:record": "node scripts/media-record.mjs",
     "brand:assets": "node scripts/make-brand-assets.mjs",
+    "placeholders": "node scripts/make-placeholders.mjs",
     "instagram:products": "node scripts/import-instagram-products.mjs",
     "inventory:import": "node scripts/import-inventory.mjs",
     "photos:add": "node scripts/add-product-photos.mjs"
