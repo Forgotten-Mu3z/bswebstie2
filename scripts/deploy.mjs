@@ -72,7 +72,12 @@ function adminAssets() {
 function deploy(name, vars, domain) {
   const config = { ...built, name, vars: { ...built.vars, ...vars } };
   // Cloudflare creates the DNS record and certificate for a custom domain.
-  if (domain) config.routes = [{ pattern: domain, custom_domain: true }];
+  // With routes set, Wrangler turns the workers.dev address off unless asked:
+  // keep it, so old links still arrive (and redirect to the domain).
+  if (domain) {
+    config.routes = [{ pattern: domain, custom_domain: true }];
+    config.workers_dev = true;
+  }
   if (vars.APP_ROLE === 'admin')
     config.assets = { ...built.assets, directory: adminAssets() };
   if (noR2) delete config.r2_buckets;
