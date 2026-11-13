@@ -48,7 +48,7 @@ components/ui        shared pieces (buttons, dialogs, price, stock, notices)
 lib/                 code shared by server and browser (catalog vocabulary, builder rules, prices)
 server/catalog       database queries and validation
 server/security      everything about access: sessions, 2FA, lockouts, limits, audit, headers
-db/, drizzle/        schema and migrations (0001 loads the 50-product catalog)
+db/, drizzle/        schema and migrations (0006 loads the catalog from the shop's stock export)
 proxy.ts             runs first on every request: rate limits and store/admin separation
 ```
 
@@ -166,6 +166,21 @@ Summary (details and incident steps in [SECURITY.md](SECURITY.md)):
 - Security headers on every response, including a Content-Security-Policy that only
   allows the site's own origin (see `next.config.ts`); error pages never show details.
 - Failed sign-in records (with IP addresses) are deleted after about a day.
+
+## Catalog from the stock export
+
+The catalog comes from the shop's stock system export (an `.xlsx` with Item No., Title,
+Total Qty, Price and Category):
+
+```bash
+npm run inventory:import -- "<export.xlsx>" drizzle/<NNNN_name>.sql
+```
+
+This writes `data/inventory.json` and a migration that **replaces every product**. Purchase
+costs in the export are never read. Used items are left out, repairs and services are listed
+without a stock count, items priced 0 become drafts, and PC builder specs are read from model
+names only where the name decides them. Export categories are mapped in the script; a new
+one stops the import until it is added there.
 
 ## Product photos
 

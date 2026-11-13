@@ -43,6 +43,13 @@
       "when": 1790410662593,
       "tag": "0005_supabase_sign_in",
       "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "6",
+      "when": 1794594042519,
+      "tag": "0006_inventory",
+      "breakpoints": true
     }
   ]
 }

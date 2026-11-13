@@ -5,10 +5,11 @@ import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 const manifest = JSON.parse(
   readFileSync('scripts/product-image-manifest.json', 'utf8'),
 );
-const seed = readFileSync('drizzle/0001_catalog.sql', 'utf8');
-// Photos the catalog seed actually points at.
+// Products in the current catalog (scripts/import-inventory.mjs).
 const listed = new Set(
-  [...seed.matchAll(/'\/products\/([a-z0-9-]+)\.webp'/g)].map((m) => m[1]),
+  JSON.parse(readFileSync('data/inventory.json', 'utf8')).products.map(
+    (product) => product.slug,
+  ),
 );
 
 // Default status per source type. Change an entry in `rights` inside the
@@ -56,8 +57,7 @@ the product photos below (\`npm run brand:assets\`), so each has the same rights
 
 ## Product photos (${manifest.length})
 
-Listings without a verified photo (the four generic BLACKSHARK products) use
-\`product-photo-needed.svg\` until the owner uploads photos of the real items.
+Products without a photo use \`product-photo-needed.svg\` until one is added.
 
 | Product slug | Source | Rights status |
 | --- | --- | --- |

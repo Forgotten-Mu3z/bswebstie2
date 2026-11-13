@@ -22,7 +22,8 @@
     "photos:clean": "node scripts/remove-photo-backgrounds.mjs",
     "media:record": "node scripts/media-record.mjs",
     "brand:assets": "node scripts/make-brand-assets.mjs",
-    "instagram:products": "node scripts/import-instagram-products.mjs"
+    "instagram:products": "node scripts/import-instagram-products.mjs",
+    "inventory:import": "node scripts/import-inventory.mjs"
   },
   "dependencies": {
     "@base-ui/react": "1.7.0",

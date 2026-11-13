@@ -7,6 +7,8 @@ import {
   Monitor,
   Package,
   PcCase,
+  Sparkles,
+  Wrench,
   type LucideIcon,
 } from 'lucide-react';
 
@@ -19,6 +21,8 @@ const LOOKS: Record<string, { icon: LucideIcon; hue: string }> = {
   monitors: { icon: Monitor, hue: '#5b9dff' },
   consoles: { icon: Gamepad2, hue: '#ff7ab6' },
   games: { icon: Disc3, hue: '#f3bd55' },
+  collectibles: { icon: Sparkles, hue: '#ff6b6b' },
+  'repairs-services': { icon: Wrench, hue: '#c9d1dc' },
   'digital-cards': { icon: CreditCard, hue: '#ff9f5a' },
 };
 
