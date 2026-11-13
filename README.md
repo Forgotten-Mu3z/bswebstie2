@@ -62,9 +62,10 @@ proxy.ts             runs first on every request: rate limits and store/admin se
   BreadcrumbList and ItemList (categories, deals).
 - `robots.txt` allows search engines and AI crawlers, `sitemap.xml` lists every public page with
   `lastmod`, and `/llms.txt` and `/llms-full.txt` summarise the store for language models.
-- Once a domain is connected, set `SITE_URL` in `wrangler.jsonc` `vars`: canonicals, the sitemap
-  and share links use it, and the store permanently redirects any other address (such as
-  `*.workers.dev`) to it.
+- With `STORE_DOMAIN` set in `.env.deploy` (see Deploying), the deploy attaches that custom
+  domain and sets `SITE_URL` once it answers: canonicals, the sitemap and share links use it, and
+  the store permanently redirects any other address (such as `*.workers.dev`) to it. Local
+  servers have no `SITE_URL`, so they stay on `localhost`.
 
 ## Local development
 
@@ -113,7 +114,12 @@ The key is trimmed before use, so a line break added by the shell is harmless.
 ADMIN_WORKER_NAME=<hard-to-guess-name>
 SUPABASE_URL=https://<project>.supabase.co
 SUPABASE_PUBLISHABLE_KEY=<publishable key>
+STORE_DOMAIN=shop.example.com   # optional: the store's own address
 ```
+
+`STORE_DOMAIN` must be on a domain (zone) in the same Cloudflare account. Cloudflare creates its
+DNS record and certificate; other names on the domain (such as `www`) are not touched. The admin
+keeps its own hard-to-guess `workers.dev` address.
 
 **Supabase** (admin sign-in), once, in the project's dashboard:
 
@@ -133,8 +139,8 @@ SUPABASE_PUBLISHABLE_KEY=<publishable key>
 a payment method), then `npx wrangler r2 bucket create bsgaming-media`. Until then use
 `npm run deploy:no-r2`; everything works except photo uploads, which explain that storage is off.
 
-Links, the sitemap and builder links follow the address the visitor used until `SITE_URL` is set
-(see SEO above).
+Links, the sitemap and builder links follow the address the visitor used until a custom domain
+is set (see SEO above).
 
 ## Security
 

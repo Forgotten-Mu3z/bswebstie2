@@ -6,6 +6,8 @@
 // The admin Worker's name and its Supabase project (SUPABASE_URL,
 // SUPABASE_PUBLISHABLE_KEY) come from the environment or the git-ignored
 // .env.deploy file, so the admin address is never in the repository.
+// STORE_DOMAIN (optional, same places) gives the store its own address, e.g.
+// shop.example.com, as a Cloudflare custom domain on a zone in this account.
 // Pass --no-r2 while R2 is not enabled on the Cloudflare account.
 import { spawnSync } from 'node:child_process';
 import {
@@ -67,8 +69,10 @@ function adminAssets() {
   return '../admin-client';
 }
 
-function deploy(name, vars) {
+function deploy(name, vars, domain) {
   const config = { ...built, name, vars: { ...built.vars, ...vars } };
+  // Cloudflare creates the DNS record and certificate for a custom domain.
+  if (domain) config.routes = [{ pattern: domain, custom_domain: true }];
   if (vars.APP_ROLE === 'admin')
     config.assets = { ...built.assets, directory: adminAssets() };
   if (noR2) delete config.r2_buckets;
@@ -106,10 +110,59 @@ if (!supabase.SUPABASE_URL || !supabase.SUPABASE_PUBLISHABLE_KEY) {
   process.exit(1);
 }
 
-const storeUrl = deploy(built.name, { APP_ROLE: 'store' });
+const storeDomain = setting('STORE_DOMAIN').trim().toLowerCase();
+if (storeDomain && !/^([a-z0-9-]+\.)+[a-z]{2,}$/.test(storeDomain)) {
+  console.error(
+    `STORE_DOMAIN must be a host name like shop.example.com, not "${storeDomain}".`,
+  );
+  process.exit(1);
+}
+const storeSite = storeDomain ? `https://${storeDomain}` : '';
+const answers = async (url) => {
+  try {
+    const response = await fetch(url, {
+      redirect: 'manual',
+      signal: AbortSignal.timeout(10_000),
+    });
+    return response.status === 200;
+  } catch {
+    return false;
+  }
+};
+
+// SITE_URL makes every other address (such as *.workers.dev) redirect to the
+// custom domain, so it is only set once the domain answers: a domain that
+// failed to attach never takes the store offline.
+let storeUrl;
+let attachedFirst = false;
+if (storeSite && !(await answers(`${storeSite}/robots.txt`))) {
+  storeUrl = deploy(built.name, { APP_ROLE: 'store' }, storeDomain);
+  attachedFirst = true;
+  console.log(`Waiting for ${storeDomain} to come online...`);
+  for (let tries = 0; tries < 24; tries++) {
+    if (await answers(`${storeSite}/robots.txt`)) break;
+    await new Promise((resolve) => setTimeout(resolve, 5000));
+  }
+}
+const domainLive =
+  Boolean(storeSite) && (await answers(`${storeSite}/robots.txt`));
+if (storeSite && !domainLive)
+  console.warn(
+    `\n${storeDomain} is not answering yet, so the old address does not redirect to it. Deploy again once it works.`,
+  );
+// Already deployed above with the domain but no redirect: only redeploy to
+// add the redirect once the domain works.
+if (!attachedFirst || domainLive)
+  storeUrl =
+    deploy(
+      built.name,
+      { APP_ROLE: 'store', ...(domainLive ? { SITE_URL: storeSite } : {}) },
+      storeDomain,
+    ) ?? storeUrl;
+if (domainLive) console.log(`Store address: ${storeSite}`);
 deploy(adminName, {
   APP_ROLE: 'admin',
-  STORE_URL: storeUrl ?? '',
+  STORE_URL: (domainLive ? storeSite : storeUrl) ?? '',
   ...supabase,
 });
 
