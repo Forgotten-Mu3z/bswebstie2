@@ -26,6 +26,7 @@ Nothing secret is in this repository. These live only in Cloudflare:
 | --- | --- | --- |
 | `ADMIN_EMAILS` | Admin Worker secret | The (at most two) emails allowed to sign in |
 | `TOTP_ENCRYPTION_KEY` | Admin Worker secret | Encrypts the Supabase token between the password and code steps |
+| `SUPABASE_URL`, `SUPABASE_PUBLISHABLE_KEY` | Admin Worker secrets (uploaded by `npm run deploy`) | Server-to-server calls to Supabase Auth; never sent to browsers |
 | Supabase login | Your Supabase account | Admin passwords, two-factor apps, reset emails |
 | Cloudflare login / API tokens | Your Cloudflare account | Deploying, database, storage |
 
@@ -68,10 +69,11 @@ Set a new key; sign-ins in progress simply start again:
    longer use.
 3. Rotate the encryption key as above, then reset all admin passwords.
 
-**The admin address becomes known**
-The address is not the protection; password, two-factor and the allowlist are. To change it
-anyway: set a new `ADMIN_WORKER_NAME` in `.env.deploy`, redeploy, set the two secrets on the new
-Worker, and delete the old Worker in the dashboard.
+**The admin address**
+The admin is at `ADMIN_DOMAIN` (admin.mu3z.dev), which is public. The address is not the
+protection; password, two-factor, the two-email allowlist, lockouts and rate limits are. In
+Supabase, add `https://admin.mu3z.dev/reset-password` to Authentication > URL Configuration >
+Redirect URLs so reset emails link straight to it (links to the old address still redirect).
 
 **Product data was changed or deleted**
 Check the audit trail on the admin overview. D1 Time Travel can restore the database to any

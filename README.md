@@ -32,7 +32,7 @@ TypeScript, Tailwind CSS 4 and Drizzle ORM. Runs on Cloudflare Workers with **D1
 - **Admin site** (a separate address): overview with counts, low stock and activity, and product
   management with photo upload.
 
-Live store: https://shop.mu3z.dev (the old https://bsgaming.kbdh1243-2.workers.dev redirects there; the admin address is kept out of this repository).
+Live store: https://shop.mu3z.dev and admin: https://admin.mu3z.dev (the old `workers.dev` addresses redirect to them).
 
 Prices are stored as whole **baisa** (1 OMR = 1000 baisa) and shown as `OMR 1,234.500`.
 
@@ -115,11 +115,16 @@ ADMIN_WORKER_NAME=<hard-to-guess-name>
 SUPABASE_URL=https://<project>.supabase.co
 SUPABASE_PUBLISHABLE_KEY=<publishable key>
 STORE_DOMAIN=shop.example.com   # optional: the store's own address
+ADMIN_DOMAIN=admin.example.com  # optional: the admin's own address
 ```
 
-`STORE_DOMAIN` must be on a domain (zone) in the same Cloudflare account. Cloudflare creates its
-DNS record and certificate; other names on the domain (such as `www`) are not touched. The admin
-keeps its own hard-to-guess `workers.dev` address.
+`STORE_DOMAIN` and `ADMIN_DOMAIN` must be on a domain (zone) in the same Cloudflare account.
+Cloudflare creates their DNS records and certificates; other names on the domain (such as `www`)
+are not touched. The old `workers.dev` addresses keep working and redirect to the domains.
+
+The deploy uploads `SUPABASE_URL` and `SUPABASE_PUBLISHABLE_KEY` as encrypted Worker secrets
+(with `--secrets-file`, a temporary file deleted right after), never as plain variables. No key
+is ever sent to browsers: the admin server talks to Supabase itself.
 
 **Supabase** (admin sign-in), once, in the project's dashboard:
 

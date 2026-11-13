@@ -10,14 +10,14 @@ import {
 } from '@/server/security/site';
 
 // Runs before every page and API route:
-//   1. one address for the store: once SITE_URL is set (a custom domain),
-//      any other host, such as *.workers.dev, gets a permanent redirect
+//   1. one address per site: once SITE_URL is set (a custom domain), any
+//      other host, such as *.workers.dev, gets a permanent redirect
 //   2. per-visitor rate limits
 //   3. keeps each site to its own paths (pages and routes check again).
 export async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  const canonical = storeRedirect(request);
+  const canonical = siteRedirect(request);
   if (canonical) {
     await drainSmallBody(request);
     return canonical;
@@ -50,8 +50,10 @@ export async function proxy(request: NextRequest) {
   return response;
 }
 
-function storeRedirect(request: NextRequest) {
-  if (isAdminSite() || !env.SITE_URL) return null;
+// Each Worker has its own SITE_URL (the store's or the admin's domain). The
+// admin cookie is host-only, so signing in happens on the domain itself.
+function siteRedirect(request: NextRequest) {
+  if (!env.SITE_URL) return null;
   const target = new URL(env.SITE_URL);
   if (request.nextUrl.host === target.host) return null;
   const url = new URL(

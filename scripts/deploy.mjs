@@ -4,10 +4,11 @@
 //
 // Run after `vinext build` (`npm run deploy` does both).
 // The admin Worker's name and its Supabase project (SUPABASE_URL,
-// SUPABASE_PUBLISHABLE_KEY) come from the environment or the git-ignored
-// .env.deploy file, so the admin address is never in the repository.
-// STORE_DOMAIN (optional, same places) gives the store its own address, e.g.
-// shop.example.com, as a Cloudflare custom domain on a zone in this account.
+// SUPABASE_PUBLISHABLE_KEY, uploaded as encrypted secrets) come from the
+// environment or the git-ignored .env.deploy file.
+// STORE_DOMAIN and ADMIN_DOMAIN (optional, same places) give each site its own
+// address, e.g. shop.example.com, as a Cloudflare custom domain on a zone in
+// this account.
 // Pass --no-r2 while R2 is not enabled on the Cloudflare account.
 import { spawnSync } from 'node:child_process';
 import {
@@ -69,7 +70,7 @@ function adminAssets() {
   return '../admin-client';
 }
 
-function deploy(name, vars, domain) {
+function deploy(name, vars, domain, secrets) {
   const config = { ...built, name, vars: { ...built.vars, ...vars } };
   // Cloudflare creates the DNS record and certificate for a custom domain.
   // With routes set, Wrangler turns the workers.dev address off unless asked:
@@ -84,8 +85,20 @@ function deploy(name, vars, domain) {
   // Written next to the built config so its relative paths still resolve.
   const file = join('dist', 'server', `wrangler.${vars.APP_ROLE}.json`);
   writeFileSync(file, JSON.stringify(config, null, 2));
+  // Secrets go up encrypted with the same version (never as plain vars). The
+  // file holding them exists only during the upload, readable by this user.
+  const secretsFile = join('dist', 'server', `.secrets-${vars.APP_ROLE}.json`);
+  const args = ['deploy', '--config', file];
+  if (secrets) args.push('--secrets-file', secretsFile);
   for (let attempt = 1; attempt <= 3; attempt++) {
-    const result = wrangler(['deploy', '--config', file]);
+    let result;
+    try {
+      if (secrets)
+        writeFileSync(secretsFile, JSON.stringify(secrets), { mode: 0o600 });
+      result = wrangler(args);
+    } finally {
+      rmSync(secretsFile, { force: true });
+    }
     if (result.ok) {
       // Match this Worker's own address, not a URL printed among its variables.
       const url = result.output.match(
@@ -115,14 +128,18 @@ if (!supabase.SUPABASE_URL || !supabase.SUPABASE_PUBLISHABLE_KEY) {
   process.exit(1);
 }
 
-const storeDomain = setting('STORE_DOMAIN').trim().toLowerCase();
-if (storeDomain && !/^([a-z0-9-]+\.)+[a-z]{2,}$/.test(storeDomain)) {
-  console.error(
-    `STORE_DOMAIN must be a host name like shop.example.com, not "${storeDomain}".`,
-  );
-  process.exit(1);
-}
-const storeSite = storeDomain ? `https://${storeDomain}` : '';
+const domain = (name) => {
+  const host = setting(name).trim().toLowerCase();
+  if (host && !/^([a-z0-9-]+\.)+[a-z]{2,}$/.test(host)) {
+    console.error(
+      `${name} must be a host name like shop.example.com, not "${host}".`,
+    );
+    process.exit(1);
+  }
+  return host;
+};
+const storeDomain = domain('STORE_DOMAIN');
+const adminDomain = domain('ADMIN_DOMAIN');
 const answers = async (url) => {
   try {
     const response = await fetch(url, {
@@ -135,41 +152,57 @@ const answers = async (url) => {
   }
 };
 
-// SITE_URL makes every other address (such as *.workers.dev) redirect to the
-// custom domain, so it is only set once the domain answers: a domain that
-// failed to attach never takes the store offline.
-let storeUrl;
-let attachedFirst = false;
-if (storeSite && !(await answers(`${storeSite}/robots.txt`))) {
-  storeUrl = deploy(built.name, { APP_ROLE: 'store' }, storeDomain);
-  attachedFirst = true;
-  console.log(`Waiting for ${storeDomain} to come online...`);
-  for (let tries = 0; tries < 24; tries++) {
-    if (await answers(`${storeSite}/robots.txt`)) break;
-    await new Promise((resolve) => setTimeout(resolve, 5000));
+// Deploys one site, on its custom domain when one is set. SITE_URL makes every
+// other address (such as *.workers.dev) redirect to the domain, so it is only
+// set once the domain answers: a domain that failed to attach never takes the
+// site offline. `probe` is a path that answers 200 on that site.
+async function deploySite(name, vars, host, probe, secrets) {
+  const site = host ? `https://${host}` : '';
+  let url;
+  let attachedFirst = false;
+  if (site && !(await answers(site + probe))) {
+    url = deploy(name, vars, host, secrets);
+    attachedFirst = true;
+    console.log(`Waiting for ${host} to come online...`);
+    for (let tries = 0; tries < 24; tries++) {
+      if (await answers(site + probe)) break;
+      await new Promise((resolve) => setTimeout(resolve, 5000));
+    }
   }
+  const live = Boolean(site) && (await answers(site + probe));
+  if (site && !live)
+    console.warn(
+      `\n${host} is not answering yet, so the old address does not redirect to it. Deploy again once it works.`,
+    );
+  // Already deployed above with the domain but no redirect: only redeploy to
+  // add the redirect once the domain works.
+  if (!attachedFirst || live)
+    url =
+      deploy(
+        name,
+        { ...vars, ...(live ? { SITE_URL: site } : {}) },
+        host,
+        secrets,
+      ) ?? url;
+  if (live) console.log(`${vars.APP_ROLE} address: ${site}`);
+  return live ? site : url;
 }
-const domainLive =
-  Boolean(storeSite) && (await answers(`${storeSite}/robots.txt`));
-if (storeSite && !domainLive)
-  console.warn(
-    `\n${storeDomain} is not answering yet, so the old address does not redirect to it. Deploy again once it works.`,
-  );
-// Already deployed above with the domain but no redirect: only redeploy to
-// add the redirect once the domain works.
-if (!attachedFirst || domainLive)
-  storeUrl =
-    deploy(
-      built.name,
-      { APP_ROLE: 'store', ...(domainLive ? { SITE_URL: storeSite } : {}) },
-      storeDomain,
-    ) ?? storeUrl;
-if (domainLive) console.log(`Store address: ${storeSite}`);
-deploy(adminName, {
-  APP_ROLE: 'admin',
-  STORE_URL: (domainLive ? storeSite : storeUrl) ?? '',
-  ...supabase,
-});
+
+const storeAddress = await deploySite(
+  built.name,
+  { APP_ROLE: 'store' },
+  storeDomain,
+  '/robots.txt',
+);
+// The Supabase settings are secrets, not plain vars, so they never show in
+// the Cloudflare dashboard or in the deployed configuration.
+await deploySite(
+  adminName,
+  { APP_ROLE: 'admin', STORE_URL: storeAddress ?? '' },
+  adminDomain,
+  '/sign-in',
+  supabase,
+);
 
 // Retried, so a timed-out request is not reported as "missing secrets".
 let secrets = { ok: false, output: '' };
@@ -182,9 +215,12 @@ for (let attempt = 1; attempt <= 3 && !secrets.ok; attempt++)
     '--format',
     'json',
   ]);
-const missing = ['ADMIN_EMAILS', 'TOTP_ENCRYPTION_KEY'].filter(
-  (name) => !secrets.output.includes(`"${name}"`),
-);
+const missing = [
+  'ADMIN_EMAILS',
+  'TOTP_ENCRYPTION_KEY',
+  'SUPABASE_URL',
+  'SUPABASE_PUBLISHABLE_KEY',
+].filter((name) => !secrets.output.includes(`"${name}"`));
 if (!secrets.ok)
   console.warn(
     `\nCould not check the admin Worker's secrets. Check with:\n  npx wrangler secret list --name ${adminName}`,

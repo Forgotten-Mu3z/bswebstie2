@@ -43,6 +43,9 @@ function StatusBadge({ status }: { status: AdminProduct['status'] }) {
   );
 }
 
+/** Rows shown at a time; "Show more" adds this many. */
+const PAGE_SIZE = 50;
+
 const isLow = (product: AdminProduct) =>
   !product.stockOnRequest && product.stock <= product.lowStockThreshold;
 
@@ -121,6 +124,12 @@ export function ProductManager({
         (!filters.lowStock || isLow(product)),
     );
   }, [products, filters]);
+  // Rows are rendered a page at a time: with 1,000+ products, rendering them
+  // all at once is too slow for the server and the phone. Filters search all.
+  const filterKey = JSON.stringify(filters);
+  const [more, setMore] = useState({ key: filterKey, count: PAGE_SIZE });
+  const limit = more.key === filterKey ? more.count : PAGE_SIZE;
+  const visible = shown.slice(0, limit);
 
   function saved(product: AdminProduct, message: string) {
     setProducts((current) =>
@@ -240,7 +249,10 @@ export function ProductManager({
 
       <Notice message={notice} className="mt-4" />
       <p className="mt-4 text-sm text-fg-subtle" aria-live="polite">
-        Showing {shown.length} of {products.length}
+        Showing {visible.length} of {shown.length}
+        {shown.length !== products.length
+          ? ` matching (${products.length} in total)`
+          : ''}
       </p>
 
       {shown.length ? (
@@ -271,7 +283,7 @@ export function ProductManager({
                 </tr>
               </thead>
               <tbody className="divide-y divide-line">
-                {shown.map((product) => (
+                {visible.map((product) => (
                   <tr key={product.id} className="bg-ink-950 hover:bg-ink-900">
                     {/* oxlint-disable-next-line jsx-a11y/control-has-associated-label -- the name and SKU inside are the label */}
                     <th scope="row" className="px-4 py-3 font-normal">
@@ -354,7 +366,7 @@ export function ProductManager({
 
           {/* Phones and tablets: cards */}
           <ul className="mt-3 grid gap-2 md:grid-cols-2 lg:hidden">
-            {shown.map((product) => (
+            {visible.map((product) => (
               <li
                 key={product.id}
                 className="rounded-lg border border-line bg-ink-900 p-3"
@@ -406,6 +418,17 @@ export function ProductManager({
               </li>
             ))}
           </ul>
+          {visible.length < shown.length ? (
+            <Button
+              variant="secondary"
+              className="mt-3 w-full justify-center"
+              onClick={() =>
+                setMore({ key: filterKey, count: limit + PAGE_SIZE })
+              }
+            >
+              Show {Math.min(PAGE_SIZE, shown.length - visible.length)} more
+            </Button>
+          ) : null}
         </>
       ) : (
         <p className="mt-3 rounded-lg border border-line bg-ink-900 p-8 text-center text-fg-muted">
