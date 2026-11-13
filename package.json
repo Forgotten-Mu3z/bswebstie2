@@ -23,7 +23,8 @@
     "media:record": "node scripts/media-record.mjs",
     "brand:assets": "node scripts/make-brand-assets.mjs",
     "instagram:products": "node scripts/import-instagram-products.mjs",
-    "inventory:import": "node scripts/import-inventory.mjs"
+    "inventory:import": "node scripts/import-inventory.mjs",
+    "photos:add": "node scripts/add-product-photos.mjs"
   },
   "dependencies": {
     "@base-ui/react": "1.7.0",

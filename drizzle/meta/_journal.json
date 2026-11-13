@@ -50,6 +50,13 @@
       "when": 1794594042519,
       "tag": "0006_inventory",
       "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "6",
+      "when": 1794594755378,
+      "tag": "0007_photos_1",
+      "breakpoints": true
     }
   ]
 }

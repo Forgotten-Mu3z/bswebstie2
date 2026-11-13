@@ -1,5 +1,40 @@
 [
   {
+    "slug": "asus-mb-prime-h610m-k-d4",
+    "sourcePage": "https://www.asus.com/motherboards-components/motherboards/prime/prime-h610m-k-d4/",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/2fd65e16-7cf6-4cf7-aa38-aae547279334/"
+  },
+  {
+    "slug": "asus-rtx-5060-8gb-oc-white",
+    "sourcePage": "https://eshop.asus.com/us/90yv0n15-mvaa00-asus-dual-geforce-rtxtm-5060-white-oc-edition-8gb-gddr7.html",
+    "imageUrl": "https://eshop.asus.com/media/catalog/product/m/a/main_oc_4.jpg?format=auto&optimize=medium&bg-color=255%2C255%2C255&fit=bounds&height=1000&width=1000&canvas=1000%3A1000"
+  },
+  {
+    "slug": "black-widow-v3",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00377519.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/73/24/LD0005732418_1.jpg"
+  },
+  {
+    "slug": "blackwidow-v3-mini-hyperspeed",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00438169.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/83/80/LD0005838053_1.jpg"
+  },
+  {
+    "slug": "blackwidow-v3-pro",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00375007.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/72/65/LD0005726580_1.jpg"
+  },
+  {
+    "slug": "goes27qhd120ips",
+    "sourcePage": "https://global.microless.com/product/gameon-essential-series-gaming-monitor-27-ips-display-qhd-resolution-120hz-refresh-rate-0-5ms-mprt-response-time-freesync-adaptive-sync-gameplus-technology-black-goes27qhd120ips/",
+    "imageUrl": "https://cdn.microless.com/products/e4722764bce9a34cc4c31b8b59d8df6f-hi.jpg"
+  },
+  {
+    "slug": "i5-13400f",
+    "sourcePage": "https://ipcstore.com/intel-core-i513400f-processor-20-mb-smart-cache-box-5284524",
+    "imageUrl": "https://ipcstore.com/media/catalog/product/1/0/106114142_4669929048.jpg"
+  },
+  {
     "slug": "intel-core-i7-14700f-tray",
     "sourcePage": "https://gccgamers.com/om/product/intel-i7-14700f-tray",
     "imageUrl": "https://cdn.gccgamers.com/media/products/5d07e70a-37fb-4262-8dff-3acc994f10d2.webp"
@@ -8,5 +43,40 @@
     "slug": "koorui-g2511p",
     "sourcePage": "https://www.instagram.com/blackshark__gaming/p/DYXQ6v1IHdW/",
     "rights": "The store's own Instagram post (@blackshark__gaming)."
+  },
+  {
+    "slug": "msi-mb-b650m-p",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00562344.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/05/18/LD0006051850.jpg"
+  },
+  {
+    "slug": "msi-pro-b650m-p",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00562344.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/05/18/LD0006051850.jpg"
+  },
+  {
+    "slug": "ns2-zelda-40th-ann-ed",
+    "sourcePage": "https://www.nintendo.com/us/store/products/nintendo-switch-2-the-legend-of-zelda-40th-anniversary-edition-121642/",
+    "imageUrl": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/ncom/My%20Nintendo%20Store/EN-US/Nintendo%20Switch%202/Hardware/121642-nintendo-switch-2-the-legend-of-zelda-40th-anniversary-edition-package-2000x2000"
+  },
+  {
+    "slug": "pro-x-superlight-2-logitech-black",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00569683.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/06/12/LD0006061283.jpg"
+  },
+  {
+    "slug": "razer-blackshark-v2",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00354041.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/70/19/LD0005701915_1.jpg"
+  },
+  {
+    "slug": "ryzen-5-7500f",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00672497.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/22/48/LD0006224837_0006224838.jpg"
+  },
+  {
+    "slug": "steelseries-kb-apex3",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00293642.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/57/36/LD0005573659_2.jpg"
   }
 ]
