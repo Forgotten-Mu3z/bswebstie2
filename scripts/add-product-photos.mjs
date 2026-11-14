@@ -69,7 +69,7 @@ async function square(input) {
 }
 
 const added = [];
-for (const { slug, imageUrl, sourcePage } of photos) {
+for (const { slug, imageUrl, sourcePage, representative } of photos) {
   try {
     if (!catalog.has(slug)) throw new Error('no product with this slug');
     for (const url of [imageUrl, sourcePage])
@@ -104,7 +104,12 @@ for (const { slug, imageUrl, sourcePage } of photos) {
     await square(input).then((photo) =>
       photo.webp({ quality: 82 }).toFile(`public/products/${slug}.webp`),
     );
-    const entry = { slug, sourcePage, imageUrl };
+    const entry = {
+      slug,
+      sourcePage,
+      imageUrl,
+      ...(representative ? { representative: true } : {}),
+    };
     const at = manifest.findIndex((e) => e.slug === slug);
     if (at >= 0) manifest[at] = entry;
     else manifest.push(entry);
@@ -119,6 +124,16 @@ for (const { slug, imageUrl, sourcePage } of photos) {
 
 manifest.sort((a, b) => a.slug.localeCompare(b.slug));
 writeFileSync(manifestFile, `${JSON.stringify(manifest, null, 2)}\n`);
+// The product page says when a photo shows the kind of product rather than
+// the exact item.
+writeFileSync(
+  'lib/representative-photos.json',
+  `${JSON.stringify(
+    manifest.filter((e) => e.representative).map((e) => e.slug),
+    null,
+    2,
+  )}\n`,
+);
 // Link every listed product that has a photo, including ones saved by an
 // earlier run whose download failed this time.
 const linked = photos

@@ -19,6 +19,9 @@ import { ProductGrid } from '@/components/store/product-cell';
 import { Section } from '@/components/store/section';
 import { getProduct, getRelated } from '@/server/catalog/public';
 import { getSiteUrl } from '@/server/site-url';
+// Products whose photo shows the same kind of product rather than the exact
+// item (written by scripts/add-product-photos.mjs).
+import representativePhotos from '@/lib/representative-photos.json';
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -190,6 +193,12 @@ export default async function ProductPage({ params }: Props) {
                 />
               </div>
             </div>
+            {representativePhotos.includes(product.slug) ? (
+              <p className="mt-2 text-xs text-fg-subtle">
+                Photo shows this type of product. The exact item may look
+                slightly different.
+              </p>
+            ) : null}
           </div>
 
           <div>

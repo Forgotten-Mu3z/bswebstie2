@@ -15,6 +15,17 @@
     "imageUrl": "https://dlcdnwebimgs.asus.com/gain/2fd65e16-7cf6-4cf7-aa38-aae547279334/"
   },
   {
+    "slug": "asus-prime-rtx-5080-16gb-oc-black",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00736307.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/20/20/LD0006202046_0006338090.jpg",
+    "representative": true
+  },
+  {
+    "slug": "asus-rtx-5060-8-gb-oc",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00681083.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/24/04/LD0006240468.jpg"
+  },
+  {
     "slug": "asus-rtx-5060-8gb-oc-white",
     "sourcePage": "https://eshop.asus.com/us/90yv0n15-mvaa00-asus-dual-geforce-rtxtm-5060-white-oc-edition-8gb-gddr7.html",
     "imageUrl": "https://eshop.asus.com/media/catalog/product/m/a/main_oc_4.jpg?format=auto&optimize=medium&bg-color=255%2C255%2C255&fit=bounds&height=1000&width=1000&canvas=1000%3A1000"
@@ -120,6 +131,17 @@
     "imageUrl": "https://cdn.gccgamers.com/media/products/5d07e70a-37fb-4262-8dff-3acc994f10d2.webp"
   },
   {
+    "slug": "kingston-2tb-m-2",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00630082.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/15/76/LD0006157669.jpg",
+    "representative": true
+  },
+  {
+    "slug": "kingston-ssd-500gb-nv3",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00630080.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/15/76/LD0006157658.jpg"
+  },
+  {
     "slug": "koorui-g2511p",
     "sourcePage": "https://www.instagram.com/blackshark__gaming/p/DYXQ6v1IHdW/",
     "rights": "The store's own Instagram post (@blackshark__gaming)."
@@ -165,6 +187,11 @@
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/05/18/LD0006051850.jpg"
   },
   {
+    "slug": "msi-rtx-5060-8gb-2x-oc",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00683080.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/24/19/LD0006241951.jpg"
+  },
+  {
     "slug": "nintendo-switch-2-uk",
     "sourcePage": "https://www.nintendo.com/us/store/products/nintendo-switch-2-system-123669/",
     "imageUrl": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/ncom/My%20Nintendo%20Store/EN-US/Nintendo%20Switch%202/Hardware/123669-nintendo-switch-2-package-front-2000x2000"
@@ -175,9 +202,19 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202607/2321/c7c534e1e9b24ccf7ff11c429948f31494ccce402b452647.png"
   },
   {
+    "slug": "ns-metal-gear-vol-2",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10009075",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202601/2201/10c1fc1cb379073791df85ad3bd235930896bfa9b20fa1f1.png"
+  },
+  {
     "slug": "ns2-fc27",
     "sourcePage": "https://store.playstation.com/en-us/concept/10017332",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202607/2321/c7c534e1e9b24ccf7ff11c429948f31494ccce402b452647.png"
+  },
+  {
+    "slug": "ns2-metal-gear-vol-2",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10009075",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202601/2201/10c1fc1cb379073791df85ad3bd235930896bfa9b20fa1f1.png"
   },
   {
     "slug": "ns2-resident-evil-requiem",
@@ -225,6 +262,11 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202407/0401/670c294ded3baf4fa11068db2ec6758c63f7daeb266a35a1.png"
   },
   {
+    "slug": "ps4-resident-evil-biohazard",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0102-PPSA04400_00-BH70000000000001",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202206/0207/V6IViuKogBMRtajqjnYrcj0e.png"
+  },
+  {
     "slug": "ps5-a-plague-tale-requim",
     "sourcePage": "https://store.playstation.com/en-us/product/UP4133-PPSA05366_00-APLAGUEOUTBURST0",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202106/1717/xIQOO3Mo5YMnIm81qkH3y5kJ.png"
@@ -238,6 +280,11 @@
     "slug": "ps5-assasins-black-flag-launch-edition",
     "sourcePage": "https://store.playstation.com/en-us/product/EP0001-PPSA28183_00-GAME000000000000",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202603/1215/0962bc91a4952e6433367fcfec38b7e0655c6bd29b431712.png"
+  },
+  {
+    "slug": "ps5-beast-of-reincaration",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10014719",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202603/2622/90ec8c84dd460708d922d6693ef8c61b3b0443db0b636b23.png"
   },
   {
     "slug": "ps5-cod-mw4",
@@ -265,6 +312,11 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202208/1012/V6WJkRhfNIQ3ePfAmrLSfGng.png"
   },
   {
+    "slug": "ps5-directive-8020",
+    "sourcePage": "https://store.playstation.com/en-us/product/EP8253-PPSA16384_00-SMGDARKPICTURESE",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202610/1908/bb604475a8c89fab4bfe29dfd90f560bd2170ade8b3ff678.png"
+  },
+  {
     "slug": "ps5-edge-white",
     "sourcePage": "https://www.playstation.com/en-us/accessories/dualsense-edge-wireless-controller/",
     "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/DualSense-Edge-image-block-01-en-24aug22?$1600px$"
@@ -275,6 +327,11 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202607/2321/c7c534e1e9b24ccf7ff11c429948f31494ccce402b452647.png"
   },
   {
+    "slug": "ps5-flight-simulator",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP6312-PPSA23943_00-FLIGHTSIM2024STA",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202509/1814/8ed0a9e5f23ed173881e2e21e259eac99a2457994f059b6c.png"
+  },
+  {
     "slug": "ps5-gta-v",
     "sourcePage": "https://store.playstation.com/en-us/product/UP1004-PPSA03420_00-GTAVCROSSGENBUND",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202203/1409/oltI7Zc96usbdvhVVXcV1EAi.png"
@@ -283,6 +340,16 @@
     "slug": "ps5-halo-campaign-evolved",
     "sourcePage": "https://store.playstation.com/en-us/concept/10013884",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202510/1321/a0d52445fcb5d96d66a361b6759d1b8b959c4644cea70714.png"
+  },
+  {
+    "slug": "ps5-hell-is-us",
+    "sourcePage": "https://store.playstation.com/en-us/product/EP6665-PPSA09259_00-HIU0000000000000",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202505/1208/881d62059f98b7d5191eae48029004d5052df238da708d5b.png"
+  },
+  {
+    "slug": "ps5-hell-is-us-deluxe-edition",
+    "sourcePage": "https://store.playstation.com/en-us/product/EP6665-PPSA09259_00-HIU0000000000000",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202505/1208/881d62059f98b7d5191eae48029004d5052df238da708d5b.png"
   },
   {
     "slug": "ps5-horizon-2-forbidden-west",
@@ -298,6 +365,11 @@
     "slug": "ps5-invincible-vs-collector-s-edition",
     "sourcePage": "https://store.playstation.com/en-us/product/UP2908-PPSA30568_00-INVINCIBLEVSMAIN",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202512/0223/1914db8ba62ff41798d0a89159d4028d927fe5b1e492dc67.png"
+  },
+  {
+    "slug": "ps5-jdm-japanese-drift-master",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10017347",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202609/0912/56cc93780fe618db7e4723f5837fbbf2eb2035fa0409fca5.png"
   },
   {
     "slug": "ps5-js-blk",
@@ -370,9 +442,19 @@
     "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/dualsense-controller-product-thumbnail-01-en-14sep21?$1600px$"
   },
   {
+    "slug": "ps5-lords-of-the-fallen",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP4321-PPSA07064_00-4092020589534297",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202308/2307/5b5caedff1afc1f8e36bafb49abe2a55baf873e0fd84fcd8.png"
+  },
+  {
     "slug": "ps5-marvels-wolverine",
     "sourcePage": "https://store.playstation.com/en-us/product/UP9000-PPSA03671_00-MARVELSWOLVERINE",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202605/2215/a69481c5fa50fe19f42896d84fb7cbf37ab8646801a93322.png"
+  },
+  {
+    "slug": "ps5-metal-gear-vol-2-noramal",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10009075",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202601/2201/10c1fc1cb379073791df85ad3bd235930896bfa9b20fa1f1.png"
   },
   {
     "slug": "ps5-minecraft",
@@ -380,9 +462,19 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202407/0401/670c294ded3baf4fa11068db2ec6758c63f7daeb266a35a1.png"
   },
   {
+    "slug": "ps5-minecraft-dungeons-ii-deluxe",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10008220",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202605/1915/219f09639385755f13a1ed8475e789e255e9b0cda4d3d236.png"
+  },
+  {
     "slug": "ps5-mortal-kombat-11-ultimate",
     "sourcePage": "https://store.playstation.com/en-us/product/UP1018-PPSA01617_00-MK11ULTIMATEKOLL",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202010/0822/SbTOirUJUZ3oNQG0eGDZAuCr.png"
+  },
+  {
+    "slug": "ps5-mortal-kombat-legacy-collection",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP7818-PPSA28068_00-0815314276314981",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202506/0417/5ab2b91ba26e152b7e6e5010a1ad7bd234dd75c8aa62d64c.png"
   },
   {
     "slug": "ps5-my-hero-academia-all-justice",
@@ -415,6 +507,11 @@
     "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/PULSE-Elite-headset-thumbnail-02-en-12sep23?$1600px$"
   },
   {
+    "slug": "ps5-resident-evil-7-biohazard",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0102-PPSA04400_00-BH70000000000001",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202206/0207/V6IViuKogBMRtajqjnYrcj0e.png"
+  },
+  {
     "slug": "ps5-resident-evil-requiem-3d",
     "sourcePage": "https://store.playstation.com/en-us/product/UP0102-PPSA30803_00-REREQUIEM0000000",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202512/1205/79661d7a2bdb9784749b4e57e1456ca89f7ac7bed8615aee.png"
@@ -430,6 +527,11 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202512/1205/79661d7a2bdb9784749b4e57e1456ca89f7ac7bed8615aee.png"
   },
   {
+    "slug": "ps5-resident-evill-biohazard",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0102-PPSA04400_00-BH70000000000001",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202206/0207/V6IViuKogBMRtajqjnYrcj0e.png"
+  },
+  {
     "slug": "ps5-resonance-a-plague-tale-legacy",
     "sourcePage": "https://store.playstation.com/en-us/product/EP4133-PPSA30601_00-RESONANCEAPLAGUE",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202605/1510/346857c01378e194d77def3f3029d79489509c541aa761d6.png"
@@ -438,6 +540,11 @@
     "slug": "ps5-spider-man-miles-morales",
     "sourcePage": "https://store.playstation.com/en-us/concept/10000649",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202008/1020/T45iRN1bhiWcJUzST6UFGBvO.png"
+  },
+  {
+    "slug": "ps5-the-adventures-of-elliot",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0082-PPSA32193_00-MILLENNIUMTALEUP",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202601/1912/9cddb60efc374d029ced0e159d1db065b48b79e0fc63a704.png"
   },
   {
     "slug": "ps5-the-blood-of-dawnwalker-collectors-edition",
@@ -478,6 +585,12 @@
     "slug": "steelseries-kb-apex3",
     "sourcePage": "https://www.ldlc.com/en/product/PB00293642.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/57/36/LD0005573659_2.jpg"
+  },
+  {
+    "slug": "wd-1tb-m-2-nvme",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00561779.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/16/14/LD0006161406.jpg",
+    "representative": true
   },
   {
     "slug": "wd-blue-tm-sa510-2tb",
