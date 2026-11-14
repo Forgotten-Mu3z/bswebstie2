@@ -197,9 +197,55 @@
     "imageUrl": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/ncom/My%20Nintendo%20Store/EN-US/Nintendo%20Switch%202/Hardware/123669-nintendo-switch-2-package-front-2000x2000"
   },
   {
+    "slug": "ns-2-hitman-signature-edition",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP4572-PPSA01768_00-0000000000000WOA",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202610/2311/b8eef1ed41e1a72df5174894082790fd23a115e6fe73eaf2.png",
+    "representative": true
+  },
+  {
+    "slug": "ns-2-kirby-and-the-forgotten-land",
+    "sourcePage": "https://www.nintendo.com/us/store/products/kirby-and-the-forgotten-land-switch/",
+    "imageUrl": "https://assets.nintendo.com/image/upload/c_crop,w_0.45,h_0.8,g_center/c_scale,w_1080/q_auto/f_auto/store/software/switch/70010000046405/d1cf83dea46094b85247f40ca30ea4557730a319be0bfe544a4fa929144cf6c2"
+  },
+  {
+    "slug": "ns-donkey-kong-country-returns-hd",
+    "sourcePage": "https://www.nintendo.com/us/store/products/donkey-kong-country-returns-hd-switch/",
+    "imageUrl": "https://assets.nintendo.com/image/upload/c_crop,w_0.45,h_0.8,g_center/c_scale,w_1080/q_auto/f_auto/store/software/switch/70010000084604/50b3b71a75022699ab39d631df7a6b1571df102f96d5f10e6267cbecadfa4cd6"
+  },
+  {
     "slug": "ns-fc27",
     "sourcePage": "https://store.playstation.com/en-us/concept/10017332",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202607/2321/c7c534e1e9b24ccf7ff11c429948f31494ccce402b452647.png"
+  },
+  {
+    "slug": "ns-final-fantasy-x-x-2",
+    "sourcePage": "https://www.nintendo.com/us/store/products/final-fantasy-x-x-2-hd-remaster-switch/",
+    "imageUrl": "https://assets.nintendo.com/image/upload/c_fill,w_1080,h_1080/q_auto/f_auto/store/software/switch/70010000015381/d0268be3a717ed2ded03fa77aea451e4cb0e95045ad80da3a726439fe258eb88"
+  },
+  {
+    "slug": "ns-kirby-and-the-forgotten-land",
+    "sourcePage": "https://www.nintendo.com/us/store/products/kirby-and-the-forgotten-land-switch/",
+    "imageUrl": "https://assets.nintendo.com/image/upload/c_crop,w_0.45,h_0.8,g_center/c_scale,w_1080/q_auto/f_auto/store/software/switch/70010000046405/d1cf83dea46094b85247f40ca30ea4557730a319be0bfe544a4fa929144cf6c2"
+  },
+  {
+    "slug": "ns-luigis-masnsion-3",
+    "sourcePage": "https://www.nintendo.com/us/store/products/luigis-mansion-3-switch/",
+    "imageUrl": "https://assets.nintendo.com/image/upload/c_fill,w_1080,h_1080/q_auto/f_auto/store/software/switch/70010000001620/2b166fb3197dacfde1d939acd6a976b9fbe3b1a32c54f9f0d2c8d23efb22412d"
+  },
+  {
+    "slug": "ns-mario-rabbids-kingdom-battle",
+    "sourcePage": "https://www.nintendo.com/us/store/products/mario-plus-rabbids-kingdom-battle-switch/",
+    "imageUrl": "https://assets.nintendo.com/image/upload/c_fill,w_1080,h_1080/q_auto/f_auto/store/software/switch/70010000000819/c0544d71c50c0595b8589451e9fc8b2deaf5cab52415202e0585e137fbe3d5fb"
+  },
+  {
+    "slug": "ns-mario-rabbids-sparks-of-hope",
+    "sourcePage": "https://www.nintendo.com/us/store/products/mario-plus-rabbids-sparks-of-hope-switch/",
+    "imageUrl": "https://assets.nintendo.com/image/upload/c_crop,w_0.45,h_0.8,g_center/c_scale,w_1080/q_auto/f_auto/store/software/switch/70010000035797/f3dc6aa2e25ab6d713ac5da17e90ce676dfadf6a0b8fefb37b8b5159d89fc36c"
+  },
+  {
+    "slug": "ns-mario-vs-donkey-kong",
+    "sourcePage": "https://www.nintendo.com/us/store/products/mario-vs-donkey-kong-switch/",
+    "imageUrl": "https://assets.nintendo.com/image/upload/c_crop,w_0.45,h_0.8,g_center/c_scale,w_1080/q_auto/f_auto/store/software/switch/70010000072191/2fda60f3007987817be456876e7755f5120522a75e477961fbb622fd32f9e588"
   },
   {
     "slug": "ns-metal-gear-vol-2",
@@ -207,9 +253,79 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202601/2201/10c1fc1cb379073791df85ad3bd235930896bfa9b20fa1f1.png"
   },
   {
+    "slug": "ns-pikmin-4",
+    "sourcePage": "https://www.nintendo.com/us/store/products/pikmin-4-switch/",
+    "imageUrl": "https://assets.nintendo.com/image/upload/c_crop,w_0.45,h_0.8,g_center/c_scale,w_1080/q_auto/f_auto/store/software/switch/70010000005308/43af89ed5bd76ac5ec6b367b4b53092f8bf94a1d1312fdfc1d4664329fd5077b"
+  },
+  {
     "slug": "ns-sonic-super-stars",
     "sourcePage": "https://store.playstation.com/en-us/product/UP0177-PPSA06888_00-SONICORION000000",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202307/2416/9fb7d209dbb62357ddd5c305f6019a97238fc1bd1b540560.png"
+  },
+  {
+    "slug": "ns-sports",
+    "sourcePage": "https://www.nintendo.com/us/store/products/nintendo-switch-sports-switch/",
+    "imageUrl": "https://assets.nintendo.com/image/upload/c_fill,w_1080,h_1080/q_auto/f_auto/store/software/switch/70010000049931/282ce6a96d5855d8b46aa9316314969f731a26ef9c7b2bc1e5aebe62dcf2ece2"
+  },
+  {
+    "slug": "ns-super-mario-3d-worldxbowsers-fury",
+    "sourcePage": "https://www.nintendo.com/us/store/products/super-mario-3d-world-plus-bowsers-fury-switch/",
+    "imageUrl": "https://assets.nintendo.com/image/upload/c_fill,w_1080,h_1080/q_auto/f_auto/store/software/switch/70010000034439/ccb69a8bf2746b2dc0a9b11a9e48c9893baa1631486326f0d681b7a36385221f"
+  },
+  {
+    "slug": "ns-super-mario-bros-u-deluxe",
+    "sourcePage": "https://www.nintendo.com/us/store/products/new-super-mario-bros-u-deluxe-switch/",
+    "imageUrl": "https://assets.nintendo.com/image/upload/c_fill,w_1080,h_1080/q_auto/f_auto/store/software/switch/70010000006411/73d58198e35bf94be752cf3d9ba0b44dea877cab1487e2cc1b7eeb02157f066f"
+  },
+  {
+    "slug": "ns-super-mario-galaxy-1-2",
+    "sourcePage": "https://www.nintendo.com/us/store/products/super-mario-galaxy-plus-super-mario-galaxy-2-switch/",
+    "imageUrl": "https://assets.nintendo.com/image/upload/c_fill,w_1080,h_1080/q_auto/f_auto/store/software/switch/70070000030770/0acaf709e29c57e125e90032853562562843757d238fec2815a52ec0409c6fd1"
+  },
+  {
+    "slug": "ns-super-mario-odyssey",
+    "sourcePage": "https://www.nintendo.com/us/store/products/super-mario-odyssey-switch/",
+    "imageUrl": "https://assets.nintendo.com/image/upload/c_fill,w_1080,h_1080/q_auto/f_auto/store/software/switch/70010000001130/c42553b4fd0312c31e70ec7468c6c9bccd739f340152925b9600631f2d29f8b5"
+  },
+  {
+    "slug": "ns-super-mario-party",
+    "sourcePage": "https://www.nintendo.com/us/store/products/super-mario-party-switch/",
+    "imageUrl": "https://assets.nintendo.com/image/upload/c_fill,w_1080,h_1080/q_auto/f_auto/store/software/switch/70010000014158/0ca41128bf40b7e0dc32a046a659ecdc69e4d7cc7a3257d6280be665d2f795b5"
+  },
+  {
+    "slug": "ns-super-mario-party-jamboree",
+    "sourcePage": "https://www.nintendo.com/us/store/products/super-mario-party-jamboree-switch/",
+    "imageUrl": "https://assets.nintendo.com/image/upload/c_fill,w_1080,h_1080/q_auto/f_auto/store/software/switch/70010000084608/ba0572bf9d840b03bf9958809943fb3c76c3adfd6d8f2704b0f1b766f8aa4027"
+  },
+  {
+    "slug": "ns-super-mario-rpg",
+    "sourcePage": "https://www.nintendo.com/us/store/products/super-mario-rpg-switch/",
+    "imageUrl": "https://assets.nintendo.com/image/upload/c_fill,w_1080,h_1080/q_auto/f_auto/store/software/switch/70010000068683/fe4afe940b0e707798332e86f0af56cdbde48da59dc37cdfb8d59febb88ac72a"
+  },
+  {
+    "slug": "ns-super-mario-wonder-bros",
+    "sourcePage": "https://www.nintendo.com/us/store/products/super-mario-bros-wonder-switch/",
+    "imageUrl": "https://assets.nintendo.com/image/upload/c_fill,w_1080,h_1080/q_auto/f_auto/store/software/switch/70010000068688/87e8aa5f1fdc950b88eae7d7c62ed185c8a6373c845090bbdb2e2cf039b38da1"
+  },
+  {
+    "slug": "ns-xenobladexchronicles",
+    "sourcePage": "https://www.nintendo.com/us/store/products/xenoblade-chronicles-x-definitive-edition-switch/",
+    "imageUrl": "https://assets.nintendo.com/image/upload/c_fill,w_1080,h_1080/q_auto/f_auto/store/software/switch/70010000088832/d33ed7f51de601b10cafa5814fd786bbad317b0421a43d54917a2c647be2f23b"
+  },
+  {
+    "slug": "ns2-animal-crossing-new-horizons",
+    "sourcePage": "https://www.nintendo.com/us/store/products/animal-crossing-new-horizons-nintendo-switch-2-edition-switch-2/",
+    "imageUrl": "https://assets.nintendo.com/image/upload/c_fill,w_1080,h_1080/q_auto/f_auto/store/software/switch2/70010000110440/749cb30819c96dc883bf8ac71dfe5a27469b2ea035f81775dd23ab8b8c82bc9d"
+  },
+  {
+    "slug": "ns2-donkey-kong-banaza",
+    "sourcePage": "https://www.nintendo.com/us/store/products/donkey-kong-bananza-switch-2/",
+    "imageUrl": "https://assets.nintendo.com/image/upload/c_crop,w_0.45,h_0.8,g_center/c_scale,w_1080/q_auto/f_auto/store/software/switch2/70010000096809/3c8219fbdcd3bdd0ebd6239cf32c651fe10f2157aa7730fcc6a7d96cd27460e5"
+  },
+  {
+    "slug": "ns2-elgo-batman-legacy-deluxe-edition",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP1018-PPSA16833_00-LEGOBATMAN000000/",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202508/1316/3302f35b66691aa405aee31624c0c95fe73081be8e0c75bb.png"
   },
   {
     "slug": "ns2-fc26",
@@ -222,6 +338,11 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202607/2321/c7c534e1e9b24ccf7ff11c429948f31494ccce402b452647.png"
   },
   {
+    "slug": "ns2-hyrule-warriors",
+    "sourcePage": "https://www.nintendo.com/us/store/products/hyrule-warriors-age-of-imprisonment-switch-2/",
+    "imageUrl": "https://assets.nintendo.com/image/upload/c_fill,w_1080,h_1080/q_auto/f_auto/store/software/switch2/70010000103459/463c88b9defa517be9227d851857d27926c9e2ffe18337790d47a948a3af1ef5"
+  },
+  {
     "slug": "ns2-it-takes-two",
     "sourcePage": "https://store.playstation.com/en-us/product/UP0006-PPSA02342_00-ITTAKESTWORETAIL",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202012/0815/7CRynuLSAb0vysSC4TmZy5e4.png"
@@ -230,6 +351,16 @@
     "slug": "ns2-lego-batman-legacy-of-dark",
     "sourcePage": "https://store.playstation.com/en-us/product/UP1018-PPSA16833_00-LEGOBATMAN000000/",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202508/1316/3302f35b66691aa405aee31624c0c95fe73081be8e0c75bb.png"
+  },
+  {
+    "slug": "ns2-mario-kart-world",
+    "sourcePage": "https://www.nintendo.com/us/store/products/mario-kart-world-switch-2/",
+    "imageUrl": "https://assets.nintendo.com/image/upload/c_fill,w_1080,h_1080/q_auto/f_auto/store/software/switch2/70010000095431/0485f410193ca12f92a2f615ea608bb437540f321bd05e464593c33fefa09bf2"
+  },
+  {
+    "slug": "ns2-mario-tennis-fever",
+    "sourcePage": "https://www.nintendo.com/us/store/products/mario-tennis-fever-switch-2/",
+    "imageUrl": "https://assets.nintendo.com/image/upload/c_fill,w_1080,h_1080/q_auto/f_auto/store/software/switch2/70010000105869/86a26a6d9a870eee16d0ff1b5591f055d63dee475fe688c42c46fcd96a199805"
   },
   {
     "slug": "ns2-metal-gear-vol-2",
@@ -260,6 +391,21 @@
     "slug": "ns2-sonicxshadow",
     "sourcePage": "https://store.playstation.com/en-us/product/UP0177-PPSA17597_00-SONICXSHADOWGENE",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202405/2308/1efd5c197776d8dd5d5c79261559cd5947b0d52fc23e1174.png"
+  },
+  {
+    "slug": "ns2-super-mario-bros-wonder",
+    "sourcePage": "https://www.nintendo.com/us/store/products/super-mario-bros-wonder-nintendo-switch-2-edition-plus-meetup-in-bellabel-park-switch-2/",
+    "imageUrl": "https://assets.nintendo.com/image/upload/c_fill,w_1080,h_1080/q_auto/f_auto/store/software/switch2/70010000115567/901218f8b149d63c90c125a3969db5f6d06f3a7cc649300b3e788116a21a84cd"
+  },
+  {
+    "slug": "ns2-super-mario-party-jamboree",
+    "sourcePage": "https://www.nintendo.com/us/store/products/super-mario-party-jamboree-nintendo-switch-2-edition-plus-jamboree-tv-switch-2/",
+    "imageUrl": "https://assets.nintendo.com/image/upload/c_fill,w_1080,h_1080/q_auto/f_auto/store/software/switch2/70010000096825/1c6d36132c3f96d24ba95ebc60e6cb7534bfe9f81b0b590177adf1cf47d3cc81"
+  },
+  {
+    "slug": "ns2-the-legend-of-zelda-ocraine-of-time",
+    "sourcePage": "https://www.nintendo.com/us/store/products/the-legend-of-zelda-ocarina-of-time-switch-2/",
+    "imageUrl": "https://assets.nintendo.com/image/upload/c_fill,w_1080,h_1080/q_auto/f_auto/store/software/switch2/70010000130792/21d17919819cffebda2817f9b0110116c28568e0b6fa30a9778f1679271be809"
   },
   {
     "slug": "ns2-zelda-40th-ann-ed",
@@ -295,6 +441,11 @@
     "slug": "ps4-assassins-creed-mirage-launch-edition",
     "sourcePage": "https://store.playstation.com/en-us/concept/10004865",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202208/1718/phwiQjbJddEg979YucUoP3Vr.png"
+  },
+  {
+    "slug": "ps4-bloodborne",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP9000-CUSA00900_00-BLOODBORNE000000",
+    "imageUrl": "https://image.api.playstation.com/vulcan/img/rnd/202011/0713/WSZqsrnejjt85wYmUqeBQvMQ.png"
   },
   {
     "slug": "ps4-cd-naruto-boruto",
@@ -377,6 +528,17 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202012/0912/DaMDXP75LV9pti5nA2IALzhO.png"
   },
   {
+    "slug": "ps4-ghost-of-tsushima",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP9000-PPSA02225_00-GHOSTDIRECTORPS5",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202106/2322/c16gs6a7lbAYzPf7ZTikbH1c.png",
+    "representative": true
+  },
+  {
+    "slug": "ps4-ghost-oftsushima-directors-cut",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP9000-PPSA02225_00-GHOSTDIRECTORPS5",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202106/2322/c16gs6a7lbAYzPf7ZTikbH1c.png"
+  },
+  {
     "slug": "ps4-gta-v",
     "sourcePage": "https://store.playstation.com/en-us/product/UP1004-PPSA03420_00-GTAVCROSSGENBUND",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202203/1409/oltI7Zc96usbdvhVVXcV1EAi.png"
@@ -397,6 +559,11 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202012/0815/7CRynuLSAb0vysSC4TmZy5e4.png"
   },
   {
+    "slug": "ps4-justice-league-cosmic",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10003572/",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202301/1016/0QyWw1rIcaHs9JMcEQFwN99p.png"
+  },
+  {
     "slug": "ps4-knack-2",
     "sourcePage": "https://store.playstation.com/en-tr/product/EP9000-CUSA07670_00-KNACK20000000000",
     "imageUrl": "https://image.api.playstation.com/vulcan/img/rnd/202011/0522/82QdmxXvA9Vpqro5t8pSTEOR.png"
@@ -405,6 +572,21 @@
     "slug": "ps4-lego-harry-potter-collection",
     "sourcePage": "https://store.playstation.com/en-us/product/UP1018-CUSA05954_00-HARRYPOTTER17000",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202410/0720/be98546dca7a757572df9d246669670e38132ba9c4c1dfc3.png"
+  },
+  {
+    "slug": "ps4-lego-hobbit",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP1018-CUSA00348_00-LEGOHOBBIT000000",
+    "imageUrl": "https://image.api.playstation.com/vulcan/img/rnd/202110/2217/UCuVngKqFRmzuk6EesKqX9gW.png"
+  },
+  {
+    "slug": "ps4-lego-marvel-collection",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP1018-CUSA08469_00-LEGOMARVELCOL000",
+    "imageUrl": "https://image.api.playstation.com/cdn/UP1018/CUSA08469_00/aLcrEmFtgB80apqsb02vipBzyLhVi8nI.png"
+  },
+  {
+    "slug": "ps4-lego-star-wars",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP1018-PPSA01864_00-LEGOSWTSS0000000",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202112/2121/qrpfY71rsvMn6beyjgStw3cH.png"
   },
   {
     "slug": "ps4-little-nightmares-2",
@@ -437,9 +619,34 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202210/3122/AooxHg4WoMdhe8oPQYn3XdrG.png"
   },
   {
+    "slug": "ps4-nfs-payback",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0006-CUSA05999_00-NFS1800000000001",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202211/2510/VOSSvGjCpMF0uj9qQtmW6AnH.png"
+  },
+  {
+    "slug": "ps4-nfs-rivals",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0006-CUSA00113_00-NFS14000PS4000NA",
+    "imageUrl": "https://image.api.playstation.com/cdn/UP0006/CUSA00113_00/bXchLnE9I6zhC6jFnobK7IPixNx7U41T.png"
+  },
+  {
+    "slug": "ps4-noih",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP9000-CUSA07113_00-NIOH000000000000",
+    "imageUrl": "https://image.api.playstation.com/vulcan/img/rnd/202011/0700/Hsx91ywFFT0r6iRzcOS69FwD.png"
+  },
+  {
     "slug": "ps4-prince-of-persia",
     "sourcePage": "https://store.playstation.com/en-us/concept/10005985",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202312/0701/de64753172dca1b06fc9ec1cd4abaeaa7f12ff7ac98f5a19.png"
+  },
+  {
+    "slug": "ps4-rachet-clank",
+    "sourcePage": "https://store.playstation.com/en-gb/product/EP9000-CUSA01928_00-RCPS400000000000",
+    "imageUrl": "https://image.api.playstation.com/vulcan/img/rnd/202011/1020/2sD70skhUEhaf3gwCWJsEfGt.png"
+  },
+  {
+    "slug": "ps4-resident-evil-2",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0102-PPSA04288_00-BH2R000000000001",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202206/0204/uDFoGvnMTTCLVmTwjj0njGWC.png"
   },
   {
     "slug": "ps4-resident-evil-3",
@@ -467,6 +674,16 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202206/0207/V6IViuKogBMRtajqjnYrcj0e.png"
   },
   {
+    "slug": "ps4-rise-of-the-tomb-rider",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0082-CUSA05794_00-RISEOFTOMBRAIDER",
+    "imageUrl": "https://image.api.playstation.com/cdn/UP0082/CUSA05794_00/HzYMHoXoANNfVJ5BlxcTJ8bpCHCW3j8j.png"
+  },
+  {
+    "slug": "ps4-shadow-of-the-tomb-rider",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0082-CUSA10938_00-DEFINITIVE00SIEA",
+    "imageUrl": "https://image.api.playstation.com/vulcan/img/cfn/11307obn0reFe1U4gMc6b1pGe29vUWBAwdA8-rwjTkBN9iSwdc4rU6hpu5QI4ZXkrja75v0RAOXR1bNsTAg1jbb-3AgvCc1Y.png"
+  },
+  {
     "slug": "ps4-sniper-elite-resistance",
     "sourcePage": "https://store.playstation.com/en-us/product/UP4363-PPSA17232_00-SNIPERELITERES00/",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202408/1309/05d041f5216b1cd55a4587729534ce8ac8c557877b4d1483.png"
@@ -477,9 +694,29 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/img/cfn/11307EJHM-I7Qf0ggvkygLUE4UaPD_OVu4Gls8cGTheeYcgQxFYsuZiVBqk0wgrfsfiUaDsP1AfChBcbOgG478JMcDs-gJNF.png"
   },
   {
+    "slug": "ps4-sonic-origins-plus",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0177-PPSA05324_00-SONICORIGINSPLUS/",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202305/3115/8c2693773976d99c58998f9d1749e610f975d3047dc22cad.png"
+  },
+  {
     "slug": "ps4-spider-man-morales",
     "sourcePage": "https://store.playstation.com/en-us/concept/10000649",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202008/1020/T45iRN1bhiWcJUzST6UFGBvO.png"
+  },
+  {
+    "slug": "ps4-spyro",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0002-CUSA12125_00-SPYROTRILOGY0001",
+    "imageUrl": "https://image.api.playstation.com/cdn/UP0002/CUSA12125_00/wQimEr4XlJnBh9zJL6h8vwIoB919zvRy.png"
+  },
+  {
+    "slug": "ps4-star-wars-the-skywalker",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP1018-PPSA01864_00-LEGOSWTSS0000000",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202112/2121/qrpfY71rsvMn6beyjgStw3cH.png"
+  },
+  {
+    "slug": "ps4-stray",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP2470-PPSA02100_00-STRAYSIEA0000000",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202206/0300/E2vZwVaDJbhLZpJo7Q10IyYo.png"
   },
   {
     "slug": "ps4-street-fighter-30th-ann",
@@ -512,9 +749,40 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202411/2217/aff7ae0da202d816a5761fd4ce865085320052f46223c770.png"
   },
   {
+    "slug": "ps4-the-crw-2",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0001-CUSA08600_00-THECREW2SCEA0000/",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202307/2708/28833b618429cfe5f65d24ea11933ae62e3308ea7d2015be.png"
+  },
+  {
     "slug": "ps4-tomb-rider-devintive-edition",
     "sourcePage": "https://store.playstation.com/en-us/product/UP0082-CUSA00107_00-000000TOMBRAIDER",
     "imageUrl": "https://image.api.playstation.com/cdn/UP0082/CUSA00107_00/jT7kkwSWEinafnaYWMZoReRr4LlmYmym.png"
+  },
+  {
+    "slug": "ps4-tony-hawks-pro-skater-3-4",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0002-PPSA18010_00-TH34RSTNDBUNDL01/",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202502/2100/90881f77d349bee47f6629b340a2b722925975e587c26bd4.png"
+  },
+  {
+    "slug": "ps4-transport-fever-2",
+    "sourcePage": "https://store.playstation.com/de-de/product/EP6665-PPSA12361_00-TRFE200000000000",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202211/0316/hi1dbXOFwRYAX5gliiFD4qDF.png"
+  },
+  {
+    "slug": "ps4-uncharted",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP9000-CUSA00341_00-UNCHARTED0000000",
+    "imageUrl": "https://image.api.playstation.com/vulcan/img/rnd/202011/1018/SGqMZHd7WWmN4XIcLfYMxJsc.png",
+    "representative": true
+  },
+  {
+    "slug": "ps4-watch-dogs-2",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0001-CUSA04459_00-WD2FULLGAME00000",
+    "imageUrl": "https://image.api.playstation.com/cdn/UP0001/CUSA04459_00/qBxvfDJJ9dbavai6xsWOcWaxRDGRb7h0.png"
+  },
+  {
+    "slug": "ps4-watch-dogs-3-legion",
+    "sourcePage": "https://store.playstation.com/en-hu/product/EP0001-PPSA01488_00-ORWFULLGAME00000",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202007/0217/OX5mEmwgRPeSQrhGFU3n4moZ.png"
   },
   {
     "slug": "ps4-world-war-z",
@@ -745,6 +1013,11 @@
     "slug": "ps5-garfield-escape-from-monday",
     "sourcePage": "https://store.playstation.com/en-us/concept/10018726",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202604/3013/abd516153a8aa3a19213ab57160e60f1b7add5c31e7cd6d4.png"
+  },
+  {
+    "slug": "ps5-ghost-of-tsushima-dc",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP9000-PPSA02225_00-GHOSTDIRECTORPS5",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202106/2322/c16gs6a7lbAYzPf7ZTikbH1c.png"
   },
   {
     "slug": "ps5-ghost-of-yotei-complete-edition",
@@ -1145,6 +1418,11 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202401/2211/40e7cfd126a11fe5118310ebce6d9b3a23e7cabaca717217.png"
   },
   {
+    "slug": "ps5-stray",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP2470-PPSA02100_00-STRAYSIEA0000000",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202206/0300/E2vZwVaDJbhLZpJo7Q10IyYo.png"
+  },
+  {
     "slug": "ps5-tales-of-eternia-remastered",
     "sourcePage": "https://store.playstation.com/en-us/concept/10014611",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202609/2922/21762159632b05e9ad99a6107eb825115081dd167c54e266.png"
@@ -1195,6 +1473,11 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202409/1221/c785b0366d8f84a18dd17a0d046fdee92ccd6195d79c81a1.png"
   },
   {
+    "slug": "ps5-tony-hawks-pro-skater-3-4",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0002-PPSA18010_00-TH34RSTNDBUNDL01/",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202502/2100/90881f77d349bee47f6629b340a2b722925975e587c26bd4.png"
+  },
+  {
     "slug": "ps5-uncharted-collection",
     "sourcePage": "https://store.playstation.com/en-sg/concept/205354",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202111/2000/gTUWTlvPHzxFJ2JAxtDyI2eS.png"
@@ -1235,6 +1518,11 @@
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/22/48/LD0006224837_0006224838.jpg"
   },
   {
+    "slug": "shadow-of-the-tomb-rider-croft-eiditon",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0082-CUSA10938_00-DEFINITIVE00SIEA",
+    "imageUrl": "https://image.api.playstation.com/vulcan/img/cfn/11307obn0reFe1U4gMc6b1pGe29vUWBAwdA8-rwjTkBN9iSwdc4rU6hpu5QI4ZXkrja75v0RAOXR1bNsTAg1jbb-3AgvCc1Y.png"
+  },
+  {
     "slug": "star-wars-outlaws",
     "sourcePage": "https://store.playstation.com/es-co/product/UP0001-PPSA08261_00-GAME000000000000",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202306/3020/bca42b94af09b7a7ffd27fcb76a7bb1e46b60ed0c5f99322.png"
@@ -1243,6 +1531,11 @@
     "slug": "steelseries-kb-apex3",
     "sourcePage": "https://www.ldlc.com/en/product/PB00293642.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/57/36/LD0005573659_2.jpg"
+  },
+  {
+    "slug": "sw-2-yoshi-and-the-mystrious-book",
+    "sourcePage": "https://www.nintendo.com/us/store/products/yoshi-and-the-mysterious-book-switch-2/",
+    "imageUrl": "https://assets.nintendo.com/image/upload/c_crop,w_0.45,h_0.8,g_center/c_scale,w_1080/q_auto/f_auto/store/software/switch2/70010000119859/74720e9755d3cc39e312e33d6c985a815ed352217cbcdeeaeabb98387767c82f"
   },
   {
     "slug": "wd-1tb-m-2-nvme",
