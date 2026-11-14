@@ -207,6 +207,11 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202601/2201/10c1fc1cb379073791df85ad3bd235930896bfa9b20fa1f1.png"
   },
   {
+    "slug": "ns2-fc26",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0006-PPSA27360_00-26STANDARDBUNDLE",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202608/0314/d0cc38456ebe67005ebea2709f52a3d2f6780985b6403219.png"
+  },
+  {
     "slug": "ns2-fc27",
     "sourcePage": "https://store.playstation.com/en-us/concept/10017332",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202607/2321/c7c534e1e9b24ccf7ff11c429948f31494ccce402b452647.png"
@@ -215,6 +220,11 @@
     "slug": "ns2-metal-gear-vol-2",
     "sourcePage": "https://store.playstation.com/en-us/concept/10009075",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202601/2201/10c1fc1cb379073791df85ad3bd235930896bfa9b20fa1f1.png"
+  },
+  {
+    "slug": "ns2-reanimal",
+    "sourcePage": "https://store.playstation.com/en-us/product/EP4389-PPSA23372_00-ANIMALGAMEGLOBAL",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202508/2109/25422d8bda53b48e35f690b9d68590ab3f5eb4df8755c84f.png"
   },
   {
     "slug": "ns2-resident-evil-requiem",
@@ -242,6 +252,31 @@
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/06/12/LD0006061283.jpg"
   },
   {
+    "slug": "ps4-assassin-creed-mirage",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10004865",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202208/1718/phwiQjbJddEg979YucUoP3Vr.png"
+  },
+  {
+    "slug": "ps4-assassins-creed-mirage-launch-edition",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10004865",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202208/1718/phwiQjbJddEg979YucUoP3Vr.png"
+  },
+  {
+    "slug": "ps4-crash-4-its-about-time",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0002-PPSA02432_00-CB4THEGAME000001",
+    "imageUrl": "https://image.api.playstation.com/vulcan/img/rnd/202111/1918/psoOkDbYuMdr1RsJo6TpU6bg.png"
+  },
+  {
+    "slug": "ps4-days-gone",
+    "sourcePage": "https://store.playstation.com/en-gb/product/EP9000-CUSA09176_00-DAYSGONECOMPLETE",
+    "imageUrl": "https://image.api.playstation.com/vulcan/img/rnd/202011/1204/wYL4v2r8uMQFvVTJlfuj8ICk.png"
+  },
+  {
+    "slug": "ps4-fc26",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0006-PPSA27360_00-26STANDARDBUNDLE",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202608/0314/d0cc38456ebe67005ebea2709f52a3d2f6780985b6403219.png"
+  },
+  {
     "slug": "ps4-fc27",
     "sourcePage": "https://store.playstation.com/en-us/concept/10017332",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202607/2321/c7c534e1e9b24ccf7ff11c429948f31494ccce402b452647.png"
@@ -262,9 +297,44 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202407/0401/670c294ded3baf4fa11068db2ec6758c63f7daeb266a35a1.png"
   },
   {
+    "slug": "ps4-prince-of-persia",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10005985",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202312/0701/de64753172dca1b06fc9ec1cd4abaeaa7f12ff7ac98f5a19.png"
+  },
+  {
+    "slug": "ps4-resident-evil-3",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0102-PPSA03952_00-BH3ROFF000000001",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202206/0206/WmriZBRlSeXWEEDLJOWW7MdW.png"
+  },
+  {
+    "slug": "ps4-resident-evil-4",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0102-PPSA07411_00-RE4RMAINGAME0000",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202210/0706/EVWyZD63pahuh95eKloFaJuC.png"
+  },
+  {
     "slug": "ps4-resident-evil-biohazard",
     "sourcePage": "https://store.playstation.com/en-us/product/UP0102-PPSA04400_00-BH70000000000001",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202206/0207/V6IViuKogBMRtajqjnYrcj0e.png"
+  },
+  {
+    "slug": "ps4-snow-runner",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP4133-PPSA04930_00-SNOWRUNNERGAME01",
+    "imageUrl": "https://image.api.playstation.com/vulcan/img/cfn/11307EJHM-I7Qf0ggvkygLUE4UaPD_OVu4Gls8cGTheeYcgQxFYsuZiVBqk0wgrfsfiUaDsP1AfChBcbOgG478JMcDs-gJNF.png"
+  },
+  {
+    "slug": "ps4-street-fighter-6",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0102-PPSA02632_00-SF600000STANDARD",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202211/1407/XFU0aPBvtm3W2od1ZvhByAOv.png"
+  },
+  {
+    "slug": "ps4-street-fighter-6-1-2",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0102-PPSA02632_00-SF600000STANDARD",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202211/1407/XFU0aPBvtm3W2od1ZvhByAOv.png"
+  },
+  {
+    "slug": "ps4-street-fighter-6-sb",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0102-PPSA02632_00-SF600000STANDARD",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202211/1407/XFU0aPBvtm3W2od1ZvhByAOv.png"
   },
   {
     "slug": "ps5-a-plague-tale-requim",
@@ -280,6 +350,11 @@
     "slug": "ps5-assasins-black-flag-launch-edition",
     "sourcePage": "https://store.playstation.com/en-us/product/EP0001-PPSA28183_00-GAME000000000000",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202603/1215/0962bc91a4952e6433367fcfec38b7e0655c6bd29b431712.png"
+  },
+  {
+    "slug": "ps5-assassins-creed-mirage",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10004865",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202208/1718/phwiQjbJddEg979YucUoP3Vr.png"
   },
   {
     "slug": "ps5-beast-of-reincaration",
@@ -320,6 +395,11 @@
     "slug": "ps5-edge-white",
     "sourcePage": "https://www.playstation.com/en-us/accessories/dualsense-edge-wireless-controller/",
     "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/DualSense-Edge-image-block-01-en-24aug22?$1600px$"
+  },
+  {
+    "slug": "ps5-fc26",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0006-PPSA27360_00-26STANDARDBUNDLE",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202608/0314/d0cc38456ebe67005ebea2709f52a3d2f6780985b6403219.png"
   },
   {
     "slug": "ps5-fc27",
@@ -502,9 +582,34 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202511/2605/3d57b6ae9b22a4982f0272ef1c716ebbfee59b7ea1fe60af.png"
   },
   {
+    "slug": "ps5-prince-of-persia",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10005985",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202312/0701/de64753172dca1b06fc9ec1cd4abaeaa7f12ff7ac98f5a19.png"
+  },
+  {
     "slug": "ps5-pulse-elite",
     "sourcePage": "https://www.playstation.com/en-us/accessories/pulse-elite-wireless-headset/",
     "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/PULSE-Elite-headset-thumbnail-02-en-12sep23?$1600px$"
+  },
+  {
+    "slug": "ps5-reanimal",
+    "sourcePage": "https://store.playstation.com/en-us/product/EP4389-PPSA23372_00-ANIMALGAMEGLOBAL",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202508/2109/25422d8bda53b48e35f690b9d68590ab3f5eb4df8755c84f.png"
+  },
+  {
+    "slug": "ps5-resident-evil-3",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0102-PPSA03952_00-BH3ROFF000000001",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202206/0206/WmriZBRlSeXWEEDLJOWW7MdW.png"
+  },
+  {
+    "slug": "ps5-resident-evil-4",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0102-PPSA07411_00-RE4RMAINGAME0000",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202210/0706/EVWyZD63pahuh95eKloFaJuC.png"
+  },
+  {
+    "slug": "ps5-resident-evil-4-gold",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0102-PPSA07411_00-RE4RMAINGAME0000",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202210/0706/EVWyZD63pahuh95eKloFaJuC.png"
   },
   {
     "slug": "ps5-resident-evil-7-biohazard",
@@ -535,6 +640,11 @@
     "slug": "ps5-resonance-a-plague-tale-legacy",
     "sourcePage": "https://store.playstation.com/en-us/product/EP4133-PPSA30601_00-RESONANCEAPLAGUE",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202605/1510/346857c01378e194d77def3f3029d79489509c541aa761d6.png"
+  },
+  {
+    "slug": "ps5-snow-runner",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP4133-PPSA04930_00-SNOWRUNNERGAME01",
+    "imageUrl": "https://image.api.playstation.com/vulcan/img/cfn/11307EJHM-I7Qf0ggvkygLUE4UaPD_OVu4Gls8cGTheeYcgQxFYsuZiVBqk0wgrfsfiUaDsP1AfChBcbOgG478JMcDs-gJNF.png"
   },
   {
     "slug": "ps5-spider-man-miles-morales",
@@ -580,6 +690,11 @@
     "slug": "ryzen-5-7500f",
     "sourcePage": "https://www.ldlc.com/en/product/PB00672497.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/22/48/LD0006224837_0006224838.jpg"
+  },
+  {
+    "slug": "star-wars-outlaws",
+    "sourcePage": "https://store.playstation.com/es-co/product/UP0001-PPSA08261_00-GAME000000000000",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202306/3020/bca42b94af09b7a7ffd27fcb76a7bb1e46b60ed0c5f99322.png"
   },
   {
     "slug": "steelseries-kb-apex3",
