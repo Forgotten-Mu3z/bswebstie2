@@ -25,6 +25,66 @@
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/72/65/LD0005726580_1.jpg"
   },
   {
+    "slug": "funko-pop-buggy-the-clown",
+    "sourcePage": "https://funko.com/search?q=buggy%20the%20clown",
+    "imageUrl": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw919af348/images/funko/66428-2_C.png?sw=1200&sh=1200"
+  },
+  {
+    "slug": "funko-pop-gojo",
+    "sourcePage": "https://funko.com/search?q=gojo",
+    "imageUrl": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dwfe3920dc/images/funko/61357-1.png?sw=1200&sh=1200"
+  },
+  {
+    "slug": "funko-pop-kakashi",
+    "sourcePage": "https://funko.com/search?q=kakashi",
+    "imageUrl": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw2d34d634/images/funko/12450-PX-1R2-1.png?sw=1200&sh=1200"
+  },
+  {
+    "slug": "funko-pop-leorio",
+    "sourcePage": "https://funko.com/search?q=leorio",
+    "imageUrl": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dwb18202f2/images/funko/45663-1.png?sw=1200&sh=1200"
+  },
+  {
+    "slug": "funko-pop-madara",
+    "sourcePage": "https://funko.com/pop-madara-uchiha/79196.html",
+    "imageUrl": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dweb5b64d5/images/funko/upload/79196_Naruto_MadaraDeepForest_POP_GLAM-WEB.png?sw=1200&sh=1200"
+  },
+  {
+    "slug": "funko-pop-nezuko-kamado",
+    "sourcePage": "https://funko.com/search?q=nezuko%20kamado",
+    "imageUrl": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw3d828a7e/images/funko/49013-1.png?sw=1200&sh=1200"
+  },
+  {
+    "slug": "funko-pop-pikachu",
+    "sourcePage": "https://funko.com/search?q=pikachu",
+    "imageUrl": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw8de08a6d/images/funko/43263-1.png?sw=1200&sh=1200"
+  },
+  {
+    "slug": "funko-pop-tanjiro",
+    "sourcePage": "https://funko.com/search?q=tanjiro",
+    "imageUrl": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw65414352/images/funko/49010-1.png?sw=1200&sh=1200"
+  },
+  {
+    "slug": "funko-pop-tanjiro-kamado",
+    "sourcePage": "https://funko.com/search?q=tanjiro%20kamado",
+    "imageUrl": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw65414352/images/funko/49010-1.png?sw=1200&sh=1200"
+  },
+  {
+    "slug": "funko-pop-wednesday-addams",
+    "sourcePage": "https://funko.com/search?q=wednesday%20addams",
+    "imageUrl": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw1dc31519/images/funko/67457-1.png?sw=1200&sh=1200"
+  },
+  {
+    "slug": "funko-pop-yuji-itadori",
+    "sourcePage": "https://funko.com/search?q=yuji%20itadori",
+    "imageUrl": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw93c386ca/images/funko/61358-1.png?sw=1200&sh=1200"
+  },
+  {
+    "slug": "funko-pop-zoro",
+    "sourcePage": "https://funko.com/search?q=zoro",
+    "imageUrl": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dwf0ae350a/images/funko/54462-1.png?sw=1200&sh=1200"
+  },
+  {
     "slug": "goes27qhd120ips",
     "sourcePage": "https://global.microless.com/product/gameon-essential-series-gaming-monitor-27-ips-display-qhd-resolution-120hz-refresh-rate-0-5ms-mprt-response-time-freesync-adaptive-sync-gameplus-technology-black-goes27qhd120ips/",
     "imageUrl": "https://cdn.microless.com/products/e4722764bce9a34cc4c31b8b59d8df6f-hi.jpg"
@@ -63,6 +123,86 @@
     "slug": "pro-x-superlight-2-logitech-black",
     "sourcePage": "https://www.ldlc.com/en/product/PB00569683.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/06/12/LD0006061283.jpg"
+  },
+  {
+    "slug": "ps5-controller-007-first-light",
+    "sourcePage": "https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/007-First-Light-LE-DualSense-image-block-01-en-02apr26?$1600px$"
+  },
+  {
+    "slug": "ps5-edge-white",
+    "sourcePage": "https://www.playstation.com/en-us/accessories/dualsense-edge-wireless-controller/",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/DualSense-Edge-image-block-01-en-24aug22?$1600px$"
+  },
+  {
+    "slug": "ps5-js-blk",
+    "sourcePage": "https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/dualsense-midnight-black-screenshot-01-en-08dec21?$1600px$"
+  },
+  {
+    "slug": "ps5-js-blue",
+    "sourcePage": "https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/dualsense-starlight-blue-screenshot-01-en-30nov21?$1600px$"
+  },
+  {
+    "slug": "ps5-js-chroma-green",
+    "sourcePage": "https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/dualsense-teal-screenshot-01-en-23sep24?$1600px$"
+  },
+  {
+    "slug": "ps5-js-chroma-white",
+    "sourcePage": "https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/dualsense-pearl-screenshot-01-en-23sep24?$1600px$"
+  },
+  {
+    "slug": "ps5-js-lisa",
+    "sourcePage": "https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/Lisa-dualsense-controller-direct-offset-01-en-05oct26?$1600px$"
+  },
+  {
+    "slug": "ps5-js-marathon-ltd-ed",
+    "sourcePage": "https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/Marathon-LE-DualSense-image-block-02-en-12jan26?$1600px$"
+  },
+  {
+    "slug": "ps5-js-purple",
+    "sourcePage": "https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/dualsense-galactic-purple-screenshot-01-en-30nov21?$1600px$"
+  },
+  {
+    "slug": "ps5-js-red",
+    "sourcePage": "https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/dualsense-cosmic-red-screenshot-01-en-08dec21?$1600px$"
+  },
+  {
+    "slug": "ps5-js-remix-green",
+    "sourcePage": "https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/dualsense-remix-green-screenshot-01-en-07jan26?$1600px$"
+  },
+  {
+    "slug": "ps5-js-rhythm-blue",
+    "sourcePage": "https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/dualsense-rhythm-blue-screenshot-01-en-07jan26?$1600px$"
+  },
+  {
+    "slug": "ps5-js-silver",
+    "sourcePage": "https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/dualsense-sterling-silver-screenshot-01-en-04sep23?$1600px$"
+  },
+  {
+    "slug": "ps5-js-techno-red",
+    "sourcePage": "https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/dualsense-techno-red-screenshot-01-en-07jan26?$1600px$"
+  },
+  {
+    "slug": "ps5-js-wht",
+    "sourcePage": "https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/dualsense-controller-product-thumbnail-01-en-14sep21?$1600px$"
+  },
+  {
+    "slug": "ps5-pulse-elite",
+    "sourcePage": "https://www.playstation.com/en-us/accessories/pulse-elite-wireless-headset/",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/PULSE-Elite-headset-thumbnail-02-en-12sep23?$1600px$"
   },
   {
     "slug": "razer-blackshark-v2",

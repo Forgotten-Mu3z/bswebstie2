@@ -28,6 +28,38 @@ const manifestFile = 'scripts/product-image-manifest.json';
 const manifest = JSON.parse(readFileSync(manifestFile, 'utf8'));
 const photos = JSON.parse(readFileSync(list, 'utf8'));
 
+// Product cards are square: crop the plain margin around the product, then
+// centre it on a square canvas of the same background (transparent stays
+// transparent), at most 1200px.
+async function square(input) {
+  const open = () => sharp(input, { limitInputPixels: 40_000_000 }).rotate();
+  const { data, info } = await open()
+    .trim({ threshold: 12 })
+    .toBuffer({ resolveWithObject: true })
+    // An image that is all one colour has nothing to trim.
+    .catch(() => open().toBuffer({ resolveWithObject: true }));
+  const side = Math.round(Math.max(info.width, info.height) * 1.08);
+  const corner = await sharp(data)
+    .extract({ left: 0, top: 0, width: 1, height: 1 })
+    .raw()
+    .toBuffer();
+  const background =
+    info.channels === 4 && corner[3] < 250
+      ? { r: 0, g: 0, b: 0, alpha: 0 }
+      : { r: corner[0], g: corner[1], b: corner[2], alpha: 1 };
+  const padX = side - info.width;
+  const padY = side - info.height;
+  return sharp(data)
+    .extend({
+      left: Math.floor(padX / 2),
+      right: Math.ceil(padX / 2),
+      top: Math.floor(padY / 2),
+      bottom: Math.ceil(padY / 2),
+      background,
+    })
+    .resize(1200, 1200, { fit: 'inside', withoutEnlargement: true });
+}
+
 const added = [];
 for (const { slug, imageUrl, sourcePage } of photos) {
   try {
@@ -61,11 +93,9 @@ for (const { slug, imageUrl, sourcePage } of photos) {
     const { width = 0, height = 0 } = await image.metadata();
     if (width < 300 || height < 300)
       throw new Error(`too small (${width}x${height})`);
-    await image
-      .rotate()
-      .resize(1200, 1200, { fit: 'inside', withoutEnlargement: true })
-      .webp({ quality: 82 })
-      .toFile(`public/products/${slug}.webp`);
+    await square(input).then((photo) =>
+      photo.webp({ quality: 82 }).toFile(`public/products/${slug}.webp`),
+    );
     const entry = { slug, sourcePage, imageUrl };
     const at = manifest.findIndex((e) => e.slug === slug);
     if (at >= 0) manifest[at] = entry;

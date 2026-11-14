@@ -20,7 +20,7 @@ a manufacturer media-kit image used under its terms, or an image with written pe
 `public/og/default.png` is made from the logo; `public/og/products/*.jpg` are made from
 the product photos below (`npm run brand:assets`), so each has the same rights status as its photo.
 
-## Product photos (16)
+## Product photos (44)
 
 Products without a photo show their category's picture from `public/placeholders/` until one is added.
 
@@ -31,6 +31,18 @@ Products without a photo show their category's picture from `public/placeholders
 | `black-widow-v3` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00377519.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `blackwidow-v3-mini-hyperspeed` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00438169.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `blackwidow-v3-pro` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00375007.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `funko-pop-buggy-the-clown` | funko.com ([page](https://funko.com/search?q=buggy%20the%20clown)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `funko-pop-gojo` | funko.com ([page](https://funko.com/search?q=gojo)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `funko-pop-kakashi` | funko.com ([page](https://funko.com/search?q=kakashi)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `funko-pop-leorio` | funko.com ([page](https://funko.com/search?q=leorio)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `funko-pop-madara` | funko.com ([page](https://funko.com/pop-madara-uchiha/79196.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `funko-pop-nezuko-kamado` | funko.com ([page](https://funko.com/search?q=nezuko%20kamado)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `funko-pop-pikachu` | funko.com ([page](https://funko.com/search?q=pikachu)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `funko-pop-tanjiro` | funko.com ([page](https://funko.com/search?q=tanjiro)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `funko-pop-tanjiro-kamado` | funko.com ([page](https://funko.com/search?q=tanjiro%20kamado)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `funko-pop-wednesday-addams` | funko.com ([page](https://funko.com/search?q=wednesday%20addams)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `funko-pop-yuji-itadori` | funko.com ([page](https://funko.com/search?q=yuji%20itadori)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `funko-pop-zoro` | funko.com ([page](https://funko.com/search?q=zoro)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `goes27qhd120ips` | global.microless.com ([page](https://global.microless.com/product/gameon-essential-series-gaming-monitor-27-ips-display-qhd-resolution-120hz-refresh-rate-0-5ms-mprt-response-time-freesync-adaptive-sync-gameplus-technology-black-goes27qhd120ips/)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `i5-13400f` | ipcstore.com ([page](https://ipcstore.com/intel-core-i513400f-processor-20-mb-smart-cache-box-5284524)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `intel-core-i7-14700f-tray` | gccgamers.com ([page](https://gccgamers.com/om/product/intel-i7-14700f-tray)) | NOT CONFIRMED. Copied from another retailer. Replace with a manufacturer or own photo, or get written permission. |
@@ -39,6 +51,22 @@ Products without a photo show their category's picture from `public/placeholders
 | `msi-pro-b650m-p` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00562344.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `ns2-zelda-40th-ann-ed` | www.nintendo.com ([page](https://www.nintendo.com/us/store/products/nintendo-switch-2-the-legend-of-zelda-40th-anniversary-edition-121642/)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `pro-x-superlight-2-logitech-black` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00569683.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ps5-controller-007-first-light` | www.playstation.com ([page](https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ps5-edge-white` | www.playstation.com ([page](https://www.playstation.com/en-us/accessories/dualsense-edge-wireless-controller/)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ps5-js-blk` | www.playstation.com ([page](https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ps5-js-blue` | www.playstation.com ([page](https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ps5-js-chroma-green` | www.playstation.com ([page](https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ps5-js-chroma-white` | www.playstation.com ([page](https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ps5-js-lisa` | www.playstation.com ([page](https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ps5-js-marathon-ltd-ed` | www.playstation.com ([page](https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ps5-js-purple` | www.playstation.com ([page](https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ps5-js-red` | www.playstation.com ([page](https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ps5-js-remix-green` | www.playstation.com ([page](https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ps5-js-rhythm-blue` | www.playstation.com ([page](https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ps5-js-silver` | www.playstation.com ([page](https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ps5-js-techno-red` | www.playstation.com ([page](https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ps5-js-wht` | www.playstation.com ([page](https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ps5-pulse-elite` | www.playstation.com ([page](https://www.playstation.com/en-us/accessories/pulse-elite-wireless-headset/)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `razer-blackshark-v2` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00354041.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `ryzen-5-7500f` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00672497.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `steelseries-kb-apex3` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00293642.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |

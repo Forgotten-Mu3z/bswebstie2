@@ -64,6 +64,13 @@
       "when": 1794597678242,
       "tag": "0008_amiibo_brand",
       "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "6",
+      "when": 1794640216584,
+      "tag": "0009_photos_2",
+      "breakpoints": true
     }
   ]
 }
