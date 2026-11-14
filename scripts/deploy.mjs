@@ -140,16 +140,23 @@ const domain = (name) => {
 };
 const storeDomain = domain('STORE_DOMAIN');
 const adminDomain = domain('ADMIN_DOMAIN');
+// Three tries, so one slow or failed request does not count as "down".
+let lastProblem = '';
 const answers = async (url) => {
-  try {
-    const response = await fetch(url, {
-      redirect: 'manual',
-      signal: AbortSignal.timeout(10_000),
-    });
-    return response.status === 200;
-  } catch {
-    return false;
+  for (let attempt = 1; attempt <= 3; attempt++) {
+    try {
+      const response = await fetch(url, {
+        redirect: 'manual',
+        signal: AbortSignal.timeout(10_000),
+      });
+      if (response.status === 200) return true;
+      lastProblem = `HTTP ${response.status}`;
+    } catch (error) {
+      lastProblem = error?.cause?.code ?? error?.message ?? String(error);
+    }
+    if (attempt < 3) await new Promise((resolve) => setTimeout(resolve, 3000));
   }
+  return false;
 };
 
 // Deploys one site, on its custom domain when one is set. SITE_URL makes every
@@ -164,7 +171,7 @@ async function deploySite(name, vars, host, probe, secrets) {
     url = deploy(name, vars, host, secrets);
     attachedFirst = true;
     console.log(`Waiting for ${host} to come online...`);
-    for (let tries = 0; tries < 24; tries++) {
+    for (let tries = 0; tries < 8; tries++) {
       if (await answers(site + probe)) break;
       await new Promise((resolve) => setTimeout(resolve, 5000));
     }
@@ -172,7 +179,7 @@ async function deploySite(name, vars, host, probe, secrets) {
   const live = Boolean(site) && (await answers(site + probe));
   if (site && !live)
     console.warn(
-      `\n${host} is not answering yet, so the old address does not redirect to it. Deploy again once it works.`,
+      `\n${host} is not answering from this computer yet (${lastProblem}), so the old address does not redirect to it. Deploy again once it works.`,
     );
   // Already deployed above with the domain but no redirect: only redeploy to
   // add the redirect once the domain works.
