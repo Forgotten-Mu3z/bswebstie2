@@ -170,6 +170,31 @@
     "imageUrl": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/ncom/My%20Nintendo%20Store/EN-US/Nintendo%20Switch%202/Hardware/123669-nintendo-switch-2-package-front-2000x2000"
   },
   {
+    "slug": "ns-fc27",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10017332",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202607/2321/c7c534e1e9b24ccf7ff11c429948f31494ccce402b452647.png"
+  },
+  {
+    "slug": "ns2-fc27",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10017332",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202607/2321/c7c534e1e9b24ccf7ff11c429948f31494ccce402b452647.png"
+  },
+  {
+    "slug": "ns2-resident-evil-requiem",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0102-PPSA30803_00-REREQUIEM0000000",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202512/1205/79661d7a2bdb9784749b4e57e1456ca89f7ac7bed8615aee.png"
+  },
+  {
+    "slug": "ns2-resident-evil-requiem-3d",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0102-PPSA30803_00-REREQUIEM0000000",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202512/1205/79661d7a2bdb9784749b4e57e1456ca89f7ac7bed8615aee.png"
+  },
+  {
+    "slug": "ns2-resident-evil-requiem-deluxe",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0102-PPSA30803_00-REREQUIEM0000000",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202512/1205/79661d7a2bdb9784749b4e57e1456ca89f7ac7bed8615aee.png"
+  },
+  {
     "slug": "ns2-zelda-40th-ann-ed",
     "sourcePage": "https://www.nintendo.com/us/store/products/nintendo-switch-2-the-legend-of-zelda-40th-anniversary-edition-121642/",
     "imageUrl": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/ncom/My%20Nintendo%20Store/EN-US/Nintendo%20Switch%202/Hardware/121642-nintendo-switch-2-the-legend-of-zelda-40th-anniversary-edition-package-2000x2000"
@@ -178,6 +203,51 @@
     "slug": "pro-x-superlight-2-logitech-black",
     "sourcePage": "https://www.ldlc.com/en/product/PB00569683.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/06/12/LD0006061283.jpg"
+  },
+  {
+    "slug": "ps4-fc27",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10017332",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202607/2321/c7c534e1e9b24ccf7ff11c429948f31494ccce402b452647.png"
+  },
+  {
+    "slug": "ps4-gta-v",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP1004-PPSA03420_00-GTAVCROSSGENBUND",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202203/1409/oltI7Zc96usbdvhVVXcV1EAi.png"
+  },
+  {
+    "slug": "ps4-horizon-forbidden-west",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP9000-PPSA04072_00-FORBIDDENWESTPS5",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202107/3100/HO8vkO9pfXhwbHi5WHECQJdN.png"
+  },
+  {
+    "slug": "ps4-minecraft",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP4433-PPSA17221_00-MINECRAFTPS50000",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202407/0401/670c294ded3baf4fa11068db2ec6758c63f7daeb266a35a1.png"
+  },
+  {
+    "slug": "ps5-a-plague-tale-requim",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP4133-PPSA05366_00-APLAGUEOUTBURST0",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202106/1717/xIQOO3Mo5YMnIm81qkH3y5kJ.png"
+  },
+  {
+    "slug": "ps5-assasins-black-flag-collectors-edition",
+    "sourcePage": "https://store.playstation.com/en-us/product/EP0001-PPSA28183_00-GAME000000000000",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202603/1215/0962bc91a4952e6433367fcfec38b7e0655c6bd29b431712.png"
+  },
+  {
+    "slug": "ps5-assasins-black-flag-launch-edition",
+    "sourcePage": "https://store.playstation.com/en-us/product/EP0001-PPSA28183_00-GAME000000000000",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202603/1215/0962bc91a4952e6433367fcfec38b7e0655c6bd29b431712.png"
+  },
+  {
+    "slug": "ps5-cod-mw4",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0002-PPSA01649_00-CODMW4STANDARD01",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202605/1419/39e532d5d5a31d9113c7fa8f3e4c332af9428613efe01037.png"
+  },
+  {
+    "slug": "ps5-codevein-ii",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0700-PPSA23909_00-MAINGAME00000000",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202508/2820/8b05429bbbc560bda063f7190ada881888db6e6aa8ed0b30.png"
   },
   {
     "slug": "ps5-controller-007-first-light",
@@ -190,9 +260,44 @@
     "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/DSWC_CFI-ZCT2_IB_SE_RNDR_LT_RGB_EU_260604-16x9-01-18aug26en?$1600px$"
   },
   {
+    "slug": "ps5-dead-island-2-hella-ed",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP2047-PPSA03098_00-DI2MAINSIEAPS500",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202208/1012/V6WJkRhfNIQ3ePfAmrLSfGng.png"
+  },
+  {
     "slug": "ps5-edge-white",
     "sourcePage": "https://www.playstation.com/en-us/accessories/dualsense-edge-wireless-controller/",
     "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/DualSense-Edge-image-block-01-en-24aug22?$1600px$"
+  },
+  {
+    "slug": "ps5-fc27",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10017332",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202607/2321/c7c534e1e9b24ccf7ff11c429948f31494ccce402b452647.png"
+  },
+  {
+    "slug": "ps5-gta-v",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP1004-PPSA03420_00-GTAVCROSSGENBUND",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202203/1409/oltI7Zc96usbdvhVVXcV1EAi.png"
+  },
+  {
+    "slug": "ps5-halo-campaign-evolved",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10013884",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202510/1321/a0d52445fcb5d96d66a361b6759d1b8b959c4644cea70714.png"
+  },
+  {
+    "slug": "ps5-horizon-2-forbidden-west",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP9000-PPSA04072_00-FORBIDDENWESTPS5",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202107/3100/HO8vkO9pfXhwbHi5WHECQJdN.png"
+  },
+  {
+    "slug": "ps5-invincible-vs",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP2908-PPSA30568_00-INVINCIBLEVSMAIN",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202512/0223/1914db8ba62ff41798d0a89159d4028d927fe5b1e492dc67.png"
+  },
+  {
+    "slug": "ps5-invincible-vs-collector-s-edition",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP2908-PPSA30568_00-INVINCIBLEVSMAIN",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202512/0223/1914db8ba62ff41798d0a89159d4028d927fe5b1e492dc67.png"
   },
   {
     "slug": "ps5-js-blk",
@@ -265,9 +370,99 @@
     "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/dualsense-controller-product-thumbnail-01-en-14sep21?$1600px$"
   },
   {
+    "slug": "ps5-marvels-wolverine",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP9000-PPSA03671_00-MARVELSWOLVERINE",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202605/2215/a69481c5fa50fe19f42896d84fb7cbf37ab8646801a93322.png"
+  },
+  {
+    "slug": "ps5-minecraft",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP4433-PPSA17221_00-MINECRAFTPS50000",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202407/0401/670c294ded3baf4fa11068db2ec6758c63f7daeb266a35a1.png"
+  },
+  {
+    "slug": "ps5-mortal-kombat-11-ultimate",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP1018-PPSA01617_00-MK11ULTIMATEKOLL",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202010/0822/SbTOirUJUZ3oNQG0eGDZAuCr.png"
+  },
+  {
+    "slug": "ps5-my-hero-academia-all-justice",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10012661",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202506/1710/acddc32ead35b97d61c7333ddb9f3b23f3720b030b3e1e55.png"
+  },
+  {
+    "slug": "ps5-onimusha-way-of-sword",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10013248",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202605/1308/79a186e6a055909cfeb66264230ad3d76915587b0269cd0d.png"
+  },
+  {
+    "slug": "ps5-onimusha-way-of-sword-lenticular",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10013248",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202605/1308/79a186e6a055909cfeb66264230ad3d76915587b0269cd0d.png"
+  },
+  {
+    "slug": "ps5-onimusha-way-of-sword-premium-deluxe-ed",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10013248",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202605/1308/79a186e6a055909cfeb66264230ad3d76915587b0269cd0d.png"
+  },
+  {
+    "slug": "ps5-pragmata",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0102-PPSA02530_00-PRAGMATA00000000",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202511/2605/3d57b6ae9b22a4982f0272ef1c716ebbfee59b7ea1fe60af.png"
+  },
+  {
     "slug": "ps5-pulse-elite",
     "sourcePage": "https://www.playstation.com/en-us/accessories/pulse-elite-wireless-headset/",
     "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/PULSE-Elite-headset-thumbnail-02-en-12sep23?$1600px$"
+  },
+  {
+    "slug": "ps5-resident-evil-requiem-3d",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0102-PPSA30803_00-REREQUIEM0000000",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202512/1205/79661d7a2bdb9784749b4e57e1456ca89f7ac7bed8615aee.png"
+  },
+  {
+    "slug": "ps5-resident-evil-requiem-deluxe-edition",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0102-PPSA30803_00-REREQUIEM0000000",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202512/1205/79661d7a2bdb9784749b4e57e1456ca89f7ac7bed8615aee.png"
+  },
+  {
+    "slug": "ps5-resident-evil-requiem-normal",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0102-PPSA30803_00-REREQUIEM0000000",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202512/1205/79661d7a2bdb9784749b4e57e1456ca89f7ac7bed8615aee.png"
+  },
+  {
+    "slug": "ps5-resonance-a-plague-tale-legacy",
+    "sourcePage": "https://store.playstation.com/en-us/product/EP4133-PPSA30601_00-RESONANCEAPLAGUE",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202605/1510/346857c01378e194d77def3f3029d79489509c541aa761d6.png"
+  },
+  {
+    "slug": "ps5-spider-man-miles-morales",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10000649",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202008/1020/T45iRN1bhiWcJUzST6UFGBvO.png"
+  },
+  {
+    "slug": "ps5-the-blood-of-dawnwalker-collectors-edition",
+    "sourcePage": "https://store.playstation.com/en-ca/product/EP0700-PPSA28000_00-DAWNWALKER00GAME",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202603/2518/65ccfdd513d835f80bf4bbb5fb0757583fd08363f3bcd0fe.png"
+  },
+  {
+    "slug": "ps5-the-blood-of-dawnwalker-d1-edition",
+    "sourcePage": "https://store.playstation.com/en-ca/product/EP0700-PPSA28000_00-DAWNWALKER00GAME",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202603/2518/65ccfdd513d835f80bf4bbb5fb0757583fd08363f3bcd0fe.png"
+  },
+  {
+    "slug": "ps5-the-last-of-us-part-1",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP9000-PPSA03396_00-THELASTOFUSPART1",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202206/0720/eEczyEMDd2BLa3dtkGJVE9Id.png"
+  },
+  {
+    "slug": "ps5-tomb-raider-4-6",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10009064",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202409/1221/c785b0366d8f84a18dd17a0d046fdee92ccd6195d79c81a1.png"
+  },
+  {
+    "slug": "ps5-watch-dogs-legion",
+    "sourcePage": "https://store.playstation.com/en-hu/product/EP0001-PPSA01488_00-ORWFULLGAME00000",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202007/0217/OX5mEmwgRPeSQrhGFU3n4moZ.png"
   },
   {
     "slug": "razer-blackshark-v2",
@@ -290,8 +485,33 @@
     "imageUrl": "https://www.sandisk.com/content/dam/sandisk/en-us/assets/products/internal-storage/wd-blue-sa510-sata-m-2-ssd/gallery/wd-blue-sa510-sata-m2-2tb-front.png"
   },
   {
+    "slug": "xbox-fc27",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10017332",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202607/2321/c7c534e1e9b24ccf7ff11c429948f31494ccce402b452647.png"
+  },
+  {
+    "slug": "xbox-halo-campaign-evolved",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10013884",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202510/1321/a0d52445fcb5d96d66a361b6759d1b8b959c4644cea70714.png"
+  },
+  {
     "slug": "xbox-js-pink",
     "sourcePage": "https://www.xbox.com/en-US/accessories/controllers/xbox-wireless-controller",
     "imageUrl": "https://assets.xboxservices.com/assets/76/b8/76b8880d-6be7-421e-82db-2b83fc317457.jpg"
+  },
+  {
+    "slug": "xbox-onimusha-way-of-sword",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10013248",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202605/1308/79a186e6a055909cfeb66264230ad3d76915587b0269cd0d.png"
+  },
+  {
+    "slug": "xbox-onimusha-way-of-sword-premium-deluxe-ed",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10013248",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202605/1308/79a186e6a055909cfeb66264230ad3d76915587b0269cd0d.png"
+  },
+  {
+    "slug": "xbox-the-blood-of-dawnwalker",
+    "sourcePage": "https://store.playstation.com/en-ca/product/EP0700-PPSA28000_00-DAWNWALKER00GAME",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202603/2518/65ccfdd513d835f80bf4bbb5fb0757583fd08363f3bcd0fe.png"
   }
 ]

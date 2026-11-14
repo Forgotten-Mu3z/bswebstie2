@@ -20,7 +20,7 @@ a manufacturer media-kit image used under its terms, or an image with written pe
 `public/og/default.png` is made from the logo; `public/og/products/*.jpg` are made from
 the product photos below (`npm run brand:assets`), so each has the same rights status as its photo.
 
-## Product photos (59)
+## Product photos (103)
 
 Products without a photo show their category's picture from `public/placeholders/` until one is added.
 
@@ -60,11 +60,32 @@ Products without a photo show their category's picture from `public/placeholders
 | `msi-mb-pro-b760m-p-d4` | www.msi.com ([page](https://www.msi.com/Motherboard/PRO-B760M-P-DDR4)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `msi-pro-b650m-p` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00562344.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `nintendo-switch-2-uk` | www.nintendo.com ([page](https://www.nintendo.com/us/store/products/nintendo-switch-2-system-123669/)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ns-fc27` | store.playstation.com ([page](https://store.playstation.com/en-us/concept/10017332)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ns2-fc27` | store.playstation.com ([page](https://store.playstation.com/en-us/concept/10017332)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ns2-resident-evil-requiem` | store.playstation.com ([page](https://store.playstation.com/en-us/product/UP0102-PPSA30803_00-REREQUIEM0000000)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ns2-resident-evil-requiem-3d` | store.playstation.com ([page](https://store.playstation.com/en-us/product/UP0102-PPSA30803_00-REREQUIEM0000000)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ns2-resident-evil-requiem-deluxe` | store.playstation.com ([page](https://store.playstation.com/en-us/product/UP0102-PPSA30803_00-REREQUIEM0000000)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `ns2-zelda-40th-ann-ed` | www.nintendo.com ([page](https://www.nintendo.com/us/store/products/nintendo-switch-2-the-legend-of-zelda-40th-anniversary-edition-121642/)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `pro-x-superlight-2-logitech-black` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00569683.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ps4-fc27` | store.playstation.com ([page](https://store.playstation.com/en-us/concept/10017332)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ps4-gta-v` | store.playstation.com ([page](https://store.playstation.com/en-us/product/UP1004-PPSA03420_00-GTAVCROSSGENBUND)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ps4-horizon-forbidden-west` | store.playstation.com ([page](https://store.playstation.com/en-us/product/UP9000-PPSA04072_00-FORBIDDENWESTPS5)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ps4-minecraft` | store.playstation.com ([page](https://store.playstation.com/en-us/product/UP4433-PPSA17221_00-MINECRAFTPS50000)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ps5-a-plague-tale-requim` | store.playstation.com ([page](https://store.playstation.com/en-us/product/UP4133-PPSA05366_00-APLAGUEOUTBURST0)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ps5-assasins-black-flag-collectors-edition` | store.playstation.com ([page](https://store.playstation.com/en-us/product/EP0001-PPSA28183_00-GAME000000000000)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ps5-assasins-black-flag-launch-edition` | store.playstation.com ([page](https://store.playstation.com/en-us/product/EP0001-PPSA28183_00-GAME000000000000)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ps5-cod-mw4` | store.playstation.com ([page](https://store.playstation.com/en-us/product/UP0002-PPSA01649_00-CODMW4STANDARD01)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ps5-codevein-ii` | store.playstation.com ([page](https://store.playstation.com/en-us/product/UP0700-PPSA23909_00-MAINGAME00000000)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `ps5-controller-007-first-light` | www.playstation.com ([page](https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `ps5-controller-icon-blue` | www.playstation.com ([page](https://www.playstation.com/accessories/dualsense-wireless-controller/buy-now/product/icon-blue-special-edition)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ps5-dead-island-2-hella-ed` | store.playstation.com ([page](https://store.playstation.com/en-us/product/UP2047-PPSA03098_00-DI2MAINSIEAPS500)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `ps5-edge-white` | www.playstation.com ([page](https://www.playstation.com/en-us/accessories/dualsense-edge-wireless-controller/)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ps5-fc27` | store.playstation.com ([page](https://store.playstation.com/en-us/concept/10017332)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ps5-gta-v` | store.playstation.com ([page](https://store.playstation.com/en-us/product/UP1004-PPSA03420_00-GTAVCROSSGENBUND)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ps5-halo-campaign-evolved` | store.playstation.com ([page](https://store.playstation.com/en-us/concept/10013884)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ps5-horizon-2-forbidden-west` | store.playstation.com ([page](https://store.playstation.com/en-us/product/UP9000-PPSA04072_00-FORBIDDENWESTPS5)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ps5-invincible-vs` | store.playstation.com ([page](https://store.playstation.com/en-us/product/UP2908-PPSA30568_00-INVINCIBLEVSMAIN)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ps5-invincible-vs-collector-s-edition` | store.playstation.com ([page](https://store.playstation.com/en-us/product/UP2908-PPSA30568_00-INVINCIBLEVSMAIN)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `ps5-js-blk` | www.playstation.com ([page](https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `ps5-js-blue` | www.playstation.com ([page](https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `ps5-js-chroma-green` | www.playstation.com ([page](https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
@@ -79,9 +100,32 @@ Products without a photo show their category's picture from `public/placeholders
 | `ps5-js-silver` | www.playstation.com ([page](https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `ps5-js-techno-red` | www.playstation.com ([page](https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `ps5-js-wht` | www.playstation.com ([page](https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ps5-marvels-wolverine` | store.playstation.com ([page](https://store.playstation.com/en-us/product/UP9000-PPSA03671_00-MARVELSWOLVERINE)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ps5-minecraft` | store.playstation.com ([page](https://store.playstation.com/en-us/product/UP4433-PPSA17221_00-MINECRAFTPS50000)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ps5-mortal-kombat-11-ultimate` | store.playstation.com ([page](https://store.playstation.com/en-us/product/UP1018-PPSA01617_00-MK11ULTIMATEKOLL)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ps5-my-hero-academia-all-justice` | store.playstation.com ([page](https://store.playstation.com/en-us/concept/10012661)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ps5-onimusha-way-of-sword` | store.playstation.com ([page](https://store.playstation.com/en-us/concept/10013248)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ps5-onimusha-way-of-sword-lenticular` | store.playstation.com ([page](https://store.playstation.com/en-us/concept/10013248)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ps5-onimusha-way-of-sword-premium-deluxe-ed` | store.playstation.com ([page](https://store.playstation.com/en-us/concept/10013248)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ps5-pragmata` | store.playstation.com ([page](https://store.playstation.com/en-us/product/UP0102-PPSA02530_00-PRAGMATA00000000)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `ps5-pulse-elite` | www.playstation.com ([page](https://www.playstation.com/en-us/accessories/pulse-elite-wireless-headset/)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ps5-resident-evil-requiem-3d` | store.playstation.com ([page](https://store.playstation.com/en-us/product/UP0102-PPSA30803_00-REREQUIEM0000000)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ps5-resident-evil-requiem-deluxe-edition` | store.playstation.com ([page](https://store.playstation.com/en-us/product/UP0102-PPSA30803_00-REREQUIEM0000000)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ps5-resident-evil-requiem-normal` | store.playstation.com ([page](https://store.playstation.com/en-us/product/UP0102-PPSA30803_00-REREQUIEM0000000)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ps5-resonance-a-plague-tale-legacy` | store.playstation.com ([page](https://store.playstation.com/en-us/product/EP4133-PPSA30601_00-RESONANCEAPLAGUE)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ps5-spider-man-miles-morales` | store.playstation.com ([page](https://store.playstation.com/en-us/concept/10000649)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ps5-the-blood-of-dawnwalker-collectors-edition` | store.playstation.com ([page](https://store.playstation.com/en-ca/product/EP0700-PPSA28000_00-DAWNWALKER00GAME)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ps5-the-blood-of-dawnwalker-d1-edition` | store.playstation.com ([page](https://store.playstation.com/en-ca/product/EP0700-PPSA28000_00-DAWNWALKER00GAME)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ps5-the-last-of-us-part-1` | store.playstation.com ([page](https://store.playstation.com/en-us/product/UP9000-PPSA03396_00-THELASTOFUSPART1)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ps5-tomb-raider-4-6` | store.playstation.com ([page](https://store.playstation.com/en-us/concept/10009064)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ps5-watch-dogs-legion` | store.playstation.com ([page](https://store.playstation.com/en-hu/product/EP0001-PPSA01488_00-ORWFULLGAME00000)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `razer-blackshark-v2` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00354041.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `ryzen-5-7500f` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00672497.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `steelseries-kb-apex3` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00293642.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `wd-blue-tm-sa510-2tb` | www.westerndigital.com ([page](https://www.westerndigital.com/products/internal-drives/wd-blue-sa510-sata-m-2-ssd?sku=WDS200T3B0B)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `xbox-fc27` | store.playstation.com ([page](https://store.playstation.com/en-us/concept/10017332)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `xbox-halo-campaign-evolved` | store.playstation.com ([page](https://store.playstation.com/en-us/concept/10013884)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `xbox-js-pink` | www.xbox.com ([page](https://www.xbox.com/en-US/accessories/controllers/xbox-wireless-controller)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `xbox-onimusha-way-of-sword` | store.playstation.com ([page](https://store.playstation.com/en-us/concept/10013248)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `xbox-onimusha-way-of-sword-premium-deluxe-ed` | store.playstation.com ([page](https://store.playstation.com/en-us/concept/10013248)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `xbox-the-blood-of-dawnwalker` | store.playstation.com ([page](https://store.playstation.com/en-ca/product/EP0700-PPSA28000_00-DAWNWALKER00GAME)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |

@@ -30,15 +30,23 @@ const photos = JSON.parse(readFileSync(list, 'utf8'));
 
 // Product cards are square: crop the plain margin around the product, then
 // centre it on a square canvas of the same background (transparent stays
-// transparent), at most 1200px.
+// transparent), at most 1200px. Artwork that fills its frame (a game cover)
+// keeps its edges: it is only padded out to a square, with no extra margin.
 async function square(input) {
   const open = () => sharp(input, { limitInputPixels: 40_000_000 }).rotate();
-  const { data, info } = await open()
+  const full = await open().toBuffer({ resolveWithObject: true });
+  const trimmed = await open()
     .trim({ threshold: 12 })
     .toBuffer({ resolveWithObject: true })
     // An image that is all one colour has nothing to trim.
-    .catch(() => open().toBuffer({ resolveWithObject: true }));
-  const side = Math.round(Math.max(info.width, info.height) * 1.08);
+    .catch(() => full);
+  const fillsFrame =
+    trimmed.info.width * trimmed.info.height >
+    0.96 * full.info.width * full.info.height;
+  const { data, info } = fillsFrame ? full : trimmed;
+  const side = Math.round(
+    Math.max(info.width, info.height) * (fillsFrame ? 1 : 1.08),
+  );
   const corner = await sharp(data)
     .extract({ left: 0, top: 0, width: 1, height: 1 })
     .raw()
