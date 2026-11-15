@@ -169,6 +169,13 @@
       "when": 1794754499947,
       "tag": "0023_photos_16",
       "breakpoints": true
+    },
+    {
+      "idx": 24,
+      "version": "6",
+      "when": 1794755313279,
+      "tag": "0024_photos_17",
+      "breakpoints": true
     }
   ]
 }

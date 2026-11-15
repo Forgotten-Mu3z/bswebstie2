@@ -1,5 +1,23 @@
 [
   {
+    "slug": "acer-1-tb-m-2",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00630081.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/15/76/LD0006157666.jpg",
+    "representative": true
+  },
+  {
+    "slug": "acer-512gb-m-2",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00630081.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/15/76/LD0006157666.jpg",
+    "representative": true
+  },
+  {
+    "slug": "acer-predator-gm6-2tb",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00630081.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/15/76/LD0006157666.jpg",
+    "representative": true
+  },
+  {
     "slug": "addlink-ram-16-gb-d4-3200",
     "sourcePage": "https://www.ldlc.com/en/product/PB00446878.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/85/33/LD0005853323_1_0005854514_0005854543.jpg",
@@ -12,10 +30,75 @@
     "representative": true
   },
   {
+    "slug": "agi-2280-1tb-m-2-3200-1700",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00630081.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/15/76/LD0006157666.jpg",
+    "representative": true
+  },
+  {
     "slug": "agi-32gb-ram-ddr4-3600mhz",
     "sourcePage": "https://www.ldlc.com/en/product/PB00446878.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/85/33/LD0005853323_1_0005854514_0005854543.jpg",
     "representative": true
+  },
+  {
+    "slug": "agi-nvme-512-gb",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00630081.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/15/76/LD0006157666.jpg",
+    "representative": true
+  },
+  {
+    "slug": "aigo-ft418",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00660834.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/20/22/LD0006202288.jpg",
+    "representative": true
+  },
+  {
+    "slug": "aigo-ice-400-old-stock",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00579289.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/07/84/LD0006078425.jpg",
+    "representative": true
+  },
+  {
+    "slug": "aigo-ice-400-se",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00579289.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/07/84/LD0006078425.jpg",
+    "representative": true
+  },
+  {
+    "slug": "aigo-psu-750w",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00717304.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/30/40/LD0006304097_0006304134_0006304144.jpg",
+    "representative": true
+  },
+  {
+    "slug": "aigo-psu-850w",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00717304.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/30/40/LD0006304097_0006304134_0006304144.jpg",
+    "representative": true
+  },
+  {
+    "slug": "alhua-256gb-m-2",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00630081.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/15/76/LD0006157666.jpg",
+    "representative": true
+  },
+  {
+    "slug": "alhua-512gb-m-2",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00630081.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/15/76/LD0006157666.jpg",
+    "representative": true
+  },
+  {
+    "slug": "antec-nx200m",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00660834.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/20/22/LD0006202288.jpg",
+    "representative": true
+  },
+  {
+    "slug": "arctic-mx-4",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00263073.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/79/38/LD0005793810_1.jpg"
   },
   {
     "slug": "asrock-b760-pro-rs-d4",
@@ -86,6 +169,24 @@
     "imageUrl": "https://eshop.asus.com/media/catalog/product/m/a/main_oc_4.jpg?format=auto&optimize=medium&bg-color=255%2C255%2C255&fit=bounds&height=1000&width=1000&canvas=1000%3A1000"
   },
   {
+    "slug": "atx-850w",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00717304.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/30/40/LD0006304097_0006304134_0006304144.jpg",
+    "representative": true
+  },
+  {
+    "slug": "biwin-1tb-m-2",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00630081.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/15/76/LD0006157666.jpg",
+    "representative": true
+  },
+  {
+    "slug": "biwin-512gb-m-2",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00630081.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/15/76/LD0006157666.jpg",
+    "representative": true
+  },
+  {
     "slug": "black-widow-v3",
     "sourcePage": "https://www.ldlc.com/en/product/PB00377519.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/73/24/LD0005732418_1.jpg"
@@ -149,6 +250,71 @@
     "representative": true
   },
   {
+    "slug": "darkflash-psu-850w-bronze",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00717304.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/30/40/LD0006304097_0006304134_0006304144.jpg",
+    "representative": true
+  },
+  {
+    "slug": "darkflash-z4-air-cooler",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00579289.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/07/84/LD0006078425.jpg",
+    "representative": true
+  },
+  {
+    "slug": "deepcool-ag200-cooler",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00541807.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/01/32/LD0006013266.jpg"
+  },
+  {
+    "slug": "deepcool-le240-v2-liquid-cooler-blk",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00278046.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/44/99/LD0005449913_2.jpg",
+    "representative": true
+  },
+  {
+    "slug": "deepcool-le240-v2-liquid-cooler-wht",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00500996.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/95/96/LD0005959689.jpg",
+    "representative": true
+  },
+  {
+    "slug": "df-dk352",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00660834.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/20/22/LD0006202288.jpg",
+    "representative": true
+  },
+  {
+    "slug": "df-m400-blk-air-cooler",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00579289.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/07/84/LD0006078425.jpg",
+    "representative": true
+  },
+  {
+    "slug": "dg240-liquid-cooler-blk",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00278046.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/44/99/LD0005449913_2.jpg",
+    "representative": true
+  },
+  {
+    "slug": "dg240-liquid-cooler-wht",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00500996.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/95/96/LD0005959689.jpg",
+    "representative": true
+  },
+  {
+    "slug": "dk-dcs-240",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00278046.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/44/99/LD0005449913_2.jpg",
+    "representative": true
+  },
+  {
+    "slug": "dk-dlm21-b",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00660834.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/20/22/LD0006202288.jpg",
+    "representative": true
+  },
+  {
     "slug": "dp-cable",
     "sourcePage": "https://www.ldlc.com/en/product/PB00548695.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/97/52/LD0005975267_0005975274_0006028851.jpg",
@@ -158,6 +324,24 @@
     "slug": "dp-cable-4k-2m",
     "sourcePage": "https://www.ldlc.com/en/product/PB00548695.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/97/52/LD0005975267_0005975274_0006028851.jpg",
+    "representative": true
+  },
+  {
+    "slug": "emperor-arctic-iii-series",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00660835.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/20/23/LD0006202301.jpg",
+    "representative": true
+  },
+  {
+    "slug": "emperor-artic-i-series",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00660835.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/20/23/LD0006202301.jpg",
+    "representative": true
+  },
+  {
+    "slug": "ex-culeus-a10-240",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00278046.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/44/99/LD0005449913_2.jpg",
     "representative": true
   },
   {
@@ -237,6 +421,18 @@
     "imageUrl": "https://resource.logitechg.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/g923-and-trueforce/g923-gallery/g923-ps4-gallery-1-new-image.png"
   },
   {
+    "slug": "gameon-emperor-midnight-iii-series-mid-tower-gaming-case-black",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00660834.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/20/22/LD0006202288.jpg",
+    "representative": true
+  },
+  {
+    "slug": "gameon-go-emperorii-m-emperor-midnight-ii-series-mid-tower-gaming-case-black",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00660834.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/20/22/LD0006202288.jpg",
+    "representative": true
+  },
+  {
     "slug": "gameon-goac49dqhd120-curved-49-va-dqhd-120hz-0-5ms-white",
     "sourcePage": "https://www.ldlc.com/en/product/PB00705786.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/28/02/LD0006280213.jpg",
@@ -264,6 +460,12 @@
     "slug": "gameon-sapphire-rgb-gaming-desk-size-1160cm",
     "sourcePage": "https://www.ldlc.com/en/product/PB00398352.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/76/51/LD0005765106_1.jpg",
+    "representative": true
+  },
+  {
+    "slug": "gameon-trident-iii-mid-tower-gaming-case-4-fans",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00660834.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/20/22/LD0006202288.jpg",
     "representative": true
   },
   {
@@ -341,6 +543,72 @@
     "slug": "go-5600-single-monitor-arm-white",
     "sourcePage": "https://www.ldlc.com/en/product/PB00606754.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/12/03/LD0006120319.jpg",
+    "representative": true
+  },
+  {
+    "slug": "go-emperori-a",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00660835.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/20/23/LD0006202301.jpg",
+    "representative": true
+  },
+  {
+    "slug": "go-emperori-a-4-fans",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00660835.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/20/23/LD0006202301.jpg",
+    "representative": true
+  },
+  {
+    "slug": "go-emperori-m",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00660834.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/20/22/LD0006202288.jpg",
+    "representative": true
+  },
+  {
+    "slug": "go-emperorii-m",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00660834.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/20/22/LD0006202288.jpg",
+    "representative": true
+  },
+  {
+    "slug": "go-emperoriii-a",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00660835.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/20/23/LD0006202301.jpg",
+    "representative": true
+  },
+  {
+    "slug": "go-emperoriv-m",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00660834.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/20/22/LD0006202288.jpg",
+    "representative": true
+  },
+  {
+    "slug": "go-trident-2",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00660834.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/20/22/LD0006202288.jpg",
+    "representative": true
+  },
+  {
+    "slug": "go-trident-iii",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00660834.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/20/22/LD0006202288.jpg",
+    "representative": true
+  },
+  {
+    "slug": "go-valkyriei-a",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00660835.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/20/23/LD0006202301.jpg",
+    "representative": true
+  },
+  {
+    "slug": "go-vortex-a",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00660835.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/20/23/LD0006202301.jpg",
+    "representative": true
+  },
+  {
+    "slug": "go-vortex-m",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00660834.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/20/22/LD0006202288.jpg",
     "representative": true
   },
   {
@@ -485,6 +753,30 @@
     "representative": true
   },
   {
+    "slug": "hiksemi-512gb-sata-ssd",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00503709.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/16/13/LD0006161371.jpg",
+    "representative": true
+  },
+  {
+    "slug": "hiksemi-wave-sata-2-5-60g-bs",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00503709.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/16/13/LD0006161371.jpg",
+    "representative": true
+  },
+  {
+    "slug": "hikvision-2048-gb-ssd",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00630081.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/15/76/LD0006157666.jpg",
+    "representative": true
+  },
+  {
+    "slug": "hikvision-m-2-512gb",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00630081.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/15/76/LD0006157666.jpg",
+    "representative": true
+  },
+  {
     "slug": "hori-hdmi-2-mtr",
     "sourcePage": "https://www.ldlc.com/en/product/PB00594937.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/11/43/LD0006114349_0006114359.jpg",
@@ -522,6 +814,12 @@
     "slug": "hyper-x-cloud-core-wl",
     "sourcePage": "https://www.ldlc.com/en/product/PB00496127.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/94/73/LD0005947388.jpg"
+  },
+  {
+    "slug": "hyperx-stealth-gaming-chair",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00256164.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/52/93/LD0005529303_2.jpg",
+    "representative": true
   },
   {
     "slug": "i5-12400f-old-stock",
@@ -592,6 +890,30 @@
     "representative": true
   },
   {
+    "slug": "k-gaming-racing-foldable-6001",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00256164.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/52/93/LD0005529303_2.jpg",
+    "representative": true
+  },
+  {
+    "slug": "kgaming-chair-blue-black-kgs-001a",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00258035.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/05/54/LD0005055428_2.jpg",
+    "representative": true
+  },
+  {
+    "slug": "kgaming-chair-compact-foldable-racing",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00256164.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/52/93/LD0005529303_2.jpg",
+    "representative": true
+  },
+  {
+    "slug": "kgaming-chair-light-green",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00405819.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/78/06/LD0005780617_1.jpg",
+    "representative": true
+  },
+  {
     "slug": "kgaming-chair-red-black-kgs-001",
     "sourcePage": "https://www.ldlc.com/en/product/PB00258033.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/05/53/LD0005055398_2.jpg",
@@ -604,15 +926,51 @@
     "representative": true
   },
   {
+    "slug": "kgming-chair-full-black-kgs-001a",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00256164.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/52/93/LD0005529303_2.jpg",
+    "representative": true
+  },
+  {
+    "slug": "kgs-001-green-black",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00405819.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/78/06/LD0005780617_1.jpg",
+    "representative": true
+  },
+  {
     "slug": "kgs-001-red-black",
     "sourcePage": "https://www.ldlc.com/en/product/PB00258033.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/05/53/LD0005055398_2.jpg",
     "representative": true
   },
   {
+    "slug": "kgs-001a-blue-black",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00258035.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/05/54/LD0005055428_2.jpg",
+    "representative": true
+  },
+  {
+    "slug": "kgs-001a-full-black",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00256164.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/52/93/LD0005529303_2.jpg",
+    "representative": true
+  },
+  {
     "slug": "kgs-001a-red-black",
     "sourcePage": "https://www.ldlc.com/en/product/PB00258033.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/05/53/LD0005055398_2.jpg",
+    "representative": true
+  },
+  {
+    "slug": "kgs-002-blue",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00258035.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/05/54/LD0005055428_2.jpg",
+    "representative": true
+  },
+  {
+    "slug": "kgs-002-light-green",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00405819.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/78/06/LD0005780617_1.jpg",
     "representative": true
   },
   {
@@ -683,9 +1041,39 @@
     "representative": true
   },
   {
+    "slug": "le520-wh",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00500996.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/95/96/LD0005959689.jpg",
+    "representative": true
+  },
+  {
+    "slug": "lexaer-nq780-1tb-m-2-pcie-gen4x4-nvme-ssd",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00630081.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/15/76/LD0006157666.jpg",
+    "representative": true
+  },
+  {
+    "slug": "lexar-2-tb-sata-2-5",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00503709.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/16/13/LD0006161371.jpg",
+    "representative": true
+  },
+  {
+    "slug": "lexar-256-gb-m-2",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00630081.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/15/76/LD0006157666.jpg",
+    "representative": true
+  },
+  {
     "slug": "lexar-32gb-ram-ddr5-6000mhz",
     "sourcePage": "https://www.ldlc.com/en/product/PB00597731.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/96/95/LD0005969567_0005969592_0005969595_0005969598_0005969628_0006027330_0006040605_0006056924_0006117668.jpg",
+    "representative": true
+  },
+  {
+    "slug": "lexar-500gb-nm610-pro-m-2-2280-pcie-gen3x4-nvme-ssd",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00630081.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/15/76/LD0006157666.jpg",
     "representative": true
   },
   {
@@ -699,6 +1087,21 @@
     "sourcePage": "https://www.ldlc.com/en/product/PB00561654.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/05/02/LD0006050270.jpg",
     "representative": true
+  },
+  {
+    "slug": "lian-li-uni-fan-cl-wireless-120-black-1pc",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00710745.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/28/92/LD0006289243.jpg"
+  },
+  {
+    "slug": "lian-li-uni-fan-cl-wireless-120-black-with-controller-3pcs",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00710751.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/28/92/LD0006289273.jpg"
+  },
+  {
+    "slug": "lian-li-uni-fan-cl-wireless-120-reverse-black-with",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00710754.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/28/92/LD0006289288.jpg"
   },
   {
     "slug": "logietch-shifter",
@@ -769,6 +1172,36 @@
     "slug": "logitech-shifter",
     "sourcePage": "https://www.logitechg.com/en-us/shop/p/driving-force-shifter",
     "imageUrl": "https://resource.logitechg.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/driving-force-shifter/shifter-gallery-1.png"
+  },
+  {
+    "slug": "loving-cool-case-blk-6-fans",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00660834.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/20/22/LD0006202288.jpg",
+    "representative": true
+  },
+  {
+    "slug": "lovingcool-5-fans-white",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00660835.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/20/23/LD0006202301.jpg",
+    "representative": true
+  },
+  {
+    "slug": "lovingcool-tempered-6-fans-case-white",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00660835.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/20/23/LD0006202301.jpg",
+    "representative": true
+  },
+  {
+    "slug": "lovingcool-tempered-glass-black",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00660834.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/20/22/LD0006202288.jpg",
+    "representative": true
+  },
+  {
+    "slug": "lovingcool-white-2-side-6-fans-white",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00660835.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/20/23/LD0006202301.jpg",
+    "representative": true
   },
   {
     "slug": "ms2-joycon",
@@ -1168,6 +1601,12 @@
     "representative": true
   },
   {
+    "slug": "pny-1tb-2-5-sata-6gb-s-read-speed-up-to-535mb-swrite-speed-up-to-515mb-s",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00503709.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/16/13/LD0006161371.jpg",
+    "representative": true
+  },
+  {
     "slug": "pny-rtx-5060-8gb-oc-black",
     "sourcePage": "https://www.pny.com/geforce-rtx-5060-8gb-models",
     "imageUrl": "https://www.pny.com/productimages/026769ef-e581-4b5f-bc57-b2c0009c7bee/images/0-pny-rtx-5060-argb-oc-epic-x-triple-fan-ra.png",
@@ -1183,6 +1622,24 @@
     "slug": "pny-rtx5070-oc-12gb-3-fan",
     "sourcePage": "https://www.pny.com/geforce-rtx-5070-models",
     "imageUrl": "https://www.pny.com/productimages/d3266c6f-d466-41a0-b948-b25f00b01415/images/1-pny-rtx-5070-argb-epic-x-triple-fan-ra.png",
+    "representative": true
+  },
+  {
+    "slug": "porodo-gaming-aluminum-multi-fan-cooling-pad-silver-pdx117",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00537269.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/00/46/LD0006004690.jpg",
+    "representative": true
+  },
+  {
+    "slug": "porodo-gaming-crystal-shell-laptop-cooling-pad-black",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00537269.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/00/46/LD0006004690.jpg",
+    "representative": true
+  },
+  {
+    "slug": "porodo-pdx-548-chair",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00256164.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/52/93/LD0005529303_2.jpg",
     "representative": true
   },
   {
@@ -1211,6 +1668,12 @@
     "slug": "prodo-xcommand-carbon-fiber-desk",
     "sourcePage": "https://www.ldlc.com/en/product/PB00398352.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/76/51/LD0005765106_1.jpg",
+    "representative": true
+  },
+  {
+    "slug": "prodoo-cooler-pdxf5cpbk",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00537269.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/00/46/LD0006004690.jpg",
     "representative": true
   },
   {
@@ -3691,6 +4154,12 @@
     "representative": true
   },
   {
+    "slug": "t-force-ga-pro-2tb-m-2",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00630081.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/15/76/LD0006157666.jpg",
+    "representative": true
+  },
+  {
     "slug": "team-group-t-force-delta-rgb-16gb-16gbx1-ddr4-3600mhz-memory-black",
     "sourcePage": "https://www.ldlc.com/en/product/PB00597731.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/96/95/LD0005969567_0005969592_0005969595_0005969598_0005969628_0006027330_0006040605_0006056924_0006117668.jpg",
@@ -3700,6 +4169,18 @@
     "slug": "team-group-t-force-delta-rgb-16gb-16gbx1-ddr4-3600mhz-memory-white",
     "sourcePage": "https://www.ldlc.com/en/product/PB00457515.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/87/27/LD0005872721_1_0005872800_0005872877.jpg",
+    "representative": true
+  },
+  {
+    "slug": "teamgroup-mp33-ssd-1tb",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00630081.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/15/76/LD0006157666.jpg",
+    "representative": true
+  },
+  {
+    "slug": "teamgroupmp33-ssd-256gb",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00630081.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/15/76/LD0006157666.jpg",
     "representative": true
   },
   {
@@ -3718,6 +4199,24 @@
     "slug": "tforce-delta-rgb-16gb-ram-ddr5-6000mhz-single-black",
     "sourcePage": "https://www.ldlc.com/en/product/PB00597731.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/96/95/LD0005969567_0005969592_0005969595_0005969598_0005969628_0006027330_0006040605_0006056924_0006117668.jpg",
+    "representative": true
+  },
+  {
+    "slug": "tm-gm-i",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00660834.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/20/22/LD0006202288.jpg",
+    "representative": true
+  },
+  {
+    "slug": "tm-gm-ii",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00660834.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/20/22/LD0006202288.jpg",
+    "representative": true
+  },
+  {
+    "slug": "tm-gm-iii-b",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00660834.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/20/22/LD0006202288.jpg",
     "representative": true
   },
   {
@@ -3775,6 +4274,24 @@
     "representative": true
   },
   {
+    "slug": "tortox-700w",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00717304.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/30/40/LD0006304097_0006304134_0006304144.jpg",
+    "representative": true
+  },
+  {
+    "slug": "tortox-bx750w",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00717304.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/30/40/LD0006304097_0006304134_0006304144.jpg",
+    "representative": true
+  },
+  {
+    "slug": "toufeeq-case",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00660834.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/20/22/LD0006202288.jpg",
+    "representative": true
+  },
+  {
     "slug": "tp-bridge-high-speed-dp-cable-1-5-mtr",
     "sourcePage": "https://www.ldlc.com/en/product/PB00548695.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/97/52/LD0005975267_0005975274_0006028851.jpg",
@@ -3795,6 +4312,24 @@
     "slug": "turtle-beach-recon-70p-headset",
     "sourcePage": "https://www.ldlc.com/en/product/PB00648608.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/17/60/LD0006176016.jpg",
+    "representative": true
+  },
+  {
+    "slug": "twisted-minds-titan-glass-mid-tower-gaming-case-black-tm-gm-iii-b",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00660834.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/20/22/LD0006202288.jpg",
+    "representative": true
+  },
+  {
+    "slug": "usd-tower-coler",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00579289.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/07/84/LD0006078425.jpg",
+    "representative": true
+  },
+  {
+    "slug": "verbatim-512gb-m-2-nvme",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00630081.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/15/76/LD0006157666.jpg",
     "representative": true
   },
   {
@@ -3902,6 +4437,12 @@
     "slug": "xbox-the-blood-of-dawnwalker",
     "sourcePage": "https://store.playstation.com/en-ca/product/EP0700-PPSA28000_00-DAWNWALKER00GAME",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202603/2518/65ccfdd513d835f80bf4bbb5fb0757583fd08363f3bcd0fe.png"
+  },
+  {
+    "slug": "xigmatex-z-power-ii-700",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00717304.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/30/40/LD0006304097_0006304134_0006304144.jpg",
+    "representative": true
   },
   {
     "slug": "xpg-16gb-x2-spectrix-d35g-3600mhz-ddr4",
