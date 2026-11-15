@@ -83,8 +83,6 @@ async function cutOut(input) {
   const top = [...buckets.values()].sort((a, b) => b.n - a.n)[0];
   if (clear + (top?.n ?? 0) < edge.length * 0.6) return null;
   const bg = top ? [top.r / top.n, top.g / top.n, top.b / top.n] : null;
-  const NEAR = 26;
-  const FAR = 70;
   const diff = (i) =>
     bg
       ? Math.max(
@@ -93,27 +91,86 @@ async function cutOut(input) {
           Math.abs(data[i + 2] - bg[2]),
         )
       : 255;
+  // How far a pixel may be from the backdrop colour and still count as
+  // backdrop: just above the backdrop's own noise along the edges, so a light
+  // product on a clean white backdrop keeps its pale edges.
+  const noise = edge
+    .map((p) => diff(p * 4))
+    .filter((d) => d < 40)
+    .sort((a, b) => a - b);
+  const NEAR = Math.min(
+    26,
+    Math.max(8, (noise[Math.floor(noise.length * 0.95)] ?? 0) + 6),
+  );
+  const FAR = NEAR + 44;
   const backdrop = (i) => data[i + 3] < 128 || diff(i) <= NEAR;
   const gone = new Uint8Array(w * h);
+  const neighbours = (p) => {
+    const x = p % w;
+    return [
+      x > 0 ? p - 1 : -1,
+      x < w - 1 ? p + 1 : -1,
+      p - w,
+      p + w < w * h ? p + w : -1,
+    ];
+  };
   const stack = [];
   for (const p of edge)
     if (!gone[p] && backdrop(p * 4)) {
       gone[p] = 1;
       stack.push(p);
     }
-  while (stack.length) {
-    const p = stack.pop();
-    const x = p % w;
-    for (const q of [
-      x > 0 ? p - 1 : -1,
-      x < w - 1 ? p + 1 : -1,
-      p - w,
-      p + w < w * h ? p + w : -1,
-    ])
+  while (stack.length)
+    for (const q of neighbours(stack.pop()))
       if (q >= 0 && !gone[q] && backdrop(q * 4)) {
         gone[q] = 1;
         stack.push(q);
       }
+  // Gaps the product closes in (inside a headband, a cable loop) are backdrop
+  // too: clear a sizeable patch that is almost exactly the backdrop colour when
+  // what surrounds it (four pixels deep, past the soft edge) is mostly dark,
+  // neutral material. White panels of a product are shaded rather than flat,
+  // or sit next to pale or coloured parts, so they stay.
+  if (bg) {
+    const darkNeutral = (i) =>
+      0.3 * data[i] + 0.59 * data[i + 1] + 0.11 * data[i + 2] < 110 &&
+      Math.max(data[i], data[i + 1], data[i + 2]) -
+        Math.min(data[i], data[i + 1], data[i + 2]) <
+        40;
+    const seen = new Uint8Array(w * h);
+    const minArea = w * h * 0.0015;
+    for (let start = 0; start < w * h; start++) {
+      if (gone[start] || seen[start] || !backdrop(start * 4)) continue;
+      const patch = [start];
+      seen[start] = 1;
+      for (let k = 0; k < patch.length; k++)
+        for (const q of neighbours(patch[k]))
+          if (q >= 0 && !gone[q] && !seen[q] && backdrop(q * 4)) {
+            seen[q] = 1;
+            patch.push(q);
+          }
+      if (patch.length < minArea) continue;
+      let pure = 0;
+      for (const p of patch) if (diff(p * 4) <= 3) pure++;
+      if (pure < patch.length * 0.85) continue;
+      const inPatch = new Set(patch);
+      const shell = new Set();
+      let front = patch;
+      for (let layer = 0; layer < 4; layer++) {
+        const next = [];
+        for (const p of front)
+          for (const q of neighbours(p))
+            if (q >= 0 && !gone[q] && !inPatch.has(q) && !shell.has(q)) {
+              shell.add(q);
+              next.push(q);
+            }
+        front = next;
+      }
+      let dark = 0;
+      for (const q of shell) if (darkNeutral(q * 4)) dark++;
+      if (shell.size && dark > shell.size * 0.5)
+        for (const p of patch) gone[p] = 1;
+    }
   }
   let left = w;
   let right = -1;

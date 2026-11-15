@@ -46,6 +46,72 @@
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/72/65/LD0005726580_1.jpg"
   },
   {
+    "slug": "call-of-duty-bo6-desk",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00398352.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/76/51/LD0005765106_1.jpg",
+    "representative": true
+  },
+  {
+    "slug": "cat-6-10m",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00210822.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld3/zoom/2009/LD0000711675_0003705730.jpg",
+    "representative": true
+  },
+  {
+    "slug": "cat-6-15m",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00210822.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld3/zoom/2009/LD0000711675_0003705730.jpg",
+    "representative": true
+  },
+  {
+    "slug": "cat-6-1m",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00210822.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld3/zoom/2009/LD0000711675_0003705730.jpg",
+    "representative": true
+  },
+  {
+    "slug": "cat-6-20m",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00210822.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld3/zoom/2009/LD0000711675_0003705730.jpg",
+    "representative": true
+  },
+  {
+    "slug": "cat-6-35m",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00210822.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld3/zoom/2009/LD0000711675_0003705730.jpg",
+    "representative": true
+  },
+  {
+    "slug": "cat-6-40m",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00210822.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld3/zoom/2009/LD0000711675_0003705730.jpg",
+    "representative": true
+  },
+  {
+    "slug": "cat-6-5m",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00210822.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld3/zoom/2009/LD0000711675_0003705730.jpg",
+    "representative": true
+  },
+  {
+    "slug": "dp-cable",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00548695.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/97/52/LD0005975267_0005975274_0006028851.jpg",
+    "representative": true
+  },
+  {
+    "slug": "dp-cable-4k-2m",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00548695.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/97/52/LD0005975267_0005975274_0006028851.jpg",
+    "representative": true
+  },
+  {
+    "slug": "fnatic-jet-mp",
+    "sourcePage": "https://fnatic.com/products/jet-pad-l",
+    "imageUrl": "https://cf-img.fnatic.com/cdn-cgi/image/dpr=1,fit=scale-down,height=630,width=1200/https://cdn.sanity.io/images/5gii1snx/production/a924a5dff7caa9dc69620a218e12b2fda3d0952d-2560x2560.png",
+    "representative": true
+  },
+  {
     "slug": "funko-pop-buggy-the-clown",
     "sourcePage": "https://funko.com/search?q=buggy%20the%20clown",
     "imageUrl": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw919af348/images/funko/66428-2_C.png?sw=1200&sh=1200"
@@ -116,9 +182,121 @@
     "imageUrl": "https://resource.logitechg.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/g923-and-trueforce/g923-gallery/g923-ps4-gallery-1-new-image.png"
   },
   {
+    "slug": "gameon-sapphire-rgb-gaming-desk-size-1160cm",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00398352.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/76/51/LD0005765106_1.jpg",
+    "representative": true
+  },
+  {
+    "slug": "go-2045-dual-arm-17-32-black",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00606683.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/14/90/LD0006149003.jpg",
+    "representative": true
+  },
+  {
+    "slug": "go-3363-single-arm",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00462653.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/89/48/LD0005894811_1.jpg",
+    "representative": true
+  },
+  {
+    "slug": "go-5008-dual-arm",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00606683.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/14/90/LD0006149003.jpg",
+    "representative": true
+  },
+  {
+    "slug": "go-5336-single-monitor-arm",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00462653.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/89/48/LD0005894811_1.jpg",
+    "representative": true
+  },
+  {
+    "slug": "go-5367-triple-arm",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00264846.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/19/17/LD0005191706_2.jpg",
+    "representative": true
+  },
+  {
+    "slug": "go-5450-dual-monitor-arm-white",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00673710.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/22/87/LD0006228755.jpg",
+    "representative": true
+  },
+  {
+    "slug": "go-5500-single-arm",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00462653.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/89/48/LD0005894811_1.jpg",
+    "representative": true
+  },
+  {
+    "slug": "go-5501-signle-arm-white",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00606754.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/12/03/LD0006120319.jpg",
+    "representative": true
+  },
+  {
+    "slug": "go-5501-single-arm-white",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00606754.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/12/03/LD0006120319.jpg",
+    "representative": true
+  },
+  {
+    "slug": "go-5550-dual-arm",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00606683.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/14/90/LD0006149003.jpg",
+    "representative": true
+  },
+  {
+    "slug": "go-5600-single-monitor-arm-white",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00606754.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/12/03/LD0006120319.jpg",
+    "representative": true
+  },
+  {
     "slug": "goes27qhd120ips",
     "sourcePage": "https://global.microless.com/product/gameon-essential-series-gaming-monitor-27-ips-display-qhd-resolution-120hz-refresh-rate-0-5ms-mprt-response-time-freesync-adaptive-sync-gameplus-technology-black-goes27qhd120ips/",
     "imageUrl": "https://cdn.microless.com/products/e4722764bce9a34cc4c31b8b59d8df6f-hi.jpg"
+  },
+  {
+    "slug": "govee-neon-rope-light-2",
+    "sourcePage": "https://us.govee.com/products/govee-neon-rope-light-2",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0512/3489/8105/files/H61D3_Free_2c0f3ddf-7ddf-4454-8b90-2c22027ff02a.png?v=1768792382"
+  },
+  {
+    "slug": "govee-rgbic-neon-rope",
+    "sourcePage": "https://us.govee.com/products/govee-rgbic-led-neon-rope-lights-for-desks",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0512/3489/8105/files/61C3_40c5fcac-28fe-4f90-bc10-13e0e5d820c4.png?v=1743405059"
+  },
+  {
+    "slug": "hdmi-cable-1-8-m-box",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00594937.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/11/43/LD0006114349_0006114359.jpg",
+    "representative": true
+  },
+  {
+    "slug": "hdmi-cable-5m",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00594937.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/11/43/LD0006114349_0006114359.jpg",
+    "representative": true
+  },
+  {
+    "slug": "hori-hdmi-2-mtr",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00594937.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/11/43/LD0006114349_0006114359.jpg",
+    "representative": true
+  },
+  {
+    "slug": "hori-hdmi-3-mtr",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00594937.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/11/43/LD0006114349_0006114359.jpg",
+    "representative": true
+  },
+  {
+    "slug": "hyper-x-cloud-2",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00426384.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/81/52/LD0005815261_1.jpg",
+    "representative": true
   },
   {
     "slug": "hyper-x-cloud-3",
@@ -152,6 +330,42 @@
     "imageUrl": "https://cdn.gccgamers.com/media/products/5d07e70a-37fb-4262-8dff-3acc994f10d2.webp"
   },
   {
+    "slug": "je-brand-cat-8-cable-3mtr",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00210822.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld3/zoom/2009/LD0000711675_0003705730.jpg",
+    "representative": true
+  },
+  {
+    "slug": "je-brand-cat-8-cable-5mtr",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00210822.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld3/zoom/2009/LD0000711675_0003705730.jpg",
+    "representative": true
+  },
+  {
+    "slug": "kgaming-chair-red-black-kgs-001",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00258033.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/05/53/LD0005055398_2.jpg",
+    "representative": true
+  },
+  {
+    "slug": "kgaming-chair-red-black-kgs-001a",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00258033.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/05/53/LD0005055398_2.jpg",
+    "representative": true
+  },
+  {
+    "slug": "kgs-001-red-black",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00258033.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/05/53/LD0005055398_2.jpg",
+    "representative": true
+  },
+  {
+    "slug": "kgs-001a-red-black",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00258033.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/05/53/LD0005055398_2.jpg",
+    "representative": true
+  },
+  {
     "slug": "kingston-2tb-m-2",
     "sourcePage": "https://www.ldlc.com/en/product/PB00630082.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/15/76/LD0006157669.jpg",
@@ -173,9 +387,32 @@
     "imageUrl": "https://resource.logitechg.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/driving-force-shifter/shifter-gallery-1.png"
   },
   {
+    "slug": "logitch-g435-wireless",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00459973.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/88/45/LD0005884535_1.jpg",
+    "representative": true
+  },
+  {
+    "slug": "logitch-g502",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00262343.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/88/25/LD0005882559_1.jpg"
+  },
+  {
+    "slug": "logitech-a30-wireless",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00519021.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/98/14/LD0005981460.jpg",
+    "representative": true
+  },
+  {
     "slug": "logitech-astro-a10",
     "sourcePage": "https://www.logitechg.com/en-us/shop/p/a10-gen-2.939-002076",
     "imageUrl": "https://resource.logitechg.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/astro/en/products/a10-gen-2/pdp-gallery-a10-black-01-new.png"
+  },
+  {
+    "slug": "logitech-g309",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00627239.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/15/06/LD0006150664.jpg",
+    "representative": true
   },
   {
     "slug": "logitech-g502x",
@@ -183,9 +420,31 @@
     "imageUrl": "https://resource.logitechg.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/g502x-corded/gallery/g502x-corded-gallery-1-black.png"
   },
   {
+    "slug": "logitech-g733-wrieless",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00367772.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/86/19/LD0005861906_1.jpg",
+    "representative": true
+  },
+  {
     "slug": "logitech-g923-racing-wheel",
     "sourcePage": "https://www.logitechg.com/en-us/shop/p/g923-trueforce-sim-racing-wheel",
     "imageUrl": "https://resource.logitechg.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/g923-and-trueforce/g923-gallery/g923-ps4-gallery-1-new-image.png"
+  },
+  {
+    "slug": "logitech-mouse-g304-blk",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00250122.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/25/83/LD0006258325.jpg"
+  },
+  {
+    "slug": "logitech-mouse-pro-x-superlight-red",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00532084.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/99/54/LD0005995452.jpg"
+  },
+  {
+    "slug": "logitech-pro-x-superlight-2c",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00730988.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/32/80/LD0006328010.jpg",
+    "representative": true
   },
   {
     "slug": "logitech-shifter",
@@ -533,14 +792,43 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202511/0515/9fcf8cc561ad83a7476bb5d1aa92630068957efc7bd077bc.png"
   },
   {
+    "slug": "pdx-544-gaming-desk-blk",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00398352.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/76/51/LD0005765106_1.jpg",
+    "representative": true
+  },
+  {
+    "slug": "porodo-pdx122bk-desk",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00398352.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/76/51/LD0005765106_1.jpg",
+    "representative": true
+  },
+  {
     "slug": "pro-x-superlight-2-logitech-black",
     "sourcePage": "https://www.ldlc.com/en/product/PB00569683.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/06/12/LD0006061283.jpg"
   },
   {
+    "slug": "pro-x-superlight-2-logitech-white",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00569684.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/06/12/LD0006061288.jpg"
+  },
+  {
+    "slug": "prodo-xcommand-carbon-fiber-desk",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00398352.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/76/51/LD0005765106_1.jpg",
+    "representative": true
+  },
+  {
     "slug": "ps-vr2",
     "sourcePage": "https://www.playstation.com/en-us/ps-vr2/",
     "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/PSVR2-thumbnail-01-en-22feb22?$1600px--t$"
+  },
+  {
+    "slug": "ps4-5-og-hdmi-cable",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00594937.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/11/43/LD0006114349_0006114359.jpg",
+    "representative": true
   },
   {
     "slug": "ps4-a-sackboy",
@@ -1738,6 +2026,12 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202510/1321/a0d52445fcb5d96d66a361b6759d1b8b959c4644cea70714.png"
   },
   {
+    "slug": "ps5-hdmi-2-mtr",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00594937.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/11/43/LD0006114349_0006114359.jpg",
+    "representative": true
+  },
+  {
     "slug": "ps5-hell-diver-2",
     "sourcePage": "https://store.playstation.com/en-us/concept/10000657",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202608/0517/6d1f643eec5087e543287e54a123277ec3bcda956d5d5158.png"
@@ -2784,6 +3078,12 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202508/1212/8fc285a94345f7eef49aa26692fb873e450d7ff72760fed8.png"
   },
   {
+    "slug": "pw-vgs119-z-desk",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00398352.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/76/51/LD0005765106_1.jpg",
+    "representative": true
+  },
+  {
     "slug": "razer-black-shark-v2-x-hs-green",
     "sourcePage": "https://www.ldlc.com/en/product/PB00462190.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/89/39/LD0005893998_1.jpg"
@@ -2802,6 +3102,18 @@
     "slug": "razer-huntsman-mini",
     "sourcePage": "https://www.ldlc.com/en/product/PB00377239.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/73/20/LD0005732060_1_0005732067.jpg",
+    "representative": true
+  },
+  {
+    "slug": "razer-kitty-edition",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00279640.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/48/29/LD0005482953_2.jpg",
+    "representative": true
+  },
+  {
+    "slug": "razer-kraken-pink",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00273946.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/36/72/LD0005367295_2.jpg",
     "representative": true
   },
   {
@@ -2872,9 +3184,27 @@
     "imageUrl": "https://assets.nintendo.com/image/upload/q_auto/f_auto/ncom/My%20Nintendo%20Store/EN-US/Nintendo%20Switch%202/Controllers/Pro%20Controllers/127074-nintendo-switch-2-pro-controller-the-legend-of-zelda-40th-edition-package-2000x2000"
   },
   {
+    "slug": "tp-bridge-high-speed-dp-cable-1-5-mtr",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00548695.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/97/52/LD0005975267_0005975274_0006028851.jpg",
+    "representative": true
+  },
+  {
+    "slug": "turtle-beach-70p-bl",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00648608.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/17/60/LD0006176016.jpg",
+    "representative": true
+  },
+  {
     "slug": "turtle-beach-70p-wh",
     "sourcePage": "https://www.ldlc.com/en/product/PB00648607.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/17/60/LD0006176011.jpg"
+  },
+  {
+    "slug": "turtle-beach-recon-70p-headset",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00648608.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/17/60/LD0006176016.jpg",
+    "representative": true
   },
   {
     "slug": "wd-1tb-m-2-nvme",
@@ -2949,8 +3279,8 @@
   },
   {
     "slug": "xbox-js-pink",
-    "sourcePage": "https://www.xbox.com/en-US/accessories/controllers/xbox-wireless-controller",
-    "imageUrl": "https://assets.xboxservices.com/assets/76/b8/76b8880d-6be7-421e-82db-2b83fc317457.jpg"
+    "sourcePage": "https://www.microsoft.com/en-us/d/xbox-wireless-controller/8xn59crbsqgz",
+    "imageUrl": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/3899411_Image-Buy-Box-0_2000x2000?wid=1600&fmt=png-alpha"
   },
   {
     "slug": "xbox-js-pulse-cipher",
