@@ -1,5 +1,11 @@
 [
   {
+    "slug": "4-inch-screen-360-liquidcooler",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00731452.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/32/93/LD0006329382.jpg",
+    "representative": true
+  },
+  {
     "slug": "acer-1-tb-m-2",
     "sourcePage": "https://www.ldlc.com/en/product/PB00630081.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/15/76/LD0006157666.jpg",
@@ -66,6 +72,12 @@
     "representative": true
   },
   {
+    "slug": "aigo-mp",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00188835.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/03/06/34/LD0003063422_2.jpg",
+    "representative": true
+  },
+  {
     "slug": "aigo-psu-750w",
     "sourcePage": "https://www.ldlc.com/en/product/PB00717304.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/30/40/LD0006304097_0006304134_0006304144.jpg",
@@ -87,6 +99,12 @@
     "slug": "alhua-512gb-m-2",
     "sourcePage": "https://www.ldlc.com/en/product/PB00630081.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/15/76/LD0006157666.jpg",
+    "representative": true
+  },
+  {
+    "slug": "anime-mousepad",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00701276.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/27/13/LD0006271399.jpg",
     "representative": true
   },
   {
@@ -119,6 +137,12 @@
     "slug": "astro-a20-x-wireless",
     "sourcePage": "https://www.logitechg.com/en-us/shop/c/gaming-headsets-audio",
     "imageUrl": "https://resource.logitechg.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/a20-x-pdp/gallery/a20x-3qtr-front-with-receiver-black-gallery-1-new.png"
+  },
+  {
+    "slug": "astrobeat-360-water-cooling",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00627312.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/15/13/LD0006151351.jpg",
+    "representative": true
   },
   {
     "slug": "asus-dual-rtx-5060-ti-oc-16gb-black",
@@ -232,6 +256,18 @@
     "representative": true
   },
   {
+    "slug": "cat-6-25-m",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00210822.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld3/zoom/2009/LD0000711675_0003705730.jpg",
+    "representative": true
+  },
+  {
+    "slug": "cat-6-30m",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00210822.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld3/zoom/2009/LD0000711675_0003705730.jpg",
+    "representative": true
+  },
+  {
     "slug": "cat-6-35m",
     "sourcePage": "https://www.ldlc.com/en/product/PB00210822.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld3/zoom/2009/LD0000711675_0003705730.jpg",
@@ -250,6 +286,12 @@
     "representative": true
   },
   {
+    "slug": "darkflash-dk-gd68-keybaord",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00256412.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/81/06/LD0005810688_1.jpg",
+    "representative": true
+  },
+  {
     "slug": "darkflash-psu-850w-bronze",
     "sourcePage": "https://www.ldlc.com/en/product/PB00717304.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/30/40/LD0006304097_0006304134_0006304144.jpg",
@@ -259,6 +301,18 @@
     "slug": "darkflash-z4-air-cooler",
     "sourcePage": "https://www.ldlc.com/en/product/PB00579289.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/07/84/LD0006078425.jpg",
+    "representative": true
+  },
+  {
+    "slug": "dash2-max-mp",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00188835.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/03/06/34/LD0003063422_2.jpg",
+    "representative": true
+  },
+  {
+    "slug": "dc-mouse-pad",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00188835.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/03/06/34/LD0003063422_2.jpg",
     "representative": true
   },
   {
@@ -276,6 +330,12 @@
     "slug": "deepcool-le240-v2-liquid-cooler-wht",
     "sourcePage": "https://www.ldlc.com/en/product/PB00500996.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/95/96/LD0005959689.jpg",
+    "representative": true
+  },
+  {
+    "slug": "deepcool-le360-v2-liquid-cooler-black",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00627312.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/15/13/LD0006151351.jpg",
     "representative": true
   },
   {
@@ -303,9 +363,27 @@
     "representative": true
   },
   {
+    "slug": "digital-liquidcooler-360",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00731452.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/32/93/LD0006329382.jpg",
+    "representative": true
+  },
+  {
     "slug": "dk-dcs-240",
     "sourcePage": "https://www.ldlc.com/en/product/PB00278046.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/44/99/LD0005449913_2.jpg",
+    "representative": true
+  },
+  {
+    "slug": "dk-dcs-360-bk",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00627312.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/15/13/LD0006151351.jpg",
+    "representative": true
+  },
+  {
+    "slug": "dk-dg360-luquid-cooler",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00627312.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/15/13/LD0006151351.jpg",
     "representative": true
   },
   {
@@ -324,6 +402,12 @@
     "slug": "dp-cable-4k-2m",
     "sourcePage": "https://www.ldlc.com/en/product/PB00548695.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/97/52/LD0005975267_0005975274_0006028851.jpg",
+    "representative": true
+  },
+  {
+    "slug": "dual-band-bluetooth-usb-dongle",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00686446.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/24/85/LD0006248547.jpg",
     "representative": true
   },
   {
@@ -348,6 +432,18 @@
     "slug": "fnatic-jet-mp",
     "sourcePage": "https://fnatic.com/products/jet-pad-l",
     "imageUrl": "https://cf-img.fnatic.com/cdn-cgi/image/dpr=1,fit=scale-down,height=630,width=1200/https://cdn.sanity.io/images/5gii1snx/production/a924a5dff7caa9dc69620a218e12b2fda3d0952d-2560x2560.png",
+    "representative": true
+  },
+  {
+    "slug": "focus-s3-mp-m",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00188835.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/03/06/34/LD0003063422_2.jpg",
+    "representative": true
+  },
+  {
+    "slug": "focus-s3-mp-s",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00188835.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/03/06/34/LD0003063422_2.jpg",
     "representative": true
   },
   {
@@ -582,6 +678,12 @@
     "representative": true
   },
   {
+    "slug": "go-mk260-rs",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00256412.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/81/06/LD0005810688_1.jpg",
+    "representative": true
+  },
+  {
     "slug": "go-trident-2",
     "sourcePage": "https://www.ldlc.com/en/product/PB00660834.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/20/22/LD0006202288.jpg",
@@ -683,6 +785,18 @@
     "representative": true
   },
   {
+    "slug": "gok905-headset",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00316221.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/60/24/LD0005602497_2.jpg",
+    "representative": true
+  },
+  {
+    "slug": "gokrakenn360-blk",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00627312.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/15/13/LD0006151351.jpg",
+    "representative": true
+  },
+  {
     "slug": "gomd27qhd180ips",
     "sourcePage": "https://www.ldlc.com/en/product/PB00653087.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/18/68/LD0006186864.jpg",
@@ -692,6 +806,30 @@
     "slug": "gomd27qhd240ips-black",
     "sourcePage": "https://www.ldlc.com/en/product/PB00653087.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/18/68/LD0006186864.jpg",
+    "representative": true
+  },
+  {
+    "slug": "gomgk68-rs",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00256412.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/81/06/LD0005810688_1.jpg",
+    "representative": true
+  },
+  {
+    "slug": "gomk160-rs",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00256412.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/81/06/LD0005810688_1.jpg",
+    "representative": true
+  },
+  {
+    "slug": "gomk60-rs-gameon-keyboard-gomk60-rs-red-switch-60",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00256412.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/81/06/LD0005810688_1.jpg",
+    "representative": true
+  },
+  {
+    "slug": "gomk87-rs",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00256412.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/81/06/LD0005810688_1.jpg",
     "representative": true
   },
   {
@@ -731,14 +869,62 @@
     "representative": true
   },
   {
+    "slug": "gosbt1-gameon-sonicstorm-x-wireless-rgb-soundbar",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00654232.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/18/78/LD0006187803.jpg",
+    "representative": true
+  },
+  {
+    "slug": "gosbt2-gameon-dominator-blaze-wireless-rgb-soundbar",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00654232.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/18/78/LD0006187803.jpg",
+    "representative": true
+  },
+  {
+    "slug": "got100-headset",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00316221.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/60/24/LD0005602497_2.jpg",
+    "representative": true
+  },
+  {
     "slug": "govee-neon-rope-light-2",
     "sourcePage": "https://us.govee.com/products/govee-neon-rope-light-2",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0512/3489/8105/files/H61D3_Free_2c0f3ddf-7ddf-4454-8b90-2c22027ff02a.png?v=1768792382"
   },
   {
+    "slug": "govee-rgb-strip",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00471388.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/91/03/LD0005910351_1.jpg",
+    "representative": true
+  },
+  {
+    "slug": "govee-rgbic",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00471388.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/91/03/LD0005910351_1.jpg",
+    "representative": true
+  },
+  {
     "slug": "govee-rgbic-neon-rope",
     "sourcePage": "https://us.govee.com/products/govee-rgbic-led-neon-rope-lights-for-desks",
     "imageUrl": "https://cdn.shopify.com/s/files/1/0512/3489/8105/files/61C3_40c5fcac-28fe-4f90-bc10-13e0e5d820c4.png?v=1743405059"
+  },
+  {
+    "slug": "govee-strip-light-s",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00471388.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/91/03/LD0005910351_1.jpg",
+    "representative": true
+  },
+  {
+    "slug": "h8360-headset",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00316221.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/60/24/LD0005602497_2.jpg",
+    "representative": true
+  },
+  {
+    "slug": "haysenser-wifi-bluetooth-5-0-usb-adapter",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00686446.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/24/85/LD0006248547.jpg",
+    "representative": true
   },
   {
     "slug": "hdmi-cable-1-8-m-box",
@@ -866,6 +1052,12 @@
     "representative": true
   },
   {
+    "slug": "jk-905-keybaord",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00256412.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/81/06/LD0005810688_1.jpg",
+    "representative": true
+  },
+  {
     "slug": "k-gaming-22fhd120hz1ms",
     "sourcePage": "https://www.ldlc.com/en/product/PB00623560.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/14/65/LD0006146556.jpg",
@@ -893,6 +1085,18 @@
     "slug": "k-gaming-racing-foldable-6001",
     "sourcePage": "https://www.ldlc.com/en/product/PB00256164.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/52/93/LD0005529303_2.jpg",
+    "representative": true
+  },
+  {
+    "slug": "k20-19-gaming-headset",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00316221.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/60/24/LD0005602497_2.jpg",
+    "representative": true
+  },
+  {
+    "slug": "k617ctb-rgb-b",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00256412.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/81/06/LD0005810688_1.jpg",
     "representative": true
   },
   {
@@ -1017,6 +1221,18 @@
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/85/33/LD0005853323_1_0005854514_0005854543.jpg"
   },
   {
+    "slug": "kmp-04-blue-switch",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00256412.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/81/06/LD0005810688_1.jpg",
+    "representative": true
+  },
+  {
+    "slug": "kmp-04-red-switch",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00256412.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/81/06/LD0005810688_1.jpg",
+    "representative": true
+  },
+  {
     "slug": "koorui-24e3-ips-fhd-165hz",
     "sourcePage": "https://www.ldlc.com/en/product/PB00623560.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/14/65/LD0006146556.jpg",
@@ -1041,9 +1257,21 @@
     "representative": true
   },
   {
+    "slug": "kumara-k522rgb1",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00256412.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/81/06/LD0005810688_1.jpg",
+    "representative": true
+  },
+  {
     "slug": "le520-wh",
     "sourcePage": "https://www.ldlc.com/en/product/PB00500996.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/95/96/LD0005959689.jpg",
+    "representative": true
+  },
+  {
+    "slug": "led-lights-5m",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00471388.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/91/03/LD0005910351_1.jpg",
     "representative": true
   },
   {
@@ -1186,6 +1414,24 @@
     "representative": true
   },
   {
+    "slug": "lovingcool-dp-01dp-360-cooler",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00627312.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/15/13/LD0006151351.jpg",
+    "representative": true
+  },
+  {
+    "slug": "lovingcool-fan-single",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00692228.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/25/87/LD0006258723.jpg",
+    "representative": true
+  },
+  {
+    "slug": "lovingcool-fan-single-black-nc",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00692228.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/25/87/LD0006258723.jpg",
+    "representative": true
+  },
+  {
     "slug": "lovingcool-tempered-6-fans-case-white",
     "sourcePage": "https://www.ldlc.com/en/product/PB00660835.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/20/23/LD0006202301.jpg",
@@ -1201,6 +1447,30 @@
     "slug": "lovingcool-white-2-side-6-fans-white",
     "sourcePage": "https://www.ldlc.com/en/product/PB00660835.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/20/23/LD0006202301.jpg",
+    "representative": true
+  },
+  {
+    "slug": "monitor-light",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00652869.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/18/56/LD0006185627.jpg",
+    "representative": true
+  },
+  {
+    "slug": "monitor-light-5w",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00652869.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/18/56/LD0006185627.jpg",
+    "representative": true
+  },
+  {
+    "slug": "monitor-light-tb-30sa",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00652869.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/18/56/LD0006185627.jpg",
+    "representative": true
+  },
+  {
+    "slug": "mouse-pad-sm-s",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00188835.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/03/06/34/LD0003063422_2.jpg",
     "representative": true
   },
   {
@@ -1595,9 +1865,21 @@
     "imageUrl": "https://www.palit.com/product/vga/picture/p05455/p05455_propng_140867a4474e4c0e1.png"
   },
   {
+    "slug": "pdx-528-headphone-stand",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00398513.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/76/55/LD0005765516_1.jpg",
+    "representative": true
+  },
+  {
     "slug": "pdx-544-gaming-desk-blk",
     "sourcePage": "https://www.ldlc.com/en/product/PB00398352.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/76/51/LD0005765106_1.jpg",
+    "representative": true
+  },
+  {
+    "slug": "pdx118-ps5-slim-stand",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00628455.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/15/44/LD0006154417.jpg",
     "representative": true
   },
   {
@@ -1625,6 +1907,18 @@
     "representative": true
   },
   {
+    "slug": "porodo-blue-fwc033",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00745195.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/35/31/LD0006353100.jpg",
+    "representative": true
+  },
+  {
+    "slug": "porodo-blue-rgb-strip",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00471388.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/91/03/LD0005910351_1.jpg",
+    "representative": true
+  },
+  {
     "slug": "porodo-gaming-aluminum-multi-fan-cooling-pad-silver-pdx117",
     "sourcePage": "https://www.ldlc.com/en/product/PB00537269.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/00/46/LD0006004690.jpg",
@@ -1646,6 +1940,18 @@
     "slug": "porodo-pdx122bk-desk",
     "sourcePage": "https://www.ldlc.com/en/product/PB00398352.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/76/51/LD0005765106_1.jpg",
+    "representative": true
+  },
+  {
+    "slug": "power-socket",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00745195.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/35/31/LD0006353100.jpg",
+    "representative": true
+  },
+  {
+    "slug": "power-strip-6-ac-pbfwch033-bk",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00745195.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/35/31/LD0006353100.jpg",
     "representative": true
   },
   {
@@ -1674,6 +1980,18 @@
     "slug": "prodoo-cooler-pdxf5cpbk",
     "sourcePage": "https://www.ldlc.com/en/product/PB00537269.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/00/46/LD0006004690.jpg",
+    "representative": true
+  },
+  {
+    "slug": "prodoo-power-strip-8-ac-pbfwch035-bk",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00745195.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/35/31/LD0006353100.jpg",
+    "representative": true
+  },
+  {
+    "slug": "prodoo-speaker-pdx543-bk",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00654232.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/18/78/LD0006187803.jpg",
     "representative": true
   },
   {
@@ -1948,6 +2266,18 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202203/1409/oltI7Zc96usbdvhVVXcV1EAi.png"
   },
   {
+    "slug": "ps4-hardisk-1-tb",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00219924.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/00/95/LD0006009563.jpg",
+    "representative": true
+  },
+  {
+    "slug": "ps4-hardisk-500-gb",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00219924.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/00/95/LD0006009563.jpg",
+    "representative": true
+  },
+  {
     "slug": "ps4-hogwarts-legacy",
     "sourcePage": "https://store.playstation.com/en-us/product/UP1018-PPSA01593_00-HOGWARTSLEGACY01",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202208/0921/dR9KJAKDW2izPbptHQbh3rnj.png"
@@ -2218,6 +2548,12 @@
     "slug": "ps4-star-wars-the-skywalker",
     "sourcePage": "https://store.playstation.com/en-us/product/UP1018-PPSA01864_00-LEGOSWTSS0000000",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202112/2121/qrpfY71rsvMn6beyjgStw3cH.png"
+  },
+  {
+    "slug": "ps4-storage-stand",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00628455.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/15/44/LD0006154417.jpg",
+    "representative": true
   },
   {
     "slug": "ps4-stray",
@@ -2743,6 +3079,12 @@
     "slug": "ps5-fast-furious-arcade-edition",
     "sourcePage": "https://store.playstation.com/en-us/concept/10015155/",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202508/1408/43996b4e29ecb582b3c2293842fc11ae31aed1b9b8620dba.png"
+  },
+  {
+    "slug": "ps5-fat-fan",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00628455.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/15/44/LD0006154417.jpg",
+    "representative": true
   },
   {
     "slug": "ps5-fatal-frame-2",
@@ -3571,6 +3913,12 @@
     "representative": true
   },
   {
+    "slug": "ps5-slim-cooling-fan-pdx120",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00628455.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/15/44/LD0006154417.jpg",
+    "representative": true
+  },
+  {
     "slug": "ps5-slim-cover-wolverine",
     "sourcePage": "https://www.playstation.com/en-us/ps5/marvels-wolverine-limited-edition-console-bundle-and-accessories/",
     "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/wolverine-LE-range-image-block-01-en-03jul26?$1600px--t$",
@@ -3592,6 +3940,12 @@
     "slug": "ps5-slim-digital-tra-oman",
     "sourcePage": "https://www.playstation.com/en-us/ps5/",
     "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/ps5-product-thumbnail-01-en-14sep21?$1600px--t$",
+    "representative": true
+  },
+  {
+    "slug": "ps5-slim-fan",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00628455.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/15/44/LD0006154417.jpg",
     "representative": true
   },
   {
@@ -3853,6 +4207,18 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202203/3011/GT1ZAtZiXW05nON8ZB6TdNA2.png"
   },
   {
+    "slug": "ps5-type-c-c",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00522333.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/98/70/LD0005987017.jpeg",
+    "representative": true
+  },
+  {
+    "slug": "ps5-type-c-usb",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00522333.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/98/70/LD0005987017.jpeg",
+    "representative": true
+  },
+  {
     "slug": "ps5-ufc-6",
     "sourcePage": "https://store.playstation.com/en-us/concept/10011247",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202604/2216/83baec5746075ec3e379c096dfe68111095c91cb7139a633.png"
@@ -4006,6 +4372,12 @@
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/77/84/LD0005778491_1.jpg"
   },
   {
+    "slug": "redragon-speaker-gs550",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00654232.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/18/78/LD0006187803.jpg",
+    "representative": true
+  },
+  {
     "slug": "rtx-5060-8gb-gddr7-dual-fan-graphic-card",
     "sourcePage": "https://www.ldlc.com/en/product/PB00681083.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/24/04/LD0006240468.jpg",
@@ -4115,6 +4487,12 @@
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/57/36/LD0005573659_2.jpg"
   },
   {
+    "slug": "strike-4-keyboard",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00256412.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/81/06/LD0005810688_1.jpg",
+    "representative": true
+  },
+  {
     "slug": "super-marios-luigi-brothership",
     "sourcePage": "https://www.nintendo.com/us/store/products/mario-and-luigi-brothership-119272/",
     "imageUrl": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/ncom/My%20Nintendo%20Store/EN-US/Nintendo%20Switch%20Software/mario-and-luigi-brothership-119272/119272-mario-and-luigi-brothership-1200x675"
@@ -4157,6 +4535,12 @@
     "slug": "t-force-ga-pro-2tb-m-2",
     "sourcePage": "https://www.ldlc.com/en/product/PB00630081.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/15/76/LD0006157666.jpg",
+    "representative": true
+  },
+  {
+    "slug": "tb-30sc",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00652869.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/18/56/LD0006185627.jpg",
     "representative": true
   },
   {
@@ -4292,9 +4676,21 @@
     "representative": true
   },
   {
+    "slug": "toufeeq-fans",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00692228.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/25/87/LD0006258723.jpg",
+    "representative": true
+  },
+  {
     "slug": "tp-bridge-high-speed-dp-cable-1-5-mtr",
     "sourcePage": "https://www.ldlc.com/en/product/PB00548695.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/97/52/LD0005975267_0005975274_0006028851.jpg",
+    "representative": true
+  },
+  {
+    "slug": "tryx-panaroma-se360-argb-blk-360mm-aio-curve-screen",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00753727.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/37/77/LD0006377799.jpg",
     "representative": true
   },
   {
@@ -4318,6 +4714,12 @@
     "slug": "twisted-minds-titan-glass-mid-tower-gaming-case-black-tm-gm-iii-b",
     "sourcePage": "https://www.ldlc.com/en/product/PB00660834.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/20/22/LD0006202288.jpg",
+    "representative": true
+  },
+  {
+    "slug": "type-cable-box",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00522333.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/98/70/LD0005987017.jpeg",
     "representative": true
   },
   {
@@ -4454,6 +4856,42 @@
     "slug": "xpg-16gbx1-3600",
     "sourcePage": "https://www.ldlc.com/en/product/PB00597731.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/96/95/LD0005969567_0005969592_0005969595_0005969598_0005969628_0006027330_0006040605_0006056924_0006117668.jpg",
+    "representative": true
+  },
+  {
+    "slug": "xt-mp-606",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00188835.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/03/06/34/LD0003063422_2.jpg",
+    "representative": true
+  },
+  {
+    "slug": "xtrike-gh-515p",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00316221.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/60/24/LD0005602497_2.jpg",
+    "representative": true
+  },
+  {
+    "slug": "xtrike-hp312",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00316221.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/60/24/LD0005602497_2.jpg",
+    "representative": true
+  },
+  {
+    "slug": "xtrike-me-kb-309",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00256412.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/81/06/LD0005810688_1.jpg",
+    "representative": true
+  },
+  {
+    "slug": "xtrike-me-kb-512",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00256412.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/81/06/LD0005810688_1.jpg",
+    "representative": true
+  },
+  {
+    "slug": "xtrike-xt-sk-610",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00654232.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/18/78/LD0006187803.jpg",
     "representative": true
   }
 ]
