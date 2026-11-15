@@ -1,71 +1,190 @@
 // Adds product photos from the web and links them to products.
 //
 //   npm run photos:add -- <photos.json> drizzle/<NNNN_name>.sql
+//   npm run photos:add -- --redo [slug ...]   (rebuild saved photos from their source)
 //
 // photos.json: [{ "slug": "...", "imageUrl": "https://...", "sourcePage": "https://..." }]
-// Each image is downloaded, checked to be a real image, saved as
-// public/products/<slug>.webp (at most 1200px) and recorded in
+// Each image is downloaded, checked to be a real image, cut out from its
+// background, saved as public/products/<slug>.webp (square, at most 1200px,
+// transparent around the product) and recorded in
 // scripts/product-image-manifest.json with where it came from. The migration
 // points those products at their photo. Then run npm run brand:assets (sizes
 // and share images) and npm run media:record (rights list).
+//
+// Optional per photo: "representative": true (photo shows this kind of
+// product), "cropBottom": 0.1 (cut a promo strip off the bottom),
+// "keepBackground": true (a scene that should not be cut out).
 import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import sharp from 'sharp';
 
-const [list, migration] = process.argv.slice(2);
-if (!list || !migration?.endsWith('.sql')) {
+const args = process.argv.slice(2);
+const redo = args[0] === '--redo';
+const [list, migration] = redo ? [] : args;
+if (!redo && (!list || !migration?.endsWith('.sql'))) {
   console.error(
-    'Usage: npm run photos:add -- <photos.json> drizzle/<NNNN_name>.sql',
+    'Usage: npm run photos:add -- <photos.json> drizzle/<NNNN_name>.sql\n' +
+      '       npm run photos:add -- --redo',
   );
   process.exit(1);
 }
 
-const catalog = new Set(
-  JSON.parse(readFileSync('data/inventory.json', 'utf8')).products.map(
-    (p) => p.slug,
-  ),
+const products = JSON.parse(
+  readFileSync('data/inventory.json', 'utf8'),
+).products;
+const catalog = new Set(products.map((p) => p.slug));
+// Game photos are cover art: the whole picture is the product.
+const covers = new Set(
+  products.filter((p) => p.categoryId === 'cat-games').map((p) => p.slug),
 );
 const manifestFile = 'scripts/product-image-manifest.json';
 const manifest = JSON.parse(readFileSync(manifestFile, 'utf8'));
-const photos = JSON.parse(readFileSync(list, 'utf8'));
+// --redo rebuilds every saved photo, or only the slugs named after it.
+const only = new Set(redo ? args.slice(1) : []);
+const photos = redo
+  ? manifest
+      .filter((entry) => !only.size || only.has(entry.slug))
+      .map((entry) => ({ ...entry }))
+  : JSON.parse(readFileSync(list, 'utf8'));
 
-// Product cards are square: crop the plain margin around the product, then
-// centre it on a square canvas of the same background (transparent stays
-// transparent), at most 1200px. Artwork that fills its frame (a game cover)
-// keeps its edges: it is only padded out to a square, with no extra margin.
-async function square(input) {
-  const open = () => sharp(input, { limitInputPixels: 40_000_000 }).rotate();
-  const full = await open().toBuffer({ resolveWithObject: true });
-  const trimmed = await open()
-    .trim({ threshold: 12 })
-    .toBuffer({ resolveWithObject: true })
-    // An image that is all one colour has nothing to trim.
-    .catch(() => full);
-  const fillsFrame =
-    trimmed.info.width * trimmed.info.height >
-    0.96 * full.info.width * full.info.height;
-  const { data, info } = fillsFrame ? full : trimmed;
-  const side = Math.round(
-    Math.max(info.width, info.height) * (fillsFrame ? 1 : 1.08),
-  );
-  const corner = await sharp(data)
-    .extract({ left: 0, top: 0, width: 1, height: 1 })
+const open = (input) =>
+  sharp(input, { limitInputPixels: 40_000_000 }).rotate().ensureAlpha();
+
+// Makes the plain backdrop of a product shot transparent. Starting from the
+// image edges, every pixel joined to the edge that is close to the backdrop
+// colour (or already see-through) is cleared; the outline is then softened so
+// it blends into any card. Returns the cropped cut-out, or null when the edges
+// are not a plain backdrop (a scene or full artwork), which is left as it is.
+async function cutOut(input) {
+  const { data, info } = await open(input)
     .raw()
+    .toBuffer({ resolveWithObject: true });
+  const { width: w, height: h } = info;
+  const edge = [];
+  for (let x = 0; x < w; x++) edge.push(x, (h - 1) * w + x);
+  for (let y = 1; y < h - 1; y++) edge.push(y * w, y * w + w - 1);
+  // Backdrop colour: the most common colour along the edges.
+  const buckets = new Map();
+  let clear = 0;
+  for (const p of edge) {
+    const i = p * 4;
+    if (data[i + 3] < 128) {
+      clear++;
+      continue;
+    }
+    const key =
+      ((data[i] >> 3) << 10) | ((data[i + 1] >> 3) << 5) | (data[i + 2] >> 3);
+    const b = buckets.get(key) ?? { n: 0, r: 0, g: 0, b: 0 };
+    b.n++;
+    b.r += data[i];
+    b.g += data[i + 1];
+    b.b += data[i + 2];
+    buckets.set(key, b);
+  }
+  const top = [...buckets.values()].sort((a, b) => b.n - a.n)[0];
+  if (clear + (top?.n ?? 0) < edge.length * 0.6) return null;
+  const bg = top ? [top.r / top.n, top.g / top.n, top.b / top.n] : null;
+  const NEAR = 26;
+  const FAR = 70;
+  const diff = (i) =>
+    bg
+      ? Math.max(
+          Math.abs(data[i] - bg[0]),
+          Math.abs(data[i + 1] - bg[1]),
+          Math.abs(data[i + 2] - bg[2]),
+        )
+      : 255;
+  const backdrop = (i) => data[i + 3] < 128 || diff(i) <= NEAR;
+  const gone = new Uint8Array(w * h);
+  const stack = [];
+  for (const p of edge)
+    if (!gone[p] && backdrop(p * 4)) {
+      gone[p] = 1;
+      stack.push(p);
+    }
+  while (stack.length) {
+    const p = stack.pop();
+    const x = p % w;
+    for (const q of [
+      x > 0 ? p - 1 : -1,
+      x < w - 1 ? p + 1 : -1,
+      p - w,
+      p + w < w * h ? p + w : -1,
+    ])
+      if (q >= 0 && !gone[q] && backdrop(q * 4)) {
+        gone[q] = 1;
+        stack.push(q);
+      }
+  }
+  let left = w;
+  let right = -1;
+  let topY = h;
+  let bottom = -1;
+  for (let p = 0; p < w * h; p++) {
+    const i = p * 4;
+    if (gone[p]) {
+      data[i] = data[i + 1] = data[i + 2] = data[i + 3] = 0;
+      continue;
+    }
+    const x = p % w;
+    const y = (p - x) / w;
+    // Soften the outline: edge pixels still close to the backdrop colour
+    // (anti-aliasing, glow) become partly see-through.
+    const touches =
+      (x > 0 && gone[p - 1]) ||
+      (x < w - 1 && gone[p + 1]) ||
+      (y > 0 && gone[p - w]) ||
+      (y < h - 1 && gone[p + w]);
+    if (touches) {
+      const d = diff(i);
+      if (d < FAR)
+        data[i + 3] = Math.min(
+          data[i + 3],
+          Math.round((255 * (d - NEAR)) / (FAR - NEAR)),
+        );
+    }
+    if (data[i + 3] > 8) {
+      if (x < left) left = x;
+      if (x > right) right = x;
+      if (y < topY) topY = y;
+      if (y > bottom) bottom = y;
+    }
+  }
+  if (right < 0) return null;
+  return sharp(data, { raw: { width: w, height: h, channels: 4 } })
+    .extract({
+      left,
+      top: topY,
+      width: right - left + 1,
+      height: bottom - topY + 1,
+    })
+    .png()
     .toBuffer();
-  const background =
-    info.channels === 4 && corner[3] < 250
-      ? { r: 0, g: 0, b: 0, alpha: 0 }
-      : { r: corner[0], g: corner[1], b: corner[2], alpha: 1 };
+}
+
+// Product cards are square, so every photo is centred on a transparent square
+// canvas, at most 1200px. A cut-out product gets a small margin; a game cover
+// (the artwork is the product) or a scene keeps its edges with no margin.
+async function square(input, keepAsIs) {
+  const full = await open(input).png().toBuffer({ resolveWithObject: true });
+  const cut = keepAsIs ? null : await cutOut(full.data);
+  const { data, info } = await open(cut ?? full.data)
+    .png()
+    .toBuffer({ resolveWithObject: true });
+  const side = Math.round(Math.max(info.width, info.height) * (cut ? 1.08 : 1));
   const padX = side - info.width;
   const padY = side - info.height;
-  return sharp(data)
-    .extend({
-      left: Math.floor(padX / 2),
-      right: Math.ceil(padX / 2),
-      top: Math.floor(padY / 2),
-      bottom: Math.ceil(padY / 2),
-      background,
-    })
-    .resize(1200, 1200, { fit: 'inside', withoutEnlargement: true });
+  return {
+    cut: Boolean(cut),
+    photo: sharp(data)
+      .extend({
+        left: Math.floor(padX / 2),
+        right: Math.ceil(padX / 2),
+        top: Math.floor(padY / 2),
+        bottom: Math.ceil(padY / 2),
+        background: { r: 0, g: 0, b: 0, alpha: 0 },
+      })
+      .resize(1200, 1200, { fit: 'inside', withoutEnlargement: true }),
+  };
 }
 
 const added = [];
@@ -75,6 +194,7 @@ for (const {
   sourcePage,
   representative,
   cropBottom,
+  keepBackground,
 } of photos) {
   try {
     if (!catalog.has(slug)) throw new Error('no product with this slug');
@@ -82,6 +202,7 @@ for (const {
       if (new URL(url).protocol !== 'https:')
         throw new Error(`not https: ${url}`);
     if (
+      !redo &&
       existsSync(`public/products/${slug}.webp`) &&
       manifest.some((e) => e.slug === slug && e.imageUrl === imageUrl)
     ) {
@@ -122,21 +243,28 @@ for (const {
         })
         .toBuffer();
     }
-    await square(input).then((photo) =>
-      photo.webp({ quality: 82 }).toFile(`public/products/${slug}.webp`),
+    const { cut, photo } = await square(
+      input,
+      keepBackground || covers.has(slug),
     );
+    await photo
+      .webp({ quality: 82, alphaQuality: 90 })
+      .toFile(`public/products/${slug}.webp`);
     const entry = {
       slug,
       sourcePage,
       imageUrl,
       ...(representative ? { representative: true } : {}),
       ...(cropBottom ? { cropBottom } : {}),
+      ...(keepBackground ? { keepBackground: true } : {}),
     };
     const at = manifest.findIndex((e) => e.slug === slug);
     if (at >= 0) manifest[at] = entry;
     else manifest.push(entry);
     added.push(slug);
-    console.log(`ok    ${slug} (${width}x${height})`);
+    console.log(
+      `ok    ${slug} (${width}x${height}, ${cut ? 'cut out' : 'artwork'})`,
+    );
   } catch (error) {
     console.log(
       `skip  ${slug}: ${error instanceof Error ? error.message : error}`,
@@ -164,7 +292,8 @@ const linked = photos
   .filter(
     (slug) => catalog.has(slug) && existsSync(`public/products/${slug}.webp`),
   );
-if (linked.length) {
+// A redo only replaces the files: the products already point at them.
+if (linked.length && !redo) {
   const q = (value) => `'${value.replaceAll("'", "''")}'`;
   writeFileSync(
     migration,
@@ -177,5 +306,7 @@ if (linked.length) {
   );
 }
 console.log(
-  `\n${added.length} of ${photos.length} photos downloaded; ${linked.length} linked${linked.length ? ` in ${migration}` : ''}.`,
+  redo
+    ? `\n${added.length} of ${photos.length} photos rebuilt.`
+    : `\n${added.length} of ${photos.length} photos downloaded; ${linked.length} linked${linked.length ? ` in ${migration}` : ''}.`,
 );

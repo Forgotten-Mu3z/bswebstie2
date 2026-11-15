@@ -121,6 +121,27 @@
     "imageUrl": "https://cdn.microless.com/products/e4722764bce9a34cc4c31b8b59d8df6f-hi.jpg"
   },
   {
+    "slug": "hyper-x-cloud-3",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00559615.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/04/67/LD0006046769.jpg",
+    "representative": true
+  },
+  {
+    "slug": "hyper-x-cloud-3-wireless",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00569698.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/06/13/LD0006061384.jpg"
+  },
+  {
+    "slug": "hyper-x-cloud-alpha-wl",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00494313.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/94/75/LD0005947522.jpg"
+  },
+  {
+    "slug": "hyper-x-cloud-core-wl",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00496127.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/94/73/LD0005947388.jpg"
+  },
+  {
     "slug": "i5-13400f",
     "sourcePage": "https://ipcstore.com/intel-core-i513400f-processor-20-mb-smart-cache-box-5284524",
     "imageUrl": "https://ipcstore.com/media/catalog/product/1/0/106114142_4669929048.jpg"
@@ -162,6 +183,11 @@
     "imageUrl": "https://resource.logitechg.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/g502x-corded/gallery/g502x-corded-gallery-1-black.png"
   },
   {
+    "slug": "logitech-g923-racing-wheel",
+    "sourcePage": "https://www.logitechg.com/en-us/shop/p/g923-trueforce-sim-racing-wheel",
+    "imageUrl": "https://resource.logitechg.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/g923-and-trueforce/g923-gallery/g923-ps4-gallery-1-new-image.png"
+  },
+  {
     "slug": "logitech-shifter",
     "sourcePage": "https://www.logitechg.com/en-us/shop/p/driving-force-shifter",
     "imageUrl": "https://resource.logitechg.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/driving-force-shifter/shifter-gallery-1.png"
@@ -192,9 +218,38 @@
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/24/19/LD0006241951.jpg"
   },
   {
+    "slug": "nintendo-switch-1-oled",
+    "sourcePage": "https://www.nintendo.com/us/store/products/nintendo-switch-oled-model-white-set/",
+    "imageUrl": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/ncom/en_US/products/hardware/nintendo-switch-oled-model-white-set/115461-switch-oled-white-boxart-1200x675",
+    "representative": true
+  },
+  {
+    "slug": "nintendo-switch-1-oled-88",
+    "sourcePage": "https://www.nintendo.com/us/store/products/nintendo-switch-oled-model-white-set/",
+    "imageUrl": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/ncom/en_US/products/hardware/nintendo-switch-oled-model-white-set/115461-switch-oled-white-boxart-1200x675",
+    "representative": true
+  },
+  {
+    "slug": "nintendo-switch-2-mario-kart",
+    "sourcePage": "https://www.nintendo.com/us/store/products/nintendo-switch-2-mario-kart-world-bundle-128067/",
+    "imageUrl": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/ncom/My%20Nintendo%20Store/EN-US/Nintendo%20Switch%202/Hardware/128067-nintendo-switch-2-mario-kart-world-bundle-package-front-2000x2000"
+  },
+  {
     "slug": "nintendo-switch-2-uk",
     "sourcePage": "https://www.nintendo.com/us/store/products/nintendo-switch-2-system-123669/",
     "imageUrl": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/ncom/My%20Nintendo%20Store/EN-US/Nintendo%20Switch%202/Hardware/123669-nintendo-switch-2-package-front-2000x2000"
+  },
+  {
+    "slug": "nintendo-switch-adapter-3pin",
+    "sourcePage": "https://www.nintendo.com/us/store/products/ac-adapter-104900/",
+    "imageUrl": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/ncom/en_US/products/accessories/nintendo-switch/docks-cables-and-chargers/ac-adapter/104900_alt1",
+    "representative": true
+  },
+  {
+    "slug": "nintendo-switch-lite",
+    "sourcePage": "https://www.nintendo.com/us/store/products/nintendo-switch-lite-110672-3/",
+    "imageUrl": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/ncom/en_US/products/hardware/nintendo-switch-lite-yellow/110678-nintendo-switch-lite-yellow-package-1200x675",
+    "representative": true
   },
   {
     "slug": "ns-2-cronos-the-dawn",
@@ -233,6 +288,12 @@
     "imageUrl": "https://assets.nintendo.com/image/upload/c_fill,w_1080,h_1080/q_auto/f_auto/store/software/switch/70010000015381/d0268be3a717ed2ded03fa77aea451e4cb0e95045ad80da3a726439fe258eb88"
   },
   {
+    "slug": "ns-joy-con-pair",
+    "sourcePage": "https://www.nintendo.com/us/store/products/joy-con-set-l-r/",
+    "imageUrl": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/ncom/en_US/products/accessories/nintendo-switch/controllers/joy-con-controllers/joy-con-gray/104878-nintendo-switch-joy-con-gray-gray-package-1200x675",
+    "representative": true
+  },
+  {
     "slug": "ns-kirby-and-the-forgotten-land",
     "sourcePage": "https://www.nintendo.com/us/store/products/kirby-and-the-forgotten-land-switch/",
     "imageUrl": "https://assets.nintendo.com/image/upload/c_crop,w_0.45,h_0.8,g_center/c_scale,w_1080/q_auto/f_auto/store/software/switch/70010000046405/d1cf83dea46094b85247f40ca30ea4557730a319be0bfe544a4fa929144cf6c2"
@@ -266,6 +327,11 @@
     "slug": "ns-pikmin-4",
     "sourcePage": "https://www.nintendo.com/us/store/products/pikmin-4-switch/",
     "imageUrl": "https://assets.nintendo.com/image/upload/c_crop,w_0.45,h_0.8,g_center/c_scale,w_1080/q_auto/f_auto/store/software/switch/70010000005308/43af89ed5bd76ac5ec6b367b4b53092f8bf94a1d1312fdfc1d4664329fd5077b"
+  },
+  {
+    "slug": "ns-pro-controller",
+    "sourcePage": "https://www.nintendo.com/us/store/products/pro-controller/",
+    "imageUrl": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/ncom/en_US/products/accessories/nintendo-switch/controllers/pro-controllers/nintendo-switch-pro-controller/104888-nintendo-switch-pro-controller-black-package-1200x675"
   },
   {
     "slug": "ns-sonic-super-stars",
@@ -327,6 +393,12 @@
     "slug": "ns-xenobladexchronicles",
     "sourcePage": "https://www.nintendo.com/us/store/products/xenoblade-chronicles-x-definitive-edition-switch/",
     "imageUrl": "https://assets.nintendo.com/image/upload/c_fill,w_1080,h_1080/q_auto/f_auto/store/software/switch/70010000088832/d33ed7f51de601b10cafa5814fd786bbad317b0421a43d54917a2c647be2f23b"
+  },
+  {
+    "slug": "ns2-256-gb-card",
+    "sourcePage": "https://www.sandisk.com/products/memory-cards/microsd-cards/sandisk-microsd-express-card-for-nintendo-switch-2",
+    "imageUrl": "https://www.sandisk.com/content/dam/store/en-us/assets/products/memory-cards/microsd-express-memory-card-nintendo-switch-2/gallery/microsd-express-card-nintendo-switch-2-256gb-front.png",
+    "representative": true
   },
   {
     "slug": "ns2-animal-crossing-new-horizons",
@@ -395,6 +467,11 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202601/2201/10c1fc1cb379073791df85ad3bd235930896bfa9b20fa1f1.png"
   },
   {
+    "slug": "ns2-pro-controller",
+    "sourcePage": "https://www.nintendo.com/us/store/products/nintendo-switch-2-pro-controller-123674/",
+    "imageUrl": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/ncom/My%20Nintendo%20Store/EN-US/Nintendo%20Switch%202/Controllers/Pro%20Controllers/123674-nintendo-switch-2-pro-controller-package-front-2000x2000"
+  },
+  {
     "slug": "ns2-reanimal",
     "sourcePage": "https://store.playstation.com/en-us/product/EP4389-PPSA23372_00-ANIMALGAMEGLOBAL",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202508/2109/25422d8bda53b48e35f690b9d68590ab3f5eb4df8755c84f.png"
@@ -423,6 +500,12 @@
     "slug": "ns2-sonicxshadow",
     "sourcePage": "https://store.playstation.com/en-us/product/UP0177-PPSA17597_00-SONICXSHADOWGENE",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202405/2308/1efd5c197776d8dd5d5c79261559cd5947b0d52fc23e1174.png"
+  },
+  {
+    "slug": "ns2-steering-wheel",
+    "sourcePage": "https://www.nintendo.com/us/store/products/nintendo-switch-2-joy-con-2-wheel-set-of-2-120834/",
+    "imageUrl": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/ncom/My%20Nintendo%20Store/EN-US/Nintendo%20Switch%202/Controllers/Controller%20Accessories/120834-nintendo-switch-2-joy-con-2-wheel-set-of-2-package-front-2000x2000",
+    "representative": true
   },
   {
     "slug": "ns2-super-mario-bros-wonder",
@@ -457,7 +540,7 @@
   {
     "slug": "ps-vr2",
     "sourcePage": "https://www.playstation.com/en-us/ps-vr2/",
-    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/PSVR2-thumbnail-01-en-22feb22?$1600px$"
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/PSVR2-thumbnail-01-en-22feb22?$1600px--t$"
   },
   {
     "slug": "ps4-a-sackboy",
@@ -743,6 +826,12 @@
     "slug": "ps4-it-takes-two",
     "sourcePage": "https://store.playstation.com/en-us/product/UP0006-PPSA02342_00-ITTAKESTWORETAIL",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202012/0815/7CRynuLSAb0vysSC4TmZy5e4.png"
+  },
+  {
+    "slug": "ps4-js-nacon",
+    "sourcePage": "https://www.nacongaming.com/en/wired-compact-controller-black",
+    "imageUrl": "https://media.nacongaming.com/media/catalog/product/p/s/ps4ofcpadblack_main.webp",
+    "representative": true
   },
   {
     "slug": "ps4-jumanji-wild-adventures",
@@ -1234,6 +1323,18 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202605/2005/4074e46383e491ab25df83141a556f69aa7c005fa92ffa4b.png"
   },
   {
+    "slug": "ps5-charging-station",
+    "sourcePage": "https://www.playstation.com/en-gb/accessories/dualsense-charging-station/",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/ChargingStation-Standalone-16x9-01-28feb26$en?$1600px--t$",
+    "representative": true
+  },
+  {
+    "slug": "ps5-charging-station-cp",
+    "sourcePage": "https://www.playstation.com/en-gb/accessories/dualsense-charging-station/",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/ChargingStation-Standalone-16x9-01-28feb26$en?$1600px--t$",
+    "representative": true
+  },
+  {
     "slug": "ps5-cobra-the-awakening",
     "sourcePage": "https://store.playstation.com/en-us/concept/10008749",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202503/2609/7bf4506a2b575a630500670638bd7e93e5d7f8cb3cf4e505.png"
@@ -1271,7 +1372,7 @@
   {
     "slug": "ps5-controller-007-first-light",
     "sourcePage": "https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/",
-    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/007-First-Light-LE-DualSense-image-block-01-en-02apr26?$1600px$"
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/007-First-Light-LE-DualSense-image-block-01-en-02apr26?$1600px--t$"
   },
   {
     "slug": "ps5-controller-icon-blue",
@@ -1337,6 +1438,11 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202610/1908/bb604475a8c89fab4bfe29dfd90f560bd2170ade8b3ff678.png"
   },
   {
+    "slug": "ps5-disc-drive",
+    "sourcePage": "https://www.playstation.com/en-gb/accessories/ps5-disc-drive/",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/PS5_CFI2000_DISC_DRIVE_PR_01_sRGB_US-1x1-01-21may26$en?$1600px--t$"
+  },
+  {
     "slug": "ps5-doom-the-dark-ages",
     "sourcePage": "https://store.playstation.com/en-us/product/UP1003-PPSA20560_00-DTITAN0000000000",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202501/1405/346673e154a94c7d1dba15de4040b8f148dd3aafda800100.png"
@@ -1392,6 +1498,11 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202406/0701/83c9162c472c03b32bdf5701e17108ec849b63a5d3ae6e40.png"
   },
   {
+    "slug": "ps5-dualsense-charging-station",
+    "sourcePage": "https://www.playstation.com/en-gb/accessories/dualsense-charging-station/",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/ChargingStation-Standalone-16x9-01-28feb26$en?$1600px--t$"
+  },
+  {
     "slug": "ps5-dynasty-warriors",
     "sourcePage": "https://store.playstation.com/en-us/concept/10008191",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202410/3101/2ba9c1b910e2d5544ffa9d2dc648bf5c16008e4244e4b5f2.png",
@@ -1405,13 +1516,13 @@
   {
     "slug": "ps5-edge-black",
     "sourcePage": "https://www.playstation.com/en-us/accessories/dualsense-edge-wireless-controller/",
-    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/dualsense-edge-listing-thumb-01-en-23aug22?$1600px$",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/dualsense-edge-listing-thumb-01-en-23aug22?$1600px--t$",
     "representative": true
   },
   {
     "slug": "ps5-edge-white",
     "sourcePage": "https://www.playstation.com/en-us/accessories/dualsense-edge-wireless-controller/",
-    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/DualSense-Edge-image-block-01-en-24aug22?$1600px$"
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/DualSense-Edge-image-block-01-en-24aug22?$1600px--t$"
   },
   {
     "slug": "ps5-elden-ring",
@@ -1705,24 +1816,47 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202609/0912/56cc93780fe618db7e4723f5837fbbf2eb2035fa0409fca5.png"
   },
   {
+    "slug": "ps5-js-army",
+    "sourcePage": "https://www.playstation.com/en-gb/accessories/dualsense-wireless-controller/buy-now/product/gray-camouflage/",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/DualsenseController-GrayCamo01-1x1-01-28feb26$en?$1600px--t$",
+    "representative": true
+  },
+  {
     "slug": "ps5-js-blk",
-    "sourcePage": "https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/",
-    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/dualsense-midnight-black-screenshot-01-en-08dec21?$1600px$"
+    "sourcePage": "https://www.playstation.com/en-gb/accessories/dualsense-wireless-controller/",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/DualsenseController-MidnightBlack01-1x1-01-28feb26$en?$1600px--t$"
   },
   {
     "slug": "ps5-js-blue",
-    "sourcePage": "https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/",
-    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/dualsense-starlight-blue-screenshot-01-en-30nov21?$1600px$"
+    "sourcePage": "https://www.playstation.com/en-gb/accessories/dualsense-wireless-controller/",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/DualsenseController-StarlightBlue01-1x1-01-28feb26$en?$1600px--t$"
   },
   {
     "slug": "ps5-js-chroma-green",
-    "sourcePage": "https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/",
-    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/dualsense-teal-screenshot-01-en-23sep24?$1600px$"
+    "sourcePage": "https://www.playstation.com/en-gb/accessories/dualsense-wireless-controller/",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/DualsenseController-ChromaTeal01-1x1-01-28feb26$en?$1600px--t$"
   },
   {
     "slug": "ps5-js-chroma-white",
-    "sourcePage": "https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/",
-    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/dualsense-pearl-screenshot-01-en-23sep24?$1600px$"
+    "sourcePage": "https://www.playstation.com/en-gb/accessories/dualsense-wireless-controller/",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/DualsenseController-ChromaPearl01-1x1-01-28feb26$en?$1600px--t$"
+  },
+  {
+    "slug": "ps5-js-death-stranding",
+    "sourcePage": "https://www.playstation.com/en-gb/accessories/dualsense-wireless-controller/while-stocks-last/product/death-stranding-2-on-the-beach/",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/DualsenseController-DeathStranding2-01-1x1-01-28feb26$en?$1600px--t$"
+  },
+  {
+    "slug": "ps5-js-ghost-of-yotei",
+    "sourcePage": "https://www.playstation.com/en-gb/accessories/dualsense-wireless-controller/while-stocks-last/product/ghost-of-yotei-black/",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/DualSense-GoY01_Black-1x1-01-28feb26$en?$1600px--t$",
+    "representative": true
+  },
+  {
+    "slug": "ps5-js-god-of-war",
+    "sourcePage": "https://www.playstation.com/en-gb/accessories/dualsense-wireless-controller/while-stocks-last/product/god-of-war-20th-anniversary-limited-edition/",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/DualsenseController-GOW20-01-1x1-01-28feb26$en?$1600px--t$",
+    "representative": true
   },
   {
     "slug": "ps5-js-lisa",
@@ -1732,47 +1866,53 @@
   {
     "slug": "ps5-js-marathon-ltd-ed",
     "sourcePage": "https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/",
-    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/Marathon-LE-DualSense-image-block-02-en-12jan26?$1600px$"
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/Marathon-LE-DualSense-image-block-02-en-12jan26?$1600px--t$"
   },
   {
     "slug": "ps5-js-pink",
     "sourcePage": "https://www.playstation.com/en-gb/accessories/dualsense-wireless-controller/",
-    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/DSWC_SA_NOVAPINK-16x9-01-6Nov26-_en?$1600px$"
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/DualsenseController-NovaPink01-1x1-01-28feb26$en?$1600px--t$"
   },
   {
     "slug": "ps5-js-purple",
-    "sourcePage": "https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/",
-    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/dualsense-galactic-purple-screenshot-01-en-30nov21?$1600px$"
+    "sourcePage": "https://www.playstation.com/en-gb/accessories/dualsense-wireless-controller/",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/DualsenseController-GalaticPurple01-1x1-01-28feb26$en?$1600px--t$"
   },
   {
     "slug": "ps5-js-red",
-    "sourcePage": "https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/",
-    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/dualsense-cosmic-red-screenshot-01-en-08dec21?$1600px$"
+    "sourcePage": "https://www.playstation.com/en-gb/accessories/dualsense-wireless-controller/",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/DualsenseController-CosmicRed01-1x1-01-28feb26$en?$1600px--t$"
   },
   {
     "slug": "ps5-js-remix-green",
-    "sourcePage": "https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/",
-    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/dualsense-remix-green-screenshot-01-en-07jan26?$1600px$"
+    "sourcePage": "https://www.playstation.com/en-gb/accessories/dualsense-wireless-controller/",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/DualsenseController-RemixGreen01-1x1-01-28feb26$en?$1600px--t$"
   },
   {
     "slug": "ps5-js-rhythm-blue",
-    "sourcePage": "https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/",
-    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/dualsense-rhythm-blue-screenshot-01-en-07jan26?$1600px$"
+    "sourcePage": "https://www.playstation.com/en-gb/accessories/dualsense-wireless-controller/",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/DualsenseController-RythymBlue01-1x1-01-28feb26$en?$1600px--t$"
   },
   {
     "slug": "ps5-js-silver",
-    "sourcePage": "https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/",
-    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/dualsense-sterling-silver-screenshot-01-en-04sep23?$1600px$"
+    "sourcePage": "https://www.playstation.com/en-gb/accessories/dualsense-wireless-controller/",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/DualsenseController-SterlingSilver01-1x1-01-28feb26$en?$1600px--t$"
   },
   {
     "slug": "ps5-js-techno-red",
-    "sourcePage": "https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/",
-    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/dualsense-techno-red-screenshot-01-en-07jan26?$1600px$"
+    "sourcePage": "https://www.playstation.com/en-gb/accessories/dualsense-wireless-controller/",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/DualsenseController-TechnoRed01-1x1-01-28feb26$en?$1600px--t$"
   },
   {
     "slug": "ps5-js-wht",
-    "sourcePage": "https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/",
-    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/dualsense-controller-product-thumbnail-01-en-14sep21?$1600px$"
+    "sourcePage": "https://www.playstation.com/en-gb/accessories/dualsense-wireless-controller/",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/DualsenseController-White01-1x1-01-28feb26$en?$1600px--t$"
+  },
+  {
+    "slug": "ps5-js-wolverine",
+    "sourcePage": "https://www.playstation.com/en-us/ps5/marvels-wolverine-limited-edition-console-bundle-and-accessories/",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/DUALSENSE-LE-MWOLVERINE-PR-01-YELL-1x1-01-06jul26-en?$1600px--t$",
+    "representative": true
   },
   {
     "slug": "ps5-jujutsu-kaisen-cursed",
@@ -1813,6 +1953,11 @@
     "slug": "ps5-like-a-dragon-pirate-yakuza",
     "sourcePage": "https://store.playstation.com/en-us/product/JP0177-PPSA24478_00-MAINGAME00000000",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202408/1401/5cbfb4502807fef739169f7e9bdd0cd615d7a86ce4e6af82.png"
+  },
+  {
+    "slug": "ps5-link-usb-adapter",
+    "sourcePage": "https://www.playstation.com/en-gb/accessories/playstation-link-usb-adapter/",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/PS-Link-Wireless-Adapter-01-1x1-01-28feb26$en?$1600px--t$"
   },
   {
     "slug": "ps5-little-big-adventure-twinsens-quest",
@@ -2077,12 +2222,12 @@
   {
     "slug": "ps5-pro-console-tra",
     "sourcePage": "https://www.playstation.com/en-us/ps5/ps5-pro/",
-    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/ps5-pro-dualsense-image-block-01-en-16aug24?$1600px$"
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/ps5-pro-dualsense-image-block-01-en-16aug24?$1600px--t$"
   },
   {
     "slug": "ps5-pulse-elite",
     "sourcePage": "https://www.playstation.com/en-us/accessories/pulse-elite-wireless-headset/",
-    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/PULSE-Elite-headset-thumbnail-02-en-12sep23?$1600px$"
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/PULSE-Elite-headset-thumbnail-02-en-12sep23?$1600px--t$"
   },
   {
     "slug": "ps5-railway-empire-2",
@@ -2098,6 +2243,11 @@
     "slug": "ps5-rayman-30th-ann-ed",
     "sourcePage": "https://store.playstation.com/en-us/concept/10016684",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202602/0500/cdbe1418361054de15c33f26ceb9114eebdf04f1c27dda4a.png"
+  },
+  {
+    "slug": "ps5-razer-black-shark-v2-x",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00611810.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/13/20/LD0006132052.jpg"
   },
   {
     "slug": "ps5-reanimal",
@@ -2174,6 +2324,12 @@
     "slug": "ps5-resonance-a-plague-tale-legacy",
     "sourcePage": "https://store.playstation.com/en-us/product/EP4133-PPSA30601_00-RESONANCEAPLAGUE",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202605/1510/346857c01378e194d77def3f3029d79489509c541aa761d6.png"
+  },
+  {
+    "slug": "ps5-revolution-5",
+    "sourcePage": "https://www.nacongaming.com/en-US/revolution-5-pro",
+    "imageUrl": "https://media.nacongaming.com/media/catalog/product/p/s/ps5rp5frnl_2_main.webp",
+    "representative": true
   },
   {
     "slug": "ps5-ride-5",
@@ -2254,25 +2410,43 @@
   {
     "slug": "ps5-slim-cd",
     "sourcePage": "https://www.playstation.com/en-us/ps5/",
-    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/ps5-product-thumbnail-01-en-14sep21?$1600px$",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/ps5-product-thumbnail-01-en-14sep21?$1600px--t$",
+    "representative": true
+  },
+  {
+    "slug": "ps5-slim-cd-ghost-of-yotei",
+    "sourcePage": "https://www.playstation.com/en-us/ps5/ghost-of-yotei-limited-edition-ps5-bundle-and-accessories/",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/Ghost-of-Yotei-LE-Gold-image-block-01-02jul25?$1600px--t$",
+    "representative": true
+  },
+  {
+    "slug": "ps5-slim-cover-wolverine",
+    "sourcePage": "https://www.playstation.com/en-us/ps5/marvels-wolverine-limited-edition-console-bundle-and-accessories/",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/wolverine-LE-range-image-block-01-en-03jul26?$1600px--t$",
     "representative": true
   },
   {
     "slug": "ps5-slim-digital",
     "sourcePage": "https://www.playstation.com/en-us/ps5/",
-    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/ps5-product-thumbnail-01-en-14sep21?$1600px$",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/ps5-product-thumbnail-01-en-14sep21?$1600px--t$",
     "representative": true
   },
   {
     "slug": "ps5-slim-digital-825gb",
     "sourcePage": "https://www.playstation.com/en-us/ps5/",
-    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/ps5-product-thumbnail-01-en-14sep21?$1600px$",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/ps5-product-thumbnail-01-en-14sep21?$1600px--t$",
     "representative": true
   },
   {
     "slug": "ps5-slim-digital-tra-oman",
     "sourcePage": "https://www.playstation.com/en-us/ps5/",
-    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/ps5-product-thumbnail-01-en-14sep21?$1600px$",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/ps5-product-thumbnail-01-en-14sep21?$1600px--t$",
+    "representative": true
+  },
+  {
+    "slug": "ps5-slim-fort-disc-jambu",
+    "sourcePage": "https://www.playstation.com/en-us/ps5/",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/ps5-product-thumbnail-01-en-14sep21?$1600px--t$",
     "representative": true
   },
   {
@@ -2335,6 +2509,18 @@
     "slug": "ps5-spongebob-squarepants-titans",
     "sourcePage": "https://store.playstation.com/en-us/product/EP4389-PPSA26893_00-SPONGEBOBGOO00WW/",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202506/2322/626804e2fe940ac1139edf72b32b3c890e3aa2766dcae682.png"
+  },
+  {
+    "slug": "ps5-stand",
+    "sourcePage": "https://www.playstation.com/en-gb/accessories/vertical-stand-for-ps5/",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/PlayStation5-VerticalStand-01-1x1-01-28feb26$en?$1600px--t$",
+    "representative": true
+  },
+  {
+    "slug": "ps5-stand-cp",
+    "sourcePage": "https://www.playstation.com/en-gb/accessories/vertical-stand-for-ps5/",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/PlayStation5-VerticalStand-01-1x1-01-28feb26$en?$1600px--t$",
+    "representative": true
   },
   {
     "slug": "ps5-star-wars-bounty-hunter",
@@ -2546,6 +2732,17 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202508/1815/96fbe904b245c74b7cbd85f2ed33c1b3d2e60186ce56b51a.png"
   },
   {
+    "slug": "ps5-victrix-pro-bfg",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00691393.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/25/66/LD0006256689.jpg",
+    "representative": true
+  },
+  {
+    "slug": "ps5-victrix-pro-bfg-blk",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00691392.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/25/66/LD0006256686.jpg"
+  },
+  {
     "slug": "ps5-wanderer",
     "sourcePage": "https://store.playstation.com/en-us/concept/10008095/",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202502/2717/f931bcd95e10d6f29265380b859de519b85aaef51e128061.png",
@@ -2587,9 +2784,57 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202508/1212/8fc285a94345f7eef49aa26692fb873e450d7ff72760fed8.png"
   },
   {
+    "slug": "razer-black-shark-v2-x-hs-green",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00462190.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/89/39/LD0005893998_1.jpg"
+  },
+  {
     "slug": "razer-blackshark-v2",
     "sourcePage": "https://www.ldlc.com/en/product/PB00354041.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/70/19/LD0005701915_1.jpg"
+  },
+  {
+    "slug": "razer-golathus-extended-mp",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00258734.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/06/85/LD0005068574_2.jpg"
+  },
+  {
+    "slug": "razer-huntsman-mini",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00377239.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/73/20/LD0005732060_1_0005732067.jpg",
+    "representative": true
+  },
+  {
+    "slug": "razer-kraken-x-lite",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00656879.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/19/39/LD0006193980.jpg"
+  },
+  {
+    "slug": "razer-naga-pro-wireless",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00366129.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/71/34/LD0005713477_1.jpg"
+  },
+  {
+    "slug": "razer-opus-x",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00442545.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/84/92/LD0005849230_1.jpg",
+    "representative": true
+  },
+  {
+    "slug": "razer-orochi-wireless",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00430691.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/82/63/LD0005826386_1.jpg",
+    "representative": true
+  },
+  {
+    "slug": "razer-seiren-v2-x",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00464797.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/89/86/LD0005898672_1.jpg"
+  },
+  {
+    "slug": "razer-viper-8k",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00405075.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/77/84/LD0005778491_1.jpg"
   },
   {
     "slug": "ryzen-5-7500f",
@@ -2627,9 +2872,26 @@
     "imageUrl": "https://assets.nintendo.com/image/upload/q_auto/f_auto/ncom/My%20Nintendo%20Store/EN-US/Nintendo%20Switch%202/Controllers/Pro%20Controllers/127074-nintendo-switch-2-pro-controller-the-legend-of-zelda-40th-edition-package-2000x2000"
   },
   {
+    "slug": "turtle-beach-70p-wh",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00648607.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/17/60/LD0006176011.jpg"
+  },
+  {
     "slug": "wd-1tb-m-2-nvme",
     "sourcePage": "https://www.ldlc.com/en/product/PB00561779.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/16/14/LD0006161406.jpg",
+    "representative": true
+  },
+  {
+    "slug": "wd-black-sn85-1-tb",
+    "sourcePage": "https://www.sandisk.com/products/ssd/internal-ssd/wd-black-sn850p-nvme-ssd-for-ps5",
+    "imageUrl": "https://www.sandisk.com/content/dam/store/en-us/assets/products/internal-storage/wd-black-sn850p-nvme-ssd-for-ps5/gallery/wd-black-sn850p-nvme-ssd-for-ps5-hero.png",
+    "representative": true
+  },
+  {
+    "slug": "wd-black-sn85-2tb",
+    "sourcePage": "https://www.sandisk.com/products/ssd/internal-ssd/wd-black-sn850p-nvme-ssd-for-ps5?sku=WDBBYV0020BNC-WRSN",
+    "imageUrl": "https://www.sandisk.com/content/dam/store/en-us/assets/products/internal-storage/wd-black-sn850p-nvme-ssd-for-ps5/gallery/wd-black-sn850p-nvme-ssd-for-ps5-hero.png",
     "representative": true
   },
   {
@@ -2641,6 +2903,12 @@
     "slug": "wwe-2k26",
     "sourcePage": "https://store.playstation.com/en-us/concept/10015300",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202511/2716/a1a698c1912cbafeaec1744f804491492af00a1c359d5806.png"
+  },
+  {
+    "slug": "xbox-batteries",
+    "sourcePage": "https://www.xbox.com/en-US/accessories/batteries-chargers/play-and-charge-kit",
+    "imageUrl": "https://assets.xboxservices.com/assets/24/28/24287d05-3a7b-491c-85f8-ff9bc7ff6132.jpg?n=X1-090234_Gallery-0_02_1056x594.jpg",
+    "representative": true
   },
   {
     "slug": "xbox-fc27",
@@ -2658,9 +2926,46 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202510/1321/a0d52445fcb5d96d66a361b6759d1b8b959c4644cea70714.png"
   },
   {
+    "slug": "xbox-js-blk",
+    "sourcePage": "https://www.microsoft.com/en-us/d/xbox-wireless-controller/8xn59crbsqgz",
+    "imageUrl": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-Xbox-Cntrl-Black-b00?wid=1600&fmt=png-alpha"
+  },
+  {
+    "slug": "xbox-js-elite-series-2",
+    "sourcePage": "https://www.microsoft.com/en-us/d/xbox-elite-wireless-controller-series-2/8vmjkh8txcxx",
+    "imageUrl": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/320089_Image-Buy-Box-0_2000x2000-1?wid=1600&fmt=png-alpha",
+    "representative": true
+  },
+  {
+    "slug": "xbox-js-forza-6",
+    "sourcePage": "https://www.microsoft.com/en-us/d/forza-horizon-6-limited-edition-accessories-collection/8mzbmmcjzpb0",
+    "imageUrl": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/394587762-A_Image-Buy-Box-0_01_2000x2000?wid=1600&fmt=png-alpha",
+    "representative": true
+  },
+  {
+    "slug": "xbox-js-ghost-cipher",
+    "sourcePage": "https://www.microsoft.com/en-us/d/xbox-wireless-controller-ghost-cipher-special-edition/8zbjpgs19ftr",
+    "imageUrl": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/508261_Image-Buy-Box-0_2000x2000-2?wid=1600&fmt=png-alpha"
+  },
+  {
     "slug": "xbox-js-pink",
     "sourcePage": "https://www.xbox.com/en-US/accessories/controllers/xbox-wireless-controller",
     "imageUrl": "https://assets.xboxservices.com/assets/76/b8/76b8880d-6be7-421e-82db-2b83fc317457.jpg"
+  },
+  {
+    "slug": "xbox-js-pulse-cipher",
+    "sourcePage": "https://www.microsoft.com/en-us/d/xbox-wireless-controller-pulse-cipher-special-edition/8vkqvfpn61kr",
+    "imageUrl": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/987678_Image-Buy-Box-0_1920x1080-1?wid=1600&fmt=png-alpha"
+  },
+  {
+    "slug": "xbox-js-sky-cipher",
+    "sourcePage": "https://www.microsoft.com/en-us/p/product/8PMMLKR9C0JT",
+    "imageUrl": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/508261_Image-Buy-Box-0_2000x2000?wid=1600&fmt=png-alpha"
+  },
+  {
+    "slug": "xbox-js-white",
+    "sourcePage": "https://www.microsoft.com/en-us/d/xbox-wireless-controller/8xn59crbsqgz",
+    "imageUrl": "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-Xbox-Cntrl-White-b01-1?wid=1600&fmt=png-alpha"
   },
   {
     "slug": "xbox-onimusha-way-of-sword",
