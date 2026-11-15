@@ -1,5 +1,33 @@
 [
   {
+    "slug": "addlink-ram-16-gb-d4-3200",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00446878.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/85/33/LD0005853323_1_0005854514_0005854543.jpg",
+    "representative": true
+  },
+  {
+    "slug": "agi-16-gb-dd4-3600-1-pc",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00446878.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/85/33/LD0005853323_1_0005854514_0005854543.jpg",
+    "representative": true
+  },
+  {
+    "slug": "agi-32gb-ram-ddr4-3600mhz",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00446878.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/85/33/LD0005853323_1_0005854514_0005854543.jpg",
+    "representative": true
+  },
+  {
+    "slug": "asrock-b760-pro-rs-d4",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00536778.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/00/40/LD0006004054.jpg"
+  },
+  {
+    "slug": "asrpck-a520m-hdv",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00357333.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/70/87/LD0005708781_1.jpg"
+  },
+  {
     "slug": "astro-a10-gen2-headphone",
     "sourcePage": "https://www.logitechg.com/en-us/shop/p/a10-gen-2.939-002076",
     "imageUrl": "https://resource.logitechg.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/astro/en/products/a10-gen-2/pdp-gallery-a10-black-01-new.png"
@@ -10,15 +38,42 @@
     "imageUrl": "https://resource.logitechg.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/a20-x-pdp/gallery/a20x-3qtr-front-with-receiver-black-gallery-1-new.png"
   },
   {
+    "slug": "asus-dual-rtx-5060-ti-oc-16gb-black",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00681083.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/24/04/LD0006240468.jpg",
+    "representative": true
+  },
+  {
     "slug": "asus-mb-prime-h610m-k-d4",
     "sourcePage": "https://www.asus.com/motherboards-components/motherboards/prime/prime-h610m-k-d4/",
     "imageUrl": "https://dlcdnwebimgs.asus.com/gain/2fd65e16-7cf6-4cf7-aa38-aae547279334/"
+  },
+  {
+    "slug": "asus-monitor-vg27uq1a",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00669909.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/21/88/LD0006218844.jpg"
+  },
+  {
+    "slug": "asus-prime-h610m-k-dd5",
+    "sourcePage": "https://www.asus.com/motherboards-components/motherboards/prime/prime-h610m-k-d4/",
+    "imageUrl": "https://dlcdnwebimgs.asus.com/gain/2fd65e16-7cf6-4cf7-aa38-aae547279334/",
+    "representative": true
   },
   {
     "slug": "asus-prime-rtx-5080-16gb-oc-black",
     "sourcePage": "https://www.ldlc.com/en/product/PB00736307.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/20/20/LD0006202046_0006338090.jpg",
     "representative": true
+  },
+  {
+    "slug": "asus-prime-x870-p-wifi",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00633564.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/16/55/LD0006165577.jpg"
+  },
+  {
+    "slug": "asus-prime-z790-p-wifi-motherboard",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00519831.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/98/30/LD0005983065.jpg"
   },
   {
     "slug": "asus-rtx-5060-8-gb-oc",
@@ -182,9 +237,44 @@
     "imageUrl": "https://resource.logitechg.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/g923-and-trueforce/g923-gallery/g923-ps4-gallery-1-new-image.png"
   },
   {
+    "slug": "gameon-goac49dqhd120-curved-49-va-dqhd-120hz-0-5ms-white",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00705786.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/28/02/LD0006280213.jpg",
+    "representative": true
+  },
+  {
+    "slug": "gameon-goc34wqhd100va-spectra-pro-series-34-wqhd",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00721613.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/31/07/LD0006310702.jpg",
+    "representative": true
+  },
+  {
+    "slug": "gameon-goc49dqhd120-curved-49-va-dqhd-120hz-black",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00558926.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/04/60/LD0006046008.jpg",
+    "representative": true
+  },
+  {
+    "slug": "gameon-gomm24fhd200ips-marksman-series-24-fhd-200hz",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00623560.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/14/65/LD0006146556.jpg",
+    "representative": true
+  },
+  {
     "slug": "gameon-sapphire-rgb-gaming-desk-size-1160cm",
     "sourcePage": "https://www.ldlc.com/en/product/PB00398352.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/76/51/LD0005765106_1.jpg",
+    "representative": true
+  },
+  {
+    "slug": "gigabyte-aorus-elite-b550m",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00357556.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/83/25/LD0005832533_1.jpg"
+  },
+  {
+    "slug": "gigabyte-b760m-k-d4",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00536771.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/00/40/LD0006004028.jpg",
     "representative": true
   },
   {
@@ -254,9 +344,123 @@
     "representative": true
   },
   {
+    "slug": "goae24qhd180ips",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00623560.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/14/65/LD0006146556.jpg",
+    "representative": true
+  },
+  {
+    "slug": "goc24f180va",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00686195.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/24/74/LD0006247485.jpg",
+    "representative": true
+  },
+  {
+    "slug": "goc27f180va",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00686195.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/24/74/LD0006247485.jpg",
+    "representative": true
+  },
+  {
+    "slug": "goc34wqhd120va",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00721613.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/31/07/LD0006310702.jpg",
+    "representative": true
+  },
+  {
+    "slug": "goc34wqhd180va",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00721613.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/31/07/LD0006310702.jpg",
+    "representative": true
+  },
+  {
+    "slug": "goes22fhd120ips",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00623560.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/14/65/LD0006146556.jpg",
+    "representative": true
+  },
+  {
+    "slug": "goes24fhd120ips",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00623560.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/14/65/LD0006146556.jpg",
+    "representative": true
+  },
+  {
+    "slug": "goes24fhd144ips",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00623560.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/14/65/LD0006146556.jpg",
+    "representative": true
+  },
+  {
+    "slug": "goes27fhd120ips",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00653087.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/18/68/LD0006186864.jpg",
+    "representative": true
+  },
+  {
+    "slug": "goes27fhd144ips",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00653087.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/18/68/LD0006186864.jpg",
+    "representative": true
+  },
+  {
     "slug": "goes27qhd120ips",
     "sourcePage": "https://global.microless.com/product/gameon-essential-series-gaming-monitor-27-ips-display-qhd-resolution-120hz-refresh-rate-0-5ms-mprt-response-time-freesync-adaptive-sync-gameplus-technology-black-goes27qhd120ips/",
     "imageUrl": "https://cdn.microless.com/products/e4722764bce9a34cc4c31b8b59d8df6f-hi.jpg"
+  },
+  {
+    "slug": "goesp24fhd240ips",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00623560.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/14/65/LD0006146556.jpg",
+    "representative": true
+  },
+  {
+    "slug": "gomd27qhd180ips",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00653087.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/18/68/LD0006186864.jpg",
+    "representative": true
+  },
+  {
+    "slug": "gomd27qhd240ips-black",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00653087.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/18/68/LD0006186864.jpg",
+    "representative": true
+  },
+  {
+    "slug": "gomp24fhd380ips",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00623560.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/14/65/LD0006146556.jpg",
+    "representative": true
+  },
+  {
+    "slug": "gop28uhd144ips",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00496115.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/94/73/LD0005947326.jpg",
+    "representative": true
+  },
+  {
+    "slug": "gop32uhd144ips",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00496115.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/94/73/LD0005947326.jpg",
+    "representative": true
+  },
+  {
+    "slug": "gops24fhd200ips",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00623560.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/14/65/LD0006146556.jpg",
+    "representative": true
+  },
+  {
+    "slug": "gops27180ips",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00653087.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/18/68/LD0006186864.jpg",
+    "representative": true
+  },
+  {
+    "slug": "gops27qhd180ips",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00653087.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/18/68/LD0006186864.jpg",
+    "representative": true
   },
   {
     "slug": "govee-neon-rope-light-2",
@@ -320,14 +524,36 @@
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/94/73/LD0005947388.jpg"
   },
   {
+    "slug": "i5-12400f-old-stock",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00718915.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/30/92/LD0006309261.jpg",
+    "representative": true
+  },
+  {
     "slug": "i5-13400f",
     "sourcePage": "https://ipcstore.com/intel-core-i513400f-processor-20-mb-smart-cache-box-5284524",
     "imageUrl": "https://ipcstore.com/media/catalog/product/1/0/106114142_4669929048.jpg"
   },
   {
+    "slug": "i5-14400f",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00587787.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/09/58/LD0006095871_0006095907_0006095979.jpg"
+  },
+  {
+    "slug": "intel-14700kf",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00577077.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/07/49/LD0006074904.jpg"
+  },
+  {
     "slug": "intel-core-i7-14700f-tray",
     "sourcePage": "https://gccgamers.com/om/product/intel-i7-14700f-tray",
     "imageUrl": "https://cdn.gccgamers.com/media/products/5d07e70a-37fb-4262-8dff-3acc994f10d2.webp"
+  },
+  {
+    "slug": "intel-tray-12400f",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00718915.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/30/92/LD0006309261.jpg",
+    "representative": true
   },
   {
     "slug": "je-brand-cat-8-cable-3mtr",
@@ -339,6 +565,30 @@
     "slug": "je-brand-cat-8-cable-5mtr",
     "sourcePage": "https://www.ldlc.com/en/product/PB00210822.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld3/zoom/2009/LD0000711675_0003705730.jpg",
+    "representative": true
+  },
+  {
+    "slug": "k-gaming-22fhd120hz1ms",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00623560.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/14/65/LD0006146556.jpg",
+    "representative": true
+  },
+  {
+    "slug": "k-gaming-25fhd240hz0-5ms",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00623560.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/14/65/LD0006146556.jpg",
+    "representative": true
+  },
+  {
+    "slug": "k-gaming-27-4k-160-hrtz",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00653087.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/18/68/LD0006186864.jpg",
+    "representative": true
+  },
+  {
+    "slug": "k-gaming-27qhd2k275hz0-5ms",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00653087.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/18/68/LD0006186864.jpg",
     "representative": true
   },
   {
@@ -372,14 +622,83 @@
     "representative": true
   },
   {
+    "slug": "kingston-fury-16gb-single-3600mhz-black",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00446878.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/85/33/LD0005853323_1_0005854514_0005854543.jpg"
+  },
+  {
+    "slug": "kingston-fury-8gb-x-2-16gb-ddr5-5600mhz",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00446878.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/85/33/LD0005853323_1_0005854514_0005854543.jpg",
+    "representative": true
+  },
+  {
+    "slug": "kingston-fury-beast-16gb-3600mhz-ddr4",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00446878.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/85/33/LD0005853323_1_0005854514_0005854543.jpg"
+  },
+  {
+    "slug": "kingston-fury-beast-32gb-2x16gb-3600mt-s-white",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00447682.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/87/38/LD0005873846_1.jpg",
+    "representative": true
+  },
+  {
+    "slug": "kingston-fury-ddr4-16gb-3600-single",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00446878.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/85/33/LD0005853323_1_0005854514_0005854543.jpg"
+  },
+  {
     "slug": "kingston-ssd-500gb-nv3",
     "sourcePage": "https://www.ldlc.com/en/product/PB00630080.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/15/76/LD0006157658.jpg"
   },
   {
+    "slug": "kinston-d4-16-gb-3600-1",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00446878.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/85/33/LD0005853323_1_0005854514_0005854543.jpg"
+  },
+  {
+    "slug": "koorui-24e3-ips-fhd-165hz",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00623560.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/14/65/LD0006146556.jpg",
+    "representative": true
+  },
+  {
+    "slug": "koorui-34e6uc",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00721613.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/31/07/LD0006310702.jpg",
+    "representative": true
+  },
+  {
     "slug": "koorui-g2511p",
-    "sourcePage": "https://www.instagram.com/blackshark__gaming/p/DYXQ6v1IHdW/",
-    "rights": "The store's own Instagram post (@blackshark__gaming)."
+    "sourcePage": "https://www.ldlc.com/en/product/PB00623560.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/14/65/LD0006146556.jpg",
+    "representative": true
+  },
+  {
+    "slug": "koorui-gn06-27-ips-fhd-165hz",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00653087.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/18/68/LD0006186864.jpg",
+    "representative": true
+  },
+  {
+    "slug": "lexar-32gb-ram-ddr5-6000mhz",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00597731.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/96/95/LD0005969567_0005969592_0005969595_0005969598_0005969628_0006027330_0006040605_0006056924_0006117668.jpg",
+    "representative": true
+  },
+  {
+    "slug": "lexar-ram-32gb-rgb-16x2-blk",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00597731.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/96/95/LD0005969567_0005969592_0005969595_0005969598_0005969628_0006027330_0006040605_0006056924_0006117668.jpg",
+    "representative": true
+  },
+  {
+    "slug": "lexar-ram-32gb-rgb-16x2-wht",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00561654.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/05/02/LD0006050270.jpg",
+    "representative": true
   },
   {
     "slug": "logietch-shifter",
@@ -462,6 +781,12 @@
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/05/18/LD0006051850.jpg"
   },
   {
+    "slug": "msi-mb-b760m-p-d5",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00537254.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/00/46/LD0006004646.jpg",
+    "representative": true
+  },
+  {
     "slug": "msi-mb-pro-b760m-p-d4",
     "sourcePage": "https://www.msi.com/Motherboard/PRO-B760M-P-DDR4",
     "imageUrl": "https://storage-asset.msi.com/global/picture/product/product_167273674460b46b34fc149101452b7a963bf9b522.webp"
@@ -472,9 +797,32 @@
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/05/18/LD0006051850.jpg"
   },
   {
+    "slug": "msi-pro-b760m-p",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00537254.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/00/46/LD0006004646.jpg",
+    "representative": true
+  },
+  {
+    "slug": "msi-pro-h610m-e-ddr4",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00537254.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/00/46/LD0006004646.jpg",
+    "representative": true
+  },
+  {
     "slug": "msi-rtx-5060-8gb-2x-oc",
     "sourcePage": "https://www.ldlc.com/en/product/PB00683080.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/24/19/LD0006241951.jpg"
+  },
+  {
+    "slug": "msi-rtx-5060-ti-8gb",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00683080.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/24/19/LD0006241951.jpg",
+    "representative": true
+  },
+  {
+    "slug": "msi-z790-p-wifi-d4",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00519296.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/98/23/LD0005982375.jpg"
   },
   {
     "slug": "nintendo-switch-1-oled",
@@ -792,15 +1140,61 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202511/0515/9fcf8cc561ad83a7476bb5d1aa92630068957efc7bd077bc.png"
   },
   {
+    "slug": "palit-5060ti-16gb-3fan",
+    "sourcePage": "https://www.palit.com/palit/vgapro.php?id=5495&lang=en",
+    "imageUrl": "https://www.palit.com/product/vga/picture/p05495/p05495_propng_192867dbab2f6a347.png"
+  },
+  {
+    "slug": "palit-rtx-5060-8gb-black",
+    "sourcePage": "https://www.palit.com/palit/vgapro.php?id=5575&lang=en",
+    "imageUrl": "https://www.palit.com/product/vga/picture/p05575/p05575_propng_32867dbad49d011b.png",
+    "representative": true
+  },
+  {
+    "slug": "palit-rtx-5060-dual-8gb-wh",
+    "sourcePage": "https://www.palit.com/palit/vgapro.php?id=5745&lang=en",
+    "imageUrl": "https://www.palit.com/product/vga/picture/p05745/p05745_propng_813685ba9be4c192.png",
+    "representative": true
+  },
+  {
+    "slug": "palit-rtx-5070-infinity-3-12gb",
+    "sourcePage": "https://www.palit.com/palit/vgapro.php?id=5455&lang=en",
+    "imageUrl": "https://www.palit.com/product/vga/picture/p05455/p05455_propng_140867a4474e4c0e1.png"
+  },
+  {
     "slug": "pdx-544-gaming-desk-blk",
     "sourcePage": "https://www.ldlc.com/en/product/PB00398352.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/76/51/LD0005765106_1.jpg",
     "representative": true
   },
   {
+    "slug": "pny-rtx-5060-8gb-oc-black",
+    "sourcePage": "https://www.pny.com/geforce-rtx-5060-8gb-models",
+    "imageUrl": "https://www.pny.com/productimages/026769ef-e581-4b5f-bc57-b2c0009c7bee/images/0-pny-rtx-5060-argb-oc-epic-x-triple-fan-ra.png",
+    "representative": true
+  },
+  {
+    "slug": "pny-rtx-5060-8gb-stealth-mode",
+    "sourcePage": "https://www.pny.com/geforce-rtx-5060-8gb-models",
+    "imageUrl": "https://www.pny.com/productimages/026769ef-e581-4b5f-bc57-b2c0009c7bee/images/0-pny-rtx-5060-argb-oc-epic-x-triple-fan-ra.png",
+    "representative": true
+  },
+  {
+    "slug": "pny-rtx5070-oc-12gb-3-fan",
+    "sourcePage": "https://www.pny.com/geforce-rtx-5070-models",
+    "imageUrl": "https://www.pny.com/productimages/d3266c6f-d466-41a0-b948-b25f00b01415/images/1-pny-rtx-5070-argb-epic-x-triple-fan-ra.png",
+    "representative": true
+  },
+  {
     "slug": "porodo-pdx122bk-desk",
     "sourcePage": "https://www.ldlc.com/en/product/PB00398352.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/76/51/LD0005765106_1.jpg",
+    "representative": true
+  },
+  {
+    "slug": "predator-16gb-6000mhz-single",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00597731.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/96/95/LD0005969567_0005969592_0005969595_0005969598_0005969628_0006027330_0006040605_0006056924_0006117668.jpg",
     "representative": true
   },
   {
@@ -3149,14 +3543,103 @@
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/77/84/LD0005778491_1.jpg"
   },
   {
+    "slug": "rtx-5060-8gb-gddr7-dual-fan-graphic-card",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00681083.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/24/04/LD0006240468.jpg",
+    "representative": true
+  },
+  {
+    "slug": "ryzen-5-560",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00493653.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/94/44/LD0005944466.jpg",
+    "representative": true
+  },
+  {
+    "slug": "ryzen-5-560-cpu",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00493653.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/94/44/LD0005944466.jpg",
+    "representative": true
+  },
+  {
     "slug": "ryzen-5-7500f",
     "sourcePage": "https://www.ldlc.com/en/product/PB00672497.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/22/48/LD0006224837_0006224838.jpg"
   },
   {
+    "slug": "ryzen-7-9800-x-3d",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00650664.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/18/10/LD0006181036.jpg"
+  },
+  {
+    "slug": "ryzen-7-9850-x3d-tray",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00650664.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/18/10/LD0006181036.jpg",
+    "representative": true
+  },
+  {
+    "slug": "sansui-es-24x3a-24-ips-fhd-100hz-spk",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00623560.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/14/65/LD0006146556.jpg",
+    "representative": true
+  },
+  {
+    "slug": "sansui-es-27x3al-27-ips-fhd-100hz-nospkr",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00653087.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/18/68/LD0006186864.jpg",
+    "representative": true
+  },
+  {
+    "slug": "sansui-es-g24c1-200hz",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00623560.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/14/65/LD0006146556.jpg",
+    "representative": true
+  },
+  {
+    "slug": "sansui-es-g27c1q-200hz",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00686195.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/24/74/LD0006247485.jpg",
+    "representative": true
+  },
+  {
+    "slug": "sansui-es-g27f2q-27-ips-2k-qhd-180hz-no-spkr",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00653087.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/18/68/LD0006186864.jpg",
+    "representative": true
+  },
+  {
+    "slug": "sansui-es-g34c5-180hz",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00721613.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/31/07/LD0006310702.jpg",
+    "representative": true
+  },
+  {
+    "slug": "sansui-esa-g27f6q-pro-27-ips-2k-wqhd-240hz-no-spk",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00653087.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/18/68/LD0006186864.jpg",
+    "representative": true
+  },
+  {
+    "slug": "sansui22c1",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00623560.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/14/65/LD0006146556.jpg",
+    "representative": true
+  },
+  {
+    "slug": "sansui24c1",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00623560.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/14/65/LD0006146556.jpg",
+    "representative": true
+  },
+  {
     "slug": "shadow-of-the-tomb-rider-croft-eiditon",
     "sourcePage": "https://store.playstation.com/en-us/product/UP0082-CUSA10938_00-DEFINITIVE00SIEA",
     "imageUrl": "https://image.api.playstation.com/vulcan/img/cfn/11307obn0reFe1U4gMc6b1pGe29vUWBAwdA8-rwjTkBN9iSwdc4rU6hpu5QI4ZXkrja75v0RAOXR1bNsTAg1jbb-3AgvCc1Y.png"
+  },
+  {
+    "slug": "spectrum-ram-16-gb-ddr5",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00597731.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/96/95/LD0005969567_0005969592_0005969595_0005969598_0005969628_0006027330_0006040605_0006056924_0006117668.jpg",
+    "representative": true
   },
   {
     "slug": "star-wars-outlaws",
@@ -3182,6 +3665,114 @@
     "slug": "switch-2-pro-controller-zelda-40th",
     "sourcePage": "https://www.nintendo.com/us/store/products/nintendo-switch-2-pro-controller-the-legend-of-zelda-40th-anniversary-edition-127074/",
     "imageUrl": "https://assets.nintendo.com/image/upload/q_auto/f_auto/ncom/My%20Nintendo%20Store/EN-US/Nintendo%20Switch%202/Controllers/Pro%20Controllers/127074-nintendo-switch-2-pro-controller-the-legend-of-zelda-40th-edition-package-2000x2000"
+  },
+  {
+    "slug": "t-force-16-gb-3600mhz-wht",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00457515.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/87/27/LD0005872721_1_0005872800_0005872877.jpg",
+    "representative": true
+  },
+  {
+    "slug": "t-force-16-gb-6000mhz",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00597731.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/96/95/LD0005969567_0005969592_0005969595_0005969598_0005969628_0006027330_0006040605_0006056924_0006117668.jpg",
+    "representative": true
+  },
+  {
+    "slug": "t-force-16-gb-ram-old-stock",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00597731.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/96/95/LD0005969567_0005969592_0005969595_0005969598_0005969628_0006027330_0006040605_0006056924_0006117668.jpg",
+    "representative": true
+  },
+  {
+    "slug": "t-force-32-gb-16x2-3600mhz-ddr4-blk",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00597731.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/96/95/LD0005969567_0005969592_0005969595_0005969598_0005969628_0006027330_0006040605_0006056924_0006117668.jpg",
+    "representative": true
+  },
+  {
+    "slug": "team-group-t-force-delta-rgb-16gb-16gbx1-ddr4-3600mhz-memory-black",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00597731.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/96/95/LD0005969567_0005969592_0005969595_0005969598_0005969628_0006027330_0006040605_0006056924_0006117668.jpg",
+    "representative": true
+  },
+  {
+    "slug": "team-group-t-force-delta-rgb-16gb-16gbx1-ddr4-3600mhz-memory-white",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00457515.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/87/27/LD0005872721_1_0005872800_0005872877.jpg",
+    "representative": true
+  },
+  {
+    "slug": "tforce-16gb-ram-ddr4-3600mhz-blk",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00597731.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/96/95/LD0005969567_0005969592_0005969595_0005969598_0005969628_0006027330_0006040605_0006056924_0006117668.jpg",
+    "representative": true
+  },
+  {
+    "slug": "tforce-16gb-ram-ddr4-3600mhz-white",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00457515.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/87/27/LD0005872721_1_0005872800_0005872877.jpg",
+    "representative": true
+  },
+  {
+    "slug": "tforce-delta-rgb-16gb-ram-ddr5-6000mhz-single-black",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00597731.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/96/95/LD0005969567_0005969592_0005969595_0005969598_0005969628_0006027330_0006040605_0006056924_0006117668.jpg",
+    "representative": true
+  },
+  {
+    "slug": "tm22fhd120ips",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00623560.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/14/65/LD0006146556.jpg",
+    "representative": true
+  },
+  {
+    "slug": "tm24fhd120ips",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00623560.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/14/65/LD0006146556.jpg",
+    "representative": true
+  },
+  {
+    "slug": "tm24fhd144ips",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00623560.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/14/65/LD0006146556.jpg",
+    "representative": true
+  },
+  {
+    "slug": "tm24fhd180-blk",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00623560.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/14/65/LD0006146556.jpg",
+    "representative": true
+  },
+  {
+    "slug": "tm24fhd280ips",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00623560.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/14/65/LD0006146556.jpg",
+    "representative": true
+  },
+  {
+    "slug": "tm27fdh192ips",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00653087.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/18/68/LD0006186864.jpg",
+    "representative": true
+  },
+  {
+    "slug": "tm27fhd120ips",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00653087.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/18/68/LD0006186864.jpg",
+    "representative": true
+  },
+  {
+    "slug": "tm27fhd144ips",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00653087.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/18/68/LD0006186864.jpg",
+    "representative": true
+  },
+  {
+    "slug": "tm34cwqhd180va",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00721613.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/31/07/LD0006310702.jpg",
+    "representative": true
   },
   {
     "slug": "tp-bridge-high-speed-dp-cable-1-5-mtr",
@@ -3311,5 +3902,17 @@
     "slug": "xbox-the-blood-of-dawnwalker",
     "sourcePage": "https://store.playstation.com/en-ca/product/EP0700-PPSA28000_00-DAWNWALKER00GAME",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202603/2518/65ccfdd513d835f80bf4bbb5fb0757583fd08363f3bcd0fe.png"
+  },
+  {
+    "slug": "xpg-16gb-x2-spectrix-d35g-3600mhz-ddr4",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00597731.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/96/95/LD0005969567_0005969592_0005969595_0005969598_0005969628_0006027330_0006040605_0006056924_0006117668.jpg",
+    "representative": true
+  },
+  {
+    "slug": "xpg-16gbx1-3600",
+    "sourcePage": "https://www.ldlc.com/en/product/PB00597731.html",
+    "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/96/95/LD0005969567_0005969592_0005969595_0005969598_0005969628_0006027330_0006040605_0006056924_0006117668.jpg",
+    "representative": true
   }
 ]

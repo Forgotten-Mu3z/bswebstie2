@@ -20,16 +20,26 @@ a manufacturer media-kit image used under its terms, or an image with written pe
 `public/og/default.png` is made from the logo; `public/og/products/*.jpg` are made from
 the product photos below (`npm run brand:assets`), so each has the same rights status as its photo.
 
-## Product photos (639)
+## Product photos (742)
 
 Products without a photo show their category's picture from `public/placeholders/` until one is added.
 
 | Product slug | Source | Rights status |
 | --- | --- | --- |
+| `addlink-ram-16-gb-d4-3200` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00446878.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `agi-16-gb-dd4-3600-1-pc` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00446878.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `agi-32gb-ram-ddr4-3600mhz` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00446878.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `asrock-b760-pro-rs-d4` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00536778.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `asrpck-a520m-hdv` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00357333.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `astro-a10-gen2-headphone` | www.logitechg.com ([page](https://www.logitechg.com/en-us/shop/p/a10-gen-2.939-002076)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `astro-a20-x-wireless` | www.logitechg.com ([page](https://www.logitechg.com/en-us/shop/c/gaming-headsets-audio)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `asus-dual-rtx-5060-ti-oc-16gb-black` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00681083.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `asus-mb-prime-h610m-k-d4` | www.asus.com ([page](https://www.asus.com/motherboards-components/motherboards/prime/prime-h610m-k-d4/)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `asus-monitor-vg27uq1a` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00669909.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `asus-prime-h610m-k-dd5` | www.asus.com ([page](https://www.asus.com/motherboards-components/motherboards/prime/prime-h610m-k-d4/)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `asus-prime-rtx-5080-16gb-oc-black` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00736307.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `asus-prime-x870-p-wifi` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00633564.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `asus-prime-z790-p-wifi-motherboard` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00519831.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `asus-rtx-5060-8-gb-oc` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00681083.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `asus-rtx-5060-8gb-oc-white` | eshop.asus.com ([page](https://eshop.asus.com/us/90yv0n15-mvaa00-asus-dual-geforce-rtxtm-5060-white-oc-edition-8gb-gddr7.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `black-widow-v3` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00377519.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
@@ -60,7 +70,13 @@ Products without a photo show their category's picture from `public/placeholders
 | `funko-pop-zoro` | funko.com ([page](https://funko.com/search?q=zoro)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `g29-driving-wheel` | www.logitechg.com ([page](https://www.logitechg.com/en-us/shop/p/driving-force-racing-wheel)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `g923-driving-wheel` | www.logitechg.com ([page](https://www.logitechg.com/en-us/shop/p/g923-trueforce-sim-racing-wheel)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `gameon-goac49dqhd120-curved-49-va-dqhd-120hz-0-5ms-white` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00705786.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `gameon-goc34wqhd100va-spectra-pro-series-34-wqhd` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00721613.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `gameon-goc49dqhd120-curved-49-va-dqhd-120hz-black` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00558926.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `gameon-gomm24fhd200ips-marksman-series-24-fhd-200hz` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00623560.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `gameon-sapphire-rgb-gaming-desk-size-1160cm` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00398352.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `gigabyte-aorus-elite-b550m` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00357556.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `gigabyte-b760m-k-d4` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00536771.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `go-2045-dual-arm-17-32-black` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00606683.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `go-3363-single-arm` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00462653.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `go-5008-dual-arm` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00606683.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
@@ -72,7 +88,26 @@ Products without a photo show their category's picture from `public/placeholders
 | `go-5501-single-arm-white` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00606754.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `go-5550-dual-arm` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00606683.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `go-5600-single-monitor-arm-white` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00606754.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `goae24qhd180ips` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00623560.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `goc24f180va` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00686195.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `goc27f180va` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00686195.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `goc34wqhd120va` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00721613.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `goc34wqhd180va` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00721613.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `goes22fhd120ips` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00623560.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `goes24fhd120ips` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00623560.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `goes24fhd144ips` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00623560.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `goes27fhd120ips` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00653087.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `goes27fhd144ips` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00653087.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `goes27qhd120ips` | global.microless.com ([page](https://global.microless.com/product/gameon-essential-series-gaming-monitor-27-ips-display-qhd-resolution-120hz-refresh-rate-0-5ms-mprt-response-time-freesync-adaptive-sync-gameplus-technology-black-goes27qhd120ips/)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `goesp24fhd240ips` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00623560.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `gomd27qhd180ips` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00653087.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `gomd27qhd240ips-black` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00653087.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `gomp24fhd380ips` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00623560.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `gop28uhd144ips` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00496115.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `gop32uhd144ips` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00496115.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `gops24fhd200ips` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00623560.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `gops27180ips` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00653087.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `gops27qhd180ips` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00653087.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `govee-neon-rope-light-2` | us.govee.com ([page](https://us.govee.com/products/govee-neon-rope-light-2)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `govee-rgbic-neon-rope` | us.govee.com ([page](https://us.govee.com/products/govee-rgbic-led-neon-rope-lights-for-desks)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `hdmi-cable-1-8-m-box` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00594937.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
@@ -84,17 +119,37 @@ Products without a photo show their category's picture from `public/placeholders
 | `hyper-x-cloud-3-wireless` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00569698.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `hyper-x-cloud-alpha-wl` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00494313.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `hyper-x-cloud-core-wl` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00496127.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `i5-12400f-old-stock` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00718915.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `i5-13400f` | ipcstore.com ([page](https://ipcstore.com/intel-core-i513400f-processor-20-mb-smart-cache-box-5284524)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `i5-14400f` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00587787.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `intel-14700kf` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00577077.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `intel-core-i7-14700f-tray` | gccgamers.com ([page](https://gccgamers.com/om/product/intel-i7-14700f-tray)) | NOT CONFIRMED. Copied from another retailer. Replace with a manufacturer or own photo, or get written permission. |
+| `intel-tray-12400f` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00718915.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `je-brand-cat-8-cable-3mtr` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00210822.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `je-brand-cat-8-cable-5mtr` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00210822.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `k-gaming-22fhd120hz1ms` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00623560.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `k-gaming-25fhd240hz0-5ms` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00623560.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `k-gaming-27-4k-160-hrtz` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00653087.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `k-gaming-27qhd2k275hz0-5ms` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00653087.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `kgaming-chair-red-black-kgs-001` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00258033.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `kgaming-chair-red-black-kgs-001a` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00258033.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `kgs-001-red-black` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00258033.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `kgs-001a-red-black` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00258033.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `kingston-2tb-m-2` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00630082.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `kingston-fury-16gb-single-3600mhz-black` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00446878.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `kingston-fury-8gb-x-2-16gb-ddr5-5600mhz` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00446878.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `kingston-fury-beast-16gb-3600mhz-ddr4` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00446878.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `kingston-fury-beast-32gb-2x16gb-3600mt-s-white` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00447682.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `kingston-fury-ddr4-16gb-3600-single` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00446878.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `kingston-ssd-500gb-nv3` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00630080.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
-| `koorui-g2511p` | www.instagram.com ([page](https://www.instagram.com/blackshark__gaming/p/DYXQ6v1IHdW/)) | The store's own Instagram post (@blackshark__gaming). |
+| `kinston-d4-16-gb-3600-1` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00446878.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `koorui-24e3-ips-fhd-165hz` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00623560.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `koorui-34e6uc` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00721613.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `koorui-g2511p` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00623560.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `koorui-gn06-27-ips-fhd-165hz` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00653087.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `lexar-32gb-ram-ddr5-6000mhz` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00597731.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `lexar-ram-32gb-rgb-16x2-blk` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00597731.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `lexar-ram-32gb-rgb-16x2-wht` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00561654.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `logietch-shifter` | www.logitechg.com ([page](https://www.logitechg.com/en-us/shop/p/driving-force-shifter)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `logitch-g435-wireless` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00459973.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `logitch-g502` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00262343.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
@@ -110,9 +165,14 @@ Products without a photo show their category's picture from `public/placeholders
 | `logitech-shifter` | www.logitechg.com ([page](https://www.logitechg.com/en-us/shop/p/driving-force-shifter)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `ms2-joycon` | www.nintendo.com ([page](https://www.nintendo.com/us/store/products/nintendo-switch-2-joy-con-2-l-r-light-blue-light-red-123677/)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `msi-mb-b650m-p` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00562344.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `msi-mb-b760m-p-d5` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00537254.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `msi-mb-pro-b760m-p-d4` | www.msi.com ([page](https://www.msi.com/Motherboard/PRO-B760M-P-DDR4)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `msi-pro-b650m-p` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00562344.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `msi-pro-b760m-p` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00537254.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `msi-pro-h610m-e-ddr4` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00537254.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `msi-rtx-5060-8gb-2x-oc` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00683080.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `msi-rtx-5060-ti-8gb` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00683080.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `msi-z790-p-wifi-d4` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00519296.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `nintendo-switch-1-oled` | www.nintendo.com ([page](https://www.nintendo.com/us/store/products/nintendo-switch-oled-model-white-set/)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `nintendo-switch-1-oled-88` | www.nintendo.com ([page](https://www.nintendo.com/us/store/products/nintendo-switch-oled-model-white-set/)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `nintendo-switch-2-mario-kart` | www.nintendo.com ([page](https://www.nintendo.com/us/store/products/nintendo-switch-2-mario-kart-world-bundle-128067/)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
@@ -174,8 +234,16 @@ Products without a photo show their category's picture from `public/placeholders
 | `ns2-the-legend-of-zelda-ocraine-of-time` | www.nintendo.com ([page](https://www.nintendo.com/us/store/products/the-legend-of-zelda-ocarina-of-time-switch-2/)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `ns2-zelda-40th-ann-ed` | www.nintendo.com ([page](https://www.nintendo.com/us/store/products/nintendo-switch-2-the-legend-of-zelda-40th-anniversary-edition-121642/)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `one-piece-pirate-warriors-4` | store.playstation.com ([page](https://store.playstation.com/en-us/concept/234628/)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `palit-5060ti-16gb-3fan` | www.palit.com ([page](https://www.palit.com/palit/vgapro.php?id=5495&lang=en)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `palit-rtx-5060-8gb-black` | www.palit.com ([page](https://www.palit.com/palit/vgapro.php?id=5575&lang=en)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `palit-rtx-5060-dual-8gb-wh` | www.palit.com ([page](https://www.palit.com/palit/vgapro.php?id=5745&lang=en)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `palit-rtx-5070-infinity-3-12gb` | www.palit.com ([page](https://www.palit.com/palit/vgapro.php?id=5455&lang=en)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `pdx-544-gaming-desk-blk` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00398352.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `pny-rtx-5060-8gb-oc-black` | www.pny.com ([page](https://www.pny.com/geforce-rtx-5060-8gb-models)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `pny-rtx-5060-8gb-stealth-mode` | www.pny.com ([page](https://www.pny.com/geforce-rtx-5060-8gb-models)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `pny-rtx5070-oc-12gb-3-fan` | www.pny.com ([page](https://www.pny.com/geforce-rtx-5070-models)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `porodo-pdx122bk-desk` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00398352.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `predator-16gb-6000mhz-single` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00597731.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `pro-x-superlight-2-logitech-black` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00569683.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `pro-x-superlight-2-logitech-white` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00569684.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `prodo-xcommand-carbon-fiber-desk` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00398352.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
@@ -634,13 +702,46 @@ Products without a photo show their category's picture from `public/placeholders
 | `razer-orochi-wireless` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00430691.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `razer-seiren-v2-x` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00464797.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `razer-viper-8k` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00405075.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `rtx-5060-8gb-gddr7-dual-fan-graphic-card` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00681083.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ryzen-5-560` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00493653.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ryzen-5-560-cpu` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00493653.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `ryzen-5-7500f` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00672497.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ryzen-7-9800-x-3d` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00650664.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `ryzen-7-9850-x3d-tray` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00650664.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `sansui-es-24x3a-24-ips-fhd-100hz-spk` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00623560.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `sansui-es-27x3al-27-ips-fhd-100hz-nospkr` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00653087.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `sansui-es-g24c1-200hz` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00623560.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `sansui-es-g27c1q-200hz` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00686195.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `sansui-es-g27f2q-27-ips-2k-qhd-180hz-no-spkr` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00653087.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `sansui-es-g34c5-180hz` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00721613.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `sansui-esa-g27f6q-pro-27-ips-2k-wqhd-240hz-no-spk` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00653087.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `sansui22c1` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00623560.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `sansui24c1` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00623560.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `shadow-of-the-tomb-rider-croft-eiditon` | store.playstation.com ([page](https://store.playstation.com/en-us/product/UP0082-CUSA10938_00-DEFINITIVE00SIEA)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `spectrum-ram-16-gb-ddr5` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00597731.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `star-wars-outlaws` | store.playstation.com ([page](https://store.playstation.com/es-co/product/UP0001-PPSA08261_00-GAME000000000000)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `steelseries-kb-apex3` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00293642.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `super-marios-luigi-brothership` | www.nintendo.com ([page](https://www.nintendo.com/us/store/products/mario-and-luigi-brothership-119272/)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `sw-2-yoshi-and-the-mystrious-book` | www.nintendo.com ([page](https://www.nintendo.com/us/store/products/yoshi-and-the-mysterious-book-switch-2/)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `switch-2-pro-controller-zelda-40th` | www.nintendo.com ([page](https://www.nintendo.com/us/store/products/nintendo-switch-2-pro-controller-the-legend-of-zelda-40th-anniversary-edition-127074/)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `t-force-16-gb-3600mhz-wht` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00457515.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `t-force-16-gb-6000mhz` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00597731.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `t-force-16-gb-ram-old-stock` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00597731.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `t-force-32-gb-16x2-3600mhz-ddr4-blk` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00597731.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `team-group-t-force-delta-rgb-16gb-16gbx1-ddr4-3600mhz-memory-black` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00597731.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `team-group-t-force-delta-rgb-16gb-16gbx1-ddr4-3600mhz-memory-white` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00457515.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `tforce-16gb-ram-ddr4-3600mhz-blk` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00597731.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `tforce-16gb-ram-ddr4-3600mhz-white` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00457515.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `tforce-delta-rgb-16gb-ram-ddr5-6000mhz-single-black` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00597731.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `tm22fhd120ips` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00623560.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `tm24fhd120ips` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00623560.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `tm24fhd144ips` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00623560.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `tm24fhd180-blk` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00623560.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `tm24fhd280ips` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00623560.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `tm27fdh192ips` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00653087.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `tm27fhd120ips` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00653087.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `tm27fhd144ips` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00653087.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `tm34cwqhd180va` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00721613.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `tp-bridge-high-speed-dp-cable-1-5-mtr` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00548695.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `turtle-beach-70p-bl` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00648608.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `turtle-beach-70p-wh` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00648607.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
@@ -665,3 +766,5 @@ Products without a photo show their category's picture from `public/placeholders
 | `xbox-onimusha-way-of-sword` | store.playstation.com ([page](https://store.playstation.com/en-us/concept/10013248)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `xbox-onimusha-way-of-sword-premium-deluxe-ed` | store.playstation.com ([page](https://store.playstation.com/en-us/concept/10013248)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
 | `xbox-the-blood-of-dawnwalker` | store.playstation.com ([page](https://store.playstation.com/en-ca/product/EP0700-PPSA28000_00-DAWNWALKER00GAME)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `xpg-16gb-x2-spectrix-d35g-3600mhz-ddr4` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00597731.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
+| `xpg-16gbx1-3600` | www.ldlc.com ([page](https://www.ldlc.com/en/product/PB00597731.html)) | NOT CONFIRMED. Manufacturer or distributor page. Check its media or reseller terms. |
