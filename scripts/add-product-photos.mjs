@@ -69,7 +69,13 @@ async function square(input) {
 }
 
 const added = [];
-for (const { slug, imageUrl, sourcePage, representative } of photos) {
+for (const {
+  slug,
+  imageUrl,
+  sourcePage,
+  representative,
+  cropBottom,
+} of photos) {
   try {
     if (!catalog.has(slug)) throw new Error('no product with this slug');
     for (const url of [imageUrl, sourcePage])
@@ -94,13 +100,28 @@ for (const { slug, imageUrl, sourcePage, representative } of photos) {
       new Promise((resolve) => setTimeout(resolve, 2000)).then(get),
     );
     if (!response.ok) throw new Error(`download failed (${response.status})`);
-    const input = Buffer.from(await response.arrayBuffer());
+    let input = Buffer.from(await response.arrayBuffer());
     if (input.length > 15 * 1024 * 1024) throw new Error('image over 15 MB');
     // sharp only accepts real image data; anything else throws here.
     const image = sharp(input, { limitInputPixels: 40_000_000 });
     const { width = 0, height = 0 } = await image.metadata();
     if (width < 300 || height < 300)
       throw new Error(`too small (${width}x${height})`);
+    // "cropBottom": 0.1 cuts off the bottom 10%, for store art with a promo
+    // strip ("Free DLC available now") along the bottom edge.
+    if (cropBottom) {
+      if (!(cropBottom > 0 && cropBottom < 0.3))
+        throw new Error(`cropBottom must be between 0 and 0.3`);
+      input = await sharp(input, { limitInputPixels: 40_000_000 })
+        .rotate()
+        .extract({
+          left: 0,
+          top: 0,
+          width,
+          height: Math.round(height * (1 - cropBottom)),
+        })
+        .toBuffer();
+    }
     await square(input).then((photo) =>
       photo.webp({ quality: 82 }).toFile(`public/products/${slug}.webp`),
     );
@@ -109,6 +130,7 @@ for (const { slug, imageUrl, sourcePage, representative } of photos) {
       sourcePage,
       imageUrl,
       ...(representative ? { representative: true } : {}),
+      ...(cropBottom ? { cropBottom } : {}),
     };
     const at = manifest.findIndex((e) => e.slug === slug);
     if (at >= 0) manifest[at] = entry;
