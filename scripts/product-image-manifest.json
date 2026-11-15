@@ -1032,9 +1032,29 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202305/2420/c3daf3037feb797d9e71b81618e3b5ff3ff1f9609db5a4a2.png"
   },
   {
+    "slug": "ps5-all-star-kart-racing",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0283-PPSA15482_00-0556027350219949",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202309/2010/6bde01f6fedea0f3e7277d4060212b422da428f6d1a6deba.png"
+  },
+  {
+    "slug": "ps5-alone-in-the-dark",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10005283",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202308/1015/b3a91fa43661ced3d57a908c26f5bfab057584343be6f618.png"
+  },
+  {
+    "slug": "ps5-ark-survival-ascended",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0691-PPSA16810_00-SURVIVALASCENDED",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202308/3119/62c379ea2d70eeffdaa610992087f7162ceb5d036a49aa9a.png"
+  },
+  {
     "slug": "ps5-armored-core-vi-fires-of-rubicon",
     "sourcePage": "https://store.playstation.com/en-us/product/UP0700-PPSA06774_00-ARMOREDCORE60000",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202304/2800/f9336cf87ddc9d5996606fd2e7f5e4e6a6bbc5131845d665.png"
+  },
+  {
+    "slug": "ps5-assaissns-creed-shadows",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10009909/",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202412/2018/6d3fddf363563ef352c729c8f5077056ab342fd0a9daae9b.png"
   },
   {
     "slug": "ps5-assasins-black-flag-collectors-edition",
@@ -1055,6 +1075,16 @@
     "slug": "ps5-assassins-creed-valhalla",
     "sourcePage": "https://store.playstation.com/en-us/product/UP0001-PPSA01491_00-GAME000000000000/",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202211/1416/HXBxcRRNOpjREOW3GpBndz3u.png"
+  },
+  {
+    "slug": "ps5-astro-bot",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP9000-PPSA21564_00-0000000000000000",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202406/0500/8f15268257b878597757fcc5f2c9545840867bc71fc863b1.png"
+  },
+  {
+    "slug": "ps5-avatar-frontiers-of-pandora",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0001-PPSA01576_00-AVATAR2GAME00001/",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202306/0113/38ad0cc5b92af440d46ccebf5d1f271213d656684fce3385.png"
   },
   {
     "slug": "ps5-battlefield-6",
@@ -1132,6 +1162,27 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202208/1012/V6WJkRhfNIQ3ePfAmrLSfGng.png"
   },
   {
+    "slug": "ps5-death-stranding-2",
+    "sourcePage": "https://store.playstation.com/en-us/product/JP9000-PPSA02015_00-DS2OTB0000000001",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202502/2711/cbc6c3135660ec68eacc766959a766b36d7ce3fa6010ca88.png"
+  },
+  {
+    "slug": "ps5-demon-slayer-2",
+    "sourcePage": "https://store.playstation.com/en-us/product/HP0177-PPSA25427_00-HINOKAMI20000000/",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202504/1707/5838807383baec8d94aaad989ca3f7c654e1efc2a1da66c2.png"
+  },
+  {
+    "slug": "ps5-devil-may-cry",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0102-PPSA01442_00-DMC5SE0000000001",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202009/1710/UUnpHLJqLAIJX5HioswiPuAm.png",
+    "representative": true
+  },
+  {
+    "slug": "ps5-diablo-iv",
+    "sourcePage": "https://store.playstation.com/en-us/concept/231761",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202211/3017/Oo1B84A7BLCT157YFSxjtwG0.png"
+  },
+  {
     "slug": "ps5-directive-8020",
     "sourcePage": "https://store.playstation.com/en-us/product/EP8253-PPSA16384_00-SMGDARKPICTURESE",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202610/1908/bb604475a8c89fab4bfe29dfd90f560bd2170ade8b3ff678.png"
@@ -1140,6 +1191,11 @@
     "slug": "ps5-doom-the-dark-ages",
     "sourcePage": "https://store.playstation.com/en-us/product/UP1003-PPSA20560_00-DTITAN0000000000",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202501/1405/346673e154a94c7d1dba15de4040b8f148dd3aafda800100.png"
+  },
+  {
+    "slug": "ps5-double-dragon-revive",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10010965",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202407/0111/9e88a794181445e441f6c9f1c0d6e8cc64748f66ab144f45.png"
   },
   {
     "slug": "ps5-dragon-ball-2-xenoverse",
@@ -1157,6 +1213,11 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202301/0921/rsiZucmepcNwIbIvMLradwwu.png"
   },
   {
+    "slug": "ps5-dragon-quest-3",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10010018",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202405/1508/2d8a60c46eb99acc83c22ebd4024acec0beee526c5acb0cf.png"
+  },
+  {
     "slug": "ps5-dragons-dogma-2",
     "sourcePage": "https://store.playstation.com/en-us/product/UP0102-PPSA09663_00-DD2GAME000000000",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202311/0203/37bd2f7293cecbc4045d33578d487127ccaa1840eb15eeb5.png"
@@ -1170,6 +1231,17 @@
     "slug": "ps5-dragons-dogma-ii-dark-arisen",
     "sourcePage": "https://store.playstation.com/en-us/product/UP0102-PPSA09663_00-DD2DA00000000000",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202606/1204/2f72b83944616f297926b77b592b7edd51e2e4954b7a3755.png"
+  },
+  {
+    "slug": "ps5-drdr-dead-rising",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0102-PPSA18259_00-DEADRISING000001",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202406/0701/83c9162c472c03b32bdf5701e17108ec849b63a5d3ae6e40.png"
+  },
+  {
+    "slug": "ps5-dynasty-warriors",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10008191",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202410/3101/2ba9c1b910e2d5544ffa9d2dc648bf5c16008e4244e4b5f2.png",
+    "representative": true
   },
   {
     "slug": "ps5-edge-white",
@@ -1207,9 +1279,24 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202501/2217/e5833a53529ff9879e87689f1e8b04d45ba7e6c97fa791e2.png"
   },
   {
+    "slug": "ps5-expeditions",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP4133-PPSA17423_00-SNOWRUNNEREXPEDI",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202310/1809/8fb813c0709d15b1efd22c39ca3ead0f4e132f2d9c291379.png"
+  },
+  {
+    "slug": "ps5-f1-23",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0006-PPSA09801_00-F12023PS5GAME000",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202311/2816/6a8e9cca68894033f83c2994933badd089bd33591a8f20eb.png"
+  },
+  {
     "slug": "ps5-fairy-tale-2",
     "sourcePage": "https://store.playstation.com/en-us/concept/10011532",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202410/0806/bf757f441e7d36d4ab2f2b580d600af620c2c1651c981b77.png"
+  },
+  {
+    "slug": "ps5-farming-simulator-25",
+    "sourcePage": "https://store.playstation.com/en-us/product/EP4399-PPSA19644_00-FARMSIMULAT25PS5",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202406/1221/5e7b5321408d56da66ffbb45abae3d2f812b0a1dd03cee5d.png"
   },
   {
     "slug": "ps5-fatal-frame-2",
@@ -1242,9 +1329,29 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202102/1515/0GxrqnoNV8rIHsGCE1hjAKSF.png"
   },
   {
+    "slug": "ps5-final-ftanasy-7-crisis-core",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10004142",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202208/2505/DE9sevLlnfHm7vLrRwDFEZpO.png"
+  },
+  {
+    "slug": "ps5-final-ftanasy-7-remake-intergrade",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0082-PPSA01903_00-5827003902180177",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202102/1515/0GxrqnoNV8rIHsGCE1hjAKSF.png"
+  },
+  {
+    "slug": "ps5-final-ftanasy-xvi",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0082-PPSA10664_00-FF16SIEA00000002",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202211/2904/NspyF8og84Div2VMShXI4cV7.png"
+  },
+  {
     "slug": "ps5-flight-simulator",
     "sourcePage": "https://store.playstation.com/en-us/product/UP6312-PPSA23943_00-FLIGHTSIM2024STA",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202509/1814/8ed0a9e5f23ed173881e2e21e259eac99a2457994f059b6c.png"
+  },
+  {
+    "slug": "ps5-funko-fusion",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10009469",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202405/2213/c426ce62c3b2df8d06ac6e41a061387de205347e3d7df2e1.png"
   },
   {
     "slug": "ps5-garfield-escape-from-monday",
@@ -1260,6 +1367,11 @@
     "slug": "ps5-ghost-of-yotei-complete-edition",
     "sourcePage": "https://store.playstation.com/en-us/concept/10003923/",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202607/2723/890df32c227f619c5bd80e9f34ba2be53d0fea4b1615adee.png"
+  },
+  {
+    "slug": "ps5-ghost-runner-2",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP4040-PPSA09911_00-GHOSTRUNNER2US00/",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202308/0121/f69a1189e9674b64a574b2fc35e987738be0ee41578818a7.png"
   },
   {
     "slug": "ps5-god-of-war",
@@ -1281,6 +1393,11 @@
     "slug": "ps5-halo-campaign-evolved",
     "sourcePage": "https://store.playstation.com/en-us/concept/10013884",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202510/1321/a0d52445fcb5d96d66a361b6759d1b8b959c4644cea70714.png"
+  },
+  {
+    "slug": "ps5-hell-diver-2",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10000657",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202608/0517/6d1f643eec5087e543287e54a123277ec3bcda956d5d5158.png"
   },
   {
     "slug": "ps5-hell-is-us",
@@ -1319,6 +1436,11 @@
     "slug": "ps5-horizon-2-forbidden-west",
     "sourcePage": "https://store.playstation.com/en-us/product/UP9000-PPSA04072_00-FORBIDDENWESTPS5",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202107/3100/HO8vkO9pfXhwbHi5WHECQJdN.png"
+  },
+  {
+    "slug": "ps5-hot-wheels-monster-trucks",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10009076/",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202408/2015/5b3ee51ed26886b8df784bc19ecf41ec5ce73f2cc2c5e20c.png"
   },
   {
     "slug": "ps5-invincible-vs",
@@ -1421,14 +1543,44 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202305/2308/06b354c8015b3c71e54f43aa883aab4641285d4a91734681.png"
   },
   {
+    "slug": "ps5-like-a-dragon-infinite-wealth",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10004462",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202308/2906/6f49857e453aaebe72a7b32f07d2ae999be69fac5bbda1ea.png"
+  },
+  {
+    "slug": "ps5-like-a-dragon-pirate-yakuza",
+    "sourcePage": "https://store.playstation.com/en-us/product/JP0177-PPSA24478_00-MAINGAME00000000",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202408/1401/5cbfb4502807fef739169f7e9bdd0cd615d7a86ce4e6af82.png"
+  },
+  {
+    "slug": "ps5-little-big-adventure-twinsens-quest",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10011441",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202406/1814/5ee6f5f1f1e3087aa5c969aededa150d716b72e979dd98fc.png"
+  },
+  {
     "slug": "ps5-little-nightmares-2",
     "sourcePage": "https://store.playstation.com/en-us/product/UP0700-PPSA02200_00-LITTLENIGHTS2000",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202010/0108/uxdypYdPjRXXKfSc1CxiLClp.png"
   },
   {
+    "slug": "ps5-little-nightmares-3",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0700-PPSA05144_00-LITTLENIGHTS3000",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202502/2619/fadb00a02c9de2cbcf41e167001be8fd36c3f77957c038b6.png"
+  },
+  {
+    "slug": "ps5-looney-tunes-wackt-world-of-sports",
+    "sourcePage": "https://store.playstation.com/pl-pl/product/EP0281-PPSA19564_00-LOONEYTUNESPORTS",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202408/1417/7fa6d2b6728bee99536d98e514ff58bae5a3092e73c01009.png"
+  },
+  {
     "slug": "ps5-lords-of-the-fallen",
     "sourcePage": "https://store.playstation.com/en-us/product/UP4321-PPSA07064_00-4092020589534297",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202308/2307/5b5caedff1afc1f8e36bafb49abe2a55baf873e0fd84fcd8.png"
+  },
+  {
+    "slug": "ps5-lost-soul-aside",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10012778",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202412/0610/39ce4e6e838bf8def364426e97677d54e4775ac0f076ebf2.png"
   },
   {
     "slug": "ps5-mafia-the-old-country",
@@ -1439,6 +1591,16 @@
     "slug": "ps5-marvels-wolverine",
     "sourcePage": "https://store.playstation.com/en-us/product/UP9000-PPSA03671_00-MARVELSWOLVERINE",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202605/2215/a69481c5fa50fe19f42896d84fb7cbf37ab8646801a93322.png"
+  },
+  {
+    "slug": "ps5-match-box-driving-adventures",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP3824-PPSA18089_00-MATCHBOXBASEGAME",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202407/0809/c5eb07731ac0850e1eacba783fa764bad84aa0d7de3de4b7.png"
+  },
+  {
+    "slug": "ps5-metal-gear-solid-snake-eater",
+    "sourcePage": "https://store.playstation.com/en-bg/concept/10007293",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202406/0513/d35b305652ee922a72b4020bd5d6ef36675cf526dd4945d1.png"
   },
   {
     "slug": "ps5-metal-gear-solid-vol1",
@@ -1471,9 +1633,19 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202409/0506/aa5c40ba185302dfcc88edc276a876fdc6c516c4db07ec9d.png"
   },
   {
+    "slug": "ps5-monster-supercross-25",
+    "sourcePage": "https://store.playstation.com/en-us/product/EP4356-PPSA20435_00-SUPERCROSS25GAME/",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202502/1409/fa3f9b7d40c4b31a7247bf908a73e99391fe6c465926edd7.png"
+  },
+  {
     "slug": "ps5-moomintroll-winters-warmth",
     "sourcePage": "https://store.playstation.com/en-us/concept/10018175/",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202607/0715/b92a26cb66b16c451277a040dd2a9fc84eeffe812be6077d.png"
+  },
+  {
+    "slug": "ps5-mortal-kombat-1",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP1018-PPSA07570_00-MKONE00000000000",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202305/1515/1cc63f4f4b2c9a9852fabefba4ca7eea936b1ef7867811a5.png"
   },
   {
     "slug": "ps5-mortal-kombat-11-ultimate",
@@ -1489,6 +1661,11 @@
     "slug": "ps5-mortal-shell-2",
     "sourcePage": "https://store.playstation.com/en-us/concept/10010058/",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202610/2013/dc3e7ec84b4e2b7e9ea1fccb7d613852e5e6c6803e2d68d8.png"
+  },
+  {
+    "slug": "ps5-motogp-24",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP1981-PPSA19567_00-MOTOGP24FULLGAME",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202402/2609/bf474899d31067bb4e648ab00a193a30acb07b89078df2e3.png"
   },
   {
     "slug": "ps5-my-hero-academia-all-justice",
@@ -1521,6 +1698,11 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202412/1202/5b7b5dbfb349815652339c30b2f35cb565934be85ecdc188.png"
   },
   {
+    "slug": "ps5-ninja-gaiden-ragebound",
+    "sourcePage": "https://store.playstation.com/en-us/product/EP1470-PPSA28002_00-NINJAGAIDENRBPS5",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202504/1616/b1a631440844715c22c91b314777a0ecacfe24f2a5e1ade3.png"
+  },
+  {
     "slug": "ps5-nioh-3",
     "sourcePage": "https://store.playstation.com/en-us/product/EP4108-PPSA32785_00-NIOH300000000000",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202509/0401/835b207c01d1b02c29229e73fba0da13b914148c8b8bd4ed.png"
@@ -1546,9 +1728,19 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202605/1308/79a186e6a055909cfeb66264230ad3d76915587b0269cd0d.png"
   },
   {
+    "slug": "ps5-overpass-2",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10006027",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202308/2508/fc58641f45a624f52b66e419bdd37c5c4c30383ad084edbe.png"
+  },
+  {
     "slug": "ps5-pac-man-world-2",
     "sourcePage": "https://store.playstation.com/en-us/concept/10009073",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202507/2217/4737c008b338b6d052f6f702bd895bbeebf52f4a39416837.png"
+  },
+  {
+    "slug": "ps5-painkiller",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10013491/",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202503/1911/8935847acc5497e1ae9103b4499f81b89aacb600214a3e51.png"
   },
   {
     "slug": "ps5-persona-5-royal",
@@ -1571,6 +1763,16 @@
     "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/PULSE-Elite-headset-thumbnail-02-en-12sep23?$1600px$"
   },
   {
+    "slug": "ps5-railway-empire-2",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10003604/",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202208/1513/wnsVkZssRqN31ta00srr58gR.png"
+  },
+  {
+    "slug": "ps5-raincode",
+    "sourcePage": "https://store.playstation.com/nl-nl/product/EP4947-PPSA18630_00-0676926623414670/",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202404/2211/97ff3940e9e513f1e4f43fcf1525da315315d6fa99142620.png"
+  },
+  {
     "slug": "ps5-rayman-30th-ann-ed",
     "sourcePage": "https://store.playstation.com/en-us/concept/10016684",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202602/0500/cdbe1418361054de15c33f26ceb9114eebdf04f1c27dda4a.png"
@@ -1584,6 +1786,16 @@
     "slug": "ps5-red-dead-redemption",
     "sourcePage": "https://store.playstation.com/en-us/concept/10006164",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202511/1714/51f72f7876824968728fa5b711f48632ec453706fa46e07a.png"
+  },
+  {
+    "slug": "ps5-remnant-2",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10004544",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202402/1420/449bd276cdf2e237c35d7e76bedc1da2a532adcb65cedf69.png"
+  },
+  {
+    "slug": "ps5-rennsport",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10013999",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202508/2008/92eec451c1f7ea7efb40e51deb2ee4cc00df7556b024dd22.png"
   },
   {
     "slug": "ps5-resident-evil-3",
@@ -1621,6 +1833,11 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202512/1205/79661d7a2bdb9784749b4e57e1456ca89f7ac7bed8615aee.png"
   },
   {
+    "slug": "ps5-resident-evil-village-gold",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0102-PPSA01556_00-VILLAGEGDEDITION",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202207/0706/GUhDp6BVY1CREF9HFT0fiOec.png"
+  },
+  {
     "slug": "ps5-resident-evill-biohazard",
     "sourcePage": "https://store.playstation.com/en-us/product/UP0102-PPSA04400_00-BH70000000000001",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202206/0207/V6IViuKogBMRtajqjnYrcj0e.png"
@@ -1631,9 +1848,19 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202605/1510/346857c01378e194d77def3f3029d79489509c541aa761d6.png"
   },
   {
+    "slug": "ps5-ride-5",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10003247",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202303/3115/c429ce8316b8c616efcb0587e5f18e9820a9f406bb88a08c.png"
+  },
+  {
     "slug": "ps5-robocop",
     "sourcePage": "https://store.playstation.com/en-us/concept/10003485",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202206/2712/YQbnDNnMNAkVx5CFdOvNyaXH.png"
+  },
+  {
+    "slug": "ps5-sacred-2-fallen-angel",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10015606/",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202509/2608/8136f4758c33c49e548ef2b9eaff8b1eebc10c8747368cf9.png"
   },
   {
     "slug": "ps5-saros",
@@ -1646,9 +1873,19 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202507/1715/f51e6b875423548e4557d79d5f00d40df9473a302e97108f.png"
   },
   {
+    "slug": "ps5-secret-of-the-mimic",
+    "sourcePage": "https://store.playstation.com/no-no/concept/10012344",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202502/1220/e957041d1c412191bc3c38c2e0ceb2cb3af77e1c5ceef5b8.png"
+  },
+  {
     "slug": "ps5-shinobi",
     "sourcePage": "https://store.playstation.com/en-us/product/UP0177-PPSA19461_00-SHINOBIAOV000001",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202501/2001/ef5de71af75b004bb6870ee2e041ad8a3d7b1867b463e17d.png"
+  },
+  {
+    "slug": "ps5-silent-hill-2",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0101-PPSA08710_00-MAINGAME00000000",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202210/2000/IgwsFz9BiBrFvyV7pIWpoVgd.png"
   },
   {
     "slug": "ps5-silent-hill-f",
@@ -1659,6 +1896,11 @@
     "slug": "ps5-silent-hill-townfall",
     "sourcePage": "https://store.playstation.com/en-us/concept/10016947/",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202605/1407/420dcf45979ace1b7c97122a2dc0eb479428590ecab89c2b.png"
+  },
+  {
+    "slug": "ps5-sniper-elite-5",
+    "sourcePage": "https://store.playstation.com/de-de/product/EP4529-PPSA04444_00-SNIPERELITE50000",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202202/2116/59jHCjMBRhuRhPUKUUy2gkNd.png"
   },
   {
     "slug": "ps5-sniper-elite-resistance",
@@ -1701,6 +1943,11 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202502/2109/0c582584b280e3bf8872316fd4626ec084efaeb9ba436c65.png"
   },
   {
+    "slug": "ps5-star-wars-jedi-survivor",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0006-PPSA07783_00-APPLEJACKGAME000",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202304/1016/47becbe467e18575f71429abbaec9af707865744b825f34d.png"
+  },
+  {
     "slug": "ps5-star-wars-zero-company",
     "sourcePage": "https://store.playstation.com/en-us/concept/10009029",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202608/2110/422562f57b88bf0efe97eb9dde23aef5ac80fc4a82d4398d.png"
@@ -1726,6 +1973,12 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202308/0312/aff71a0ced271048f5079b1fcf715bcb45110efc13e9704a.png"
   },
   {
+    "slug": "ps5-test-drive",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10003910",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202405/1009/5663b2c33b9e49f8549af335b46d5778e79904548c87fe86.png",
+    "representative": true
+  },
+  {
     "slug": "ps5-the-adventures-of-elliot",
     "sourcePage": "https://store.playstation.com/en-us/product/UP0082-PPSA32193_00-MILLENNIUMTALEUP",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202601/1912/9cddb60efc374d029ced0e159d1db065b48b79e0fc63a704.png"
@@ -1746,6 +1999,16 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202411/2217/aff7ae0da202d816a5761fd4ce865085320052f46223c770.png"
   },
   {
+    "slug": "ps5-the-first-berker-khazan",
+    "sourcePage": "https://store.playstation.com/pl-pl/concept/10009937",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202406/2604/78cf326a8cceaed3f4a807fe9e3f811abdfb5df96fe0cd06.png"
+  },
+  {
+    "slug": "ps5-the-karate-kid",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0283-PPSA21258_00-0545877962476479",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202407/1813/709414d1c2b659f55a364056c416cdc0e8517fd2c191778e.png"
+  },
+  {
     "slug": "ps5-the-last-of-us-part-1",
     "sourcePage": "https://store.playstation.com/en-us/product/UP9000-PPSA03396_00-THELASTOFUSPART1",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202206/0720/eEczyEMDd2BLa3dtkGJVE9Id.png"
@@ -1754,6 +2017,11 @@
     "slug": "ps5-the-last-of-us-part-2-rmstrd",
     "sourcePage": "https://store.playstation.com/es-cr/concept/230079",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202312/0117/315718bce7eed62e3cf3fb02d61b81ff1782d6b6cf850fa4.png"
+  },
+  {
+    "slug": "ps5-the-smurds-village-party",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10010362",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202403/0609/468b468052437913b3fb0ca324715c71ed36a3d2b84e3966.png"
   },
   {
     "slug": "ps5-the-witcher",
@@ -1771,9 +2039,19 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202409/1221/c785b0366d8f84a18dd17a0d046fdee92ccd6195d79c81a1.png"
   },
   {
+    "slug": "ps5-tomb-rider-1-2-3-remstrd",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP1032-PPSA16901_00-TOMBRAIDER123224",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202402/0221/b10e4dff0c3c4ba38ef9a331671b156c70bdfadc32a8f5cf.png"
+  },
+  {
     "slug": "ps5-tony-hawks-pro-skater-3-4",
     "sourcePage": "https://store.playstation.com/en-us/product/UP0002-PPSA18010_00-TH34RSTNDBUNDL01/",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202502/2100/90881f77d349bee47f6629b340a2b722925975e587c26bd4.png"
+  },
+  {
+    "slug": "ps5-totally-spies-cyber-mission",
+    "sourcePage": "https://store.playstation.com/en-us/product/EP4295-PPSA23846_00-TSCYBERMISSPS5EU",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202405/2413/b5fbbadc76fb4bd3ddb7724480efabf45868f08de2673513.png"
   },
   {
     "slug": "ps5-uncharted-collection",
@@ -1786,9 +2064,19 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202310/2611/2ef3bfca0f1b197bbe71cfda286fa80ebaaf2fe204b3ccc1.png"
   },
   {
+    "slug": "ps5-unkown-9-awakening",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0700-PPSA17841_00-UNKNOWN90000GAME",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202405/1721/4c4a1ae19ba1c3460e7deb688cd36a2f53fdf26fff58162c.png"
+  },
+  {
     "slug": "ps5-watch-dogs-legion",
     "sourcePage": "https://store.playstation.com/en-hu/product/EP0001-PPSA01488_00-ORWFULLGAME00000",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202007/0217/OX5mEmwgRPeSQrhGFU3n4moZ.png"
+  },
+  {
+    "slug": "ps5-wild-hearts",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0006-PPSA07837_00-BOHNIGAME0000000",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202210/2615/fb9fe7JhjCL5vOsWY3wpSOm8.png"
   },
   {
     "slug": "ps5-wrc-generations",
