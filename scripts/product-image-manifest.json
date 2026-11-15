@@ -197,6 +197,11 @@
     "imageUrl": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/ncom/My%20Nintendo%20Store/EN-US/Nintendo%20Switch%202/Hardware/123669-nintendo-switch-2-package-front-2000x2000"
   },
   {
+    "slug": "ns-2-cronos-the-dawn",
+    "sourcePage": "https://store.playstation.com/en-us/product/EP4176-PPSA24096_00-TITAN00000000000",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202410/1511/3775082b58945a3e9659f576feb92e0102332ac42f87ec24.png"
+  },
+  {
     "slug": "ns-2-hitman-signature-edition",
     "sourcePage": "https://store.playstation.com/en-us/product/UP4572-PPSA01768_00-0000000000000WOA",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202610/2311/b8eef1ed41e1a72df5174894082790fd23a115e6fe73eaf2.png",
@@ -206,6 +211,11 @@
     "slug": "ns-2-kirby-and-the-forgotten-land",
     "sourcePage": "https://www.nintendo.com/us/store/products/kirby-and-the-forgotten-land-switch/",
     "imageUrl": "https://assets.nintendo.com/image/upload/c_crop,w_0.45,h_0.8,g_center/c_scale,w_1080/q_auto/f_auto/store/software/switch/70010000046405/d1cf83dea46094b85247f40ca30ea4557730a319be0bfe544a4fa929144cf6c2"
+  },
+  {
+    "slug": "ns-cobra-awakening",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10008749",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202503/2609/7bf4506a2b575a630500670638bd7e93e5d7f8cb3cf4e505.png"
   },
   {
     "slug": "ns-donkey-kong-country-returns-hd",
@@ -308,6 +318,12 @@
     "imageUrl": "https://assets.nintendo.com/image/upload/c_fill,w_1080,h_1080/q_auto/f_auto/store/software/switch/70010000068688/87e8aa5f1fdc950b88eae7d7c62ed185c8a6373c845090bbdb2e2cf039b38da1"
   },
   {
+    "slug": "ns-the-legend-of-zelda",
+    "sourcePage": "https://www.nintendo.com/us/store/products/the-legend-of-zelda-tears-of-the-kingdom-switch/",
+    "imageUrl": "https://assets.nintendo.com/image/upload/c_fill,w_1080,h_1080,g_west/q_auto/f_auto/store/software/switch/70010000063714/fb30eab428df3fc993b41c76e20f72e4d76d49734d17d31996b5ab61c414b117",
+    "representative": true
+  },
+  {
     "slug": "ns-xenobladexchronicles",
     "sourcePage": "https://www.nintendo.com/us/store/products/xenoblade-chronicles-x-definitive-edition-switch/",
     "imageUrl": "https://assets.nintendo.com/image/upload/c_fill,w_1080,h_1080/q_auto/f_auto/store/software/switch/70010000088832/d33ed7f51de601b10cafa5814fd786bbad317b0421a43d54917a2c647be2f23b"
@@ -348,6 +364,17 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202012/0815/7CRynuLSAb0vysSC4TmZy5e4.png"
   },
   {
+    "slug": "ns2-kingdom-hearts-collection-i-iii",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0082-PPSA35901_00-KHCOLLECTION00EN",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202607/1305/28ad47102bb7db9d6a8feb8ec79870abeb130429afef5cc6.png"
+  },
+  {
+    "slug": "ns2-legend-of-heroes-trials-collection",
+    "sourcePage": "https://www.nintendo.com/us/store/products/the-legend-of-heroes-trails-from-zero-the-legend-of-heroes-trails-to-azure-switch-2/",
+    "imageUrl": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch2/70070000040397/1c299ed9de456e4651c1bda5ce79a8cfa593fbeb45a724a6cb9b36711c577e20",
+    "representative": true
+  },
+  {
     "slug": "ns2-lego-batman-legacy-of-dark",
     "sourcePage": "https://store.playstation.com/en-us/product/UP1018-PPSA16833_00-LEGOBATMAN000000/",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202508/1316/3302f35b66691aa405aee31624c0c95fe73081be8e0c75bb.png"
@@ -371,6 +398,11 @@
     "slug": "ns2-reanimal",
     "sourcePage": "https://store.playstation.com/en-us/product/EP4389-PPSA23372_00-ANIMALGAMEGLOBAL",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202508/2109/25422d8bda53b48e35f690b9d68590ab3f5eb4df8755c84f.png"
+  },
+  {
+    "slug": "ns2-resident-evil-generation-pack",
+    "sourcePage": "https://ec.nintendo.com/AU/en/bundles/70070000031241",
+    "imageUrl": "https://img-eshop.cdn.nintendo.net/i/d4a3674ddba43318736d086a5e49cc584fe6dcf51e07acd60dfd2cc55462e739.jpg"
   },
   {
     "slug": "ns2-resident-evil-requiem",
@@ -421,6 +453,11 @@
     "slug": "pro-x-superlight-2-logitech-black",
     "sourcePage": "https://www.ldlc.com/en/product/PB00569683.html",
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/06/06/12/LD0006061283.jpg"
+  },
+  {
+    "slug": "ps-vr2",
+    "sourcePage": "https://www.playstation.com/en-us/ps-vr2/",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/PSVR2-thumbnail-01-en-22feb22?$1600px$"
   },
   {
     "slug": "ps4-a-sackboy",
@@ -584,6 +621,12 @@
     "imageUrl": "https://image.api.playstation.com/cdn/UP0700/CUSA03388_00/v8JlD8KcQUtTqaLBmpFnj1ESRR5zMkLk.png"
   },
   {
+    "slug": "ps4-dark-souls-trilogy",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP0700-CUSA08692_00-DARKSOULSHD00000",
+    "imageUrl": "https://image.api.playstation.com/cdn/UP0700/CUSA08692_00/JxilRmpXkS3CCXUnr0gZTBOlqso3plaw.png",
+    "representative": true
+  },
+  {
     "slug": "ps4-days-gone",
     "sourcePage": "https://store.playstation.com/en-gb/product/EP9000-CUSA09176_00-DAYSGONECOMPLETE",
     "imageUrl": "https://image.api.playstation.com/vulcan/img/rnd/202011/1204/wYL4v2r8uMQFvVTJlfuj8ICk.png"
@@ -664,6 +707,12 @@
     "slug": "ps4-grid-legends",
     "sourcePage": "https://store.playstation.com/en-us/product/UP0006-PPSA03865_00-GRIDLEGPS5GAME00",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202111/2213/9bCyljPZ6TYi3xMTpFywSmlZ.png"
+  },
+  {
+    "slug": "ps4-gt-sport",
+    "sourcePage": "https://www.playstation.com/en-us/games/gran-turismo-sport/",
+    "imageUrl": "https://image.api.playstation.com/vulcan/img/rnd/202011/1019/hMkDp3eo0OSpdqe4rZj6EYJK.png",
+    "representative": true
   },
   {
     "slug": "ps4-gta-v",
@@ -821,6 +870,11 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202209/0618/zgEjW4gX8C1GdU7F3P2NnLiH.png"
   },
   {
+    "slug": "ps4-paw-patrol-championship",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10013289",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202506/1013/71d9dda8b847bcf29957872547114764825b437fd22ecc60.png"
+  },
+  {
     "slug": "ps4-pes-2020",
     "sourcePage": "https://store.playstation.com/en-us/concept/233374/",
     "imageUrl": "https://image.api.playstation.com/gs2-sec/appkgo/prod/CUSA14918_00/3/i_54b82636f5a09b208a811e66a2ae787c5e4175fb290e5f3555b040a0ef5aa099/i/icon0.png"
@@ -911,6 +965,12 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202305/3115/8c2693773976d99c58998f9d1749e610f975d3047dc22cad.png"
   },
   {
+    "slug": "ps4-spider-man",
+    "sourcePage": "https://www.playstation.com/en-us/games/marvels-spider-man/",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202009/3021/B2aUYFC0qUAkNnjbTHRyhrg3.png",
+    "representative": true
+  },
+  {
     "slug": "ps4-spider-man-morales",
     "sourcePage": "https://store.playstation.com/en-us/concept/10000649",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202008/1020/T45iRN1bhiWcJUzST6UFGBvO.png"
@@ -981,6 +1041,11 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202502/2100/90881f77d349bee47f6629b340a2b722925975e587c26bd4.png"
   },
   {
+    "slug": "ps4-transformers-battelgrounds",
+    "sourcePage": "https://store.playstation.com/nl-nl/concept/235017",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202008/2016/H1XgePdzBezIalDxM1aHJgpt.png"
+  },
+  {
     "slug": "ps4-transport-fever-2",
     "sourcePage": "https://store.playstation.com/de-de/product/EP6665-PPSA12361_00-TRFE200000000000",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202211/0316/hi1dbXOFwRYAX5gliiFD4qDF.png"
@@ -1005,6 +1070,11 @@
     "slug": "ps4-world-war-z",
     "sourcePage": "https://store.playstation.com/en-us/product/UP2746-CUSA14046_00-WWZTHEGAME201800",
     "imageUrl": "https://image.api.playstation.com/cdn/UP2746/CUSA14046_00/0sdmApE8KNjQkMY5y3PFa7KJzf7MIx2K.png"
+  },
+  {
+    "slug": "ps4-wrc-10",
+    "sourcePage": "https://store.playstation.com/en-us/product/UP6665-CUSA27791_00-WRC1000000000000/",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202104/1314/VpfiBsNcPVln9ZjsKYuDDlvo.png"
   },
   {
     "slug": "ps4-wrc-generations",
@@ -1209,6 +1279,28 @@
     "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/DSWC_CFI-ZCT2_IB_SE_RNDR_LT_RGB_EU_260604-16x9-01-18aug26en?$1600px$"
   },
   {
+    "slug": "ps5-criksholm-the-stolen-dream",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10009571/",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202406/0714/2160eca251f55b2db79a9cf21c88e146b0855c55c35dc575.png"
+  },
+  {
+    "slug": "ps5-crimson-desert",
+    "sourcePage": "https://www.playstation.com/en-us/games/crimson-desert/",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202608/2006/e8f306c89efa555a13e4d3910dafda994a14b2355f342802.png",
+    "representative": true
+  },
+  {
+    "slug": "ps5-crimson-desert-deluxe",
+    "sourcePage": "https://www.playstation.com/en-us/games/crimson-desert/",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202608/2006/e8f306c89efa555a13e4d3910dafda994a14b2355f342802.png",
+    "representative": true
+  },
+  {
+    "slug": "ps5-cronos",
+    "sourcePage": "https://store.playstation.com/en-us/product/EP4176-PPSA24096_00-TITAN00000000000",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202410/1511/3775082b58945a3e9659f576feb92e0102332ac42f87ec24.png"
+  },
+  {
     "slug": "ps5-cyberpunk-2077",
     "sourcePage": "https://store.playstation.com/en-au/product/EP4497-PPSA04029_00-0000000000000N22",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202111/3013/cKZ4tKNFj9C00giTzYtH8PF1.png"
@@ -1311,6 +1403,12 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202410/1111/0efd2372a248a006a05e503cd673db16c631c1806b325edc.png"
   },
   {
+    "slug": "ps5-edge-black",
+    "sourcePage": "https://www.playstation.com/en-us/accessories/dualsense-edge-wireless-controller/",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/dualsense-edge-listing-thumb-01-en-23aug22?$1600px$",
+    "representative": true
+  },
+  {
     "slug": "ps5-edge-white",
     "sourcePage": "https://www.playstation.com/en-us/accessories/dualsense-edge-wireless-controller/",
     "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/DualSense-Edge-image-block-01-en-24aug22?$1600px$"
@@ -1384,6 +1482,11 @@
     "slug": "ps5-farming-simulator-25",
     "sourcePage": "https://store.playstation.com/en-us/product/EP4399-PPSA19644_00-FARMSIMULAT25PS5",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202406/1221/5e7b5321408d56da66ffbb45abae3d2f812b0a1dd03cee5d.png"
+  },
+  {
+    "slug": "ps5-fast-furious-arcade-edition",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10015155/",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202508/1408/43996b4e29ecb582b3c2293842fc11ae31aed1b9b8620dba.png"
   },
   {
     "slug": "ps5-fatal-frame-2",
@@ -1572,9 +1675,19 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202405/1709/4d263f1439c6f7cf3aba789d57a623ee366c948e586cb9ca.png"
   },
   {
+    "slug": "ps5-hot-wheels-lets-race",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10012875/",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202508/2212/c0f6953211498eb1d52875f1a145cd31c7424d9eb10ca544.png"
+  },
+  {
     "slug": "ps5-hot-wheels-monster-trucks",
     "sourcePage": "https://store.playstation.com/en-us/concept/10009076/",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202408/2015/5b3ee51ed26886b8df784bc19ecf41ec5ce73f2cc2c5e20c.png"
+  },
+  {
+    "slug": "ps5-into-the-restless-ruins",
+    "sourcePage": "https://store.playstation.com/en-us/product/EP4459-PPSA27589_00-RESTLESSRUINSPS5",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202502/2115/b97edcc8db9866ca3f09cd5c1f834121a3950c891de9a990.png"
   },
   {
     "slug": "ps5-invincible-vs",
@@ -1735,6 +1848,11 @@
     "slug": "ps5-mafia-the-old-country",
     "sourcePage": "https://store.playstation.com/en-us/product/UP1001-PPSA14251_00-00000NEROPS5SIEA",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202504/2416/06f677b905f8794395b855a0de3e9fcb42b567e78c50aaed.png"
+  },
+  {
+    "slug": "ps5-marsupilami-2-salsa-palombia",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10017553",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202602/2609/228450248e648e3815821da87cabb721e7239b00203076df.png"
   },
   {
     "slug": "ps5-marvel-tokon-fighting-souls",
@@ -1932,6 +2050,11 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202406/1110/f39807ab0a1aecd8fd037fe1cec488395e6f490f19685ebb.png"
   },
   {
+    "slug": "ps5-paw-patrol-championship",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10013289",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202506/1013/71d9dda8b847bcf29957872547114764825b437fd22ecc60.png"
+  },
+  {
     "slug": "ps5-persona-5-royal",
     "sourcePage": "https://store.playstation.com/en-us/product/UP0177-PPSA05109_00-P5RGAME000000000",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202209/0202/OjPcc6QP2W8kImOhWSnzojn3.png"
@@ -1950,6 +2073,11 @@
     "slug": "ps5-prince-of-persia",
     "sourcePage": "https://store.playstation.com/en-us/concept/10005985",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202312/0701/de64753172dca1b06fc9ec1cd4abaeaa7f12ff7ac98f5a19.png"
+  },
+  {
+    "slug": "ps5-pro-console-tra",
+    "sourcePage": "https://www.playstation.com/en-us/ps5/ps5-pro/",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/ps5-pro-dualsense-image-block-01-en-16aug24?$1600px$"
   },
   {
     "slug": "ps5-pulse-elite",
@@ -2124,6 +2252,30 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202605/0713/0c7ac434f7527fe28e0d4201db879d14438b8d409e456b86.png"
   },
   {
+    "slug": "ps5-slim-cd",
+    "sourcePage": "https://www.playstation.com/en-us/ps5/",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/ps5-product-thumbnail-01-en-14sep21?$1600px$",
+    "representative": true
+  },
+  {
+    "slug": "ps5-slim-digital",
+    "sourcePage": "https://www.playstation.com/en-us/ps5/",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/ps5-product-thumbnail-01-en-14sep21?$1600px$",
+    "representative": true
+  },
+  {
+    "slug": "ps5-slim-digital-825gb",
+    "sourcePage": "https://www.playstation.com/en-us/ps5/",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/ps5-product-thumbnail-01-en-14sep21?$1600px$",
+    "representative": true
+  },
+  {
+    "slug": "ps5-slim-digital-tra-oman",
+    "sourcePage": "https://www.playstation.com/en-us/ps5/",
+    "imageUrl": "https://gmedia.playstation.com/is/image/SIEPDC/ps5-product-thumbnail-01-en-14sep21?$1600px$",
+    "representative": true
+  },
+  {
     "slug": "ps5-smells-like-a-mushroom",
     "sourcePage": "https://store.playstation.com/en-us/product/UB0925-PPSA23670_00-SLAMPS5EU0000001",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202410/2418/e462879389f11adadd5d112850458165aa470bb252757eb5.png"
@@ -2157,6 +2309,12 @@
     "slug": "ps5-soul-reaver-1-2",
     "sourcePage": "https://store.playstation.com/en-us/product/UP1032-PPSA18153_00-SOULREAVER120824",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202409/1715/14b9503de49035832456c264fe5e34bcb80dcaf31a5101a3.png"
+  },
+  {
+    "slug": "ps5-space-marine-2-ultimate",
+    "sourcePage": "https://store.playstation.com/es-mx/concept/10003330",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202508/2615/85eb5c569cea8bfe54bccf3ecf7f4d2fd991e2c921b22831.png",
+    "representative": true
   },
   {
     "slug": "ps5-spider-man-2",
@@ -2358,6 +2516,11 @@
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202203/3011/GT1ZAtZiXW05nON8ZB6TdNA2.png"
   },
   {
+    "slug": "ps5-ufc-6",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10011247",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202604/2216/83baec5746075ec3e379c096dfe68111095c91cb7139a633.png"
+  },
+  {
     "slug": "ps5-uncharted-collection",
     "sourcePage": "https://store.playstation.com/en-sg/concept/205354",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202111/2000/gTUWTlvPHzxFJ2JAxtDyI2eS.png"
@@ -2381,6 +2544,12 @@
     "slug": "ps5-valor-mortis",
     "sourcePage": "https://store.playstation.com/pl-pl/concept/10016571",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202508/1815/96fbe904b245c74b7cbd85f2ed33c1b3d2e60186ce56b51a.png"
+  },
+  {
+    "slug": "ps5-wanderer",
+    "sourcePage": "https://store.playstation.com/en-us/concept/10008095/",
+    "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202502/2717/f931bcd95e10d6f29265380b859de519b85aaef51e128061.png",
+    "representative": true
   },
   {
     "slug": "ps5-watch-dogs-legion",
@@ -2443,9 +2612,19 @@
     "imageUrl": "https://media.ldlc.com/r1600/ld/products/00/05/57/36/LD0005573659_2.jpg"
   },
   {
+    "slug": "super-marios-luigi-brothership",
+    "sourcePage": "https://www.nintendo.com/us/store/products/mario-and-luigi-brothership-119272/",
+    "imageUrl": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto/f_auto/dpr_2.0/ncom/My%20Nintendo%20Store/EN-US/Nintendo%20Switch%20Software/mario-and-luigi-brothership-119272/119272-mario-and-luigi-brothership-1200x675"
+  },
+  {
     "slug": "sw-2-yoshi-and-the-mystrious-book",
     "sourcePage": "https://www.nintendo.com/us/store/products/yoshi-and-the-mysterious-book-switch-2/",
     "imageUrl": "https://assets.nintendo.com/image/upload/c_crop,w_0.45,h_0.8,g_center/c_scale,w_1080/q_auto/f_auto/store/software/switch2/70010000119859/74720e9755d3cc39e312e33d6c985a815ed352217cbcdeeaeabb98387767c82f"
+  },
+  {
+    "slug": "switch-2-pro-controller-zelda-40th",
+    "sourcePage": "https://www.nintendo.com/us/store/products/nintendo-switch-2-pro-controller-the-legend-of-zelda-40th-anniversary-edition-127074/",
+    "imageUrl": "https://assets.nintendo.com/image/upload/q_auto/f_auto/ncom/My%20Nintendo%20Store/EN-US/Nintendo%20Switch%202/Controllers/Pro%20Controllers/127074-nintendo-switch-2-pro-controller-the-legend-of-zelda-40th-edition-package-2000x2000"
   },
   {
     "slug": "wd-1tb-m-2-nvme",
@@ -2467,6 +2646,11 @@
     "slug": "xbox-fc27",
     "sourcePage": "https://store.playstation.com/en-us/concept/10017332",
     "imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202607/2321/c7c534e1e9b24ccf7ff11c429948f31494ccce402b452647.png"
+  },
+  {
+    "slug": "xbox-forza-horizon-6",
+    "sourcePage": "https://www.xbox.com/en-us/games/store/forza-horizon-6/9NR1R1XWLCNB/0010",
+    "imageUrl": "https://store-images.s-microsoft.com/image/apps.29856.13758467164481545.c998f207-34a5-4a78-8843-178e2acdf371.9472937a-30ec-4ce0-8cd4-62f282fd5d28?q=90&w=800&h=1200"
   },
   {
     "slug": "xbox-halo-campaign-evolved",
